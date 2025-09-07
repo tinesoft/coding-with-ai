@@ -1,19 +1,37 @@
 {
-  "name": "@sfeir-school-coding-with-ai/source",
+  "name": "sfeir-school-coding-with-ai",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx run docs:serve",
+    "sstart": "nx run docs:serve-static",
+    "build": "nx run docs:build",
+    "serve": "nx run docs:serve",
+    "lint": "nx run-many -t lint",
+    "clean": "npx nx reset && rm -rf dist"
+  },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@nx/js": "21.4.1",
+    "@nx/vite": "^21.4.1",
+    "@nx/web": "21.4.1",
     "@nx/workspace": "21.4.1",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@vitest/ui": "^3.0.0",
+    "jiti": "2.4.2",
     "nx": "21.4.1",
     "prettier": "^2.6.2",
     "tslib": "^2.3.0",
-    "typescript": "~5.8.2"
+    "typescript": "~5.8.2",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0",
+    "vite-plugin-image-optimizer": "latest",
+    "svgo": "latest",
+    "sharp": "latest"
+  },
+  "dependencies": {
+    "sfeir-school-theme": "latest"
   }
 }

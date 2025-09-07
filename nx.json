@@ -2,8 +2,48 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": ["default"],
+    "production": [
+      "default",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/src/test-setup.[jt]s"
+    ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "68bd7781aff9c334d6929e67"
+  "targetDefaults": {
+    "copy-theme-images": {
+      "cache": true,
+      "inputs": [
+        "{workspaceRoot}/node_modules/sfeir-school-theme/**/*",
+        "{workspaceRoot}/package-lock.json",
+        "{workspaceRoot}/bun.lock",
+        "{workspaceRoot}/nx.json"
+      ],
+      "outputs": ["{projectRoot}/web_modules/sfeir-school-theme"]
+    },
+    "serve": {
+      "dependsOn": ["copy-theme-images"]
+    },
+    "build": {
+      "dependsOn": ["copy-theme-images"]
+    }
+  },
+  "defaultProject": "docs",
+  "nxCloudId": "68bd7781aff9c334d6929e67",
+  "plugins": [
+    {
+      "plugin": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ]
 }

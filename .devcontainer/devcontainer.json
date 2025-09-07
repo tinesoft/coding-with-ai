@@ -1,0 +1,71 @@
+{
+  "name": "SFEIR School Coding with AI DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "ppa": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false,
+      "installOhMyZsh": false,
+      "upgradePackages": true    
+    }
+  },
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume,consistency=cached"
+  ],
+  "forwardPorts": [4200],
+  "runArgs": [
+    "--cpus=4",
+    "--memory=4g",
+    "--memory-swap=8g", 
+    "--shm-size=2g",
+    "--ulimit=nofile=65535:65535"
+  ],
+  "containerUser": "node",
+  "updateRemoteUserUID": true,
+  "postCreateCommand": "chmod +x ./.devcontainer/post-create.sh && ./.devcontainer/post-create.sh",
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "usernamehw.errorlens",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "firsttris.vscode-jest-runner",
+        "anweber.reveal-button",
+        "mutantdino.resourcemonitor",
+        "chrisdias.promptboost",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "nrwl.angular-console"
+      ],
+      "settings": {
+        "debug.javascript.autoAttachFilter": "disabled",
+        "dotfiles.repository": "https://github.com/tinesoft/dotfiles",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "nxConsole.generateAiAgentRules": true,
+        "chat.agent.maxRequests": 50,
+        "github.copilot.chat.codesearch.enabled": true,
+        "github.copilot.chat.agent.thinkingTool": true,
+        "chat.tools.terminal.autoApprove": {
+          "curl": true,
+          "wget": true,
+          "find": true,
+          "ls": true,
+          "\"/^git (status|show\\b.*)$/\"": true,
+          "npm install": true,
+          "npm run": true,
+          "npx": true,
+          "bun install": true,
+          "bun add": true,
+          "bunx": true,
+          "nx": true
+        }
+      }
+    }
+  }
+}
