@@ -30,7 +30,10 @@ jobs:
           name: github-pages
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-      
+
+      - name: Display structure of downloaded files
+        run: ls -lR
+
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
