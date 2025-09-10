@@ -34,4 +34,8 @@ export default defineConfig(() => ({
       transformMixedEsModules: true,
     },
   },
+  // Set base path for GitHub Pages deployment
+  base: process.env.GITHUB_PAGES || process.env.GITHUB_ACTIONS || process.env.CI 
+    ? '/coding-with-ai/'  // Replace with your actual github repository name
+    : '/',
 }));
