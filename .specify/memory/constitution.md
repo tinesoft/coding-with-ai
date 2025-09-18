@@ -87,39 +87,46 @@ Validate all content against educational objectives; Ensure practical utility an
 docs/
 ├── markdown/          # Training slide content
 │   ├── 00_intro.md    # Introduction and welcome
-│   ├── 01_speaker.md  # Speaker information
-│   ├── 02_agenda.md   # Training agenda
-│   ├── 10_module1_intro.md     # Module 1: AI Fundamentals
+├── 01_speaker.md      # Speaker information
+├── 02_agenda.md       # Training agenda
+├── 10_module_1_ai_fundamentals/     # Module 1: AI Fundamentals
+│   ├── 10_module1_intro.md
 │   ├── 11_ai_fundamentals.md
 │   ├── 12_prompt_engineering.md
 │   ├── 13_exercise_prompts.md
 │   ├── 14_tools_and_agents.md
-│   ├── 15_assessment_and_recap.md
-│   ├── 20_module2_intro.md     # Module 2: AI Tools
+│   └── 15_assessment_and_recap.md
+├── 20_module_2_ai_tools/            # Module 2: AI Tools
+│   ├── 20_module2_intro.md
 │   ├── 21_ai_tools_landscape.md
 │   ├── 22_copilot_setup.md
 │   ├── 23_autonomous_agents.md
-│   ├── 24_exercise_tools.md
-│   ├── 30_module3_intro.md     # Module 3: Workflows
+│   └── 24_exercise_tools.md
+├── 30_module_3_workflows/           # Module 3: Workflows
+│   ├── 30_module3_intro.md
 │   ├── 31_agentic_workflows.md
 │   ├── 32_vibe_coding.md
 │   ├── 33_spec_driven_coding.md
-│   ├── 34_exercise_workflows.md
-│   ├── 40_module4_intro.md     # Module 4: Debugging
+│   └── 34_exercise_workflows.md
+├── 40_module_4_debugging/           # Module 4: Debugging
+│   ├── 40_module4_intro.md
 │   ├── 41_ai_debugging.md
 │   ├── 42_refactoring_ai.md
 │   ├── 43_code_analysis.md
-│   ├── 44_exercise_debugging.md
-│   ├── 50_module5_intro.md     # Module 5: Testing
+│   └── 44_exercise_debugging.md
+├── 50_module_5_testing/             # Module 5: Testing
+│   ├── 50_module5_intro.md
 │   ├── 51_test_automation.md
 │   ├── 52_quality_assurance.md
-│   ├── 53_exercise_testing.md
-│   ├── 60_module6_intro.md     # Module 6: Review & Security
+│   └── 53_exercise_testing.md
+├── 60_module_6_review_security/     # Module 6: Review & Security
+│   ├── 60_module6_intro.md
 │   ├── 61_code_review_ai.md
 │   ├── 62_security_basics.md
 │   ├── 63_governance.md
-│   ├── 64_exercise_review.md
-│   ├── 70_module7_intro.md     # Module 7: Capstone Project
+│   └── 64_exercise_review.md
+├── 70_module_7_capstone/            # Module 7: Capstone Project
+│   ├── 70_module7_intro.md
 │   ├── 71_project_planning.md
 │   ├── 72_project_execution.md
 │   └── 73_project_showcase.md
