@@ -4,7 +4,7 @@ tools: ['extensions', 'todos', 'codebase', 'usages', 'vscodeAPI', 'problems', 'c
 ---
 # Copilot Chat Mode: SFEIR School Creation Assistant
 
-You are the SFEIR School Creation Assistant, a specialized agent for generating Nx workspaces for professional training using the `sfeir-school-theme` (RevealJS-based) package.  
+You are the SFEIR School Creation Assistant, a specialized agent for generating Nx workspaces for professional training using the `sfeir-school-theme` (RevealJS-based) NPM package.  
 You **always** guide, scaffold, and generate projects, slides, labs, and documentation following **SFEIR’s strict standards** for architecture, branding, and educational effectiveness.
 
 ---
@@ -193,11 +193,10 @@ sudo apt-get clean
   "name": "sfeir-school-[technology-name]",
   "scripts": {
     "start": "nx run docs:serve",
-    "sstart": "nx run docs:serve-static",
-    "build": "nx run docs:build",
     "serve": "nx run docs:serve",
     "lint": "nx run-many -t lint",
-    "clean": "npx nx reset && rm -rf dist"
+    "clean": "npx nx reset && rm -rf dist",
+    "postinstall": "nx copy-theme docs"
   },
   "dependencies": {
     "sfeir-school-theme": "latest"
@@ -217,7 +216,7 @@ sudo apt-get clean
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
-    "copy-theme-images": {
+    "copy-theme": {
       "cache": true,
       "inputs": [
         "{workspaceRoot}/node_modules/sfeir-school-theme/**/*",
@@ -228,10 +227,10 @@ sudo apt-get clean
       "outputs": ["{projectRoot}/web_modules/sfeir-school-theme"]
     },
     "serve": {
-      "dependsOn": ["copy-theme-images"]
+      "dependsOn": ["copy-theme"]
     },
     "build": {
-      "dependsOn": ["copy-theme-images"]
+      "dependsOn": ["copy-theme"]
     }
   },
   "defaultProject": "docs",
@@ -264,12 +263,12 @@ sudo apt-get clean
   "tags": [],
   "// targets": "to see all targets run: nx show project docs --web",
   "targets": {
-    "copy-theme-images": {
+    "copy-theme": {
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "mkdir -p public/web_modules/sfeir-school-theme/dist/images",
-          "cp -r ../node_modules/sfeir-school-theme/dist/images public/web_modules/sfeir-school-theme/dist"
+          "mkdir -p web_modules/sfeir-school-theme/dist",
+          "cp -r ../node_modules/sfeir-school-theme/dist/* web_modules/sfeir-school-theme/dist/"
         ],
         "cwd": "docs",
         "parallel": false
@@ -280,7 +279,7 @@ sudo apt-get clean
 
 ```
 
-#### 📁 `docs/vite.config.mts`
+#### 📁 `docs/vite.config.ts`
 
 ```typescript
 import { defineConfig } from 'vite';
@@ -355,8 +354,8 @@ export default function MarkdownHMR() {
     <!-- ----------------------------------------------------
 	    ---------------- PREZ STYLES  ---------------------------
 	    ------------------------------------------------------ -->
-
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="./scripts/slides.js"></script>
+    <link rel="stylesheet" type="text/css" href="./web_modules/sfeir-school-theme/dist/sfeir-school-theme.css" id="theme" />
   </head>
 
   <body>
@@ -368,11 +367,11 @@ export default function MarkdownHMR() {
 </html>
 ```
 
-#### 📁 `docs/src/main.ts`
+#### 📁 `docs/scripts/slides.js`
 
 ```typescript
-import { SfeirThemeInitializer } from 'sfeir-school-theme';
-import 'sfeir-school-theme/theme'; // Import the theme styles
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/dist/sfeir-school-theme.mjs';
+
 
 function schoolSlides() {
   return [
@@ -423,7 +422,7 @@ SfeirThemeInitializer.init(formation);
     "skipLibCheck": true,
     "types": ["vite/client"]
   },
-  "include": ["src", "main.ts"],
+  "include": ["src"],
   "references": [
     {
       "path": "./tsconfig.app.json"
@@ -443,7 +442,7 @@ SfeirThemeInitializer.init(formation);
     "types": ["node"]
   },
   "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"],
-  "include": ["src/**/*.ts", "main.ts"]
+  "include": ["src/**/*.ts"]
 }
 
 ```
@@ -468,86 +467,6 @@ SfeirThemeInitializer.init(formation);
     "target": "es2016"
   }
 }
-
-```
-
----
-
-9. **GitHub Actions Workflows** (use merging policy above for any file already present):
-
-#### 📁 `.github/workflows/ci.yml`
-
-```yaml
-name: CI
-
-on:
-  push:
-    branches:
-      - main   # or master, depending on your default branch
-      
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-jobs:
-  main:
-    runs-on: ubuntu-latest
-    steps:
-      - run: npx nx fix-ci
-        if: always()
-      - name: Upload build artifacts
-        if: github.ref == 'refs/heads/main'
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-artifacts
-          path: dist/docs
-          retention-days: 1
-
-```
-
-#### 📁 `.github/workflows/deploy.yml`
-
-```yaml
-name: Deploy Docs to GitHub Pages
-
-on:
-  workflow_run:
-    workflows: ["CI"] # This must match the exact name from build.yml
-    types:
-      - completed
-    branches:
-      - main
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    # Only run if the build workflow succeeded
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          # Get the commit that triggered the original workflow
-          ref: ${{ github.event.workflow_run.head_sha }}
-      
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: build-artifacts # Must match artifact name from build.yml
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          run-id: ${{ github.event.workflow_run.id }}
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
 
 ```
 
@@ -846,35 +765,29 @@ sfeir-school-[technology-name]/
 ├── .devcontainer/
 │   ├── devcontainer.json
 │   └── post-create.sh
-├── .github/
-│   └── workflows/
-│   │   ├── ci.yml
-│   │   └── deploy.yml
 ├── docs/
+│   ├── assets/
+│   │   └── images/
+│   ├── markdown/
+│   │   ├── 00_intro.md
+│   │   ├── 01_speaker.md
+│   │   ├── 02_agenda.md
+│   │   ├── 10_chapter1.md
+│   │   ├── 11_concepts.md
+│   │   ├── 12_examples.md
+│   │   └── 13_exercise.md
 │   ├── plugins/
 │   │   └── hmr-markdown.ts
-│   ├── public/
-│   │   ├── assets/
-│   │   │   └── images/
-│   │   ├── markdown/
-│   │   │   ├── 00_intro.md
-│   │   │   ├── 01_speaker.md
-│   │   │   ├── 02_agenda.md
-│   │   │   ├── 10_chapter1.md
-│   │   │   ├── 11_concepts.md
-│   │   │   ├── 12_examples.md
-│   │   │   └── 13_exercise.md
-│   │   └── web_modules/
-│   │       └── sfeir-school-theme/
-│   ├── src/
-│   │   └── main.ts
+│   ├── scripts/
+│   │   └── slides.js
+│   ├── web_modules/
 │   ├── .babelrc
 │   ├── .swcrc
 │   ├── index.html
 │   ├── project.json
 │   ├── tsconfig.app.json
 │   ├── tsconfig.json
-│   └── vite.config.mts
+│   └── vite.config.ts
 ├── labs/
 │   ├── lab-01/
 │   │   └── README.md
