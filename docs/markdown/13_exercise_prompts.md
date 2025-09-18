@@ -12,6 +12,9 @@
 
 ### Step: lab-01-prompt-basics
 
+- Open the lab: ../../labs/lab-01-prompt-basics/README.md
+- Aim for specific prompts with constraints and examples; document deltas between iterations.
+
 **Duration**: 30 minutes
 
 Notes:

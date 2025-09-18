@@ -6,12 +6,12 @@
   "tags": [],
   "// targets": "to see all targets run: nx show project docs --web",
   "targets": {
-    "copy-theme-images": {
+    "copy-theme": {
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "mkdir -p public/web_modules/sfeir-school-theme/dist/images",
-          "cp -r ../node_modules/sfeir-school-theme/dist/images public/web_modules/sfeir-school-theme/dist"
+          "mkdir -p web_modules/sfeir-school-theme/dist",
+          "cp -r ../node_modules/sfeir-school-theme/dist/* web_modules/sfeir-school-theme/dist/"
         ],
         "cwd": "docs",
         "parallel": false

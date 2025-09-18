@@ -11,7 +11,7 @@
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
   "targetDefaults": {
-    "copy-theme-images": {
+    "copy-theme": {
       "cache": true,
       "inputs": [
         "{workspaceRoot}/node_modules/sfeir-school-theme/**/*",
@@ -22,10 +22,10 @@
       "outputs": ["{projectRoot}/web_modules/sfeir-school-theme"]
     },
     "serve": {
-      "dependsOn": ["copy-theme-images"]
+      "dependsOn": ["copy-theme"]
     },
     "build": {
-      "dependsOn": ["copy-theme-images"]
+      "dependsOn": ["copy-theme"]
     }
   },
   "defaultProject": "docs",

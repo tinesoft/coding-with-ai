@@ -1,5 +1,4 @@
-import { SfeirThemeInitializer } from 'sfeir-school-theme';
-import 'sfeir-school-theme/theme'; // Import the theme styles
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/dist/sfeir-school-theme.mjs';
 
 function schoolSlides() {
   return [

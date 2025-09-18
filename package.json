@@ -4,11 +4,10 @@
   "license": "MIT",
   "scripts": {
     "start": "nx run docs:serve",
-    "sstart": "nx run docs:serve-static",
-    "build": "nx run docs:build",
     "serve": "nx run docs:serve",
     "lint": "nx run-many -t lint",
-    "clean": "npx nx reset && rm -rf dist"
+    "clean": "nx reset && rm -rf dist",
+    "postinstall": "nx copy-theme docs"
   },
   "private": true,
   "devDependencies": {
