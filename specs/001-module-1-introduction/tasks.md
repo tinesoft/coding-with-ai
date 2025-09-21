@@ -48,8 +48,8 @@
 
 ## Phase 3.2: Content Quality Validation Setup ⚠️ MUST COMPLETE BEFORE 3.3
 **CRITICAL: These validation checkpoints MUST be established before content creation**
-- [x] T004 [P] Create slide quality validation checklist in `docs/markdown/10_module_1_ai_fundamentals/QUALITY_CHECKLIST.md`
-- [x] T005 [P] Create lab exercise validation criteria in `labs/VALIDATION_CRITERIA.md`
+- [x] T004 [P] ~~Create slide quality validation checklist~~ *Removed: Replaced by constitutional governance*
+- [x] T005 [P] ~~Create lab exercise validation criteria~~ *Removed: Replaced by constitutional governance*
 - [x] T006 [P] Set up constitutional compliance checklist for Module 1 content
 
 ## Phase 3.3: Core Slide Content Creation (ONLY after validation setup)
@@ -92,9 +92,8 @@
 
 ### Phase 3.2: Validation Setup (T004-T006)
 ```bash
-# Launch validation setup tasks together:
-Task: "Create slide quality validation checklist in docs/markdown/10_module_1_ai_fundamentals/QUALITY_CHECKLIST.md"
-Task: "Create lab exercise validation criteria in labs/VALIDATION_CRITERIA.md"
+# Note: Quality validation is now handled by constitutional governance
+# T004 and T005 replaced by constitutional standards
 Task: "Set up constitutional compliance checklist for Module 1 content"
 ```
 
