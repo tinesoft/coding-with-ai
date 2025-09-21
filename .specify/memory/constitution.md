@@ -1,19 +1,20 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.1.1 → 1.1.2
+Version Change: 1.1.2 → 1.1.3
 Modified Principles: 
-- Content Organization Standards → Enhanced with exercise slide formatting requirements
+- Content Organization Standards → Enhanced exercise slide formatting with header hierarchy restrictions
 Added Sections:
-- Exercise Slide Formatting rules under Content Organization Standards
+- Header hierarchy rules (H1/H2/H3 only) for exercise slides
+- Bold text usage guidelines for exercise content
 Removed Sections: None
 Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: Update existing exercise slides to follow new format
-Notes: Added mandatory exercise slide formatting standards with specific heading structure requirements.
+Follow-up TODOs: Update existing exercise slides to follow refined header hierarchy
+Notes: Added specific header level restrictions and bold text guidance for exercise slides to ensure consistent formatting.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.1.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
+**Version**: 1.1.3 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
 
 ## Core Principles
 
@@ -25,13 +26,17 @@ Place training modules in `docs/markdown/` using SFEIR School Theme markdown syn
 
 **Slide Class Organization**: Only the main presentation introduction (`00_intro.md`) SHALL use the `class="first-slide"` directive. All module introduction slides MUST use `class="transition"` to maintain consistent navigation flow. Regular content slides use standard slide classes without special designation.
 
-**Exercise Slide Formatting**: Exercise slides MUST use the `class="exercice"` directive and follow this exact heading structure:
+**Exercise Slide Formatting**: Exercise slides MUST use the `class="exercice"` directive and follow this exact heading hierarchy:
 ```markdown
 <!-- .slide: class="exercice" --> 
 # Exercice X: {short text}
 ## Lab XX
+### Step 1
+### Step 2
+**A Section**
+[simple content here]
 ```
-Where X is the exercise number and XX is the two-digit lab number. All other headers within exercise slides MUST be kept short and concise.
+Where X is the exercise number and XX is the two-digit lab number. Exercise slides SHALL only use H1, H2, or H3 level headers: H1 (#) is reserved for the exercise title, H2 (##) is reserved for the lab generic sub-header ("Lab XX"), and H3 (###) is reserved for specific steps of the exercise. Bold text MAY be used to highlight sections within the exercise content.
 
 ### III. Lab Structure Requirements
 Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with corresponding solution folders `labs/lab-XX-{topic}-solution/`. Write all lab instructions in GitHub-flavored markdown format with clear objectives, prerequisites, and success criteria. Provide hands-on exercises with scaffolded projects that demonstrate practical application of module concepts.
@@ -204,4 +209,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.1.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
+**Version**: 1.1.3 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
