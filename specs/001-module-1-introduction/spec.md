@@ -34,10 +34,10 @@
 A trainer needs to deliver a comprehensive 1-day introduction to AI and prompt engineering for software developers. The trainer must have access to structured slide materials, hands-on lab exercises, visual aids, and assessment tools that guide learners from basic AI concepts through practical prompt engineering skills and coding agent usage.
 
 ### Acceptance Scenarios
-1. **Given** a trainer preparing for the course, **When** they access the training materials, **Then** they find complete slide decks, lab instructions, timing guides, and assessment rubrics for a 7-hour curriculum
-2. **Given** learners with basic TypeScript knowledge but mixed AI experience, **When** they complete Module 1, **Then** they can write effective prompts, understand AI fundamentals, and safely use coding assistants
-3. **Given** a trainer delivering the AI Fundamentals section, **When** they present slides 11, **Then** learners understand LLMs, embeddings, RAG, and practical AI applications in coding
-4. **Given** learners in Lab 01, **When** they complete prompt engineering exercises, **Then** they demonstrate measurable improvement in prompt quality and output effectiveness
+1. **Given** a trainer preparing for the course, **When** they access the training materials, **Then** they find complete slide decks, lab instructions, timing guides, and assessment rubrics for a 6-8 hour curriculum
+2. **Given** learners with basic programming knowledge but mixed AI experience, **When** they complete Module 1, **Then** they can write effective prompts, understand AI fundamentals, and safely use coding assistants  
+3. **Given** a trainer delivering the AI Fundamentals section, **When** they present slide 11, **Then** learners understand LLMs, embeddings, RAG, and practical AI applications in coding
+4. **Given** learners in Lab 1, **When** they complete prompt engineering exercises, **Then** they demonstrate measurable improvement in prompt quality and output effectiveness
 5. **Given** a trainer conducting assessment, **When** they use provided evaluation materials, **Then** they can measure learner competency in prompt writing and AI tool usage
 
 ### Edge Cases
@@ -50,7 +50,7 @@ A trainer needs to deliver a comprehensive 1-day introduction to AI and prompt e
 
 ### Functional Requirements
 - **FR-001**: Training materials MUST include complete slide decks for all 5 presentation segments (11-15)
-- **FR-002**: Materials MUST provide 3 structured lab exercises with clear objectives and time allocations
+- **FR-002**: Materials MUST provide 2 structured lab exercises with clear objectives and time allocations  
 - **FR-003**: Content MUST cover AI fundamentals including LLMs, embeddings, RAG, and coding applications
 - **FR-004**: Materials MUST include comprehensive prompt engineering techniques and patterns
 - **FR-005**: Labs MUST provide hands-on practice with multiple AI coding assistants (Copilot, Claude, ChatGPT)
