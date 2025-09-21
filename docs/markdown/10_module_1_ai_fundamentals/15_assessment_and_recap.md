@@ -1,15 +1,6 @@
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="AI" -->
+<!-- .slide: class="transition" -->
 # **Module 1 Assessment**
 ## **Knowledge Check and Recap**
-
-Notes:
-Time to consolidate your learning! This assessment will help you validate your understanding of AI fundamentals and prompt engineering skills before we move to more advanced topics.
-
-##--##
-
-<!-- .slide: class="transition" -->
-# Let's Review What You've Learned
-## From AI Basics to Practical Application
 
 Notes:
 We've covered a lot of ground in Module 1. Let's systematically review the key concepts and test your understanding through practical exercises.
@@ -268,6 +259,7 @@ Safety awareness is crucial for responsible AI usage. Understanding what not to 
 # **Safety Assessment: Answers**
 
 ## **🚨 Red Flags**: B, D, E
+<br>
 
 ### **B**: Sharing API keys with AI
 **Risk**: Data breach, unauthorized access  
@@ -385,17 +377,6 @@ Module 2 will build directly on these fundamentals, so any additional practice y
 ### **Looking Ahead**:
 - What aspects of Module 2 are you most interested in?
 - Are there specific development scenarios you'd like to explore?
-
-Notes:
-This is your opportunity to clarify any concepts and share insights with your fellow learners. The diverse perspectives in the room will help everyone understand different applications and challenges.
-
-##--##
-
-<!-- .slide: class="transition" -->
-# Congratulations! 🎉
-## You've Completed Module 1
-
-### Ready to build amazing things with AI?
 
 Notes:
 You've successfully completed the foundation module! You now have the essential knowledge and skills to start using AI effectively in your development work. In Module 2, we'll dive deeper into practical code generation and assistance techniques that will transform your daily coding experience.

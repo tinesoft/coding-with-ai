@@ -279,34 +279,3 @@ Learning to spot and fix bad prompts is just as important as writing good ones. 
 
 Notes:
 The key to fixing bad prompts is adding specificity while maintaining focus. Break complex requests into smaller, manageable pieces.
-
-##--##
-
-<!-- .slide: class="exercice" -->
-# **Reflection and Key Takeaways**
-
-**What We've Practiced**
-- ✅ **CLEAR Framework**: Context, Length, Examples, Audience, Role
-- ✅ **Iterative Refinement**: Systematic improvement process
-- ✅ **Pattern Application**: Role-based, few-shot, chain-of-thought
-- ✅ **Real-World Problem Solving**: Applying skills to actual challenges
-- ✅ **Debugging Techniques**: Identifying and fixing common issues
-
-**Prompt Engineering Toolkit**
-- **Start Simple**: Basic prompt to test understanding
-- **Add Specificity**: Constraints, requirements, context
-- **Use Patterns**: Role-based, examples, reasoning
-- **Iterate**: Refine based on output quality
-- **Document**: Save what works for future use
-
-Notes:
-These exercises have given you hands-on experience with the core techniques of prompt engineering. The key now is to apply these skills consistently in your daily development work.
-
-##--##
-
-<!-- .slide: class="transition" -->
-# Skills Applied Successfully!
-**Now Let's Explore the AI Development Toolkit**
-
-Notes:
-Excellent work on these exercises! You've now experienced firsthand how effective prompt engineering can dramatically improve your AI interactions. Next, we'll explore the broader ecosystem of AI development tools.

@@ -1,20 +1,21 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.1.2 → 1.1.3
+Version Change: 1.1.3 → 1.2.0
 Modified Principles: 
-- Content Organization Standards → Enhanced exercise slide formatting with header hierarchy restrictions
+- Content Organization Standards → Enhanced with content generation restrictions
 Added Sections:
-- Header hierarchy rules (H1/H2/H3 only) for exercise slides
-- Bold text usage guidelines for exercise content
+- Exercise slide content restrictions (no introductory/closing slides)
+- Module slide content restrictions (no introductory/closing transition slides)
+- Content focus guidelines for exercise and module generation
 Removed Sections: None
 Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: Update existing exercise slides to follow refined header hierarchy
-Notes: Added specific header level restrictions and bold text guidance for exercise slides to ensure consistent formatting.
+Follow-up TODOs: None
+Notes: Added specific content generation restrictions to prevent unnecessary introductory and closing slides for exercises and modules, focusing on core educational content only.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.1.3 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
+**Version**: 1.2.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
 
 ## Core Principles
 
@@ -25,6 +26,8 @@ Comprehensive 7-day training program targeting beginner to intermediate develope
 Place training modules in `docs/markdown/` using SFEIR School Theme markdown syntax (reference: https://github.com/sfeir-open-source/sfeir-school-theme). Structured module progression with clear learning outcomes and sequential numbering system for modules and slides. 
 
 **Slide Class Organization**: Only the main presentation introduction (`00_intro.md`) SHALL use the `class="first-slide"` directive. All module introduction slides MUST use `class="transition"` to maintain consistent navigation flow. Regular content slides use standard slide classes without special designation.
+
+**Content Generation Restrictions**: When generating exercise slides, focus ONLY on the actual exercise content without creating introductory or closing slides. When generating module slides, focus ONLY on the core content without creating introductory or closing transition slides. This ensures lean, focused educational content without unnecessary navigational overhead.
 
 **Exercise Slide Formatting**: Exercise slides MUST use the `class="exercice"` directive and follow this exact heading hierarchy:
 ```markdown
@@ -209,4 +212,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.1.3 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
+**Version**: 1.2.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21

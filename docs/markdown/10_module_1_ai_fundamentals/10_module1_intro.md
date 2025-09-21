@@ -98,12 +98,3 @@ Prompt engineering isn't just about writing better prompts—it's about fundamen
 
 Notes:
 These success indicators help you self-assess your progress. Don't worry if you don't feel 100% confident immediately—learning AI skills is an iterative process.
-
-##--##
-
-<!-- .slide: class="transition" -->
-# Ready to Begin?
-## Let's Explore the Fascinating World of AI
-
-Notes:
-Now that we've set the stage, let's dive into the foundational concepts that will power your AI-enhanced development journey. Remember, every expert was once a beginner—your AI journey starts here.

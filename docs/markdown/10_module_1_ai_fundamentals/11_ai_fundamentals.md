@@ -195,13 +195,4 @@ Responsible AI use requires understanding both capabilities and limitations. The
 - **Team Collaboration**: Shared vs. individual workflows
 
 Notes:
-The AI landscape is rapidly evolving. Understanding the ecosystem helps you make informed decisions about which tools to adopt and when.
-
-##--##
-
-<!-- .slide: class="transition" -->
-# Foundation Complete
-## Now Let's Learn to Communicate Effectively with AI
-
-Notes:
-With these fundamental concepts in place, you're ready to learn the crucial skill of prompt engineering—how to communicate effectively with AI systems to get the results you want.
+With these fundamental concepts of RAG systems, you have a comprehensive understanding of how modern AI applications work. These technologies form the foundation for the AI tools and techniques you'll use throughout your development career.

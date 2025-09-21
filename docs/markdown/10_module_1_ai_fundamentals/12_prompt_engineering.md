@@ -301,13 +301,4 @@ Building a personal prompt library saves time and ensures consistency. Treat you
 - Share successful prompts with your team
 
 Notes:
-Like any skill, prompt engineering improves with practice and measurement. Tracking your progress helps identify what works and where to focus improvement efforts.
-
-##--##
-
-<!-- .slide: class="transition" -->
-# Ready to Practice?
-## Let's Apply These Techniques in Real Exercises
-
-Notes:
-Now that you understand the principles and patterns of effective prompt engineering, it's time to put these skills into practice with hands-on exercises that will build your confidence and competence.
+These common pitfalls represent the most frequent mistakes in prompt engineering. By understanding and avoiding them, you'll write more effective prompts and get better results from AI systems. Remember: good prompts are specific, clear, and provide sufficient context for the AI to understand your intent.

@@ -1,15 +1,6 @@
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="AI" -->
+<!-- .slide: class="transition" -->
 # **AI Development Toolkit**
 ## **Tools, Agents, and Best Practices**
-
-Notes:
-Welcome to the exciting world of AI development tools! This section introduces you to the diverse ecosystem of AI-powered coding assistants, their capabilities, and how to use them safely and effectively.
-
-##--##
-
-<!-- .slide: class="transition" -->
-# The AI Coding Revolution
-## From Theory to Practice
 
 Notes:
 We've covered the fundamentals and practiced prompt engineering. Now let's explore how these concepts translate into real development tools that are transforming how we write code.
@@ -271,13 +262,5 @@ When choosing AI tools for your team, consider:
 - 🔄 **Vendor Stability**: Company track record and roadmap
 
 Notes:
-A systematic evaluation approach helps you choose tools that will provide long-term value rather than just impressive demos.
-
-##--##
-
-<!-- .slide: class="transition" -->
-# Ready to Apply Your Knowledge?
-## Let's Test Your Understanding
-
 Notes:
 You've now explored the practical side of AI development tools. Time to synthesize everything you've learned in Module 1 with our assessment and recap session.
