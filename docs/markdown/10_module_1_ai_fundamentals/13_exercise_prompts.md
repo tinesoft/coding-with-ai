@@ -1,6 +1,8 @@
 <!-- .slide: class="exercice" -->
 # Hands-on Prompt Exercises
-## Apply Your Prompt Engineering Skills
+## Lab 01
+
+Apply your prompt engineering skills through practical exercises.
 
 Notes:
 Time to put theory into practice! These exercises will help you internalize prompt engineering techniques and build confidence in your AI communication skills.
@@ -8,12 +10,12 @@ Time to put theory into practice! These exercises will help you internalize prom
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 1: Basic Prompt Writing**
+# Exercice 1: Basic Prompt Writing
+## Lab 01
 
-## **Objective**
-Transform vague requests into clear, effective prompts
+**Objective:** Transform vague requests into clear, effective prompts
 
-## **Your Task**
+## **Task**
 Improve these prompts using the CLEAR framework:
 
 ### **Before:**
@@ -22,13 +24,13 @@ Improve these prompts using the CLEAR framework:
 ```
 
 ### **Your Turn:**
-Write an improved version that includes:
+Write an improved version including:
 - Context and role
-- Specific language/framework
+- Specific language/framework  
 - Error handling requirements
 - Expected output format
 
-**Time: 5 minutes**
+**Time:** 5 minutes
 
 Notes:
 This exercise focuses on the fundamentals. Remember: Context, Length, Examples, Audience, Role. Think about what information the AI needs to give you exactly what you want.
@@ -36,9 +38,10 @@ This exercise focuses on the fundamentals. Remember: Context, Length, Examples, 
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 1: Solution Discussion**
+# Exercice 1: Solution Discussion  
+## Lab 01
 
-## **Improved Prompt Example:**
+## **Example**
 ```
 "As a senior JavaScript developer, create a robust email validation 
 function for a React application. The function should:
@@ -53,7 +56,7 @@ function for a React application. The function should:
 Provide the function with 2-3 test examples showing usage."
 ```
 
-## **Key Improvements:**
+## **Improvements**
 - ✅ Clear role and context
 - ✅ Specific requirements
 - ✅ Technology constraints
@@ -65,22 +68,22 @@ Notice how the improved prompt eliminates ambiguity and gives the AI everything 
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 2: Iterative Refinement**
+# Exercice 2: Iterative Refinement
+## Lab 01
 
-## **Objective**
-Practice the refinement process to improve AI responses
+**Objective:** Practice the prompt iteration process
 
 ## **Scenario**
 You need a React component for displaying user profiles.
 
-### **Round 1:** Start with a basic prompt
+### **Round 1:** Basic prompt
 ```
 "Create a React component for user profiles"
 ```
 
-### **Round 2:** Add constraints after seeing initial output
-### **Round 3:** Specify missing requirements
-### **Round 4:** Perfect the details
+### **Round 2:** Add constraints
+### **Round 3:** Specify requirements  
+### **Round 4:** Perfect details
 
 ## **Work in Pairs**
 - Person A: Write prompts
@@ -95,16 +98,17 @@ This exercise simulates real-world prompt engineering, where you rarely get perf
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 2: Refinement Example**
+# Exercice 2: Refinement Example
+## Lab 01
 
-## **Iterative Progression:**
+## **Progression**
 
 ### **v1:** "Create a React component for user profiles"
 ### **v2:** "Create a React TypeScript component that displays user profile information including name, email, and avatar"
 ### **v3:** "Create a React TypeScript component called UserProfile that displays user information (name, email, avatar) with proper styling using CSS modules and error handling for missing data"
 ### **v4:** "Create a React TypeScript component called UserProfile that displays user information (name, email, avatar) using interface props, CSS modules for styling, loading states, error boundaries for missing data, and accessibility features. Include prop validation."
 
-## **Notice the Pattern:**
+## **Pattern**
 Each iteration adds **specificity** and addresses **gaps** from the previous version.
 
 Notes:
@@ -113,12 +117,12 @@ This progression shows how each iteration builds on the previous one, adding spe
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 3: Pattern Application**
+# Exercice 3: Pattern Application
+## Lab 01
 
-## **Objective**
-Apply specific prompt engineering patterns to different scenarios
+**Objective:** Apply advanced prompt patterns
 
-## **Scenarios** (Choose 2):
+## **Scenarios** (Choose 2)
 1. **Role-Based**: Code review prompt as a security expert
 2. **Few-Shot**: API error handling examples
 3. **Chain-of-Thought**: Debugging a performance issue
@@ -139,7 +143,8 @@ This exercise helps you practice the specific patterns we discussed. Each patter
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 3: Pattern Examples**
+# Exercice 3: Pattern Examples
+## Lab 01
 
 ## **Role-Based Pattern**
 ```
@@ -164,12 +169,12 @@ These examples show how patterns shape the AI's approach to problem-solving. Rol
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 4: Real-World Application**
+# Exercice 4: Real-World Application
+## Lab 01
 
-## **Objective**
-Apply prompt engineering to your actual development needs
+**Objective:** Apply prompt engineering to actual development needs
 
-## **Your Task**
+## **Task**
 Think of a real coding challenge you're currently facing or recently encountered:
 - API integration
 - Performance optimization  
@@ -191,7 +196,8 @@ This exercise bridges the gap between learning and application. Using real probl
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 4: Peer Review**
+# Exercice 4: Peer Review
+## Lab 01
 
 ## **Review Criteria**
 When evaluating each other's prompts, check for:
@@ -213,10 +219,10 @@ Peer review helps you see prompt engineering from different perspectives and lea
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 5: Debugging Bad Prompts**
+# Exercice 5: Debugging Bad Prompts
+## Lab 01
 
-## **Objective**
-Learn to identify and fix common prompt problems
+**Objective:** Identify and fix common prompt problems
 
 ## **Fix These Broken Prompts:**
 
@@ -246,7 +252,8 @@ Learning to spot and fix bad prompts is just as important as writing good ones. 
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Exercise 5: Debugging Solutions**
+# Exercice 5: Debugging Solutions
+## Lab 01
 
 ## **Fixed Prompts:**
 
@@ -284,7 +291,7 @@ The key to fixing bad prompts is adding specificity while maintaining focus. Bre
 - ✅ **Real-World Problem Solving**: Applying skills to actual challenges
 - ✅ **Debugging Techniques**: Identifying and fixing common issues
 
-## **Your Prompt Engineering Toolkit**
+## **Prompt Engineering Toolkit**
 - **Start Simple**: Basic prompt to test understanding
 - **Add Specificity**: Constraints, requirements, context
 - **Use Patterns**: Role-based, examples, reasoning

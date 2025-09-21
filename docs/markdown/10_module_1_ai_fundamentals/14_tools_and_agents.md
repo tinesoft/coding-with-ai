@@ -226,16 +226,17 @@ The AI development landscape is rapidly evolving. Success requires balancing ado
 ##--##
 
 <!-- .slide: class="exercice" -->
-# **Hands-on Tool Exploration**
+# Exercice 6: Tool Exploration
+## Lab 02
 
-## **Mini Lab: Try It Yourself**
+**Mini Lab:** Try different AI coding tools
 
-### **Option 1: GitHub Copilot** (if available)
+### **Option 1:** GitHub Copilot (if available)
 - Install Copilot extension in VS Code
 - Try code completion for a simple function
 - Use Copilot Chat for code explanation
 
-### **Option 2: Free Alternative**
+### **Option 2:** Free Alternative
 - Visit ChatGPT or Claude
 - Practice prompt engineering techniques
 - Generate and review a small code snippet
