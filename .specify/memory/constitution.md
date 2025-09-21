@@ -1,21 +1,37 @@
+<!--
+SYNC IMPACT REPORT:
+Version Change: 1.0.0 → 1.1.0
+Modified Principles: 
+- Content Organization Standards → Enhanced with slide class organization rules
+Added Sections:
+- Slide Class Organization principle under Content Organization Standards
+Removed Sections: None
+Templates Requiring Updates: ✅ All current (no changes needed)
+Follow-up TODOs: None
+-->
+
 # SFEIR School Coding with AI Constitution
+
+**Version**: 1.1.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
 
 ## Core Principles
 
 ### I. Educational Excellence
-Comprehensive 7-day training program targeting beginner to intermediate developers; Focus on practical AI coding skills and autonomous agents; Emphasis on hands-on learning with real-world applications; Professional development workflow enhancement
+Comprehensive 7-day training program targeting beginner to intermediate developers with focus on practical AI coding skills and autonomous agents. Emphasis on hands-on learning with real-world applications and professional development workflow enhancement. All content MUST provide measurable skill building and confidence development for modern AI-enhanced software development.
 
 ### II. Content Organization Standards
-Place training modules in `docs/markdown/` using SFEIR School Theme markdown syntax; Reference: https://github.com/sfeir-open-source/sfeir-school-theme; Structured module progression with clear learning outcomes; Sequential numbering system for modules and slides
+Place training modules in `docs/markdown/` using SFEIR School Theme markdown syntax (reference: https://github.com/sfeir-open-source/sfeir-school-theme). Structured module progression with clear learning outcomes and sequential numbering system for modules and slides. 
+
+**Slide Class Organization**: Only the main presentation introduction (`00_intro.md`) SHALL use the `class="first-slide"` directive. All module introduction slides MUST use `class="transition"` to maintain consistent navigation flow. Regular content slides use standard slide classes without special designation.
 
 ### III. Lab Structure Requirements
-Create sequential lab folders: `labs/lab-XX/`; Include corresponding solution folders: `labs/lab-XX-solution/`; Write all lab instructions in markdown format; Provide hands-on exercises with scaffolded projects
+Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with corresponding solution folders `labs/lab-XX-{topic}-solution/`. Write all lab instructions in GitHub-flavored markdown format with clear objectives, prerequisites, and success criteria. Provide hands-on exercises with scaffolded projects that demonstrate practical application of module concepts.
 
 ### IV. Asset Management Protocol
-Store all visual assets in `docs/assets/images/`; Use relative paths from `docs/` in markdown files; Include slides, schemas, and supporting visuals; Maintain consistent branding with SFEIR standards
+Store all visual assets in `docs/assets/images/` using descriptive file names and organized subdirectories by module. Reference assets using relative paths from `docs/` directory in all markdown files. Include slides, diagrams, code screenshots, and supporting visuals while maintaining consistent SFEIR branding standards.
 
 ### V. Quality Assurance Standards
-Validate all content against educational objectives; Ensure practical utility and confidence building; Maintain code quality and professional standards; Focus on clarity and real-world application
+Validate all content against defined educational objectives with focus on practical utility and learner confidence building. Maintain professional code quality standards in all examples and exercises. Prioritize clarity, real-world application, and progressive skill development across all training materials.
 
 ## Training Module Overview
 
@@ -168,14 +184,15 @@ labs/
 ```
 
 ### Content Creation Guidelines
-- **Slide Numbering**: Sequential numbering system (00-09: intro, 10-19: module 1, etc.)
-- **Module Organization**: Each module has intro, content slides, and exercise slides
-- **Exercise Integration**: Each module includes hands-on exercises and assessments
+- **Slide Numbering**: Sequential numbering system (00-09: intro, 10-19: module 1, 20-29: module 2, etc.)
+- **Slide Class Usage**: `first-slide` class reserved exclusively for `00_intro.md`; module introductions use `transition` class
+- **Module Organization**: Each module includes intro slide, content slides, exercise slides, and assessment slide
+- **Exercise Integration**: Each module includes hands-on exercises with clear objectives and success criteria
 - **Asset Management**: All images referenced with relative paths from `docs/` directory
 - **Markdown Standards**: SFEIR School Theme syntax for consistent presentation formatting
 
 ## Governance
 
-This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation must verify compliance with these standards. Educational effectiveness and practical utility must be maintained throughout the training development process.
+This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.0.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-18
+**Version**: 1.1.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
