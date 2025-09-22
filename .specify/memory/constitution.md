@@ -1,21 +1,20 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.1.3 → 1.2.0
+Version Change: 1.2.0 → 1.2.1
 Modified Principles: 
-- Content Organization Standards → Enhanced with content generation restrictions
+- Content Organization Standards → Enhanced with slide formatting requirements for H2/H3 spacing
 Added Sections:
-- Exercise slide content restrictions (no introductory/closing slides)
-- Module slide content restrictions (no introductory/closing transition slides)
-- Content focus guidelines for exercise and module generation
+- Regular slide formatting requirements (add <br> between H2 and H3 headers)
+- Example formatting template for content overlap prevention
 Removed Sections: None
 Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: None
-Notes: Added specific content generation restrictions to prevent unnecessary introductory and closing slides for exercises and modules, focusing on core educational content only.
+Follow-up TODOs: Apply <br> formatting to existing Module 1 slides where H2/H3 headers exist
+Notes: Added specific formatting requirement to prevent content overlap between H2 and H3 headers in regular slides by requiring <br> tags.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.2.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
+**Version**: 1.2.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
 
 ## Core Principles
 
@@ -40,6 +39,18 @@ Place training modules in `docs/markdown/` using SFEIR School Theme markdown syn
 [simple content here]
 ```
 Where X is the exercise number and XX is the two-digit lab number. Exercise slides SHALL only use H1, H2, or H3 level headers: H1 (#) is reserved for the exercise title, H2 (##) is reserved for the lab generic sub-header ("Lab XX"), and H3 (###) is reserved for specific steps of the exercise. Bold text MAY be used to highlight sections within the exercise content.
+
+**Regular Slide Formatting**: Regular content slides MUST include a `<br>` tag between H2-level (##) and H3-level (###) headers to prevent content overlap. This formatting requirement applies to all standard slides that are not exercise or transition slides:
+```markdown
+<!-- .slide: -->
+# **Slide Title**
+
+## **H2 Section Header**
+<br>
+
+### **H3 Subsection Header**
+Content here...
+```
 
 ### III. Lab Structure Requirements
 Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with corresponding solution folders `labs/lab-XX-{topic}-solution/`. Write all lab instructions in GitHub-flavored markdown format with clear objectives, prerequisites, and success criteria. Provide hands-on exercises with scaffolded projects that demonstrate practical application of module concepts.
@@ -212,4 +223,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.2.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
+**Version**: 1.2.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21

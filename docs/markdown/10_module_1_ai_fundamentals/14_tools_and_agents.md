@@ -84,6 +84,7 @@ Understanding both capabilities and limitations is crucial for effective AI tool
 # **Practical Integration Strategies**
 
 ## **The AI-Human Development Workflow**
+<br>
 
 ### **1. Exploration Phase**
 - Use AI for research and learning new technologies

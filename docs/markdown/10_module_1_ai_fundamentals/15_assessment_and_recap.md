@@ -32,6 +32,7 @@ Take a moment to reflect on your progress. These foundational skills will be the
 # **Knowledge Check: AI Fundamentals**
 
 ## **Quick Quiz** (2 minutes each)
+<br>
 
 ### **Question 1**: What does "RAG" stand for and why is it important?
 **A)** Random Access Generation - for faster AI responses  
@@ -76,6 +77,7 @@ These aren't just theoretical concepts - they directly impact how you use AI too
 # **Prompt Engineering Assessment**
 
 ## **Practical Challenge**: Fix This Prompt
+<br>
 
 ### **Scenario**: You need a React component for user authentication
 
@@ -135,6 +137,7 @@ Notice how this version eliminates ambiguity and provides specific constraints. 
 # **Pattern Recognition Assessment**
 
 ## **Match the Pattern to the Use Case**
+<br>
 
 ### **Patterns**: Role-Based, Few-Shot, Chain-of-Thought, Constraint-Based
 
@@ -183,6 +186,7 @@ Understanding these patterns helps you structure prompts more effectively. The p
 # **Tool Selection Assessment**
 
 ## **Scenario-Based Decision Making**
+<br>
 
 ### **Team Scenarios** (Choose the best AI tool):
 
@@ -208,6 +212,7 @@ Tool selection depends on context. There's no universally "best" tool - the righ
 # **Tool Selection: Recommendations**
 
 ## **Scenario Solutions**:
+<br>
 
 ### **A: Solo + Budget + Learning**
 **✅ ChatGPT Free** + **Codeium Free**
@@ -236,6 +241,7 @@ These recommendations balance practical needs with constraints. In reality, many
 # **Safety and Ethics Assessment**
 
 ## **Red Flag Recognition**
+<br>
 
 ### **Which scenarios raise concerns?** (Check all that apply)
 
@@ -285,6 +291,7 @@ Remember: AI is a powerful assistant, but human oversight is essential. Always r
 # **Module 1 Synthesis**
 
 ## **Key Takeaways**
+<br>
 
 ### **🧠 AI Understanding**
 - AI tools are powerful assistants, not replacements for human expertise
@@ -310,6 +317,7 @@ These takeaways form the foundation for all advanced AI development techniques. 
 # **Success Validation Checklist**
 
 ## **✅ Module 1 Completion Criteria**
+<br>
 
 ### **Knowledge Demonstrated**:
 - [ ] Can explain key AI concepts (LLMs, embeddings, RAG)
@@ -362,6 +370,7 @@ Module 2 will build directly on these fundamentals, so any additional practice y
 # **Questions and Discussion**
 
 ## **💬 Open Floor** (10 minutes)
+<br>
 
 ### **Common Questions**:
 - "Which AI tool should I start with?"
