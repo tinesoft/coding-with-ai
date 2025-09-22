@@ -3,14 +3,17 @@
 
 # Hello ! @SFEIR
 
-## Guillaume Homberg
+## Guillaume **Homberg**
+
 ### Engineering Director at SFEIR Luxembourg
-### guillaume.homberg@sfeir.com
+
+### homberg.g@sfeir.com
+
 ### @ghomberg
 
-![](./assets/images/speaker.jpg 'speaker')
-![](./assets/images/logo-sfeir.png 'company')
-![](./assets/images/badge-coding-with-ai.png 'badge')
+![](./assets/images/logo-sfeir-blanc.png 'company')
+
+![](./assets/images/speaker-gho.webp 'speaker')
 
 </div>
 

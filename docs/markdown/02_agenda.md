@@ -2,6 +2,7 @@
 # **Training Agenda**
 
 ## **7 Days of AI-Powered Development**
+<br>
 
 ### **Day 1**: Introduction to AI and Prompt Engineering
 ### **Day 2-3**: Modern AI Tools and Autonomous Agents  
@@ -23,7 +24,7 @@
 
 ## **Prerequisites**
 - Basic programming knowledge (any language)
-- TypeScript familiarity (training available: [sfeir-open-source.github.io/sfeir-school-typescript](https://sfeir-open-source.github.io/sfeir-school-typescript))
+- TypeScript familiarity (training available [here](https://sfeir-open-source.github.io/sfeir-school-typescript): ![](https://sfeir-open-source.github.io/sfeir-school-typescript 'tc-qrcode h-200'))
 - VS Code or Cursor IDE
 
 Notes:
