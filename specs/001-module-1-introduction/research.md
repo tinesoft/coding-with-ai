@@ -1,38 +1,24 @@
-# Module 1 Research: Introduction to AI and Prompt Engineering
+# Research: Module 1 Training Materials
 
-## Technical Research
+## Overview
+Research for comprehensive AI and prompt engineering training materials targeting beginner to intermediate developers for a 1-day course.
 
-### SFEIR School Theme Markdown Syntax
+## Technology Stack Decisions
 
-**Decision**: Use SFEIR School Theme with RevealJS integration  
+### Presentation Framework
+**Decision**: SFEIR School Theme (RevealJS-based)  
 **Rationale**: 
-- Provides professional presentation framework specifically designed for SFEIR training
-- Includes built-in slide types (first-slide, speaker-slide, transition, exercice)
-- Supports slide separators with `##--##` for content organization
-- Compatible with custom CSS classes and RevealJS features
+- Consistent with organizational standards
+- Supports interactive presentations with code highlighting
+- Mobile-responsive for various screen sizes
+- Integrates with Nx workspace architecture
+- Supports speaker notes and timing guidance
+- Constitutional compliance requirement
 
-**Key Syntax Patterns**:
-```markdown
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="AI" -->
-# **Welcome to SFEIR School**
-## **Coding with AI**
-
-##--##
-
-<!-- .slide: class="transition" -->
-# Module 1
-## Introduction to AI and Prompt Engineering
-
-##--##
-
-<!-- .slide: class="exercice" -->
-# Exercise: Basic Prompting
-## Objective
-Practice writing effective prompts
-```
-
-**Alternatives considered**: Plain RevealJS, custom theme development  
-**Rejected because**: SFEIR School Theme provides standardized branding and educational features
+**Alternatives considered**:
+- PowerPoint/Keynote: Not web-native, limited interactivity
+- Google Slides: Limited code formatting capabilities
+- Custom HTML/CSS: Too much development overhead
 
 ### Educational Content Structure for AI/ML Topics
 

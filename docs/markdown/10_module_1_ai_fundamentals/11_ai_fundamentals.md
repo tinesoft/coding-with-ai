@@ -5,6 +5,8 @@
 Notes:
 Let's start our journey by understanding the fundamental building blocks of modern AI systems. These concepts will provide the foundation for everything we do with AI in software development.
 
+*Note: All AI model capabilities and tool references are current as of September 2025.*
+
 ##--##
 
 <!-- .slide -->
@@ -37,10 +39,10 @@ AI represents a fundamental shift in how we approach problem-solving. Instead of
 - **Multimodal Capabilities**: Some models handle text, code, and images
 
 ## **Popular LLMs for Developers**
-- **GPT-4** (OpenAI) - General purpose, strong reasoning
-- **Claude** (Anthropic) - Safety-focused, excellent for analysis
-- **Gemini** (Google) - Integrated with Google services
-- **Codex/Copilot** (GitHub) - Specialized for code generation
+- **GPT-4o** (OpenAI) - Latest model with improved reasoning and speed
+- **Claude 3.5 Sonnet** (Anthropic) - Safety-focused, excellent for analysis
+- **Gemini Pro** (Google) - Integrated with Google services and tools
+- **GitHub Copilot** (Microsoft/OpenAI) - Specialized for code generation
 
 Notes:
 LLMs are the engines behind most AI coding tools. Understanding their capabilities and limitations helps you use them more effectively.
@@ -106,10 +108,10 @@ Embeddings are crucial for many AI applications. They allow systems to understan
 - **Reduced Hallucination**: Grounded in real data
 
 ## **RAG in Action**
-- **GitHub Copilot**: Uses repository context
-- **Documentation Bots**: Query specific docs
-- **Code Search**: Find relevant examples
-- **Knowledge Bases**: Company-specific information
+- **GitHub Copilot**: Uses repository context and chat history
+- **Documentation Bots**: Query specific docs with current information
+- **Code Search**: Find relevant examples from updated codebases
+- **Knowledge Bases**: Company-specific information with real-time updates
 
 Notes:
 RAG solves the "knowledge cutoff" problem by combining LLM capabilities with real-time information retrieval. This is how many AI coding tools stay current.

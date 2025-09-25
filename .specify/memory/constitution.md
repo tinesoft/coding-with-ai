@@ -1,20 +1,18 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.2.0 → 1.2.1
-Modified Principles: 
-- Content Organization Standards → Enhanced with slide formatting requirements for H2/H3 spacing
+Version Change: 1.2.1 → 1.3.0
+Modified Principles: None
 Added Sections:
-- Regular slide formatting requirements (add <br> between H2 and H3 headers)
-- Example formatting template for content overlap prevention
+- VI. Content Accuracy and Currency Requirements → New principle ensuring training materials reflect current AI landscape as of constitution amendment date
 Removed Sections: None
 Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: Apply <br> formatting to existing Module 1 slides where H2/H3 headers exist
-Notes: Added specific formatting requirement to prevent content overlap between H2 and H3 headers in regular slides by requiring <br> tags.
+Follow-up TODOs: Review all existing training materials to ensure accuracy as of 2025-09-23
+Notes: Added mandatory requirement for content accuracy and currency validation in all training materials.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.2.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
+**Version**: 1.3.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-23
 
 ## Core Principles
 
@@ -60,6 +58,9 @@ Store all visual assets in `docs/assets/images/` using descriptive file names an
 
 ### V. Quality Assurance Standards
 Validate all content against defined educational objectives with focus on practical utility and learner confidence building. Maintain professional code quality standards in all examples and exercises. Prioritize clarity, real-world application, and progressive skill development across all training materials.
+
+### VI. Content Accuracy and Currency Requirements
+All training materials (slides, labs, exercises, and visual aids) MUST reflect accurate and current information about AI technologies, tools, and best practices as of the constitution's last amendment date. When generating or updating content, verify that all technical information, tool capabilities, API references, and industry practices are current and factually correct. Outdated information MUST be updated or clearly marked with deprecation notices. Content creators SHALL validate all AI tool references, feature availability, and technical specifications against official documentation and current releases before publication.
 
 ## Training Module Overview
 
@@ -223,4 +224,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.2.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-21
+**Version**: 1.3.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-23
