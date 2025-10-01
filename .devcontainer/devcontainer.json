@@ -10,7 +10,11 @@
       "installZsh": false,
       "installOhMyZsh": false,
       "upgradePackages": true    
-    }
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+			"version": "3.12",
+			"toolsToInstall": "uv"
+		}
   },
   "mounts": [
     "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume,consistency=cached"
@@ -56,6 +60,14 @@
           "wget": true,
           "find": true,
           "ls": true,
+          "cat": true,
+          "head": true,
+          "tail": true,
+          "echo": true,
+          "grep": true,
+          "sed": true,
+          "awk": true,
+          "jq": true,
           "\"/^git (status|show\\b.*)$/\"": true,
           "npm install": true,
           "npm run": true,

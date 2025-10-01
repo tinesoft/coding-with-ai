@@ -1,8 +1,8 @@
 
-# Implementation Plan: Module 1: Introduction to AI and Prompt Engineering - Comprehensive Training Materials
+# Implementation Plan: [FEATURE]
 
-**Branch**: `001-module-1-introduction` | **Date**: September 24, 2025 | **Spec**: [spec.md](./spec.md)
-**Input**: Feature specification from `/specs/001-module-1-introduction/spec.md`
+**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
 ## Execution Flow (/plan command scope)
 ```
@@ -31,39 +31,29 @@
 - Phase 3-4: Implementation execution (manual or via tools)
 
 ## Summary
-Comprehensive training materials for a 1-day introduction to AI and prompt engineering targeting software developers. Primary requirement: Create complete slide decks (6 segments), 2 structured lab exercises, visual aids, and assessment tools covering AI fundamentals, prompt engineering techniques, and practical coding applications. Technical approach: SFEIR School Theme (RevealJS) for presentations, GitHub-flavored markdown for labs, real-time content validation for accuracy as of September 2025.
+[Extract from feature spec: primary requirement + technical approach from research]
 
 ## Technical Context
-**Language/Version**: Markdown (SFEIR School Theme syntax), TypeScript 5.8.2  
-**Primary Dependencies**: sfeir-school-theme, RevealJS, Nx Workspace, Vite  
-**Storage**: Static files in docs/markdown/ and labs/ directories  
-**Testing**: Manual review against educational objectives and constitutional compliance  
-**Target Platform**: Web browsers via GitHub Pages deployment  
-**Project Type**: Educational content (slides + labs)  
-**Performance Goals**: Fast slide loading, clear educational progression  
-**Constraints**: Must follow SFEIR School Theme guidelines, constitutional structure  
-**Scale/Scope**: 1 day training module (6-8 hours), 6 slide sections, 2-3 lab exercises
+**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
+**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
+**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
+**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
+**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Project Type**: [single/web/mobile - determines source structure]  
+**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
+**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
+**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
 
 ## Constitution Check
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-**Educational Excellence**: ✅ PASS - Targets beginner-intermediate developers with practical AI skills focus  
-**Content Organization Standards**: ✅ PASS - Uses docs/markdown/ with SFEIR School Theme, sequential numbering (10-19)  
-**Lab Structure Requirements**: ✅ PASS - Uses labs/lab-XX-{topic}/ pattern with GitHub-flavored markdown  
-**Asset Management Protocol**: ✅ PASS - Stores visuals in docs/assets/images/ with relative paths  
-**Quality Assurance Standards**: ✅ PASS - Validates against educational objectives and constitutional standards  
-✅ **Sequential Numbering**: Follows 10-19 numbering for Module 1 slides  
-✅ **Module Organization**: Includes intro, content slides, and exercise slides  
-✅ **Technical Stack**: Uses SFEIR School Theme (RevealJS-based) with Nx Workspace
-✅ **Content Accuracy and Currency**: Implements real-time validation against September 2025 standards
-
-**Status**: PASS - All constitutional requirements satisfied
+[Gates determined based on constitution file]
 
 ## Project Structure
 
 ### Documentation (this feature)
 ```
-specs/001-module-1-introduction/
+specs/[###-feature]/
 ├── plan.md              # This file (/plan command output)
 ├── research.md          # Phase 0 output (/plan command)
 ├── data-model.md        # Phase 1 output (/plan command)
@@ -74,51 +64,63 @@ specs/001-module-1-introduction/
 
 ### Source Code (repository root)
 ```
-docs/
-├── markdown/
-│   ├── 10_module_1_ai_fundamentals/     # Module 1 content
-│   │   ├── 10_module1_intro.md          # Module introduction
-│   │   ├── 11_ai_fundamentals.md        # AI core concepts
-│   │   ├── 12_prompt_engineering.md     # Prompt engineering techniques
-│   │   ├── 13_exercise_prompts.md       # Hands-on prompt exercises
-│   │   ├── 14_tools_and_agents.md       # Tools introduction
-│   │   └── 15_assessment_and_recap.md   # Module wrap-up
-│   └── assets/
-│       └── images/                      # Module 1 visual assets
-└── scripts/
-    └── slides.js                        # Updated slide configuration
+# Option 1: Single project (DEFAULT)
+src/
+├── models/
+├── services/
+├── cli/
+└── lib/
 
-labs/
-├── lab-01-prompt-basics/                # Introduction to effective prompting
-│   └── README.md
-├── lab-01-prompt-basics-solution/
-│   └── README.md
-├── lab-02-ai-fundamentals/              # AI concepts hands-on
-│   └── README.md
-└── lab-02-ai-fundamentals-solution/
-    └── README.md
+tests/
+├── contract/
+├── integration/
+└── unit/
+
+# Option 2: Web application (when "frontend" + "backend" detected)
+backend/
+├── src/
+│   ├── models/
+│   ├── services/
+│   └── api/
+└── tests/
+
+frontend/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── services/
+└── tests/
+
+# Option 3: Mobile + API (when "iOS/Android" detected)
+api/
+└── [same as backend above]
+
+ios/ or android/
+└── [platform-specific structure]
 ```
 
-**Structure Decision**: Educational content project following SFEIR School constitutional structure
+**Structure Decision**: [DEFAULT to Option 1 unless Technical Context indicates web/mobile app]
 
 ## Phase 0: Outline & Research
-1. **Extract unknowns from Technical Context**:
-   - SFEIR School Theme specific markdown syntax patterns
-   - RevealJS slide formatting best practices
-   - Educational content structuring for AI/ML topics
-   - Prompt engineering exercise design
+1. **Extract unknowns from Technical Context** above:
+   - For each NEEDS CLARIFICATION → research task
+   - For each dependency → best practices task
+   - For each integration → patterns task
 
 2. **Generate and dispatch research agents**:
    ```
-   Task: "Research SFEIR School Theme slide syntax patterns and RevealJS integration"
-   Task: "Find best practices for AI/ML educational content structure"
-   Task: "Research effective prompt engineering teaching methodologies"
-   Task: "Analyze successful coding education lab design patterns"
+   For each unknown in Technical Context:
+     Task: "Research {unknown} for {feature context}"
+   For each technology choice:
+     Task: "Find best practices for {tech} in {domain}"
    ```
 
-3. **Consolidate findings** in `research.md`
+3. **Consolidate findings** in `research.md` using format:
+   - Decision: [what was chosen]
+   - Rationale: [why chosen]
+   - Alternatives considered: [what else evaluated]
 
-**Output**: research.md with all technical and educational research complete
+**Output**: research.md with all NEEDS CLARIFICATION resolved
 
 ## Phase 1: Design & Contracts
 *Prerequisites: research.md complete*
@@ -151,52 +153,25 @@ labs/
    - Keep under 150 lines for token efficiency
    - Output to repository root
 
-## Phase 1: Design & Contracts
-*Prerequisites: research.md complete*
-
-1. **Extract content entities** from feature spec → `data-model.md`:
-   - Slide sections with learning objectives
-   - Lab exercises with skill progression
-   - Assessment criteria and success metrics
-
-2. **Generate content contracts** from educational requirements:
-   - Learning objective validation endpoints
-   - Exercise completion criteria
-   - Assessment rubrics and standards
-
-3. **Generate validation tests** from contracts:
-   - Content quality checks
-   - Educational objective alignment tests
-   - Constitutional compliance validation
-
-4. **Extract learning scenarios** from user stories:
-   - Developer learning journey validation
-   - Hands-on exercise completion flows
-
-5. **Update agent file incrementally**:
-   - Update .github/copilot-instructions.md with Module 1 context
-   - Add SFEIR School Theme syntax guidance
-   - Include educational content quality standards
-
-**Output**: data-model.md, /contracts/*, validation checklists, quickstart.md, .github/copilot-instructions.md
+**Output**: data-model.md, /contracts/*, failing tests, quickstart.md, agent-specific file
 
 ## Phase 2: Task Planning Approach
 *This section describes what the /tasks command will do - DO NOT execute during /plan*
 
 **Task Generation Strategy**:
 - Load `.specify/templates/tasks-template.md` as base
-- Generate content creation tasks from Phase 1 design docs
-- Each slide section → slide creation task
-- Each lab exercise → lab development task
-- Each assessment → validation task
-- Integration tasks for slides.js configuration
+- Generate tasks from Phase 1 design docs (contracts, data model, quickstart)
+- Each contract → contract test task [P]
+- Each entity → model creation task [P] 
+- Each user story → integration test task
+- Implementation tasks to make tests pass
 
 **Ordering Strategy**:
-- Content-first order: Research → Slides → Labs → Validation
-- Dependency order: Introduction → Core concepts → Practical exercises
-- Sequential numbering following constitutional guidelines
+- TDD order: Tests before implementation 
+- Dependency order: Models before services before UI
+- Mark [P] for parallel execution (independent files)
 
-**Estimated Output**: 15-20 numbered, ordered tasks in tasks.md
+**Estimated Output**: 25-30 numbered, ordered tasks in tasks.md
 
 **IMPORTANT**: This phase is executed by the /tasks command, NOT by /plan
 
@@ -219,46 +194,6 @@ labs/
 ## Progress Tracking
 *This checklist is updated during execution flow*
 
-### Phase 0: Research ✓
-- [x] Loaded existing research.md (comprehensive technology decisions already documented)
-- [x] Validated SFEIR School Theme decision rationale
-- [x] Confirmed progressive learning approach methodology
-- [x] Identified educational content structure requirements
-
-### Phase 1: Design & Contracts ✓
-- [x] Verified data-model.md exists with complete entity definitions
-- [x] Confirmed contracts/ directory exists with content-quality.md and learning-validation.md
-- [x] Validated quickstart.md provides 40-minute validation process
-- [x] Updated agent context using `.specify/scripts/bash/update-agent-context.sh copilot`
-- [x] Constitution Check: All constitutional principles maintained
-
-### Constitution Check Re-evaluation ✓
-- [x] Content organization follows sequential numbering (10-19 for Module 1)
-- [x] File structure matches required patterns (docs/markdown/, labs/)
-- [x] Quality standards maintained throughout implementation
-- [x] Educational excellence preserved in all materials
-- [x] Content Accuracy and Currency Requirements satisfied (v1.3.0)
-
-### Implementation Readiness ✓
-**All Phase 1 artifacts generated and validated:**
-- ✓ research.md - Technology stack decisions documented
-- ✓ data-model.md - Educational entities and relationships defined  
-- ✓ contracts/content-quality.md - Quality standards established
-- ✓ contracts/learning-validation.md - Assessment criteria defined
-- ✓ quickstart.md - 40-minute validation process documented
-- ✓ Agent context updated with current technical stack
-
-### Phase 2: Task Planning ✓
-**tasks.md generation completed:**
-- ✓ All 27 tasks defined with proper dependencies
-- ✓ Parallel execution marked where appropriate ([P])
-- ✓ Task categories: Setup, Validation, Content Creation, Integration, QA
-- ✓ All tasks show completion status (✅ or [x])
-- ✓ Constitutional compliance verification included
-- ✓ Development server validation confirmed (localhost:4200)
-
-**Ready for Phase 3+**: All implementation artifacts are complete and validated
-
 **Phase Status**:
 - [ ] Phase 0: Research complete (/plan command)
 - [ ] Phase 1: Design complete (/plan command)
@@ -274,4 +209,4 @@ labs/
 - [ ] Complexity deviations documented
 
 ---
-*Based on Constitution v2.1.1 - See `/memory/constitution.md`*
+*Based on Constitution v2.1.1 - See `.specify/memory/constitution.md`*
