@@ -8,14 +8,23 @@ Each lab follows a consistent structure:
 
 - **Main Lab Directory**: Contains the exercise instructions and any starter files
 - **Solution Directory** (suffix `-solution`): Contains the complete solution and explanation
+  - **Optional Resources Folder**: May contain lab outputs and deliverables (e.g., final projects, code samples)
 
 ## Module 1: Introduction to AI and Prompt Engineering
 
-### Lab 01: Basic Prompt Engineering Practice
-- **Duration**: 30 minutes
-- **Objectives**: Learn to write effective prompts for AI coding assistants
-- **Skills**: Prompt engineering fundamentals, iteration techniques
+### Lab 01: Prompt Engineering Basics
+- **Duration**: 2-3 hours
+- **Slides Alignment**: Exercises 1-5 from slide `13_exercise_prompts.md`
+- **Objectives**: Master the CLEAR framework and advanced prompt patterns
+- **Skills**: Prompt engineering fundamentals, iterative refinement, pattern application
 - **Tools**: ChatGPT, Claude, or any available AI assistant
+
+### Lab 02: AI Fundamentals in Practice  
+- **Duration**: 3-4 hours
+- **Slides Alignment**: Concepts from `11_ai_fundamentals.md` + Exercise 6 from `14_tools_and_agents.md`
+- **Objectives**: Understand LLMs, embeddings, RAG, and practical AI tool integration
+- **Skills**: AI concept application, tool evaluation, workflow design
+- **Tools**: Multiple AI platforms for comparison
 
 ## Module 2: Modern AI Coding Tools and Autonomous Agents
 

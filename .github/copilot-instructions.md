@@ -33,14 +33,33 @@ When creating slide content, use these patterns:
 ##--##
 
 <!-- .slide: class="exercice" -->  
-# Exercise Title
-## Objective
-Practice specific skills
+<!-- .slide: class="exercice" --> 
+# Exercice X: {short text}
+## Lab XX
 
-### Steps:
-1. First step
-2. Second step
-3. Third step
+<br>
+
+### 👉🏾 Follow **instructions** in
+
+### `labs/lab-XX-{topic}/README.md`
+
+Notes:
+- Follow the instructions in the lab README.md for detailed steps.
+
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercice X: {short text}
+## Lab XX
+
+<br>
+
+### 💡 Read **solution** at
+
+### `labs/lab-XX-{topic}-solution/README.md`
+
+Notes:
+- Read the lab README.md for example of solutions.
 ```
 
 **Key Syntax Rules:**
@@ -60,7 +79,8 @@ labs/lab-XX-topic/
 
 labs/lab-XX-topic-solution/
 ├── README.md           # Solution explanations
-└── completed/          # Finished exercises
+├── completed/          # Finished exercises
+└── resources/          # Optional: Lab outputs and deliverables
 ```
 
 **Lab README.md Format:**

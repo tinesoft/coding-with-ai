@@ -219,30 +219,33 @@ The AI development landscape is rapidly evolving. Success requires balancing ado
 
 ##--##
 
-<!-- .slide: class="exercice" -->
-# Exercice 6: Tool Exploration
+<!-- .slide: class="exercice" --> 
+# Exercice 5: Tool Exploration
 ## Lab 02
 
-**Mini Lab:** Try different AI coding tools
+<br>
 
-### **Option 1:** GitHub Copilot (if available)
-- Install Copilot extension in VS Code
-- Try code completion for a simple function
-- Use Copilot Chat for code explanation
+### 👉🏾 Follow **instructions** in
 
-### **Option 2:** Free Alternative
-- Visit ChatGPT or Claude
-- Practice prompt engineering techniques
-- Generate and review a small code snippet
-
-### **Option 3: Documentation AI**
-- Use AI to generate documentation for existing code
-- Compare AI-generated vs. manual documentation
-
-**Time: 10 minutes exploration + 5 minutes discussion**
+### `labs/lab-02-ai-fundamentals/README.md`
 
 Notes:
-Hands-on experience is crucial for understanding AI tool capabilities. Even a brief exploration will give you insights into how these tools can fit into your workflow.
+- Follow the instructions in the lab README.md for detailed steps.
+
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercice 5: Tool Exploration
+## Lab 02
+
+<br>
+
+### 💡 Read **solution** at
+
+### `labs/lab-02-ai-fundamentals-solution/README.md`
+
+Notes:
+- Read the lab README.md for example of solutions.
 
 ##--##
 

@@ -209,266 +209,7 @@ function processData(input, config) {
 | Claude | Very Good (8/10) | Very Good (8/10) | Good (7/10) |
 | Gemini | Good (7/10) | Good (7/10) | Fair (6/10) |
 
-## Exercise 3 Solutions: RAG in Action - Context-Aware Development
-
-### RAG Simulation Results Analysis
-
-#### Context-Aware vs. Generic Responses
-
-**Generic Prompt Response** (Without Project Context):
-```javascript
-// Basic user registration endpoint
-app.post('/register', async (req, res) => {
-  try {
-    const { email, password } = req.body;
-    
-    // Basic validation
-    if (!email || !password) {
-      return res.status(400).json({ error: 'Email and password required' });
-    }
-    
-    // Create user (simplified)
-    const user = await User.create({ email, password });
-    
-    res.status(201).json({ user });
-  } catch (error) {
-    res.status(500).json({ error: 'Registration failed' });
-  }
-});
-```
-
-**Quality**: 5/10 - Basic functionality, no project-specific patterns
-
-**Context-Aware Response** (With Project Knowledge Base):
-```javascript
-/**
- * User Registration Endpoint
- * Follows project architecture and coding standards
- */
-app.post('/api/v1/users/register', async (req, res) => {
-  const correlationId = req.headers['x-correlation-id'] || uuidv4();
-  
-  try {
-    // Input validation using Yup schema (per project standards)
-    const validatedData = await userRegistrationSchema.validate(req.body);
-    
-    // Check if user exists (following repository pattern)
-    const existingUser = await userRepository.findByEmail(validatedData.email);
-    if (existingUser) {
-      logger.warn('Registration attempt for existing email', { 
-        email: validatedData.email, 
-        correlationId 
-      });
-      return res.status(409).json({
-        success: false,
-        error: {
-          code: 'USER_EXISTS',
-          message: 'User with this email already exists'
-        },
-        timestamp: new Date().toISOString()
-      });
-    }
-    
-    // Hash password using bcrypt (security standard)
-    const passwordHash = await bcrypt.hash(validatedData.password, 12);
-    
-    // Create user with transaction (database pattern)
-    const newUser = await db.transaction(async (trx) => {
-      const user = await userRepository.create({
-        ...validatedData,
-        password_hash: passwordHash,
-        account_status: 'active'
-      }, trx);
-      
-      // Create user profile (microservices pattern)
-      await profileService.createProfile(user.id, trx);
-      
-      return user;
-    });
-    
-    // Generate JWT tokens (auth pattern)
-    const tokens = await authService.generateTokens(newUser);
-    
-    // Log successful registration
-    logger.info('User registered successfully', { 
-      userId: newUser.id, 
-      correlationId 
-    });
-    
-    // Return standardized response format
-    res.status(201).json({
-      success: true,
-      data: {
-        user: userSerializer.serialize(newUser),
-        tokens
-      },
-      message: 'User registered successfully',
-      timestamp: new Date().toISOString()
-    });
-    
-  } catch (error) {
-    // Error handling pattern with correlation ID
-    logger.error('Registration failed', { 
-      error: error.message, 
-      correlationId,
-      stack: error.stack 
-    });
-    
-    if (error.name === 'ValidationError') {
-      return res.status(400).json({
-        success: false,
-        error: {
-          code: 'VALIDATION_ERROR',
-          message: error.message,
-          details: error.errors
-        },
-        timestamp: new Date().toISOString()
-      });
-    }
-    
-    res.status(500).json({
-      success: false,
-      error: {
-        code: 'INTERNAL_ERROR',
-        message: 'Registration failed'
-      },
-      timestamp: new Date().toISOString()
-    });
-  }
-});
-```
-
-**Quality**: 9/10 - Follows all project patterns, comprehensive implementation
-
-#### Key Improvement Factors with Context
-
-1. **Architectural Consistency**: Follows microservices and repository patterns
-2. **Error Handling**: Uses project-specific error format and logging
-3. **Security Implementation**: Proper password hashing and validation
-4. **Response Format**: Matches project API standards
-5. **Database Patterns**: Uses transactions and proper data access
-6. **Observability**: Includes correlation IDs and structured logging
-
-### Multi-Document RAG Simulation
-
-**Scenario**: Secure login implementation using multiple knowledge documents
-
-**Effective Integration Response**:
-```javascript
-/**
- * Secure Login Endpoint
- * Integrates patterns from Error Handling, Authentication, and Database docs
- */
-app.post('/api/v1/auth/login', [
-  rateLimiter({ max: 5, windowMs: 60000 }), // Rate limiting from Auth doc
-  validateLoginInput // Input validation middleware
-], async (req, res) => {
-  const correlationId = req.headers['x-correlation-id'] || uuidv4();
-  
-  try {
-    const { email, password } = req.body;
-    
-    // Database connection with health check (Database doc pattern)
-    if (!await dbHealthCheck()) {
-      throw new ServiceUnavailableError('Database connection unavailable');
-    }
-    
-    // Find user with query timeout (Database doc)
-    const user = await userRepository.findByEmail(email, { 
-      timeout: 30000,
-      retries: 2 
-    });
-    
-    if (!user || !await bcrypt.compare(password, user.password_hash)) {
-      // Failed login tracking for rate limiting (Auth doc)
-      await authService.recordFailedLogin(email, req.ip);
-      
-      // Standardized error response (Error Handling doc)
-      return res.status(401).json({
-        success: false,
-        error: {
-          code: 'INVALID_CREDENTIALS',
-          message: 'Invalid email or password'
-        },
-        timestamp: new Date().toISOString()
-      });
-    }
-    
-    // Generate tokens with rotation (Auth doc)
-    const tokens = await authService.generateTokens(user, {
-      rotateRefreshToken: true
-    });
-    
-    // Update last login in transaction (Database doc)
-    await db.transaction(async (trx) => {
-      await userRepository.updateLastLogin(user.id, trx);
-      await authService.storeRefreshToken(user.id, tokens.refreshToken, trx);
-    });
-    
-    // Success response format (Error Handling doc)
-    res.json({
-      success: true,
-      data: {
-        user: userSerializer.serialize(user),
-        tokens
-      },
-      message: 'Login successful',
-      timestamp: new Date().toISOString()
-    });
-    
-  } catch (error) {
-    // Error logging with correlation ID (Error Handling doc)
-    logger.error('Login failed', {
-      error: error.message,
-      correlationId,
-      email: req.body.email,
-      ip: req.ip
-    });
-    
-    // Circuit breaker for database errors (Database doc)
-    if (error instanceof DatabaseError) {
-      circuitBreaker.recordFailure();
-    }
-    
-    res.status(500).json({
-      success: false,
-      error: {
-        code: 'LOGIN_FAILED',
-        message: 'Login temporarily unavailable'
-      },
-      timestamp: new Date().toISOString()
-    });
-  }
-});
-```
-
-### RAG Implementation Insights
-
-#### Why RAG Matters for Development
-
-1. **Project Consistency**: Ensures new code follows established patterns
-2. **Knowledge Retention**: Captures team knowledge in accessible format
-3. **Onboarding Acceleration**: New team members get context-aware assistance
-4. **Standard Enforcement**: Automatically applies coding standards and best practices
-5. **Architectural Coherence**: Maintains system design principles across implementations
-
-#### Building Effective Knowledge Bases
-
-**Essential Documents**:
-1. **Architecture Overview**: System design, service relationships, data flow
-2. **Coding Standards**: Conventions, patterns, quality requirements
-3. **API Guidelines**: Request/response formats, error handling, versioning
-4. **Security Standards**: Authentication, authorization, data protection
-5. **Database Patterns**: Schema design, query patterns, migration strategies
-6. **Deployment Procedures**: Environment setup, CI/CD, monitoring
-
-**Document Quality Criteria**:
-- **Specificity**: Concrete examples, not abstract principles
-- **Completeness**: Covers common scenarios and edge cases
-- **Currency**: Reflects current practices and decisions
-- **Searchability**: Well-structured with clear section headers
-
-## Exercise 4 Solutions: Model Capabilities and Limitations
+## Exercise 3 Solutions: Model Capabilities and Limitations
 
 ### Systematic Capability Assessment
 
@@ -669,7 +410,7 @@ providing a robust foundation for collaborative coding.
 - **Risk Awareness**: Identifies challenges and mitigation strategies
 - **Scalability Considerations**: Addresses performance concerns
 
-## Exercise 5 Solutions: Practical AI Integration Strategies
+## Exercise 4 Solutions: Practical AI Integration Strategies
 
 ### AI-Enhanced Workflow Designs
 
@@ -949,5 +690,317 @@ Based on your lab experiences, create your personal approach:
 - [ ] Prompt library development and maintenance
 - [ ] Team knowledge sharing and best practice development
 ```
+
+## Exercise 5 Solutions: Tool Exploration
+
+This exercise provides hands-on experience with different AI coding tools and demonstrates their integration into development workflows. Below are comprehensive solutions for each option.
+
+### Option 1 Solution: GitHub Copilot Experience
+
+#### Installation and Setup Results
+**Successful Setup Steps:**
+1. **Extension Installation**: GitHub Copilot extension installed in VS Code
+2. **Authentication**: Connected to GitHub account with active Copilot subscription
+3. **Configuration Optimization**:
+   ```json
+   {
+     "github.copilot.enable": {
+       "*": true,
+       "plaintext": false,
+       "markdown": true
+     },
+     "github.copilot.inlineSuggest.enable": true
+   }
+   ```
+
+#### Code Completion Test Results
+**Test Prompt**: `// Create a function that validates email addresses using regex`
+
+**Copilot Generated Solution**:
+```javascript
+function validateEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Additional suggestions that appeared:
+function validateEmailStrict(email) {
+  const strictRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  if (typeof email !== 'string') return false;
+  return strictRegex.test(email.toLowerCase());
+}
+```
+
+**Quality Assessment**:
+- ✅ Immediately generated working code
+- ✅ Included both basic and strict validation options
+- ✅ Added type checking in advanced version
+- ⚠️ Basic version lacks edge case handling
+
+#### Copilot Chat Experience Results
+**Test Query**: "Explain how this function works and suggest improvements"
+**Test Code**: Basic email validation function
+
+**Copilot Chat Response**:
+```
+This function validates email addresses using a regular expression pattern:
+
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+Breaking it down:
+- ^ : Start of string
+- [^\s@]+ : One or more characters that are not whitespace or @
+- @ : Literal @ symbol
+- [^\s@]+ : One or more characters that are not whitespace or @
+- \. : Literal dot (escaped)
+- [^\s@]+ : Domain extension
+
+Suggested improvements:
+1. Add input validation for null/undefined
+2. Convert to lowercase for consistency
+3. Use more comprehensive RFC-compliant regex
+4. Add JSDoc documentation
+```
+
+**Improvement Suggestions Accuracy**: 9/10 - All suggestions were relevant and technically sound.
+
+### Option 2 Solution: Free AI Alternative (ChatGPT)
+
+#### Code Generation Test Results
+**Prompt Used**:
+```
+"Generate a simple TypeScript function that validates email addresses. 
+Include type annotations, error handling, and JSDoc documentation."
+```
+
+**Generated Solution**:
+```typescript
+/**
+ * Validates an email address using RFC-compliant regex pattern
+ * @param email - The email address to validate
+ * @returns Boolean indicating whether the email is valid
+ * @throws Error if input is not a string
+ */
+function validateEmail(email: string): boolean {
+  if (typeof email !== 'string') {
+    throw new Error('Email must be a string');
+  }
+  
+  if (email.length === 0) {
+    return false;
+  }
+  
+  const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  
+  return emailRegex.test(email.toLowerCase());
+}
+
+// Usage example:
+try {
+  console.log(validateEmail("user@example.com")); // true
+  console.log(validateEmail("invalid-email"));    // false
+} catch (error) {
+  console.error(error.message);
+}
+```
+
+**Quality Assessment**:
+- ✅ Complete TypeScript implementation with types
+- ✅ Comprehensive JSDoc documentation
+- ✅ Proper error handling
+- ✅ Usage examples provided
+- ✅ RFC-compliant regex pattern
+
+#### Code Review Simulation Results
+**Test Code**: Basic authentication middleware
+**Review Request**: "Review for improvements, security issues, and best practices"
+
+**AI Analysis Provided**:
+1. **Security Issues Identified**:
+   - Missing rate limiting
+   - JWT secret should be environment variable
+   - No input sanitization
+
+2. **Best Practices Suggestions**:
+   - Add request logging
+   - Implement proper error handling
+   - Use async/await consistently
+
+3. **Performance Optimizations**:
+   - Cache JWT verification results
+   - Add connection pooling for database calls
+
+**Review Quality**: 8/10 - Caught most important issues, some suggestions were overly generic.
+
+### Option 3 Solution: Documentation AI
+
+#### Code Sample Selected
+```javascript
+class UserService {
+  constructor(database) {
+    this.db = database;
+    this.cache = new Map();
+  }
+  
+  async findById(id) {
+    if (this.cache.has(id)) {
+      return this.cache.get(id);
+    }
+    
+    const user = await this.db.users.findOne({ id });
+    if (user) {
+      this.cache.set(id, user);
+    }
+    return user;
+  }
+}
+```
+
+#### AI-Generated Documentation
+```javascript
+/**
+ * UserService - Manages user data operations with built-in caching
+ * 
+ * This service provides an abstraction layer for user data access,
+ * implementing in-memory caching to improve performance for frequently
+ * accessed user records.
+ * 
+ * @class UserService
+ */
+class UserService {
+  /**
+   * Creates an instance of UserService
+   * 
+   * @param {Object} database - Database connection object with users collection
+   * @param {Object} database.users - Users collection interface
+   * @memberof UserService
+   */
+  constructor(database) {
+    /** @private {Object} Database connection instance */
+    this.db = database;
+    /** @private {Map} In-memory cache for user objects */
+    this.cache = new Map();
+  }
+  
+  /**
+   * Retrieves a user by their unique identifier
+   * 
+   * Implements a cache-first strategy: checks memory cache before
+   * querying the database. Successfully retrieved users are cached
+   * for subsequent requests.
+   * 
+   * @async
+   * @param {string|number} id - Unique user identifier
+   * @returns {Promise<Object|null>} User object if found, null otherwise
+   * @throws {Error} Database connection or query errors
+   * 
+   * @example
+   * const userService = new UserService(database);
+   * const user = await userService.findById(123);
+   * if (user) {
+   *   console.log(user.name);
+   * }
+   * 
+   * @memberof UserService
+   */
+  async findById(id) {
+    // Check cache first for performance optimization
+    if (this.cache.has(id)) {
+      return this.cache.get(id);
+    }
+    
+    // Query database if not in cache
+    const user = await this.db.users.findOne({ id });
+    
+    // Cache successful results for future requests
+    if (user) {
+      this.cache.set(id, user);
+    }
+    
+    return user;
+  }
+}
+```
+
+#### Manual vs. AI Documentation Comparison
+
+**Manual Documentation (typical developer approach)**:
+```javascript
+// Gets user by ID, uses cache
+async findById(id) {
+  // ... code
+}
+```
+
+**AI Documentation Advantages**:
+- ✅ Comprehensive JSDoc format
+- ✅ Explains caching strategy
+- ✅ Includes usage examples
+- ✅ Documents error conditions
+- ✅ Proper parameter and return type documentation
+
+**AI Documentation Quality**: 9/10 - Thorough, accurate, and professionally formatted.
+
+### Comparative Analysis: Tool Capabilities
+
+#### GitHub Copilot Strengths:
+- **Real-time Integration**: Seamless IDE experience
+- **Context Awareness**: Understands current project patterns
+- **Code Completion**: Excellent at predicting next code lines
+- **Chat Functionality**: Good for explanations and debugging
+
+#### GitHub Copilot Limitations:
+- **Subscription Required**: Not free for all users
+- **Context Window**: Limited to current file context
+- **Dependency on GitHub**: Requires active GitHub account
+
+#### ChatGPT/Claude Strengths:
+- **Deep Analysis**: Comprehensive code reviews and explanations
+- **Flexibility**: Can handle various request types and formats
+- **Documentation**: Excellent at generating thorough documentation
+- **Reasoning**: Can explain complex concepts clearly
+
+#### ChatGPT/Claude Limitations:
+- **No IDE Integration**: Copy-paste workflow required
+- **Context Switching**: Must provide full context each time
+- **Project Awareness**: No understanding of broader codebase
+
+### Integration Recommendations
+
+#### For Individual Developers:
+1. **Primary Tool**: GitHub Copilot for daily coding assistance
+2. **Secondary Tool**: ChatGPT/Claude for complex analysis and learning
+3. **Documentation**: AI tools for comprehensive documentation generation
+
+#### For Development Teams:
+1. **Standardization**: Choose consistent tools across team
+2. **Guidelines**: Establish prompt patterns and quality standards
+3. **Review Process**: AI-generated code still needs human review
+
+#### Workflow Integration Points:
+- **Code Writing**: Real-time assistance during development
+- **Code Review**: AI analysis before human review
+- **Documentation**: Automated generation with human refinement
+- **Learning**: AI tutoring for new technologies and patterns
+
+### Exercise 5 Key Insights
+
+**Tool Selection Criteria**:
+1. **Integration Quality**: How seamlessly does it fit your workflow?
+2. **Accuracy**: How often are suggestions correct and useful?
+3. **Context Understanding**: How well does it grasp your specific needs?
+4. **Learning Curve**: How quickly can you become productive?
+
+**Best Practices Discovered**:
+- Start with clear, specific prompts
+- Provide adequate context for better results
+- Always review and test AI-generated code
+- Use AI as a productivity multiplier, not a replacement for understanding
+
+**Next Steps for Tool Mastery**:
+1. Practice with different prompt patterns
+2. Experiment with various AI tools for different tasks
+3. Develop personal productivity workflows
+4. Stay updated on AI tool capabilities and limitations
 
 This foundation prepares you for Module 2's focus on advanced code generation and AI-assisted development workflows.

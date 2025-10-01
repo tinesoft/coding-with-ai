@@ -1,18 +1,18 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.2.1 → 1.3.0
-Modified Principles: None
-Added Sections:
-- VI. Content Accuracy and Currency Requirements → New principle ensuring training materials reflect current AI landscape as of constitution amendment date
+Version Change: 1.5.0 → 1.5.1
+Modified Principles:
+- III. Lab Structure Requirements: Enhanced to enforce exercise-solution alignment and deliverable organization structure
+Added Sections: Exercise-Solution Correspondence and Deliverable Organization requirements
 Removed Sections: None
 Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: Review all existing training materials to ensure accuracy as of 2025-09-23
-Notes: Added mandatory requirement for content accuracy and currency validation in all training materials.
+Follow-up TODOs: Update existing labs to ensure proper exercise-solution correspondence and create deliverable folder structure
+Notes: Enhanced lab structure to mandate 1:1 correspondence between exercises and solutions, with standardized deliverable organization in resources/ subdirectories.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.3.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-23
+**Version**: 1.5.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-01
 
 ## Core Principles
 
@@ -31,11 +31,34 @@ Place training modules in `docs/markdown/` using SFEIR School Theme markdown syn
 <!-- .slide: class="exercice" --> 
 # Exercice X: {short text}
 ## Lab XX
-### Step 1
-### Step 2
-**A Section**
-[simple content here]
+
+<br>
+
+### 👉🏾 Follow **instructions** in
+
+### `labs/lab-XX-{topic}/README.md`
+
+Notes:
+- Follow the instructions in the lab README.md for detailed steps.
+
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercice X: {short text}
+## Lab XX
+
+<br>
+
+### 💡 Read **solution** at
+
+### `labs/lab-XX-{topic}-solution/README.md`
+
+Notes:
+- Read the lab README.md for example of solutions.
 ```
+Where X is the exercise number and XX is the two-digit lab number. Exercise slides SHALL only use H1, H2, or H3 level headers: H1 (#) is reserved for the exercise title, H2 (##) is reserved for the lab generic sub-header ("Lab XX"), and H3 (###) is reserved for specific steps of the exercise. Bold text MAY be used to highlight sections within the exercise content.
+```
+
 Where X is the exercise number and XX is the two-digit lab number. Exercise slides SHALL only use H1, H2, or H3 level headers: H1 (#) is reserved for the exercise title, H2 (##) is reserved for the lab generic sub-header ("Lab XX"), and H3 (###) is reserved for specific steps of the exercise. Bold text MAY be used to highlight sections within the exercise content.
 
 **Regular Slide Formatting**: Regular content slides MUST include a `<br>` tag between H2-level (##) and H3-level (###) headers to prevent content overlap. This formatting requirement applies to all standard slides that are not exercise or transition slides:
@@ -51,13 +74,27 @@ Content here...
 ```
 
 ### III. Lab Structure Requirements
-Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with corresponding solution folders `labs/lab-XX-{topic}-solution/`. Write all lab instructions in GitHub-flavored markdown format with clear objectives, prerequisites, and success criteria. Provide hands-on exercises with scaffolded projects that demonstrate practical application of module concepts.
+Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with corresponding solution folders `labs/lab-XX-{topic}-solution/`. Each solution folder MUST contain a mandatory `README.md` file and MAY include an optional `resources/` directory for lab outputs and deliverables (e.g., final projects, code samples, generated artifacts). Write all lab instructions in GitHub-flavored markdown format with clear objectives, prerequisites, and success criteria. Provide hands-on exercises with scaffolded projects that demonstrate practical application of module concepts.
+
+**Lab-Slide Content Alignment**: Lab exercises MUST align with and reinforce the learning objectives and content presented in their corresponding module slides. Each lab SHALL provide hands-on practice for concepts introduced in the theoretical slide content. Exercise instructions MUST reference specific techniques, tools, or methodologies covered in the module slides. Learning progression in labs SHALL follow the sequence established in slide presentations to ensure educational coherence and effective skill building.
+
+**Assessment Content Alignment**: Assessment materials including knowledge checks, quizzes, and evaluation criteria MUST accurately reflect the actual content that learners experienced in labs and slide presentations. Assessment questions SHALL be updated when lab content changes to maintain alignment between what is taught and what is tested. This ensures valid measurement of learning outcomes and prevents assessment-instruction misalignment.
+
+**Exercise-Solution Correspondence**: The `lab-XX-{topic}/README.md` file MUST contain all exercises to be completed. The corresponding `lab-XX-{topic}-solution/README.md` file MUST contain the complete solution to each exercise in the same sequential order. Each exercise solution SHALL be clearly marked and correspond exactly to the exercise statement in the main lab file.
+
+**Exercise Numbering Consistency**: When content is removed or reorganized, exercise numbering MUST be updated consistently across all related materials including lab instructions, solutions, exercise slides, and assessment content. Sequential numbering SHALL be maintained without gaps to ensure educational flow and prevent learner confusion.
+
+**Deliverable Organization**: When an exercise solution includes deliverable artifacts (complete projects, code repositories, generated files), the solution text MUST indicate the specific location of these deliverables within the `lab-XX-{topic}-solution/resources/exercise-{X}-complete-project/` subdirectory structure, where X corresponds to the exercise number. Deliverable subdirectories SHALL only be created when required by the exercise's deliverable requirements.
 
 ### IV. Asset Management Protocol
 Store all visual assets in `docs/assets/images/` using descriptive file names and organized subdirectories by module. Reference assets using relative paths from `docs/` directory in all markdown files. Include slides, diagrams, code screenshots, and supporting visuals while maintaining consistent SFEIR branding standards.
 
 ### V. Quality Assurance Standards
 Validate all content against defined educational objectives with focus on practical utility and learner confidence building. Maintain professional code quality standards in all examples and exercises. Prioritize clarity, real-world application, and progressive skill development across all training materials.
+
+**Constitution Compliance Verification**: When making changes to training materials, ALL affected files MUST be systematically reviewed for constitutional compliance. This includes exercise slides, lab instructions, solutions, assessment content, and any cross-references. Changes to one component require verification of consistency across the entire educational package to prevent maintenance burden and ensure cohesive learning experience.
+
+**Content Duplication Prevention**: Exercise slides SHALL NOT duplicate detailed content from lab README files. Slides MUST follow the prescribed format pointing to lab instructions and solutions. This eliminates maintenance overhead and ensures single-source-of-truth for educational content while maintaining proper educational flow.
 
 ### VI. Content Accuracy and Currency Requirements
 All training materials (slides, labs, exercises, and visual aids) MUST reflect accurate and current information about AI technologies, tools, and best practices as of the constitution's last amendment date. When generating or updating content, verify that all technical information, tool capabilities, API references, and industry practices are current and factually correct. Outdated information MUST be updated or clearly marked with deprecation notices. Content creators SHALL validate all AI tool references, feature availability, and technical specifications against official documentation and current releases before publication.
@@ -182,34 +219,41 @@ docs/
 ### Laboratory Structure
 ```
 labs/
-├── lab-01-prompt-basics/         # Introduction to effective prompting
+├── lab-01-prompt-basics/         # Module 1: Prompt engineering fundamentals
 │   └── README.md
 ├── lab-01-prompt-basics-solution/
+│   ├── README.md
+│   └── resources/                # Optional: Lab outputs and deliverables
+├── lab-02-ai-fundamentals/       # Module 1: AI concepts and LLM understanding
 │   └── README.md
-├── lab-02-tools-setup/            # AI tools installation and comparison
-│   └── README.md
-├── lab-02-tools-setup-solution/
-│   └── README.md
+├── lab-02-ai-fundamentals-solution/
+│   ├── README.md
+│   └── resources/                # Optional: Lab outputs and deliverables
 ├── lab-03-coding-patterns/       # Hands-on coding with AI
 │   └── README.md
 ├── lab-03-coding-patterns-solution/
-│   └── README.md
+│   ├── README.md
+│   └── resources/                # Optional: Lab outputs and deliverables
 ├── lab-04-debugging/             # AI-assisted debugging
 │   └── README.md
 ├── lab-04-debugging-solution/
-│   └── README.md
+│   ├── README.md
+│   └── resources/                # Optional: Lab outputs and deliverables
 ├── lab-05-testing/               # Test automation with AI
 │   └── README.md
 ├── lab-05-testing-solution/
-│   └── README.md
+│   ├── README.md
+│   └── resources/                # Optional: Lab outputs and deliverables
 ├── lab-06-security/              # AI and code security
 │   └── README.md
 ├── lab-06-security-solution/
-│   └── README.md
+│   ├── README.md
+│   └── resources/                # Optional: Lab outputs and deliverables
 ├── lab-07-capstone/              # Complete project development
 │   └── README.md
 └── lab-07-capstone-solution/
-    └── README.md
+    ├── README.md
+    └── resources/                # Optional: Lab outputs and deliverables
 ```
 
 ### Content Creation Guidelines
@@ -224,4 +268,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.3.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-09-23
+**Version**: 1.5.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-01

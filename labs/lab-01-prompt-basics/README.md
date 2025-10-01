@@ -98,11 +98,115 @@ Target: Senior developers familiar with React and TypeScript"
 **Step 6**: Compare the two responses and document the differences.
 
 ### Success Criteria
-- [ ] Original vague prompt attempted and documented
-- [ ] Clear identification of response limitations
-- [ ] Improved prompt follows CLEAR framework
-- [ ] Significant improvement in response quality observed
-- [ ] Key differences between responses documented
+- [ ] Applied real-world problem-solving with AI assistance
+- [ ] Received and incorporated feedback from peers
+
+## Exercise 5: Debugging Bad Prompts
+
+### Objective
+Identify common prompt problems and practice fixing them using the techniques learned in Module 1.
+
+### Background
+This exercise aligns with **slide 13_exercise_prompts.md** (Exercice 5) and helps you recognize and correct typical prompt engineering mistakes.
+
+### Instructions
+
+#### **Fix These Broken Prompts**
+
+**Problem 1: Too Vague**
+```
+"Make this code better"
+```
+
+**Your Task**: Rewrite this prompt to be specific and actionable.
+
+**Considerations**:
+- What kind of improvements are needed?
+- What context is missing?
+- What output format is expected?
+
+**Problem 2: Too Many Tasks**
+```
+"Create a React app with authentication, database integration, user management, 
+email notifications, file uploads, and deployment scripts using the latest 
+best practices and security measures"
+```
+
+**Your Task**: Break this down into manageable, focused prompts.
+
+**Problem 3: Missing Context**
+```
+"Fix the performance issue in my function"
+```
+
+**Your Task**: Add the necessary context to make this prompt effective.
+
+#### **Solution Development**
+
+**Step 1**: Work individually to fix each prompt (5 minutes)
+
+**Step 2**: Compare your solutions with provided examples:
+
+**Problem 1 → Fixed Example**:
+```
+"Review this JavaScript function for code quality improvements:
+- Optimize for readability and maintainability
+- Suggest modern ES6+ syntax where applicable
+- Identify potential performance optimizations
+- Add error handling where missing
+
+[Include the specific code to review]"
+```
+
+**Problem 2 → Fixed Example**:
+```
+"Create a basic React authentication component with:
+- Login/logout functionality using email/password
+- JWT token storage in localStorage
+- Form validation for email format
+- Loading states for async operations
+- TypeScript interfaces for all props
+
+Note: This is part 1 of a larger application. Additional features 
+will be addressed in separate prompts."
+```
+
+**Problem 3 → Fixed Example**:
+```
+"Analyze this Node.js function for performance issues:
+
+function processUserData(users) {
+  // [Include the actual function code]
+}
+
+Context:
+- Function processes arrays of 1000+ user objects
+- Currently takes 3-5 seconds to complete
+- Running on Node.js 18 in production
+- Each user object has ~20 properties
+
+Please identify bottlenecks and suggest specific optimizations 
+with expected performance improvements."
+```
+
+**Step 3**: Document the patterns you notice in effective vs. ineffective prompts
+
+### Success Criteria
+- [ ] Successfully identified problems in all three broken prompts
+- [ ] Created improved versions that address the specific issues
+- [ ] Compared your solutions with provided examples
+- [ ] Documented patterns for recognizing and fixing prompt problems
+- [ ] Can explain why each improvement makes the prompt more effective
+
+### Reflection Questions
+- What made the original prompts problematic?
+- Which improvement techniques were most effective?
+- How do these patterns apply to your own prompt writing?
+- What warning signs indicate a prompt needs refinement?
+
+**Time: 15 minutes (10 minutes fixing + 5 minutes reflection)**
+
+## Troubleshooting
 
 ## Exercise 2: Iterative Refinement
 

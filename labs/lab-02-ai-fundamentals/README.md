@@ -1,7 +1,7 @@
 # Lab 2: AI Fundamentals in Practice
 
 ## Learning Objectives
-- Understand how LLMs, embeddings, and RAG work in real applications
+- Understand how LLMs and embeddings work in real applications
 - Experiment with different AI model capabilities and limitations
 - Explore practical applications of AI concepts in development workflows
 - Build confidence in choosing appropriate AI tools for specific tasks
@@ -13,7 +13,7 @@
 - Text editor for documenting experiments and observations
 
 ## Lab Overview
-This hands-on lab bridges the gap between AI theory and practical application. You'll explore how fundamental AI concepts like embeddings, context windows, and RAG manifest in real development tools and workflows.
+This hands-on lab bridges the gap between AI theory and practical application. You'll explore how fundamental AI concepts like embeddings and context windows manifest in real development tools and workflows.
 
 ## Setup Instructions
 
@@ -174,107 +174,7 @@ function processData(input, config) {
 - [ ] Successfully generated semantic-focused documentation
 - [ ] Identified patterns in how embeddings affect code analysis
 
-## Exercise 3: RAG in Action - Context-Aware Development
-
-### Objective
-Explore how Retrieval Augmented Generation works in practice and simulate RAG-like workflows for development tasks.
-
-### Background
-RAG combines retrieval of relevant information with generation, allowing AI to access current, specific information beyond its training data.
-
-### Instructions
-
-**Step 1**: Simulate RAG for project-specific assistance.
-
-Create a "knowledge base" for your test project:
-
-```markdown
-# Project Knowledge Base
-
-## Architecture Overview
-This project follows microservices architecture with:
-- API Gateway (Express.js)
-- User Service (Node.js + PostgreSQL)
-- Order Service (Node.js + MongoDB)
-- Notification Service (Python + Redis)
-
-## Coding Standards
-- Use TypeScript for all new code
-- Follow ESLint configuration in .eslintrc.js
-- Use Prettier for code formatting
-- All functions must include JSDoc comments
-- Unit tests required for business logic
-
-## Database Schema
-Users table: id, email, password_hash, created_at, updated_at
-Orders table: id, user_id, items, total, status, created_at
-Products table: id, name, price, category_id, stock_count
-```
-
-**Step 2**: Test context-aware assistance:
-
-```
-"Based on this project's architecture and standards, help me create a new user registration endpoint.
-
-Project Context:
-[Include your knowledge base]
-
-Requirements:
-- Follow existing patterns
-- Include proper validation
-- Add appropriate tests
-- Consider security best practices"
-```
-
-**Step 3**: Compare with and without context:
-
-First, ask for the same endpoint without providing project context:
-```
-"Create a user registration endpoint for a web application"
-```
-
-Then provide the context and ask again. Document the differences.
-
-**Step 4**: Test retrieval simulation:
-
-Create multiple "documents" with different information:
-
-```markdown
-Document 1: Error Handling Patterns
-- Use try-catch for async operations
-- Return standardized error objects
-- Log errors with correlation IDs
-
-Document 2: Authentication Flow
-- JWT tokens with 24-hour expiry
-- Refresh token rotation
-- Rate limiting on auth endpoints
-
-Document 3: Database Patterns
-- Use connection pooling
-- Implement query timeout
-- Add database health checks
-```
-
-Ask the AI to solve a problem that requires information from multiple documents:
-
-```
-"I need to implement secure user login with proper error handling and database connectivity. 
-
-Relevant Documentation:
-[Include all three documents]
-
-Please create a solution that follows all documented patterns."
-```
-
-### Success Criteria
-- [ ] Created comprehensive project knowledge base
-- [ ] Compared AI responses with and without context
-- [ ] Demonstrated improved specificity with project context
-- [ ] Successfully simulated multi-document RAG workflow
-- [ ] Documented how context affects response quality and relevance
-
-## Exercise 4: Model Capabilities and Limitations
+## Exercise 3: Model Capabilities and Limitations
 
 ### Objective
 Systematically explore what different AI models can and cannot do effectively, building intuition for tool selection.
@@ -361,7 +261,7 @@ Present a novel problem without obvious solutions:
 - [ ] Compared capabilities across multiple AI tools
 - [ ] Documented patterns for when to use which tool
 
-## Exercise 5: Practical AI Integration Strategies
+## Exercise 4: Practical AI Integration Strategies
 
 ### Objective
 Design AI-enhanced workflows for common development tasks based on your understanding of AI capabilities and limitations.
@@ -429,9 +329,9 @@ Answer these questions based on your experiments:
    - How well do AI models understand code semantics vs. syntax?
    - When is semantic understanding most valuable in development?
 
-3. **RAG Applications**:
+3. **Context and Semantics**:
    - How does providing context change AI response quality?
-   - What types of project information are most valuable to include?
+   - When is semantic understanding most valuable in development?
 
 4. **Model Capabilities**:
    - What are the reliability boundaries for different AI tools?
@@ -440,6 +340,85 @@ Answer these questions based on your experiments:
 5. **Integration Strategies**:
    - Which development tasks benefit most from AI assistance?
    - How do you balance AI efficiency with human expertise?
+
+## Exercise 5: Tool Exploration
+
+### Objective
+Experience hands-on interaction with different AI coding tools to understand their capabilities and integration patterns.
+
+### Background
+This exercise aligns with **slide 14_tools_and_agents.md** and provides practical experience with the AI development tools discussed in Module 1.
+
+### Instructions
+
+Choose one of the following options based on your available tools:
+
+#### **Option 1: GitHub Copilot (if available)**
+1. **Installation and Setup**:
+   - Install GitHub Copilot extension in VS Code
+   - Ensure you have an active Copilot subscription
+   - Configure settings for optimal performance
+
+2. **Code Completion Test**:
+   ```javascript
+   // Try typing this comment and let Copilot suggest the implementation
+   // Create a function that validates email addresses using regex
+   ```
+
+3. **Copilot Chat Experience**:
+   - Open Copilot Chat in VS Code
+   - Ask: "Explain how this function works and suggest improvements"
+   - Test with a code snippet from your current project
+
+#### **Option 2: Free AI Alternative**
+1. **Access AI Tool**:
+   - Visit ChatGPT, Claude, or Gemini web interface
+   - Practice prompt engineering techniques from Lab 01
+
+2. **Code Generation Test**:
+   ```
+   "Generate a simple TypeScript function that validates email addresses. 
+   Include type annotations, error handling, and JSDoc documentation."
+   ```
+
+3. **Code Review Simulation**:
+   - Paste an existing code snippet
+   - Ask the AI to review for improvements, security issues, and best practices
+
+#### **Option 3: Documentation AI**
+1. **Select Code Sample**:
+   - Choose a function or class from your existing codebase
+   - Or use the sample code provided in this lab
+
+2. **Generate Documentation**:
+   ```
+   "Generate comprehensive documentation for this code including:
+   - Purpose and functionality
+   - Parameter descriptions
+   - Return value explanation
+   - Usage examples
+   - Potential edge cases"
+   ```
+
+3. **Compare Results**:
+   - Generate documentation manually
+   - Compare AI-generated vs. manual documentation
+   - Identify strengths and weaknesses of each approach
+
+### Success Criteria
+- [ ] Successfully tested at least one AI coding tool
+- [ ] Compared AI-generated outputs with manual alternatives
+- [ ] Documented tool capabilities and limitations
+- [ ] Identified potential integration points in your workflow
+- [ ] Recorded specific examples for future reference
+
+### Reflection Questions
+- How accurate were the AI suggestions?
+- What types of tasks seemed well-suited to AI assistance?
+- Where did you notice limitations or errors?
+- How would you integrate this tool into your development workflow?
+
+**Time: 15 minutes (10 minutes exploration + 5 minutes reflection)**
 
 ### Key Insights Documentation
 

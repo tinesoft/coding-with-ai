@@ -437,3 +437,199 @@ Lab 2 will focus on AI fundamentals and practical applications. The prompt engin
 3. **Define success criteria** - Clear goals lead to better outcomes
 4. **Iterate systematically** - Each refinement should address specific gaps
 5. **Match patterns to tasks** - Different challenges need different approaches
+
+## Exercise 5 Solutions: Debugging Bad Prompts
+
+This exercise focuses on identifying and fixing common prompt engineering mistakes. The solutions demonstrate how to transform problematic prompts into effective ones.
+
+### Problem 1: Too Vague - "Make this code better"
+
+#### Issues Identified:
+- No specific code provided
+- No context about what "better" means
+- No constraints or requirements
+- No indication of current problems
+
+#### Fixed Solution:
+```
+"Review this JavaScript authentication function for code quality improvements:
+
+[INSERT ACTUAL CODE HERE]
+
+Context:
+- Node.js application for user management
+- Function currently works but needs optimization
+- Team follows ES6+ standards and functional programming patterns
+
+Please analyze and provide:
+1. Specific performance optimizations
+2. Security vulnerability assessment
+3. Code readability improvements
+4. Modern JavaScript syntax suggestions
+5. Error handling enhancements
+
+Format: Provide improved code with inline comments explaining changes."
+```
+
+#### Key Improvements:
+- ✅ Specific context provided
+- ✅ Clear improvement categories defined
+- ✅ Technology constraints specified
+- ✅ Output format requirements
+
+### Problem 2: Too Many Tasks
+
+#### Original Problematic Prompt:
+```
+"Create a React app with authentication, database integration, user management, 
+email notifications, file uploads, and deployment scripts using the latest 
+best practices and security measures"
+```
+
+#### Issues Identified:
+- Overwhelmingly complex scope
+- Multiple unrelated features
+- Impossible to address comprehensively
+- Lacks focus and priorities
+
+#### Fixed Solution - Broken into Focused Prompts:
+
+**Prompt 1: Core Authentication**
+```
+"Create a basic React authentication system with the following specific requirements:
+
+Technology Stack:
+- React 18 with TypeScript
+- JWT for session management
+- Axios for API calls
+
+Core Features:
+- Login/logout functionality
+- Protected route wrapper component
+- Token storage in localStorage
+- Basic form validation
+
+Deliverables:
+1. Login component with form validation
+2. AuthContext for state management
+3. PrivateRoute wrapper component
+4. TypeScript interfaces for user data
+
+Please provide complete code with explanatory comments."
+```
+
+**Prompt 2: User Management (separate session)**
+```
+"Building on the React authentication system, create user management functionality:
+
+Previous Context: JWT-based auth system established
+New Requirements:
+- User profile editing
+- Password change functionality
+- User role management (admin/user)
+- Account deletion with confirmation
+
+[Continue with specific requirements...]"
+```
+
+#### Key Improvements:
+- ✅ Single focused scope per prompt
+- ✅ Clear dependency relationships
+- ✅ Specific technical requirements
+- ✅ Manageable complexity
+
+### Problem 3: Missing Context - "Fix the performance issue in my function"
+
+#### Issues Identified:
+- No function code provided
+- No performance metrics or symptoms
+- No environment context
+- No constraints or requirements
+
+#### Fixed Solution:
+```
+"Analyze and optimize this Node.js function for performance issues:
+
+```javascript
+function processUserData(users) {
+  let results = [];
+  for (let i = 0; i < users.length; i++) {
+    let user = users[i];
+    let processed = {
+      id: user.id,
+      fullName: user.firstName + ' ' + user.lastName,
+      isActive: checkUserStatus(user.id), // Database call
+      permissions: getUserPermissions(user.id), // Database call
+      lastLogin: formatDate(user.lastLoginDate)
+    };
+    results.push(processed);
+  }
+  return results;
+}
+```
+
+Performance Context:
+- Processing arrays of 1000-5000 user objects
+- Currently takes 8-12 seconds to complete
+- Running on Node.js 18 in production
+- Database calls are the suspected bottleneck
+- Cannot change the external database schema
+
+Optimization Goals:
+- Target: < 2 seconds execution time
+- Maintain data accuracy
+- Minimize database calls
+- Keep memory usage reasonable
+
+Please provide:
+1. Specific bottleneck identification
+2. Optimized code solution
+3. Expected performance improvement
+4. Alternative approaches if applicable"
+```
+
+#### Key Improvements:
+- ✅ Complete code context provided
+- ✅ Specific performance metrics
+- ✅ Environment and constraints defined
+- ✅ Clear optimization goals
+- ✅ Requested output format
+
+### Common Patterns in Effective Prompts
+
+#### The CLEAR Framework Applied:
+1. **Context**: Background, environment, constraints
+2. **Length**: Specify desired response detail level
+3. **Examples**: Provide concrete illustrations when helpful
+4. **Audience**: Define the expertise level required
+5. **Role**: Establish the AI's perspective and expertise
+
+#### Red Flags to Avoid:
+- ❌ Generic requests without specifics
+- ❌ Multiple unrelated tasks in one prompt
+- ❌ Missing essential context
+- ❌ Vague success criteria
+- ❌ No output format specification
+
+#### Success Indicators:
+- ✅ Single, focused objective
+- ✅ Complete context provided
+- ✅ Specific, measurable requirements
+- ✅ Clear constraints and limitations
+- ✅ Defined output format and expectations
+
+### Exercise 5 Key Insights
+
+**Most Effective Improvements:**
+1. Adding specific context transforms generic responses into targeted solutions
+2. Breaking complex requests into focused components improves quality dramatically
+3. Providing examples and constraints eliminates ambiguity
+4. Defining success criteria ensures usable outputs
+
+**Common Debugging Patterns:**
+- **Too vague** → Add context, constraints, and examples
+- **Too complex** → Break into smaller, focused prompts
+- **Missing context** → Provide environment, constraints, and goals
+- **Poor results** → Specify output format and success criteria
+
+This exercise reinforces that prompt debugging follows predictable patterns, and systematic application of the CLEAR framework resolves most common issues effectively.

@@ -11,7 +11,7 @@ We've covered a lot of ground in Module 1. Let's systematically review the key c
 # **Learning Objectives Review**
 
 ## **✅ What You Should Now Know**
-- 🧠 **AI Fundamentals**: LLMs, embeddings, and RAG concepts
+- 🧠 **AI Fundamentals**: LLMs, embeddings, and context windows
 - 🎯 **Prompt Engineering**: CLEAR framework and effective techniques
 - 🛠️ **Practical Application**: Real prompt writing and iteration skills
 - 🔧 **Tool Awareness**: AI coding assistants and their capabilities
@@ -34,11 +34,11 @@ Take a moment to reflect on your progress. These foundational skills will be the
 ## **Quick Quiz** (2 minutes each)
 <br>
 
-### **Question 1**: What does "RAG" stand for and why is it important?
-**A)** Random Access Generation - for faster AI responses  
-**B)** Retrieval Augmented Generation - for accessing current information  
-**C)** Recursive Algorithm Generation - for complex problem solving  
-**D)** Real-time AI Guidance - for live coding assistance
+### **Question 1**: What is a context window in LLMs and why is it important?
+**A)** The visual interface where you interact with AI  
+**B)** The maximum amount of text an LLM can process at once  
+**C)** The time window when AI models are most accurate  
+**D)** The browser window where AI tools run
 
 ### **Question 2**: Which component is most crucial for LLM performance?
 **A)** Processing speed  
@@ -57,7 +57,7 @@ These questions test your understanding of core AI concepts that underpin all th
 # **Knowledge Check: Answers**
 
 ## **Answer 1**: **B** - Retrieval Augmented Generation
-RAG allows AI models to access external, up-to-date information by retrieving relevant documents before generating responses. This solves the "knowledge cutoff" problem.
+The context window determines how much text (measured in tokens) an LLM can process at once. This affects conversation length, document analysis capability, and code completion quality.
 
 ## **Answer 2**: **B** - Training data quality and quantity
 While all factors matter, the foundation of any LLM's capabilities comes from the quality, diversity, and quantity of its training data. This determines what the model can understand and generate.
@@ -69,7 +69,7 @@ Understanding these fundamentals helps you:
 - Troubleshoot when AI responses aren't meeting your needs
 
 Notes:
-These aren't just theoretical concepts - they directly impact how you use AI tools in practice. RAG explains why AI can help with recent technologies, and training data quality explains why some models excel at certain programming languages.
+These aren't just theoretical concepts - they directly impact how you use AI tools in practice. Context windows explain why long conversations may lose coherence, and training data quality explains why some models excel at certain programming languages.
 
 ##--##
 
@@ -296,7 +296,7 @@ Remember: AI is a powerful assistant, but human oversight is essential. Always r
 ### **🧠 AI Understanding**
 - AI tools are powerful assistants, not replacements for human expertise
 - Understanding limitations helps set realistic expectations
-- RAG and embeddings enable current, contextual information access
+- Embeddings enable semantic understanding and code similarity detection
 
 ### **🎯 Prompt Engineering**
 - CLEAR framework provides systematic approach to effective prompts
@@ -320,7 +320,7 @@ These takeaways form the foundation for all advanced AI development techniques. 
 <br>
 
 ### **Knowledge Demonstrated**:
-- [ ] Can explain key AI concepts (LLMs, embeddings, RAG)
+- [ ] Can explain key AI concepts (LLMs, embeddings, context windows)
 - [ ] Understands prompt engineering principles and patterns
 - [ ] Recognizes appropriate use cases for different AI tools
 - [ ] Identifies safety and security considerations
