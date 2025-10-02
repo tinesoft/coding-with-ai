@@ -1,18 +1,17 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.5.0 → 1.5.1
-Modified Principles:
-- III. Lab Structure Requirements: Enhanced to enforce exercise-solution alignment and deliverable organization structure
-Added Sections: Exercise-Solution Correspondence and Deliverable Organization requirements
+Version Change: 1.5.2 → 1.6.0
+Modified Principles: None
+Added Sections: VII. Data Sourcing and Citation Requirements - New principle requiring all metrics and statistical data to include source links
 Removed Sections: None
 Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: Update existing labs to ensure proper exercise-solution correspondence and create deliverable folder structure
-Notes: Enhanced lab structure to mandate 1:1 correspondence between exercises and solutions, with standardized deliverable organization in resources/ subdirectories.
+Follow-up TODOs: Review existing slide content and lab materials to ensure all metrics data includes proper source citations
+Notes: Added mandatory sourcing requirement for all metrics and statistical data to maintain educational integrity and provide learners with access to original data sources.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.5.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-01
+**Version**: 1.6.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-02
 
 ## Core Principles
 
@@ -98,6 +97,9 @@ Validate all content against defined educational objectives with focus on practi
 
 ### VI. Content Accuracy and Currency Requirements
 All training materials (slides, labs, exercises, and visual aids) MUST reflect accurate and current information about AI technologies, tools, and best practices as of the constitution's last amendment date. When generating or updating content, verify that all technical information, tool capabilities, API references, and industry practices are current and factually correct. Outdated information MUST be updated or clearly marked with deprecation notices. Content creators SHALL validate all AI tool references, feature availability, and technical specifications against official documentation and current releases before publication.
+
+### VII. Data Sourcing and Citation Requirements
+When including metrics, statistics, performance data, or quantitative claims in training materials (slides, labs, exercises), ALL such information MUST be accompanied by a direct link to the original source where that data was obtained. Unsourced data claims SHALL NOT be included in any educational materials. The citation format MUST follow this pattern: `[metric value]([source-link])` to provide immediate access to verification. For example: "**Time to First Working Code**: [30-50% reduction](https://example.com/source)" rather than unsourced claims. This requirement ensures educational integrity, allows learners to verify information independently, and maintains professional standards for factual content. When no verifiable source can be provided, the information MUST be excluded from the training materials entirely.
 
 ## Training Module Overview
 
@@ -268,4 +270,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.5.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-01
+**Version**: 1.6.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-02
