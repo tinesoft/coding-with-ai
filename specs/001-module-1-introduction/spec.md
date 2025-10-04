@@ -35,6 +35,12 @@
 - Q: The current spec mentions "measurable improvement in prompt quality" but doesn't define the measurement criteria. How should prompt quality improvements be quantified? → A: Before/after comparison of AI response quality and relevance
 - Q: The edge cases mention "What if specific AI tools (Copilot, Claude) are unavailable during labs?" but no fallback strategy is specified. What should be the primary backup approach? → A: Alternative free AI tools with similar capabilities (ChatGPT Free, Gemini)
 
+### Session 2025-10-02
+- Q: The course needs to accommodate "varying levels of programming expertise" among learners. What should be the approach for handling skill level differences during the 6-8 hour delivery? → A: Single track with optional advanced sections
+- Q: For learners with "no prior AI experience," what level of foundational explanation should be provided before diving into practical exercises? → A: Comprehensive theory: 30-45 minutes covering AI history, types, and concepts
+- Q: The course mentions a "5-point scoring rubric" for assessment. What should be the specific scoring scale definition for each rubric criterion? → A: 1=Unsatisfactory, 2=Needs Improvement, 3=Satisfactory, 4=Good, 5=Outstanding
+- Q: The final edge case asks about accommodating "different learning paces within the 6-8 hour timeframe." What should be the primary strategy for time management? → A: Flexible timing: Allow sections to run over if needed, skip less critical content
+
 ---
 
 ## User Scenarios & Testing
@@ -50,10 +56,10 @@ A trainer needs to deliver a comprehensive 1-day introduction to AI and prompt e
 5. **Given** a trainer conducting assessment, **When** they use provided evaluation materials, **Then** they can measure learner competency in prompt writing and AI tool usage
 
 ### Edge Cases
-- What happens when learners have no prior AI experience?
-- How does the course handle varying levels of programming expertise?
+- What happens when learners have no prior AI experience? → Provide 30-45 minutes of comprehensive foundational theory covering AI history, types, and concepts before practical exercises
+- How does the course handle varying levels of programming expertise? → Single track with optional advanced sections for experienced developers
 - What if specific AI tools (Copilot, Claude) are unavailable during labs? → Use alternative free AI tools with similar capabilities (ChatGPT Free, Gemini)
-- How are different learning paces accommodated within the 6-8 hour timeframe?
+- How are different learning paces accommodated within the 6-8 hour timeframe? → Flexible timing approach: allow sections to run over if needed, skip less critical content to maintain core learning objectives
 
 ## Requirements
 
@@ -70,9 +76,11 @@ A trainer needs to deliver a comprehensive 1-day introduction to AI and prompt e
 - **FR-010**: Materials MUST include trainer guidance for course delivery and timing
 - **FR-011**: Content MUST demonstrate practical productivity benefits (30-50% development speed increase)
 - **FR-012**: Materials MUST address safety and privacy considerations for AI tool usage
-- **FR-013**: All technical information (AI model capabilities, tool versions, API references) MUST be validated in real-time during content creation against current official documentation as of September 2025
-- **FR-014**: Assessment tools MUST include before/after prompt comparison exercises that measure AI response quality and relevance improvements using a 5-point scoring rubric (clarity, specificity, context, expected outcome, measurable criteria)
-- **FR-015**: Lab exercises MUST include fallback instructions for alternative free AI tools (ChatGPT Free, Gemini) when primary tools are unavailable
+- **FR-013**: Assessment tools MUST include before/after prompt comparison exercises that measure AI response quality and relevance improvements using a 5-point scoring rubric (clarity, specificity, context, expected outcome, measurable criteria) with scale: 1=Unsatisfactory, 2=Needs Improvement, 3=Satisfactory, 4=Good, 5=Outstanding
+- **FR-014**: Lab exercises MUST include fallback instructions for alternative free AI tools (Github Copilot, Claude, ChatGPT,Gemini) when primary tools are unavailable
+- **FR-015**: Materials MUST include optional advanced sections within each lab to accommodate experienced developers while maintaining single-track delivery
+- **FR-016**: Materials MUST include 30-45 minutes of comprehensive foundational theory covering AI history, types, and core concepts for learners with no prior AI experience
+- **FR-017**: Trainer guidance MUST include flexible timing strategies that prioritize core learning objectives and allow sections to run over when needed, with identification of less critical content that can be skipped
 
 ### Key Entities
 - **Training Module**: Complete course package with slides, labs, assessments, and trainer guides
