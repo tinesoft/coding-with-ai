@@ -1,17 +1,17 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.5.2 → 1.6.0
+Version Change: 1.6.0 → 1.7.0
 Modified Principles: None
-Added Sections: VII. Data Sourcing and Citation Requirements - New principle requiring all metrics and statistical data to include source links
+Added Sections: VIII. Sequential Numbering and Consistency Standards - New principle requiring strict sequential numbering across modules, labs, and exercises
 Removed Sections: None
 Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: Review existing slide content and lab materials to ensure all metrics data includes proper source citations
-Notes: Added mandatory sourcing requirement for all metrics and statistical data to maintain educational integrity and provide learners with access to original data sources.
+Follow-up TODOs: Audit existing content for numbering consistency, update any gaps in sequential progression
+Notes: Added mandatory sequential numbering requirements to prevent learner confusion and ensure proper educational progression across all training materials.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.6.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-02
+**Version**: 1.7.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-04
 
 ## Core Principles
 
@@ -100,6 +100,17 @@ All training materials (slides, labs, exercises, and visual aids) MUST reflect a
 
 ### VII. Data Sourcing and Citation Requirements
 When including metrics, statistics, performance data, or quantitative claims in training materials (slides, labs, exercises), ALL such information MUST be accompanied by a direct link to the original source where that data was obtained. Unsourced data claims SHALL NOT be included in any educational materials. The citation format MUST follow this pattern: `[metric value]([source-link])` to provide immediate access to verification. For example: "**Time to First Working Code**: [30-50% reduction](https://example.com/source)" rather than unsourced claims. This requirement ensures educational integrity, allows learners to verify information independently, and maintains professional standards for factual content. When no verifiable source can be provided, the information MUST be excluded from the training materials entirely.
+
+### VIII. Sequential Numbering and Consistency Standards
+All training content MUST maintain strict sequential numbering without gaps across modules, labs, and exercises to ensure clear educational progression and prevent learner confusion. Sequential numbering SHALL be enforced at three hierarchical levels:
+
+**Module-Level Numbering**: Training modules MUST use sequential numbering (Module 1, Module 2, Module 3, etc.) with no gaps in the sequence. When modules are added, removed, or reorganized, ALL subsequent numbering MUST be updated to maintain sequential integrity.
+
+**Lab-Level Numbering**: Within each module, laboratories MUST use zero-padded two-digit sequential numbering (Lab 01, Lab 02, Lab 03, etc.) starting from 01 for the first lab in each module. Lab numbering resets to 01 for each new module. Lab folder names MUST follow the pattern `lab-XX-{topic}/` where XX is the sequential lab number within that module.
+
+**Exercise-Level Numbering**: Within each lab, exercises MUST use sequential numbering (Exercise 1, Exercise 2, Exercise 3, etc.) starting from 1 for the first exercise in each lab. Exercise numbering resets to 1 for each new lab. Exercise slides MUST reference exercises using the format "Exercice X" where X matches the exercise number in the lab instructions.
+
+**Cross-Reference Consistency**: When content is modified, ALL related materials MUST be updated simultaneously including lab instructions, solutions, exercise slides, assessment content, and navigation references. No orphaned references or broken sequential chains SHALL be permitted. Changes to numbering in one component require immediate verification and update of all dependent references to maintain educational coherence.
 
 ## Training Module Overview
 
@@ -270,4 +281,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.6.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-02
+**Version**: 1.7.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-04
