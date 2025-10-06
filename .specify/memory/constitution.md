@@ -1,17 +1,17 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.6.0 → 1.7.0
-Modified Principles: None
-Added Sections: VIII. Sequential Numbering and Consistency Standards - New principle requiring strict sequential numbering across modules, labs, and exercises
+Version Change: 1.7.0 → 1.7.1
+Modified Principles: IV. Asset Management Protocol - Enhanced with SVG format preference guidance
+Added Sections: None
 Removed Sections: None
 Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: Audit existing content for numbering consistency, update any gaps in sequential progression
-Notes: Added mandatory sequential numbering requirements to prevent learner confusion and ensure proper educational progression across all training materials.
+Follow-up TODOs: Review existing visual assets and convert raster images to SVG where applicable for improved scalability and maintenance
+Notes: Added SVG format preference to Asset Management Protocol to ensure scalable, resolution-independent visuals that maintain quality across devices and reduce file sizes. Raster formats (PNG, JPG) permitted only when SVG is not technically feasible (e.g., photographs, complex gradients).
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.7.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-04
+**Version**: 1.7.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-06
 
 ## Core Principles
 
@@ -87,6 +87,8 @@ Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with correspo
 
 ### IV. Asset Management Protocol
 Store all visual assets in `docs/assets/images/` using descriptive file names and organized subdirectories by module. Reference assets using relative paths from `docs/` directory in all markdown files. Include slides, diagrams, code screenshots, and supporting visuals while maintaining consistent SFEIR branding standards.
+
+**Visual Format Preference**: When generating or creating visual assets to illustrate concepts in slides, prefer SVG (Scalable Vector Graphics) format whenever technically feasible. SVG format provides resolution-independent scaling, smaller file sizes for diagrams, easier maintenance through text-based editing, and consistent rendering across all devices and screen resolutions. Raster formats (PNG, JPG, WebP) SHALL only be used when SVG is not technically feasible, such as for photographs, complex photo-realistic images, or graphics with intricate gradients that would result in excessive SVG complexity. For diagrams, flowcharts, architecture illustrations, icons, and technical schematics, SVG MUST be the default choice.
 
 ### V. Quality Assurance Standards
 Validate all content against defined educational objectives with focus on practical utility and learner confidence building. Maintain professional code quality standards in all examples and exercises. Prioritize clarity, real-world application, and progressive skill development across all training materials.
@@ -281,4 +283,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.7.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-04
+**Version**: 1.7.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-06
