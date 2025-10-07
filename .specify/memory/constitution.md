@@ -1,17 +1,17 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.7.0 → 1.7.1
-Modified Principles: IV. Asset Management Protocol - Enhanced with SVG format preference guidance
-Added Sections: None
+Version Change: 1.7.1 → 1.7.2
+Modified Principles: IV. Asset Management Protocol - Enhanced with Visual Presentation Standards
+Added Sections: Visual Presentation Standards (within Principle IV)
 Removed Sections: None
-Templates Requiring Updates: ✅ All current templates verified (no changes needed)
-Follow-up TODOs: Review existing visual assets and convert raster images to SVG where applicable for improved scalability and maintenance
-Notes: Added SVG format preference to Asset Management Protocol to ensure scalable, resolution-independent visuals that maintain quality across devices and reduce file sizes. Raster formats (PNG, JPG) permitted only when SVG is not technically feasible (e.g., photographs, complex gradients).
+Templates Requiring Updates: ⚠️ ALL slide files with visual assets require updates to follow new presentation format
+Follow-up TODOs: 1) Move all inline visuals to dedicated separate slides after concept slides, 2) Update Notes sections to reference following visuals, 3) Apply full-width image formatting with aspect ratio preservation
+Notes: Added Visual Presentation Standards requiring all illustrative visuals to be presented on dedicated separate slides immediately after concept slides. Visuals must use full-width display with preserved aspect ratio. Original concept slide Notes must reference the following visual. This ensures clear educational flow: concept introduction → visual reinforcement.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.7.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-06
+**Version**: 1.7.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-07
 
 ## Core Principles
 
@@ -89,6 +89,16 @@ Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with correspo
 Store all visual assets in `docs/assets/images/` using descriptive file names and organized subdirectories by module. Reference assets using relative paths from `docs/` directory in all markdown files. Include slides, diagrams, code screenshots, and supporting visuals while maintaining consistent SFEIR branding standards.
 
 **Visual Format Preference**: When generating or creating visual assets to illustrate concepts in slides, prefer SVG (Scalable Vector Graphics) format whenever technically feasible. SVG format provides resolution-independent scaling, smaller file sizes for diagrams, easier maintenance through text-based editing, and consistent rendering across all devices and screen resolutions. Raster formats (PNG, JPG, WebP) SHALL only be used when SVG is not technically feasible, such as for photographs, complex photo-realistic images, or graphics with intricate gradients that would result in excessive SVG complexity. For diagrams, flowcharts, architecture illustrations, icons, and technical schematics, SVG MUST be the default choice.
+
+**Visual Presentation Standards**: Illustrative visuals MUST be presented on a dedicated separate slide immediately following the concept slide they illustrate. The visual slide SHALL be created using the slide separator `##--##` after the Notes section of the original concept slide. Visual slides MUST display images at full width while preserving aspect ratio using this exact format:
+
+```markdown
+##--##
+
+<img src="{path/to/visual}" alt="{veryShortDescription}" style="width:100%; height:auto; display:block;">
+```
+
+When the original concept slide includes a Notes section, that Notes section MUST be updated to reference the visual that follows on the next slide. This ensures clear educational flow where concepts are introduced on one slide and reinforced visually on the dedicated subsequent slide. Visual slides SHALL NOT include additional text, headers, or content beyond the image itself to maintain focus on the illustration.
 
 ### V. Quality Assurance Standards
 Validate all content against defined educational objectives with focus on practical utility and learner confidence building. Maintain professional code quality standards in all examples and exercises. Prioritize clarity, real-world application, and progressive skill development across all training materials.
@@ -283,4 +293,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.7.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-06
+**Version**: 1.7.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-07

@@ -46,10 +46,12 @@ function that sorts a list of integers in ascending order.
 Include error handling for invalid inputs and add type hints."
 ```
 
-![CLEAR Framework](./assets/images/module-1/clear-framework.svg)
-
 Notes:
-The CLEAR framework ensures you cover all essential elements of a comprehensive prompt. Each element serves a specific purpose in guiding the AI toward your desired outcome. The visual shows how each component contributes to effective prompts.
+The CLEAR framework ensures you cover all essential elements of a comprehensive prompt. Each element serves a specific purpose in guiding the AI toward your desired outcome. The next slide shows how each component contributes to effective prompts.
+
+##--##
+
+<img src="./assets/images/module-1/clear-framework.svg" alt="CLEAR Framework" style="width:100%; height:auto; display:block;">
 
 ##--##
 
@@ -81,10 +83,12 @@ Story: [AI completes the pattern]"
 3. Finally, recommend the best approach because..."
 ```
 
-![Prompt Patterns](./assets/images/module-1/prompt-patterns.svg)
-
 Notes:
-These patterns are proven techniques that consistently improve AI responses. Role-based prompting gives context, few-shot provides examples, and chain of thought encourages reasoning. The diagram shows how each pattern works in practice.
+These patterns are proven techniques that consistently improve AI responses. Role-based prompting gives context, few-shot provides examples, and chain of thought encourages reasoning. The next slide shows how each pattern works in practice.
+
+##--##
+
+<img src="./assets/images/module-1/prompt-patterns.svg" alt="Prompt Patterns" style="width:100%; height:auto; display:block;">
 
 ##--##
 

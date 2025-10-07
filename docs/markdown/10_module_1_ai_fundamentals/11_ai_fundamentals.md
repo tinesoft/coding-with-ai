@@ -65,10 +65,12 @@ Context Window: 4K, 8K, 32K, 128K+ tokens
 - **Hallucination**: May generate plausible but incorrect information
 - **Determinism**: Outputs can vary between runs
 
-![LLM Architecture](./assets/images/module-1/llm-architecture.svg)
-
 Notes:
-Understanding these technical constraints helps you work within LLM capabilities and recognize when outputs might need verification. The diagram illustrates how LLMs process input tokens through neural networks to generate responses.
+Understanding these technical constraints helps you work within LLM capabilities and recognize when outputs might need verification. The next slide illustrates how LLMs process input tokens through neural networks to generate responses.
+
+##--##
+
+<img src="./assets/images/module-1/llm-architecture.svg" alt="LLM Architecture" style="width:100%; height:auto; display:block;">
 
 ##--##
 
@@ -89,10 +91,12 @@ const function2 = "function sortArray(arr) { return arr.sort(); }"
 // Embeddings would show these are semantically similar
 ```
 
-![Embeddings Visualization](./assets/images/module-1/embeddings-visualization.svg)
-
 Notes:
-Embeddings are crucial for many AI applications. They allow systems to understand that "sort a list" and "arrange items in order" are conceptually similar. The visualization shows how similar concepts cluster together in vector space.
+Embeddings are crucial for many AI applications. They allow systems to understand that "sort a list" and "arrange items in order" are conceptually similar. The next slide visualizes how similar concepts cluster together in vector space.
+
+##--##
+
+<img src="./assets/images/module-1/embeddings-visualization.svg" alt="Embeddings Visualization" style="width:100%; height:auto; display:block;">
 
 ##--##
 
@@ -117,10 +121,12 @@ Embeddings are crucial for many AI applications. They allow systems to understan
 - **Code Search**: Find relevant examples from updated codebases
 - **Knowledge Bases**: Company-specific information with real-time updates
 
-![RAG Workflow](./assets/images/module-1/rag-workflow.svg)
-
 Notes:
-RAG solves the "knowledge cutoff" problem by combining LLM capabilities with real-time information retrieval. This is how many AI coding tools stay current. The diagram shows the complete RAG process from query to response.
+RAG solves the "knowledge cutoff" problem by combining LLM capabilities with real-time information retrieval. This is how many AI coding tools stay current. The next slide shows the complete RAG process from query to response.
+
+##--##
+
+<img src="./assets/images/module-1/rag-workflow.svg" alt="RAG Workflow" style="width:100%; height:auto; display:block;">
 
 ##--##
 
