@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" role="img" aria-labelledby="spear-title spear-desc">
+  <title id="spear-title">SPEAR Prompt Engineering Framework</title>
+  <desc id="spear-desc">Visual representation of the SPEAR framework: Scenario, Perspective, Examples, Action, and Result</desc>
+  
+  <!-- Background -->
+  <rect width="700" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">SPEAR Framework</text>
+  <text x="350" y="65" text-anchor="middle" font-size="14" fill="#666">Role-Based &amp; Contextual Prompt Construction</text>
+  
+  <!-- S - Scenario -->
+  <g id="scenario">
+    <rect x="50" y="100" width="280" height="70" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <circle cx="90" cy="135" r="20" fill="#388e3c"/>
+    <text x="90" y="143" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">S</text>
+    <text x="130" y="130" font-size="18" font-weight="bold" fill="#388e3c">Scenario</text>
+    <text x="130" y="152" font-size="13" fill="#333">Define context and situation</text>
+  </g>
+  
+  <!-- P - Perspective -->
+  <g id="perspective">
+    <rect x="370" y="100" width="280" height="70" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <circle cx="410" cy="135" r="20" fill="#1976d2"/>
+    <text x="410" y="143" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">P</text>
+    <text x="450" y="130" font-size="18" font-weight="bold" fill="#1976d2">Perspective</text>
+    <text x="450" y="152" font-size="13" fill="#333">Establish AI role or viewpoint</text>
+  </g>
+  
+  <!-- E - Examples -->
+  <g id="examples">
+    <rect x="50" y="190" width="280" height="70" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <circle cx="90" cy="225" r="20" fill="#7b1fa2"/>
+    <text x="90" y="233" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">E</text>
+    <text x="130" y="220" font-size="18" font-weight="bold" fill="#7b1fa2">Examples</text>
+    <text x="130" y="242" font-size="13" fill="#333">Provide concrete output samples</text>
+  </g>
+  
+  <!-- A - Action -->
+  <g id="action">
+    <rect x="370" y="190" width="280" height="70" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+    <circle cx="410" cy="225" r="20" fill="#f57c00"/>
+    <text x="410" y="233" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">A</text>
+    <text x="450" y="220" font-size="18" font-weight="bold" fill="#f57c00">Action</text>
+    <text x="450" y="242" font-size="13" fill="#333">Specify what AI should do</text>
+  </g>
+  
+  <!-- R - Result -->
+  <g id="result">
+    <rect x="210" y="280" width="280" height="70" rx="8" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+    <circle cx="250" cy="315" r="20" fill="#f57f17"/>
+    <text x="250" y="323" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffffff">R</text>
+    <text x="290" y="310" font-size="18" font-weight="bold" fill="#f57f17">Result</text>
+    <text x="290" y="332" font-size="13" fill="#333">Define expected outcome</text>
+  </g>
+  
+  <!-- Example section -->
+  <g id="example">
+    <rect x="50" y="375" width="600" height="105" rx="8" fill="#ffffff" stroke="#666" stroke-width="2"/>
+    <text x="350" y="400" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Example with SPEAR:</text>
+    
+    <text x="70" y="425" font-size="11" fill="#388e3c">Scenario:</text>
+    <text x="140" y="425" font-size="11" fill="#333">"Building an e-commerce checkout flow..."</text>
+    
+    <text x="70" y="443" font-size="11" fill="#1976d2">Perspective:</text>
+    <text x="140" y="443" font-size="11" fill="#333">"...as a UX-focused developer..."</text>
+    
+    <text x="70" y="461" font-size="11" fill="#7b1fa2">Examples:</text>
+    <text x="140" y="461" font-size="11" fill="#333">"...like Stripe's checkout pattern..."</text>
+    
+    <text x="370" y="425" font-size="11" fill="#f57c00">Action:</text>
+    <text x="430" y="425" font-size="11" fill="#333">"...create a React component..."</text>
+    
+    <text x="370" y="443" font-size="11" fill="#f57f17">Result:</text>
+    <text x="430" y="443" font-size="11" fill="#333">"...TypeScript with error handling"</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="350" y="495" text-anchor="middle" font-size="12" fill="#666" font-style="italic">Emphasizes role and context for focused AI responses</text>
+</svg>

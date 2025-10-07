@@ -56,6 +56,75 @@ The CLEAR framework ensures you cover all essential elements of a comprehensive 
 ##--##
 
 <!-- .slide -->
+# **The SPEAR Framework**
+
+## **Alternative Approach: Role-Based & Contextual**
+- **S**cenario: Define the context and situation
+- **P**erspective: Establish the role or viewpoint the AI should take
+- **E**xamples: Provide concrete examples of desired outputs
+- **A**ction: Specify what you want the AI to do
+- **R**esult: Define the expected outcome or format
+
+## **When to Use SPEAR**
+- **Complex scenarios** requiring specific context
+- **Role-based tasks** where perspective matters
+- **Domain expertise** needed in the response
+- **Output format** is critical to success
+
+Notes:
+SPEAR complements CLEAR by emphasizing role and situational context. It's particularly effective when you need the AI to adopt a specific professional perspective or work within a defined scenario. The next slide visualizes the SPEAR components.
+
+##--##
+
+<img src="./assets/images/module-1/spear-framework.svg" alt="SPEAR Framework" style="width:100%; height:auto; display:block;">
+
+##--##
+
+<!-- .slide -->
+# **SPEAR Framework in Practice**
+
+## **Example: Building a Feature**
+```
+Scenario: "I'm developing a payment processing system for a SaaS platform"
+
+Perspective: "As a senior backend engineer focused on security and reliability"
+
+Examples: "Similar to Stripe's webhook handling with retry logic"
+
+Action: "Create a Node.js service that processes payment webhooks"
+
+Result: "TypeScript code with error handling, logging, and unit tests"
+```
+
+Notes:
+Notice how SPEAR builds a comprehensive context before specifying the action. The Scenario sets the business context, Perspective establishes expertise level, Examples provide reference points, Action defines the task, and Result clarifies deliverables.
+
+##--##
+
+<!-- .slide -->
+# **CLEAR vs SPEAR: When to Use Each**
+
+## **Use CLEAR when:**
+- Learning or teaching AI interaction
+- Need structured, methodical approach
+- Working with general-purpose tasks
+- Audience and output format are primary concerns
+
+## **Use SPEAR when:**
+- Complex business scenarios require context
+- Role/expertise level significantly affects output
+- Domain-specific knowledge is critical
+- Situation-specific solutions needed
+
+## **Best Practice**
+> Combine elements from both frameworks based on your specific needs. They're complementary, not mutually exclusive.
+
+Notes:
+Both frameworks serve different strengths. CLEAR is excellent for teaching structured prompt writing, while SPEAR excels in role-based, contextual scenarios. Experienced prompters often blend elements from both frameworks.
+
+##--##
+
+<!-- .slide -->
 # **Essential Prompt Patterns**
 
 ## **1. Role-Based Prompting**

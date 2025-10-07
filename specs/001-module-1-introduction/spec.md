@@ -43,6 +43,7 @@
 
 ### Session 2025-10-07
 - Q: For the visual aids required by FR-006 to illustrate complex AI concepts (LLMs, embeddings, RAG, prompt patterns), should these assets be created new, sourced from existing materials, or use a mixed approach? → A: Created new as part of Module 1 development (original SVG diagrams for all key concepts)
+- Q: For the new SPEAR framework content (Scenario, Perspective, Examples, Action, Result) to be added after CLEAR framework, what should be the implementation scope: new dedicated slide file, extend existing prompt engineering slides, or separate advanced module? → A: Extend existing prompt engineering slides (12_prompt_engineering.md), create new SPEAR visual, and add SPEAR exercises to Lab 01
 
 ---
 
@@ -70,9 +71,9 @@ A trainer needs to deliver a comprehensive 1-day introduction to AI and prompt e
 - **FR-001**: Training materials MUST include complete slide decks for all 6 presentation segments (10-15)
 - **FR-002**: Materials MUST provide 2 structured lab exercises with clear objectives and time allocations  
 - **FR-003**: Content MUST cover AI fundamentals including LLMs, embeddings, RAG, and coding applications
-- **FR-004**: Materials MUST include comprehensive prompt engineering techniques and patterns
+- **FR-004**: Materials MUST include comprehensive prompt engineering techniques and patterns, including both CLEAR (Context, Length, Examples, Audience, Role) and SPEAR (Scenario, Perspective, Examples, Action, Result) frameworks
 - **FR-005**: Labs MUST provide hands-on practice with multiple AI coding assistants (Copilot, Claude, ChatGPT)
-- **FR-006**: Materials MUST include original visual aids and diagrams created specifically to illustrate key AI concepts (LLMs, embeddings, RAG, prompt engineering patterns)
+- **FR-006**: Materials MUST include original visual aids and diagrams created specifically to illustrate key AI concepts (LLMs, embeddings, RAG, prompt engineering patterns including CLEAR and SPEAR frameworks)
 - **FR-007**: Content MUST be structured for a 6-8 hour delivery schedule with designated breaks
 - **FR-008**: Materials MUST include assessment tools and success criteria for learner evaluation
 - **FR-009**: All exercises MUST be designed for developers with basic TypeScript/JavaScript familiarity

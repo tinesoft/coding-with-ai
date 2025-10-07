@@ -425,7 +425,216 @@ with expected performance improvements."
 - Compare responses across different AI tools
 - Ask classmates or instructors for prompt review
 
+## Exercise 6: SPEAR Framework Introduction
+
+### Objective
+Learn and apply the SPEAR framework (Scenario, Perspective, Examples, Action, Result) for role-based and contextual prompt construction.
+
+### Background
+While CLEAR focuses on comprehensive prompt elements, SPEAR emphasizes situational context and role-specific expertise. This exercise introduces you to this complementary framework.
+
+### Instructions
+
+**Step 1**: Understand SPEAR Components
+- **S**cenario: The business or technical context
+- **P**erspective: The role or viewpoint the AI should adopt
+- **E**xamples: Reference implementations or patterns
+- **A**ction: The specific task to perform
+- **R**esult: Expected deliverables and format
+
+**Step 2**: Apply SPEAR to this scenario:
+
+**Context**: You're building a REST API for a mobile application that needs to handle user profiles.
+
+**Your Task**: Write a prompt using the SPEAR framework to generate a user profile endpoint.
+
+**SPEAR Template**:
+```
+Scenario: [Describe the business/technical context]
+
+Perspective: [Define the role/expertise level]
+
+Examples: [Provide reference patterns or implementations]
+
+Action: [Specify the exact task]
+
+Result: [Define expected output format and quality]
+```
+
+**Step 3**: Create your SPEAR prompt. Here's a starter:
+```
+Scenario: I'm developing a mobile app backend for a fitness tracking platform. 
+We need a user profile system that handles 10,000+ daily active users.
+
+Perspective: As a backend engineer with 5 years experience in Node.js and REST API design, 
+focused on scalability and security.
+
+Examples: Similar to GitHub's user API (GET /users/:username) with profile fields, 
+but tailored for fitness data (age, weight, height, fitness goals).
+
+Action: Create a Node.js Express endpoint that:
+- Handles GET /api/users/:userId
+- Returns user profile data
+- Includes proper error handling
+- Uses TypeScript types
+- Validates user authentication
+
+Result: Provide complete TypeScript code with:
+1. Route handler with JSDoc comments
+2. TypeScript interfaces for request/response
+3. Error handling middleware
+4. Example successful and error responses
+```
+
+**Step 4**: Submit your prompt to an AI tool and evaluate:
+- Does the response match the expected expertise level?
+- Is the context appropriately considered?
+- Does the output match the specified format?
+
+### Success Criteria
+- [ ] Created a complete SPEAR-formatted prompt
+- [ ] All five SPEAR components are clearly defined
+- [ ] AI response reflects the specified perspective/expertise
+- [ ] Output matches the expected result format
+- [ ] Can explain how SPEAR differs from CLEAR
+
+**Time: 20 minutes**
+
+## Exercise 7: CLEAR vs SPEAR Comparison
+
+### Objective
+Compare and contrast CLEAR and SPEAR frameworks by applying both to the same task.
+
+### Instructions
+
+**The Challenge**: Create a React component for a data table with sorting and filtering.
+
+**Step 1**: Write a prompt using the CLEAR framework
+- Context: What's the application context?
+- Length: How detailed should the response be?
+- Examples: What format/style do you want?
+- Audience: What's your skill level?
+- Role: What expertise should AI provide?
+
+**Step 2**: Write a prompt using the SPEAR framework
+- Scenario: What's the business context?
+- Perspective: What role should AI adopt?
+- Examples: What reference implementations?
+- Action: What specific task to perform?
+- Result: What deliverables are expected?
+
+**Step 3**: Submit both prompts to the same AI tool (use separate sessions)
+
+**Step 4**: Compare the responses:
+
+| Aspect | CLEAR Response | SPEAR Response |
+|--------|---------------|----------------|
+| Code complexity | | |
+| Documentation quality | | |
+| Assumptions made | | |
+| Expertise level | | |
+| Relevance to context | | |
+
+**Step 5**: Answer these questions:
+- Which framework produced a better response for this task? Why?
+- What did CLEAR emphasize that SPEAR didn't?
+- What did SPEAR capture that CLEAR missed?
+- When would you prefer one framework over the other?
+
+### Success Criteria
+- [ ] Created prompts using both CLEAR and SPEAR for the same task
+- [ ] Documented responses from both frameworks
+- [ ] Completed comparison analysis table
+- [ ] Can articulate when to use each framework
+- [ ] Understand the complementary nature of both approaches
+
+**Time: 25 minutes**
+
+## Exercise 8: Advanced SPEAR Application
+
+### Objective
+Apply SPEAR framework to a complex, domain-specific scenario requiring specialized expertise.
+
+### Instructions
+
+Choose ONE of these advanced scenarios and create a comprehensive SPEAR prompt:
+
+#### Scenario A: Database Performance Optimization
+**Context**: E-commerce platform experiencing slow query performance during flash sales (1000+ concurrent users)
+
+**Your Task**: Use SPEAR to request database optimization recommendations from a senior database architect perspective.
+
+**Required Elements**:
+- Scenario: Include user volume, current tech stack, specific pain points
+- Perspective: Senior DBA with PostgreSQL and high-traffic experience
+- Examples: Reference similar optimization cases (e.g., Twitter, Amazon Prime Day)
+- Action: Analyze query patterns and provide optimization strategy
+- Result: Specific SQL optimization, indexing strategy, caching recommendations
+
+#### Scenario B: Security Audit
+**Context**: Legacy authentication system needs modernization before SOC 2 compliance audit
+
+**Your Task**: Use SPEAR to request a security review from an application security expert perspective.
+
+**Required Elements**:
+- Scenario: Legacy system details, compliance requirements, timeline
+- Perspective: AppSec engineer with OAuth2/JWT expertise and compliance knowledge
+- Examples: Industry-standard auth implementations (Auth0, Okta patterns)
+- Action: Review current implementation and create migration plan
+- Result: Security assessment report + step-by-step migration strategy
+
+#### Scenario C: Microservices Architecture
+**Context**: Monolithic application needs decomposition into microservices for scaling team and deployment
+
+**Your Task**: Use SPEAR to request architecture design from a solutions architect perspective.
+
+**Required Elements**:
+- Scenario: Current monolith structure, team size, scaling requirements
+- Perspective: Solutions architect with microservices and DDD experience
+- Examples: Netflix, Uber microservice patterns
+- Action: Design service boundaries and communication patterns
+- Result: Architecture diagram, service definitions, migration phases
+
+**Deliverables**:
+1. Complete SPEAR prompt (400-600 words)
+2. AI response analysis
+3. Evaluation of whether perspective/expertise was properly reflected
+4. Refinement suggestions if response didn't meet expectations
+
+### Success Criteria
+- [ ] Selected one advanced scenario
+- [ ] Created comprehensive SPEAR prompt with all components
+- [ ] Scenario reflects real-world complexity
+- [ ] Perspective clearly defines required expertise level
+- [ ] Examples provide relevant reference points
+- [ ] Action specifies detailed requirements
+- [ ] Result defines clear, measurable deliverables
+- [ ] Can articulate how SPEAR handles domain expertise better than simpler frameworks
+
+**Time: 30 minutes**
+
+## SPEAR Framework Summary
+
+### Key Takeaways
+- **SPEAR emphasizes**: Role-based context and situational awareness
+- **Best for**: Domain-specific tasks requiring specialized expertise
+- **Complements CLEAR**: Use together for comprehensive prompts
+- **Perspective is crucial**: The role significantly affects response quality
+
+### When to Use SPEAR
+✅ Complex business scenarios with specific context  
+✅ Domain expertise significantly affects solution quality  
+✅ Role-based perspective changes approach  
+✅ Situational context drives decision-making  
+
+### Combining CLEAR and SPEAR
+You can blend elements from both frameworks:
+- Use CLEAR's Length and Audience with SPEAR's Scenario and Perspective
+- Combine CLEAR's structured approach with SPEAR's contextual depth
+- Adapt based on task complexity and domain specificity
+
 ---
-**Estimated Completion Time**: 2-3 hours
+**Estimated Completion Time**: 2-3 hours (original exercises) + 75 minutes (SPEAR exercises)
+**Total Lab Time**: 3-4.25 hours
 **Difficulty Level**: Beginner to Intermediate
-**Skills Practiced**: Prompt engineering, iterative refinement, pattern application
+**Skills Practiced**: Prompt engineering, CLEAR framework, SPEAR framework, iterative refinement, pattern application
