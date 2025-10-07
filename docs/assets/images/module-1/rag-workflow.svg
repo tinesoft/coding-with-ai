@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-labelledby="rag-title rag-desc">
+  <title id="rag-title">Retrieval Augmented Generation Workflow</title>
+  <desc id="rag-desc">Step-by-step visualization of RAG process: user query, information retrieval, context injection, and LLM response generation</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">Retrieval Augmented Generation (RAG)</text>
+  
+  <!-- Step 1: User Query -->
+  <g id="step1">
+    <rect x="30" y="80" width="180" height="250" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="120" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#1976d2">1. User Query</text>
+    
+    <!-- User icon -->
+    <circle cx="120" cy="155" r="25" fill="#1976d2" opacity="0.2"/>
+    <circle cx="120" cy="150" r="15" fill="#1976d2"/>
+    <path d="M 95 180 Q 120 165 145 180" fill="#1976d2"/>
+    
+    <!-- Query text -->
+    <rect x="50" y="205" width="140" height="90" rx="5" fill="#ffffff" stroke="#1976d2" stroke-width="1.5"/>
+    <text x="120" y="230" text-anchor="middle" font-size="13" fill="#333">"How do I debug</text>
+    <text x="120" y="250" text-anchor="middle" font-size="13" fill="#333">React hooks in</text>
+    <text x="120" y="270" text-anchor="middle" font-size="13" fill="#333">production?"</text>
+    
+    <text x="120" y="315" text-anchor="middle" font-size="11" fill="#666">Natural language</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 210 200 L 240 200" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: Retrieval -->
+  <g id="step2">
+    <rect x="240" y="80" width="180" height="250" rx="10" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+    <text x="330" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#f57c00">2. Information</text>
+    <text x="330" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#f57c00">Retrieval</text>
+    
+    <!-- Database icon -->
+    <rect x="300" y="150" width="60" height="45" rx="3" fill="#f57c00" opacity="0.2"/>
+    <rect x="305" y="155" width="50" height="8" rx="2" fill="#f57c00"/>
+    <rect x="305" y="168" width="50" height="8" rx="2" fill="#f57c00"/>
+    <rect x="305" y="181" width="50" height="8" rx="2" fill="#f57c00"/>
+    
+    <!-- Retrieved docs -->
+    <rect x="260" y="210" width="140" height="80" rx="5" fill="#ffffff" stroke="#f57c00" stroke-width="1.5"/>
+    <text x="330" y="230" text-anchor="middle" font-size="11" fill="#333">📄 React Docs v18</text>
+    <text x="330" y="250" text-anchor="middle" font-size="11" fill="#333">📄 Debug Guide</text>
+    <text x="330" y="270" text-anchor="middle" font-size="11" fill="#333">📄 Hooks FAQ</text>
+    
+    <text x="330" y="310" text-anchor="middle" font-size="11" fill="#666">Semantic search</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 420 200 L 450 200" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Context Injection -->
+  <g id="step3">
+    <rect x="450" y="80" width="180" height="250" rx="10" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="540" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#7b1fa2">3. Context +</text>
+    <text x="540" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#7b1fa2">Query</text>
+    
+    <!-- Merge icon -->
+    <circle cx="515" cy="170" r="20" fill="#7b1fa2" opacity="0.2"/>
+    <circle cx="565" cy="170" r="20" fill="#7b1fa2" opacity="0.2"/>
+    <circle cx="540" cy="170" r="25" fill="#7b1fa2" opacity="0.3"/>
+    <text x="540" y="178" text-anchor="middle" font-size="20" fill="#7b1fa2">+</text>
+    
+    <!-- Combined prompt -->
+    <rect x="470" y="210" width="140" height="80" rx="5" fill="#ffffff" stroke="#7b1fa2" stroke-width="1.5"/>
+    <text x="540" y="230" text-anchor="middle" font-size="10" fill="#333">Query + Retrieved</text>
+    <text x="540" y="245" text-anchor="middle" font-size="10" fill="#333">Context sent to LLM</text>
+    <text x="540" y="265" text-anchor="middle" font-size="10" fill="#666" font-style="italic">"Using React 18 docs,</text>
+    <text x="540" y="278" text-anchor="middle" font-size="10" fill="#666" font-style="italic">debug hooks..."</text>
+    
+    <text x="540" y="310" text-anchor="middle" font-size="11" fill="#666">Augmented prompt</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M 630 200 L 660 200" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: LLM Generation -->
+  <g id="step4">
+    <rect x="660" y="80" width="210" height="250" rx="10" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <text x="765" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#388e3c">4. LLM Response</text>
+    
+    <!-- AI brain icon -->
+    <ellipse cx="765" cy="165" rx="35" ry="30" fill="#388e3c" opacity="0.2"/>
+    <circle cx="755" cy="160" r="5" fill="#388e3c"/>
+    <circle cx="775" cy="160" r="5" fill="#388e3c"/>
+    <path d="M 745 175 Q 765 182 785 175" stroke="#388e3c" stroke-width="2" fill="none"/>
+    
+    <!-- Response -->
+    <rect x="680" y="210" width="170" height="85" rx="5" fill="#ffffff" stroke="#388e3c" stroke-width="1.5"/>
+    <text x="765" y="230" text-anchor="middle" font-size="11" fill="#333">"To debug React hooks</text>
+    <text x="765" y="245" text-anchor="middle" font-size="11" fill="#333">in production, use:</text>
+    <text x="765" y="260" text-anchor="middle" font-size="11" fill="#333">1. React DevTools</text>
+    <text x="765" y="275" text-anchor="middle" font-size="11" fill="#333">2. Console logs..."</text>
+    
+    <text x="765" y="315" text-anchor="middle" font-size="11" fill="#666">Accurate, grounded</text>
+  </g>
+  
+  <!-- Benefits callout -->
+  <rect x="30" y="350" width="840" height="35" rx="5" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
+  <text x="450" y="370" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">✓ Current information  ✓ Reduced hallucination  ✓ Source attribution</text>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

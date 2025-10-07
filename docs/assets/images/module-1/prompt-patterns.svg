@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" role="img" aria-labelledby="patterns-title patterns-desc">
+  <title id="patterns-title">Essential Prompt Patterns</title>
+  <desc id="patterns-desc">Visual guide to three essential prompt engineering patterns: Role-Based, Few-Shot Learning, and Chain of Thought</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="550" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="26" font-weight="bold" fill="#333">Essential Prompt Patterns</text>
+  
+  <!-- Pattern 1: Role-Based Prompting -->
+  <g id="pattern1">
+    <rect x="30" y="70" width="270" height="200" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="165" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#1976d2">1. Role-Based</text>
+    
+    <!-- Icon: Person with badge -->
+    <circle cx="165" cy="140" r="20" fill="#1976d2" opacity="0.3"/>
+    <rect x="153" y="165" width="24" height="12" rx="2" fill="#1976d2"/>
+    <text x="165" y="174" text-anchor="middle" font-size="8" fill="#fff">ROLE</text>
+    
+    <!-- Example -->
+    <rect x="50" y="190" width="230" height="65" rx="5" fill="#ffffff" stroke="#1976d2" stroke-width="1"/>
+    <text x="165" y="210" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">Example:</text>
+    <text x="165" y="227" text-anchor="middle" font-size="10" fill="#333">"You are a senior security</text>
+    <text x="165" y="242" text-anchor="middle" font-size="10" fill="#333">engineer. Review this code</text>
+  </g>
+  
+  <!-- Pattern 2: Few-Shot Learning -->
+  <g id="pattern2">
+    <rect x="315" y="70" width="270" height="200" rx="10" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+    <text x="450" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#f57c00">2. Few-Shot Learning</text>
+    
+    <!-- Icon: Examples list -->
+    <rect x="430" y="125" width="40" height="50" rx="3" fill="#f57c00" opacity="0.2"/>
+    <line x1="437" y1="135" x2="463" y2="135" stroke="#f57c00" stroke-width="2"/>
+    <line x1="437" y1="145" x2="463" y2="145" stroke="#f57c00" stroke-width="2"/>
+    <line x1="437" y1="155" x2="463" y2="155" stroke="#f57c00" stroke-width="2"/>
+    <line x1="437" y1="165" x2="463" y2="165" stroke="#f57c00" stroke-width="2"/>
+    
+    <!-- Example -->
+    <rect x="335" y="190" width="230" height="65" rx="5" fill="#ffffff" stroke="#f57c00" stroke-width="1"/>
+    <text x="450" y="210" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">Example:</text>
+    <text x="450" y="227" text-anchor="middle" font-size="10" fill="#333">"Input: 'login' → Story: 'As a</text>
+    <text x="450" y="242" text-anchor="middle" font-size="10" fill="#333">user...' Now do: 'payment'"</text>
+  </g>
+  
+  <!-- Pattern 3: Chain of Thought -->
+  <g id="pattern3">
+    <rect x="600" y="70" width="270" height="200" rx="10" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <text x="735" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#388e3c">3. Chain of Thought</text>
+    
+    <!-- Icon: Connected nodes -->
+    <circle cx="715" cy="140" r="10" fill="#388e3c"/>
+    <circle cx="735" cy="160" r="10" fill="#388e3c"/>
+    <circle cx="755" cy="140" r="10" fill="#388e3c"/>
+    <line x1="715" y1="145" x2="730" y2="157" stroke="#388e3c" stroke-width="2"/>
+    <line x1="740" y1="157" x2="755" y2="145" stroke="#388e3c" stroke-width="2"/>
+    
+    <!-- Example -->
+    <rect x="620" y="190" width="230" height="65" rx="5" fill="#ffffff" stroke="#388e3c" stroke-width="1"/>
+    <text x="735" y="210" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">Example:</text>
+    <text x="735" y="227" text-anchor="middle" font-size="10" fill="#333">"Step 1: Identify problem</text>
+    <text x="735" y="242" text-anchor="middle" font-size="10" fill="#333">Step 2: Consider solutions..."</text>
+  </g>
+  
+  <!-- Detailed Flow Section -->
+  <text x="450" y="305" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">How Each Pattern Works</text>
+  
+  <!-- Flow 1: Role-Based -->
+  <g id="flow1">
+    <rect x="30" y="325" width="270" height="185" rx="8" fill="#ffffff" stroke="#1976d2" stroke-width="2"/>
+    
+    <!-- Step 1 -->
+    <rect x="50" y="345" width="230" height="35" rx="5" fill="#e3f2fd"/>
+    <text x="165" y="367" text-anchor="middle" font-size="11" fill="#333">Define expertise/perspective</text>
+    
+    <!-- Arrow -->
+    <path d="M 165 380 L 165 390" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    
+    <!-- Step 2 -->
+    <rect x="50" y="395" width="230" height="35" rx="5" fill="#e3f2fd"/>
+    <text x="165" y="417" text-anchor="middle" font-size="11" fill="#333">AI adopts that mindset</text>
+    
+    <!-- Arrow -->
+    <path d="M 165 430 L 165 440" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    
+    <!-- Step 3 -->
+    <rect x="50" y="445" width="230" height="50" rx="5" fill="#c5e1f5"/>
+    <text x="165" y="463" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">✓ Context-aware</text>
+    <text x="165" y="478" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">responses</text>
+  </g>
+  
+  <!-- Flow 2: Few-Shot -->
+  <g id="flow2">
+    <rect x="315" y="325" width="270" height="185" rx="8" fill="#ffffff" stroke="#f57c00" stroke-width="2"/>
+    
+    <!-- Step 1 -->
+    <rect x="335" y="345" width="230" height="35" rx="5" fill="#fff3e0"/>
+    <text x="450" y="367" text-anchor="middle" font-size="11" fill="#333">Show 2-3 examples</text>
+    
+    <!-- Arrow -->
+    <path d="M 450 380 L 450 390" stroke="#f57c00" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    
+    <!-- Step 2 -->
+    <rect x="335" y="395" width="230" height="35" rx="5" fill="#fff3e0"/>
+    <text x="450" y="417" text-anchor="middle" font-size="11" fill="#333">AI learns the pattern</text>
+    
+    <!-- Arrow -->
+    <path d="M 450 430 L 450 440" stroke="#f57c00" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    
+    <!-- Step 3 -->
+    <rect x="335" y="445" width="230" height="50" rx="5" fill="#ffe0b2"/>
+    <text x="450" y="463" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">✓ Consistent format</text>
+    <text x="450" y="478" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">&amp; style</text>
+  </g>
+  
+  <!-- Flow 3: Chain of Thought -->
+  <g id="flow3">
+    <rect x="600" y="325" width="270" height="185" rx="8" fill="#ffffff" stroke="#388e3c" stroke-width="2"/>
+    
+    <!-- Step 1 -->
+    <rect x="620" y="345" width="230" height="35" rx="5" fill="#e8f5e9"/>
+    <text x="735" y="367" text-anchor="middle" font-size="11" fill="#333">Request step-by-step</text>
+    
+    <!-- Arrow -->
+    <path d="M 735 380 L 735 390" stroke="#388e3c" stroke-width="2" marker-end="url(#arrow-green)"/>
+    
+    <!-- Step 2 -->
+    <rect x="620" y="395" width="230" height="35" rx="5" fill="#e8f5e9"/>
+    <text x="735" y="417" text-anchor="middle" font-size="11" fill="#333">AI shows reasoning</text>
+    
+    <!-- Arrow -->
+    <path d="M 735 430 L 735 440" stroke="#388e3c" stroke-width="2" marker-end="url(#arrow-green)"/>
+    
+    <!-- Step 3 -->
+    <rect x="620" y="445" width="230" height="50" rx="5" fill="#c8e6c9"/>
+    <text x="735" y="463" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">✓ Transparent logic</text>
+    <text x="735" y="478" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">&amp; verification</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="450" y="535" text-anchor="middle" font-size="13" fill="#666" font-style="italic">Combine patterns for optimal results</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1976d2"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#f57c00"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#388e3c"/>
+    </marker>
+  </defs>
+</svg>

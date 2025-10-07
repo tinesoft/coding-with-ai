@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="embed-title embed-desc">
+  <title id="embed-title">Text Embeddings and Vector Space</title>
+  <desc id="embed-desc">Visualization of how text is converted to numerical vectors in multi-dimensional space, showing semantic similarity</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">Text Embeddings: Semantic Vector Space</text>
+  
+  <!-- Text to Vector Conversion -->
+  <g id="conversion-section">
+    <rect x="50" y="80" width="200" height="180" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="150" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#1976d2">Text Input</text>
+    
+    <!-- Text examples -->
+    <text x="150" y="145" text-anchor="middle" font-size="14" fill="#333">"sort a list"</text>
+    <text x="150" y="175" text-anchor="middle" font-size="14" fill="#333">"arrange items"</text>
+    <text x="150" y="205" text-anchor="middle" font-size="14" fill="#333">"organize data"</text>
+    <text x="150" y="235" text-anchor="middle" font-size="14" fill="#666" font-style="italic">(similar concepts)</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M 250 170 L 290 170" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="270" y="160" text-anchor="middle" font-size="12" fill="#666">Embedding</text>
+  <text x="270" y="188" text-anchor="middle" font-size="12" fill="#666">Model</text>
+  
+  <!-- Vector representation -->
+  <g id="vector-section">
+    <rect x="290" y="80" width="200" height="180" rx="10" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+    <text x="390" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#f57c00">Numerical Vectors</text>
+    
+    <!-- Vector arrays -->
+    <text x="310" y="145" font-size="11" font-family="monospace" fill="#333">[0.23, -0.81, 0.45, ...]</text>
+    <text x="310" y="175" font-size="11" font-family="monospace" fill="#333">[0.19, -0.78, 0.51, ...]</text>
+    <text x="310" y="205" font-size="11" font-family="monospace" fill="#333">[0.27, -0.85, 0.42, ...]</text>
+    <text x="390" y="235" text-anchor="middle" font-size="11" fill="#666">1536 dimensions</text>
+  </g>
+  
+  <!-- 3D Vector Space Visualization -->
+  <g id="vector-space">
+    <rect x="50" y="280" width="700" height="190" rx="10" fill="#ffffff" stroke="#666" stroke-width="2"/>
+    <text x="400" y="310" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Vector Space (simplified 2D view)</text>
+    
+    <!-- Axes -->
+    <line x1="100" y1="430" x2="700" y2="430" stroke="#999" stroke-width="1.5"/>
+    <line x1="100" y1="330" x2="100" y2="430" stroke="#999" stroke-width="1.5"/>
+    <text x="710" y="435" font-size="12" fill="#666">→ Dimension 1</text>
+    <text x="80" y="325" font-size="12" fill="#666">↑</text>
+    <text x="65" y="345" font-size="12" fill="#666">Dim 2</text>
+    
+    <!-- Cluster 1: Sorting-related (blue) -->
+    <g id="cluster-sorting">
+      <circle cx="250" cy="370" r="8" fill="#1976d2"/>
+      <circle cx="270" cy="360" r="8" fill="#1976d2"/>
+      <circle cx="260" cy="385" r="8" fill="#1976d2"/>
+      <ellipse cx="260" cy="370" rx="35" ry="30" fill="none" stroke="#1976d2" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="260" y="415" text-anchor="middle" font-size="11" fill="#1976d2" font-weight="bold">"sort" related</text>
+    </g>
+    
+    <!-- Cluster 2: Database-related (green) -->
+    <g id="cluster-database">
+      <circle cx="450" cy="360" r="8" fill="#388e3c"/>
+      <circle cx="470" cy="370" r="8" fill="#388e3c"/>
+      <circle cx="460" cy="345" r="8" fill="#388e3c"/>
+      <ellipse cx="460" cy="360" rx="35" ry="30" fill="none" stroke="#388e3c" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="460" y="405" text-anchor="middle" font-size="11" fill="#388e3c" font-weight="bold">"database" related</text>
+    </g>
+    
+    <!-- Cluster 3: UI-related (orange) -->
+    <g id="cluster-ui">
+      <circle cx="600" cy="385" r="8" fill="#f57c00"/>
+      <circle cx="620" cy="395" r="8" fill="#f57c00"/>
+      <circle cx="610" cy="370" r="8" fill="#f57c00"/>
+      <ellipse cx="610" cy="385" rx="35" ry="30" fill="none" stroke="#f57c00" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="610" y="430" text-anchor="middle" font-size="11" fill="#f57c00" font-weight="bold">"UI" related</text>
+    </g>
+    
+    <!-- Similarity indicator -->
+    <line x1="270" y1="360" x2="450" y2="360" stroke="#666" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="360" y="350" text-anchor="middle" font-size="10" fill="#666">Distance = Similarity</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="400" y="490" text-anchor="middle" font-size="12" fill="#666">Similar concepts cluster together in vector space</text>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

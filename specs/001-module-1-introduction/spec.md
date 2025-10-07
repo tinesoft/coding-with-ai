@@ -41,6 +41,9 @@
 - Q: The course mentions a "5-point scoring rubric" for assessment. What should be the specific scoring scale definition for each rubric criterion? → A: 1=Unsatisfactory, 2=Needs Improvement, 3=Satisfactory, 4=Good, 5=Outstanding
 - Q: The final edge case asks about accommodating "different learning paces within the 6-8 hour timeframe." What should be the primary strategy for time management? → A: Flexible timing: Allow sections to run over if needed, skip less critical content
 
+### Session 2025-10-07
+- Q: For the visual aids required by FR-006 to illustrate complex AI concepts (LLMs, embeddings, RAG, prompt patterns), should these assets be created new, sourced from existing materials, or use a mixed approach? → A: Created new as part of Module 1 development (original SVG diagrams for all key concepts)
+
 ---
 
 ## User Scenarios & Testing
@@ -69,7 +72,7 @@ A trainer needs to deliver a comprehensive 1-day introduction to AI and prompt e
 - **FR-003**: Content MUST cover AI fundamentals including LLMs, embeddings, RAG, and coding applications
 - **FR-004**: Materials MUST include comprehensive prompt engineering techniques and patterns
 - **FR-005**: Labs MUST provide hands-on practice with multiple AI coding assistants (Copilot, Claude, ChatGPT)
-- **FR-006**: Materials MUST include visual aids and diagrams to illustrate complex AI concepts
+- **FR-006**: Materials MUST include original visual aids and diagrams created specifically to illustrate key AI concepts (LLMs, embeddings, RAG, prompt engineering patterns)
 - **FR-007**: Content MUST be structured for a 6-8 hour delivery schedule with designated breaks
 - **FR-008**: Materials MUST include assessment tools and success criteria for learner evaluation
 - **FR-009**: All exercises MUST be designed for developers with basic TypeScript/JavaScript familiarity
@@ -81,6 +84,7 @@ A trainer needs to deliver a comprehensive 1-day introduction to AI and prompt e
 - **FR-015**: Materials MUST include optional advanced sections within each lab to accommodate experienced developers while maintaining single-track delivery
 - **FR-016**: Materials MUST include 30-45 minutes of comprehensive foundational theory covering AI history, types, and core concepts for learners with no prior AI experience
 - **FR-017**: Trainer guidance MUST include flexible timing strategies that prioritize core learning objectives and allow sections to run over when needed, with identification of less critical content that can be skipped
+- **FR-018**: Visual assets MUST be created in SVG format whenever possible, as specified in Constitution Principle IV (Asset Management Protocol)
 
 ### Key Entities
 - **Training Module**: Complete course package with slides, labs, assessments, and trainer guides

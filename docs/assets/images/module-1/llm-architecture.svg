@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="llm-title llm-desc">
+  <title id="llm-title">Large Language Model Architecture</title>
+  <desc id="llm-desc">Diagram showing how LLMs process input tokens through neural networks to generate output text</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Input Section -->
+  <g id="input-section">
+    <rect x="50" y="100" width="180" height="300" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="140" y="130" text-anchor="middle" font-size="18" font-weight="bold" fill="#1976d2">Input Text</text>
+    
+    <!-- Tokens visualization -->
+    <g id="tokens">
+      <rect x="70" y="160" width="140" height="35" rx="5" fill="#ffffff" stroke="#1976d2" stroke-width="1.5"/>
+      <text x="140" y="182" text-anchor="middle" font-size="14" fill="#333">"Write"</text>
+      
+      <rect x="70" y="205" width="140" height="35" rx="5" fill="#ffffff" stroke="#1976d2" stroke-width="1.5"/>
+      <text x="140" y="227" text-anchor="middle" font-size="14" fill="#333">"a"</text>
+      
+      <rect x="70" y="250" width="140" height="35" rx="5" fill="#ffffff" stroke="#1976d2" stroke-width="1.5"/>
+      <text x="140" y="272" text-anchor="middle" font-size="14" fill="#333">"Python"</text>
+      
+      <rect x="70" y="295" width="140" height="35" rx="5" fill="#ffffff" stroke="#1976d2" stroke-width="1.5"/>
+      <text x="140" y="317" text-anchor="middle" font-size="14" fill="#333">"function"</text>
+      
+      <text x="140" y="355" text-anchor="middle" font-size="12" fill="#666">Tokenization</text>
+    </g>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 230 250 L 290 250" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Neural Network Section -->
+  <g id="neural-network">
+    <rect x="290" y="100" width="220" height="300" rx="10" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+    <text x="400" y="130" text-anchor="middle" font-size="18" font-weight="bold" fill="#f57c00">Neural Network</text>
+    
+    <!-- Layers visualization -->
+    <g id="layers">
+      <!-- Layer 1 -->
+      <circle cx="330" cy="180" r="8" fill="#f57c00"/>
+      <circle cx="360" cy="180" r="8" fill="#f57c00"/>
+      <circle cx="390" cy="180" r="8" fill="#f57c00"/>
+      <circle cx="420" cy="180" r="8" fill="#f57c00"/>
+      <circle cx="450" cy="180" r="8" fill="#f57c00"/>
+      
+      <!-- Layer 2 -->
+      <circle cx="330" cy="230" r="8" fill="#ff9800"/>
+      <circle cx="360" cy="230" r="8" fill="#ff9800"/>
+      <circle cx="390" cy="230" r="8" fill="#ff9800"/>
+      <circle cx="420" cy="230" r="8" fill="#ff9800"/>
+      <circle cx="450" cy="230" r="8" fill="#ff9800"/>
+      
+      <!-- Layer 3 -->
+      <circle cx="330" cy="280" r="8" fill="#ffb74d"/>
+      <circle cx="360" cy="280" r="8" fill="#ffb74d"/>
+      <circle cx="390" cy="280" r="8" fill="#ffb74d"/>
+      <circle cx="420" cy="280" r="8" fill="#ffb74d"/>
+      <circle cx="450" cy="280" r="8" fill="#ffb74d"/>
+      
+      <!-- Connections (sample) -->
+      <line x1="330" y1="180" x2="330" y2="230" stroke="#ccc" stroke-width="0.5"/>
+      <line x1="360" y1="180" x2="390" y2="230" stroke="#ccc" stroke-width="0.5"/>
+      <line x1="390" y1="180" x2="420" y2="230" stroke="#ccc" stroke-width="0.5"/>
+      <line x1="330" y1="230" x2="360" y2="280" stroke="#ccc" stroke-width="0.5"/>
+      <line x1="390" y1="230" x2="390" y2="280" stroke="#ccc" stroke-width="0.5"/>
+      
+      <text x="400" y="320" text-anchor="middle" font-size="12" fill="#666">Pattern Recognition</text>
+      <text x="400" y="340" text-anchor="middle" font-size="12" fill="#666">&amp; Processing</text>
+    </g>
+    
+    <!-- Context Window indicator -->
+    <rect x="305" y="155" width="190" height="150" rx="5" fill="none" stroke="#f57c00" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="400" y="365" text-anchor="middle" font-size="11" fill="#f57c00">Context Window</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 510 250 L 570 250" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Output Section -->
+  <g id="output-section">
+    <rect x="570" y="100" width="180" height="300" rx="10" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <text x="660" y="130" text-anchor="middle" font-size="18" font-weight="bold" fill="#388e3c">Generated Output</text>
+    
+    <!-- Generated tokens -->
+    <g id="output-tokens">
+      <rect x="590" y="160" width="140" height="35" rx="5" fill="#ffffff" stroke="#388e3c" stroke-width="1.5"/>
+      <text x="660" y="182" text-anchor="middle" font-size="14" fill="#333">"def"</text>
+      
+      <rect x="590" y="205" width="140" height="35" rx="5" fill="#ffffff" stroke="#388e3c" stroke-width="1.5"/>
+      <text x="660" y="227" text-anchor="middle" font-size="14" fill="#333">"sort_list"</text>
+      
+      <rect x="590" y="250" width="140" height="35" rx="5" fill="#ffffff" stroke="#388e3c" stroke-width="1.5"/>
+      <text x="660" y="272" text-anchor="middle" font-size="14" fill="#333">"(items)"</text>
+      
+      <rect x="590" y="295" width="140" height="35" rx="5" fill="#ffffff" stroke="#388e3c" stroke-width="1.5"/>
+      <text x="660" y="317" text-anchor="middle" font-size="14" fill="#333">":"</text>
+      
+      <text x="660" y="355" text-anchor="middle" font-size="12" fill="#666">Token Generation</text>
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">How LLMs Process Information</text>
+  
+  <!-- Footer -->
+  <text x="400" y="470" text-anchor="middle" font-size="12" fill="#666">Tokens → Neural Network → Generated Response</text>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+</svg>
