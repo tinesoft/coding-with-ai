@@ -119,6 +119,10 @@ The most effective AI integration treats AI as a powerful assistant, not a repla
 | **Continue** | Open source, customizable | Team customization | Setup complexity |
 | **Codeium** | Free tier, multiple languages | Individual developers | Fewer features than premium tools |
 
+##--##
+
+<!-- .slide: -->
+# **Tool Comparison Matrix**
 ## **Selection Criteria**
 - 💰 **Budget**: Free vs. paid tiers
 - 🔧 **Integration**: IDE compatibility
@@ -267,6 +271,5 @@ When choosing AI tools for your team, consider:
 - 📞 **Support Quality**: Documentation and customer service
 - 🔄 **Vendor Stability**: Company track record and roadmap
 
-Notes:
 Notes:
 You've now explored the practical side of AI development tools. Time to synthesize everything you've learned in Module 1 with our assessment and recap session.

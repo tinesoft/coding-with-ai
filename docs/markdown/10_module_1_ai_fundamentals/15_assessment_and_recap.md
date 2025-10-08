@@ -226,6 +226,14 @@ Tool selection depends on context. There's no universally "best" tool - the righ
 - Native VS Code integration
 - Team management and policy controls
 
+##--##
+
+<!-- .slide: -->
+# **Tool Selection: Recommendations**
+
+## **Scenario Solutions**:
+<br>
+
 ### **C: Open-source + Multi-IDE + Customization**
 **✅ Continue** + **Local LLM**
 - Open-source and customizable
@@ -287,7 +295,7 @@ Remember: AI is a powerful assistant, but human oversight is essential. Always r
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: data-type-show="hidden" -->
 # **Module 1 Synthesis**
 
 ## **Key Takeaways**
@@ -313,7 +321,7 @@ These takeaways form the foundation for all advanced AI development techniques. 
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: data-type-show="hidden" -->
 # **Success Validation Checklist**
 
 ## **✅ Module 1 Completion Criteria**
@@ -342,7 +350,7 @@ Use this checklist to self-assess your readiness for Module 2. If any areas feel
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: data-type-show="hidden" -->
 # **Next Steps and Preparation**
 
 ## **📚 Module 2 Preview**: Code Generation and Assistance
@@ -357,16 +365,17 @@ Use this checklist to self-assess your readiness for Module 2. If any areas feel
 - **Reflect**: How did AI change your development process?
 
 ## **📖 Recommended Reading**:
-- GitHub Copilot documentation and best practices
-- OpenAI prompt engineering guide
-- Your chosen AI tool's getting started guide
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot) and best practices
+- [Claude Code documentation](https://docs.claude.com/en/docs/claude-code/overview)
+- [OpenAI prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering) and best practices
+- [Cursor AI coding assistant overview](https://www.cursor.so/) and tutorials
 
 Notes:
 Module 2 will build directly on these fundamentals, so any additional practice you can get with prompt engineering and AI tool usage will be valuable.
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: data-type-show="hidden" -->
 # **Questions and Discussion**
 
 ## **💬 Open Floor** (10 minutes)
@@ -382,10 +391,6 @@ Module 2 will build directly on these fundamentals, so any additional practice y
 - What surprised you most about AI capabilities?
 - What challenges do you anticipate in your work?
 - What specific use cases are you excited to try?
-
-### **Looking Ahead**:
-- What aspects of Module 2 are you most interested in?
-- Are there specific development scenarios you'd like to explore?
 
 Notes:
 You've successfully completed the foundation module! You now have the essential knowledge and skills to start using AI effectively in your development work. In Module 2, we'll dive deeper into practical code generation and assistance techniques that will transform your daily coding experience.
