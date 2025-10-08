@@ -138,28 +138,28 @@ All training content MUST maintain strict sequential numbering without gaps acro
 - Autonomous Agents: Introduction to independent coding agents
 - Tool Comparison: Hands-on evaluation of different AI platforms
 
-### Module 3: Agentic Development Workflows and Spec-Driven Coding (1.5 days)
-- Agentic Workflows: Systematic approaches to AI-driven development
-- Vibe Coding: Intuitive AI collaboration patterns
-- Spec-Driven Coding: Specification-based development methodology
-- Workflow Exercises: Real-world development scenarios
-
-### Module 4: AI-Powered Debugging, Refactoring, and Code Analysis (1 day)
+### Module 3: AI-Powered Debugging, Refactoring, and Code Analysis (1 day)
 - AI Debugging: Systematic problem-solving with AI assistance
 - Refactoring with AI: Code improvement and modernization techniques
 - Code Analysis: AI-powered code review and optimization
 - Debugging Exercises: Practical troubleshooting scenarios
 
-### Module 5: Test Automation and Quality Assurance with AI (1 day)
+### Module 4: Test Automation and Quality Assurance with AI (1 day)
 - Test Automation: AI-assisted test generation and execution
 - Quality Assurance: Maintaining standards with AI tools
 - Testing Exercises: Automated test creation and validation
 
-### Module 6: AI-Assisted Code Review, Security Basics, and Governance (1 day)
+### Module 5: AI-Assisted Code Review, Security Basics, and Governance (1 day)
 - Code Review with AI: Systematic review processes and best practices
 - Security Fundamentals: AI tool implications for code security
 - Governance: Enterprise AI adoption strategies and policies
 - Review Exercises: Practical code review scenarios
+
+### Module 6: Agentic Development Workflows and Spec-Driven Coding (1.5 days)
+- Agentic Workflows: Systematic approaches to AI-driven development
+- Vibe Coding: Intuitive AI collaboration patterns
+- Spec-Driven Coding: Specification-based development methodology
+- Workflow Exercises: Real-world development scenarios
 
 ### Module 7: Practical Project - Website Development with AI Agents (1 day)
 - Project Planning: AI-assisted project architecture and planning
@@ -209,29 +209,29 @@ docs/
 │   ├── 22_copilot_setup.md
 │   ├── 23_autonomous_agents.md
 │   └── 24_exercise_tools.md
-├── 30_module_3_workflows/           # Module 3: Workflows
+├── 30_module_3_debugging/           # Module 3: Debugging
 │   ├── 30_module3_intro.md
-│   ├── 31_agentic_workflows.md
-│   ├── 32_vibe_coding.md
-│   ├── 33_spec_driven_coding.md
-│   └── 34_exercise_workflows.md
-├── 40_module_4_debugging/           # Module 4: Debugging
+│   ├── 31_ai_debugging.md
+│   ├── 32_refactoring_ai.md
+│   ├── 33_code_analysis.md
+│   └── 34_exercise_debugging.md
+├── 40_module_4_testing/             # Module 4: Testing
 │   ├── 40_module4_intro.md
-│   ├── 41_ai_debugging.md
-│   ├── 42_refactoring_ai.md
-│   ├── 43_code_analysis.md
-│   └── 44_exercise_debugging.md
-├── 50_module_5_testing/             # Module 5: Testing
+│   ├── 41_test_automation.md
+│   ├── 42_quality_assurance.md
+│   └── 43_exercise_testing.md
+├── 50_module_5_review_security/     # Module 5: Review & Security
 │   ├── 50_module5_intro.md
-│   ├── 51_test_automation.md
-│   ├── 52_quality_assurance.md
-│   └── 53_exercise_testing.md
-├── 60_module_6_review_security/     # Module 6: Review & Security
+│   ├── 51_code_review_ai.md
+│   ├── 52_security_basics.md
+│   ├── 53_governance.md
+│   └── 54_exercise_review.md
+├── 60_module_6_workflows/           # Module 6: Workflows
 │   ├── 60_module6_intro.md
-│   ├── 61_code_review_ai.md
-│   ├── 62_security_basics.md
-│   ├── 63_governance.md
-│   └── 64_exercise_review.md
+│   ├── 61_agentic_workflows.md
+│   ├── 62_vibe_coding.md
+│   ├── 63_spec_driven_coding.md
+│   └── 64_exercise_workflows.md
 ├── 70_module_7_capstone/            # Module 7: Capstone Project
 │   ├── 70_module7_intro.md
 │   ├── 71_project_planning.md

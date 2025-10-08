@@ -26,10 +26,10 @@ This 7-day comprehensive program teaches developers how to leverage AI tools and
 
 1. **Introduction to AI and Prompt Engineering** (1 day)
 2. **Modern AI Coding Tools and Autonomous Agents** (1.5 days)
-3. **Agentic Development Workflows and Spec-Driven Coding** (1.5 days)
-4. **AI-Powered Debugging, Refactoring, and Code Analysis** (1 day)
-5. **Test Automation and Quality Assurance with AI** (1 day)
-6. **AI-Assisted Code Review, Security Basics, and Governance** (1 day)
+3. **AI-Powered Debugging, Refactoring, and Code Analysis** (1 day)
+4. **Test Automation and Quality Assurance with AI** (1 day)
+5. **AI-Assisted Code Review, Security Basics, and Governance** (1 day)
+6. **Agentic Development Workflows and Spec-Driven Coding** (1.5 days)
 7. **Practical Project: Website Development with AI Agents** (1 day)
 
 ## Slides
