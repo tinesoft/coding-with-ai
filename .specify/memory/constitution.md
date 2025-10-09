@@ -148,11 +148,21 @@ All training content MUST maintain strict sequential numbering without gaps to e
 - Practical Exercises: Hands-on prompt writing and iteration
 - Tools Introduction: Overview of coding agents and safety practices
 
-### Module 2: Modern AI Coding Tools and Autonomous Agents (1.5 days)
-- AI Tools Landscape: Comprehensive overview of available platforms
-- GitHub Copilot Setup: Professional tool configuration and usage
-- Autonomous Agents: Introduction to independent coding agents
-- Tool Comparison: Hands-on evaluation of different AI platforms
+### Module 2: Modern AI Coding Tools and Copilot Agent (1.5 days)
+- Agentic Tools Landscape: Focus on practical tools developers actually use, highlighted by category:
+  - Standalone IDEs: Cursor, Windsurf, Kiro, Zed
+  - IDE Extensions (VS Code/JetBrains): GitHub Copilot, Cline (formerly Claude Dev), Roo Code, KiloCode, Continue, Amazon Q Developer
+  - CLI-Based Agents: GitHub Copilot CLI, Codex CLI, Gemini CLI, Claude Code, Opencode, Aider, Warp
+  - Online Tools: Mention-only (Bolt.new, Firebase Studio, Lovable, v0 by Vercel, Replit AI)
+- GitHub Copilot Setup (Simplified): Install the VS Code extension, then add the custom agent “GPT 4.1 - Beast Mode” via this direct link badge: [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/awesome-copilot/install/chatmode?url=vscode%3Achat-mode%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fawesome-copilot%2Fmain%2Fchatmodes%2F4.1-Beast.chatmode.md)
+- Copilot Interaction Modes: Showcase and practice the three modes — Ask (chat), Edit (inline/apply changes), Agent (autonomous task execution with oversight)
+- Labs Scope: Hands-on labs exclusively in VS Code using GitHub Copilot with “GPT 4.1 - Beast Mode”; other tools are demonstrated live by the trainer
+- Model Comparison (when to use what):
+  - GPT-5: General-purpose coding assistant; strong for multi-step reasoning and tool-use orchestration
+  - GPT-5-Codex: Code-centric generation; effective for structured edits, refactors, and multi-file changes
+  - GPT-4.1: Balanced assistant compatible with Copilot features; great for inline edits and quick iterations
+  - Claude Sonnet: Long-context comprehension and clear explanations; helpful for documentation, reviews, and planning
+  - Gemini 2.5 Pro: Solid code understanding with ecosystem integrations; good for API-first tasks and multi-modal prompts
 
 ### Module 3: AI-Powered Debugging, Refactoring, and Code Analysis (1 day)
 - AI Debugging: Systematic problem-solving with AI assistance
@@ -197,11 +207,11 @@ All training content MUST maintain strict sequential numbering without gaps to e
 - **Container Support**: DevContainer configuration for consistent development environment
 
 ### AI Tools Integration
-- **Primary Tool**: GitHub Copilot
-- **Seconday Tools**: Gemini, Claude, Codex, Cursor
+- **Primary Tool for Labs**: GitHub Copilot in VS Code (with optional custom agent: “GPT 4.1 - Beast Mode”)
+- **Secondary/Optional Tools**: Gemini, Claude, Codex, Cursor, Amazon Q Developer (demonstrated live by trainer; not required for labs)
 - **Enterprise Platforms**: Support for professional AI development environments
 - **Tool Access**: GitHub account required for Copilot access
-- **Multi-Platform**: Cross-platform compatibility for diverse development setups
+- **Multi-Platform**: Cross-platform compatibility for diverse development setups; online tools are mention-only in Module 2 and not used in labs
 
 ## Project Structure Standards
 
@@ -221,10 +231,10 @@ docs/
 │   └── 15_assessment_and_recap.md
 ├── 20_module_2_ai_tools/            # Module 2: AI Tools
 │   ├── 20_module2_intro.md
-│   ├── 21_ai_tools_landscape.md
-│   ├── 22_copilot_setup.md
-│   ├── 23_autonomous_agents.md
-│   └── 24_exercise_tools.md
+│   ├── 21_agentic_tools_landscape.md
+│   ├── 22_copilot_setup_and_modes.md
+│   ├── 23_copilot_agent_workflows.md
+│   └── 24_exercise_copilot_tools.md
 ├── 30_module_3_debugging/           # Module 3: Debugging
 │   ├── 30_module3_intro.md
 │   ├── 31_ai_debugging.md
@@ -270,12 +280,12 @@ labs/
 ├── lab-12-ai-fundamentals-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-21-copilot-setup/         # Module 2, Lab 1: GitHub Copilot setup and configuration
+├── lab-21-copilot-setup/         # Module 2, Lab 1: GitHub Copilot setup (VS Code + Beast Mode)
 │   └── README.md
 ├── lab-21-copilot-setup-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-22-tool-comparison/       # Module 2, Lab 2: Hands-on AI tool evaluation
+├── lab-22-tool-comparison/       # Module 2, Lab 2: Copilot modes and model comparison in VS Code
 │   └── README.md
 ├── lab-22-tool-comparison-solution/
 │   ├── README.md
