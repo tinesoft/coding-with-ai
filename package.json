@@ -7,7 +7,9 @@
     "serve": "nx run docs:serve",
     "lint": "nx run-many -t lint",
     "clean": "nx reset && rm -rf dist",
-    "postinstall": "nx copy-theme docs"
+    "postinstall": "nx copy-theme docs",
+    "upspeckit": "uv tool install specify-cli --from git+https://github.com/github/spec-kit.git",
+    "upspecify": "specify init --here --force --ai copilot --script sh"
   },
   "private": true,
   "devDependencies": {
