@@ -22,7 +22,7 @@ This hands-on lab will guide you through the fundamentals of prompt engineering.
    - **IDE Integration**: GitHub Copilot (if available)
 
 2. **Create a Lab Notebook**:
-   - Create a new text file named `lab-01-prompts.md`
+   - Create a new text file named `lab-11-prompts.md`
    - You'll document prompts and responses throughout the lab
    - Include timestamps and tool used for each interaction
 

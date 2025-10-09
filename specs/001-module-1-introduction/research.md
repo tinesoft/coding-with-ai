@@ -101,8 +101,8 @@ lab-XX-topic-solution/
 - **15_assessment_and_recap.md**: Knowledge check and module summary
 
 ### Lab Progression
-- **lab-01-prompt-basics**: Introduction to effective prompting techniques
-- **lab-02-ai-fundamentals**: Hands-on exploration of AI concepts
+- **lab-11-prompt-basics**: Introduction to effective prompting techniques (Module 1, Lab 1)
+- **lab-12-ai-fundamentals**: Hands-on exploration of AI concepts (Module 1, Lab 2)
 
 ## Implementation Decisions
 

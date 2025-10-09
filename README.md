@@ -62,18 +62,33 @@ Workshops are in the `labs/` directory:
   - One with a README.md with workshop steps and source files to complete
   - A second directory suffixed with `-solution` which contains source files with solutions
 
-### Lab Structure
+### Lab Structure (Module-Scoped Numbering)
 
-- **lab-01-prompt-basics**: Introduction to effective prompt writing
-- **lab-02-tool-setup**: AI tool installation and comparison
-- **lab-03-copilot-basics**: GitHub Copilot hands-on practice
-- **lab-04-agentic-workflow**: Building with autonomous agents
-- **lab-05-spec-driven-dev**: Specification-driven development
-- **lab-06-debugging-ai**: AI-assisted debugging techniques
-- **lab-07-refactoring**: Code improvement with AI
-- **lab-08-test-generation**: Automated test creation
-- **lab-09-code-review**: AI-powered code review
-- **lab-10-final-project**: Complete website development project
+Labs use module-scoped numbering: `lab-[MODULE_NUMBER][SEQUENCE]-{topic}`
+
+**Module 1: Introduction to AI and Prompt Engineering**
+- **lab-11-prompt-basics**: Introduction to effective prompt writing
+- **lab-12-ai-fundamentals**: AI concepts and LLM understanding
+
+**Module 2: Modern AI Coding Tools and Autonomous Agents**
+- **lab-21-copilot-setup**: GitHub Copilot setup and configuration
+- **lab-22-tool-comparison**: Hands-on AI tool evaluation
+
+**Module 3: AI-Powered Debugging, Refactoring, and Code Analysis**
+- **lab-31-ai-debugging**: AI-assisted debugging techniques
+
+**Module 4: Test Automation and Quality Assurance with AI**
+- **lab-41-test-automation**: Automated test creation with AI
+
+**Module 5: AI-Assisted Code Review, Security Basics, and Governance**
+- **lab-51-code-review**: AI-powered code review practices
+
+**Module 6: Agentic Development Workflows and Spec-Driven Coding**
+- **lab-61-agentic-workflows**: Building with autonomous agents
+- **lab-62-spec-driven-dev**: Specification-driven development
+
+**Module 7: Practical Project - Website Development with AI Agents**
+- **lab-71-capstone-project**: Complete website development project
 
 ## Contributing
 

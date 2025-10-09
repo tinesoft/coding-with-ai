@@ -1,17 +1,28 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.7.1 → 1.7.2
-Modified Principles: IV. Asset Management Protocol - Enhanced with Visual Presentation Standards
-Added Sections: Visual Presentation Standards (within Principle IV)
-Removed Sections: None
-Templates Requiring Updates: ⚠️ ALL slide files with visual assets require updates to follow new presentation format
-Follow-up TODOs: 1) Move all inline visuals to dedicated separate slides after concept slides, 2) Update Notes sections to reference following visuals, 3) Apply full-width image formatting with aspect ratio preservation
-Notes: Added Visual Presentation Standards requiring all illustrative visuals to be presented on dedicated separate slides immediately after concept slides. Visuals must use full-width display with preserved aspect ratio. Original concept slide Notes must reference the following visual. This ensures clear educational flow: concept introduction → visual reinforcement.
+Version Change: 1.7.2 → 1.8.0
+Modified Principles: VIII. Sequential Numbering and Consistency Standards - Complete rewrite to enforce module-scoped numbering
+Added Sections: Module-Level Numbering, Lab-Level Numbering (within module scope), Exercise-Level Numbering clarifications
+Removed Sections: None (replaced global sequential numbering guidance with module-scoped approach)
+Templates Requiring Updates:
+  ✅ .specify/memory/constitution.md - Updated with module-scoped numbering principle
+  ⚠️ ALL existing lab folders require renumbering to follow module-scoped pattern
+  ⚠️ ALL lab instruction and solution README files require exercise numbering updates
+  ⚠️ ALL exercise slides require lab reference updates
+  ⚠️ spec-template.md may require updates to reflect module-scoped lab planning
+  ⚠️ tasks-template.md may require updates to reflect module-scoped task organization
+Follow-up TODOs:
+  1) Rename existing lab folders to follow module-scoped pattern (e.g., lab-01-prompt-basics → lab-11-prompt-basics for Module 1)
+  2) Update all lab README files to use module-scoped exercise numbering
+  3) Update all exercise slides to reference correct module-scoped lab numbers
+  4) Update spec files for all modules to reflect module-scoped lab planning
+  5) Verify all cross-references between slides, labs, and assessments maintain consistency
+Notes: Changed from global sequential lab numbering (lab-01, lab-02, lab-03 across all modules) to module-scoped numbering (Module 1: lab-11, lab-12; Module 2: lab-21, lab-22; etc.). This MAJOR principle change ensures labs are clearly associated with their parent module and numbering resets for each module. Lab folders now use pattern lab-[MODULE_NUMBER][SEQUENCE]-{topic} where MODULE_NUMBER is the module digit (1-7) and SEQUENCE is the sequential position within that module (1, 2, 3...). Exercise numbering within each lab still starts from 1 and increments sequentially.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.7.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-07
+**Version**: 1.8.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-09
 
 ## Core Principles
 
@@ -114,15 +125,20 @@ All training materials (slides, labs, exercises, and visual aids) MUST reflect a
 When including metrics, statistics, performance data, or quantitative claims in training materials (slides, labs, exercises), ALL such information MUST be accompanied by a direct link to the original source where that data was obtained. Unsourced data claims SHALL NOT be included in any educational materials. The citation format MUST follow this pattern: `[metric value]([source-link])` to provide immediate access to verification. For example: "**Time to First Working Code**: [30-50% reduction](https://example.com/source)" rather than unsourced claims. This requirement ensures educational integrity, allows learners to verify information independently, and maintains professional standards for factual content. When no verifiable source can be provided, the information MUST be excluded from the training materials entirely.
 
 ### VIII. Sequential Numbering and Consistency Standards
-All training content MUST maintain strict sequential numbering without gaps across modules, labs, and exercises to ensure clear educational progression and prevent learner confusion. Sequential numbering SHALL be enforced at three hierarchical levels:
+All training content MUST maintain strict sequential numbering without gaps to ensure clear educational progression and prevent learner confusion. Sequential numbering SHALL be enforced at three hierarchical levels with MODULE-SCOPED NUMBERING for labs and exercises:
 
-**Module-Level Numbering**: Training modules MUST use sequential numbering (Module 1, Module 2, Module 3, etc.) with no gaps in the sequence. When modules are added, removed, or reorganized, ALL subsequent numbering MUST be updated to maintain sequential integrity.
+**Module-Level Numbering**: Training modules MUST use sequential numbering (Module 1, Module 2, Module 3, etc.) with no gaps in the sequence. When modules are added, removed, or reorganized, ALL subsequent module numbering MUST be updated to maintain sequential integrity.
 
-**Lab-Level Numbering**: Within each module, laboratories MUST use zero-padded two-digit sequential numbering (Lab 01, Lab 02, Lab 03, etc.) starting from 01 for the first lab in each module. Lab numbering resets to 01 for each new module. Lab folder names MUST follow the pattern `lab-XX-{topic}/` where XX is the sequential lab number within that module.
+**Lab-Level Numbering (Module-Scoped)**: Within each module, laboratories MUST use module-scoped numbering that clearly identifies both the parent module and the sequential position within that module. Lab folder names MUST follow the pattern `lab-[MODULE_NUMBER][SEQUENCE]-{topic}/` where:
+- `MODULE_NUMBER` is a single digit (1-7) identifying the parent module
+- `SEQUENCE` is a single digit (1, 2, 3...) identifying the sequential position within that module
+- Lab numbering RESETS to 1 for each new module
+- Examples: Module 1 labs are `lab-11-{topic}`, `lab-12-{topic}`, `lab-13-{topic}`; Module 2 labs are `lab-21-{topic}`, `lab-22-{topic}`, etc.
+- This ensures labs are CLEARLY ASSOCIATED with their parent module and prevents ambiguity about which module a lab belongs to.
 
-**Exercise-Level Numbering**: Within each lab, exercises MUST use sequential numbering (Exercise 1, Exercise 2, Exercise 3, etc.) starting from 1 for the first exercise in each lab. Exercise numbering resets to 1 for each new lab. Exercise slides MUST reference exercises using the format "Exercice X" where X matches the exercise number in the lab instructions.
+**Exercise-Level Numbering (Lab-Scoped)**: Within each lab, exercises MUST use sequential numbering (Exercise 1, Exercise 2, Exercise 3, etc.) starting from 1 for the first exercise in each lab. Exercise numbering RESETS to 1 for each new lab. Exercise slides MUST reference labs using the module-scoped format "Lab [MODULE_NUMBER][SEQUENCE]" matching the lab folder name pattern.
 
-**Cross-Reference Consistency**: When content is modified, ALL related materials MUST be updated simultaneously including lab instructions, solutions, exercise slides, assessment content, and navigation references. No orphaned references or broken sequential chains SHALL be permitted. Changes to numbering in one component require immediate verification and update of all dependent references to maintain educational coherence.
+**Cross-Reference Consistency**: When content is modified, ALL related materials MUST be updated simultaneously including lab instructions, solutions, exercise slides, assessment content, and navigation references. No orphaned references or broken sequential chains SHALL be permitted. Changes to numbering in one component require immediate verification and update of all dependent references to maintain educational coherence. The module-scoped numbering system ensures clear module boundaries and prevents confusion when working across multiple modules simultaneously.
 
 ## Training Module Overview
 
@@ -241,42 +257,52 @@ docs/
     └── images/        # Generated visual assets and diagrams
 ```
 
-### Laboratory Structure
+### Laboratory Structure (Module-Scoped Numbering)
 ```
 labs/
-├── lab-01-prompt-basics/         # Module 1: Prompt engineering fundamentals
+├── lab-11-prompt-basics/         # Module 1, Lab 1: Prompt engineering fundamentals
 │   └── README.md
-├── lab-01-prompt-basics-solution/
+├── lab-11-prompt-basics-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-02-ai-fundamentals/       # Module 1: AI concepts and LLM understanding
+├── lab-12-ai-fundamentals/       # Module 1, Lab 2: AI concepts and LLM understanding
 │   └── README.md
-├── lab-02-ai-fundamentals-solution/
+├── lab-12-ai-fundamentals-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-03-coding-patterns/       # Hands-on coding with AI
+├── lab-21-copilot-setup/         # Module 2, Lab 1: GitHub Copilot setup and configuration
 │   └── README.md
-├── lab-03-coding-patterns-solution/
+├── lab-21-copilot-setup-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-04-debugging/             # AI-assisted debugging
+├── lab-22-tool-comparison/       # Module 2, Lab 2: Hands-on AI tool evaluation
 │   └── README.md
-├── lab-04-debugging-solution/
+├── lab-22-tool-comparison-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-05-testing/               # Test automation with AI
+├── lab-31-ai-debugging/          # Module 3, Lab 1: AI-assisted debugging
 │   └── README.md
-├── lab-05-testing-solution/
+├── lab-31-ai-debugging-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-06-security/              # AI and code security
+├── lab-41-test-automation/       # Module 4, Lab 1: Test automation with AI
 │   └── README.md
-├── lab-06-security-solution/
+├── lab-41-test-automation-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-07-capstone/              # Complete project development
+├── lab-51-code-review/           # Module 5, Lab 1: AI-assisted code review
 │   └── README.md
-└── lab-07-capstone-solution/
+├── lab-51-code-review-solution/
+│   ├── README.md
+│   └── resources/                # Optional: Lab outputs and deliverables
+├── lab-61-agentic-workflows/     # Module 6, Lab 1: Agentic development workflows
+│   └── README.md
+├── lab-61-agentic-workflows-solution/
+│   ├── README.md
+│   └── resources/                # Optional: Lab outputs and deliverables
+├── lab-71-capstone-project/      # Module 7, Lab 1: Complete project development
+│   └── README.md
+└── lab-71-capstone-project-solution/
     ├── README.md
     └── resources/                # Optional: Lab outputs and deliverables
 ```
@@ -293,4 +319,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.7.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-07
+**Version**: 1.8.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-09

@@ -118,7 +118,7 @@ labs/lab-XX-topic-solution/
 ### File Organization
 - **Slides:** Place in `docs/markdown/10_module_1_ai_fundamentals/`
 - **Numbering:** Use 10-19 for Module 1 (10_intro, 11_fundamentals, etc.)
-- **Labs:** Sequential numbering `lab-01-prompt-basics`, `lab-02-ai-fundamentals`
+- **Labs:** Module-scoped numbering `lab-11-prompt-basics`, `lab-12-ai-fundamentals` (format: `lab-[MODULE][SEQUENCE]-{topic}`)
 - **Assets:** Store in `docs/assets/images/` with relative path references
 
 ### Quality Standards
@@ -176,8 +176,8 @@ npm run start
 6. **15_assessment_and_recap.md** - Validation and summary
 
 ### Lab Development Order  
-1. **lab-01-prompt-basics** - Foundation skills
-2. **lab-02-ai-fundamentals** - Concept application
+1. **lab-11-prompt-basics** - Foundation skills (Module 1, Lab 1)
+2. **lab-12-ai-fundamentals** - Concept application (Module 1, Lab 2)
 
 ## Recent Changes and Context
 

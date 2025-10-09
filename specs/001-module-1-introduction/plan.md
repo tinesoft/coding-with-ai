@@ -49,7 +49,7 @@ Comprehensive 1-day training materials for Module 1 covering AI fundamentals, pr
 
 **Educational Excellence**: ✅ Targets beginner-intermediate developers with practical AI coding skills  
 **Content Organization**: ✅ Uses SFEIR School Theme syntax, proper slide classes, exercise formatting  
-**Lab Structure**: ✅ Sequential lab pattern `lab-01-prompt-basics/`, `lab-02-ai-fundamentals/` with solutions  
+**Lab Structure**: ✅ Module-scoped lab pattern `lab-11-prompt-basics/`, `lab-12-ai-fundamentals/` with solutions  
 **Asset Management**: ✅ Visual assets in `docs/assets/images/module-1/` with relative paths  
 **Quality Assurance**: ✅ Validates against educational objectives, progressive skill development  
 **Content Accuracy**: ✅ Current AI tool information, verified technical specifications  

@@ -92,7 +92,7 @@ LabExercise:
   success_criteria: string[]
   
 Exercises:
-  - id: "lab-01-prompt-basics"
+  - id: "lab-11-prompt-basics"
     title: "Introduction to Effective Prompting"
     difficulty: beginner
     estimated_time_minutes: 30
@@ -109,7 +109,7 @@ Exercises:
       - "Demonstrate prompt improvement through iteration"
       - "Achieve satisfactory AI responses for given tasks"
       
-  - id: "lab-02-ai-fundamentals"
+  - id: "lab-12-ai-fundamentals"
     title: "Exploring AI Concepts Hands-on"
     difficulty: beginner
     estimated_time_minutes: 45
@@ -162,7 +162,7 @@ Criteria:
 ```
 10_module1_intro → 11_ai_fundamentals → 12_prompt_engineering → 13_exercise_prompts → 14_tools_and_agents → 15_assessment_and_recap
                                      ↘
-                                      lab-01-prompt-basics → lab-02-ai-fundamentals
+                                      lab-11-prompt-basics → lab-12-ai-fundamentals
 ```
 
 ### Skill Progression

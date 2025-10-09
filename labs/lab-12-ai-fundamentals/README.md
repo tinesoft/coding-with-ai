@@ -23,7 +23,7 @@ This hands-on lab bridges the gap between AI theory and practical application. Y
    - **Optional**: Local AI tools (Ollama, etc.)
 
 2. **Create Lab Documentation**:
-   - Create `lab-02-ai-fundamentals.md` for your observations
+   - Create `lab-12-ai-fundamentals.md` for your observations
    - Set up experiment tracking templates
    - Prepare code samples for testing
 
@@ -373,7 +373,7 @@ Choose one of the following options based on your available tools:
 #### **Option 2: Free AI Alternative**
 1. **Access AI Tool**:
    - Visit ChatGPT, Claude, or Gemini web interface
-   - Practice prompt engineering techniques from Lab 01
+   - Practice prompt engineering techniques from Lab 11
 
 2. **Code Generation Test**:
    ```

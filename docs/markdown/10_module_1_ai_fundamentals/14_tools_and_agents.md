@@ -225,13 +225,13 @@ The AI development landscape is rapidly evolving. Success requires balancing ado
 
 <!-- .slide: class="exercice" --> 
 # Exercice 5: Tool Exploration
-## Lab 02
+## Lab 12
 
 <br>
 
 ### 👉🏾 Follow **instructions** in
 
-### `labs/lab-02-ai-fundamentals/README.md`
+### `labs/lab-12-ai-fundamentals/README.md`
 
 Notes:
 - Follow the instructions in the lab README.md for detailed steps.
@@ -240,13 +240,13 @@ Notes:
 
 <!-- .slide: class="exercice" --> 
 # Exercice 5: Tool Exploration
-## Lab 02
+## Lab 12
 
 <br>
 
 ### 💡 Read **solution** at
 
-### `labs/lab-02-ai-fundamentals-solution/README.md`
+### `labs/lab-12-ai-fundamentals-solution/README.md`
 
 Notes:
 - Read the lab README.md for example of solutions.

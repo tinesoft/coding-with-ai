@@ -2,24 +2,38 @@
 
 This folder contains all hands-on exercises for the SFEIR School Coding with AI training. Each lab is designed to reinforce the concepts learned in the corresponding module and provide practical experience with AI coding tools and techniques.
 
+## Lab Numbering System (Module-Scoped)
+
+Labs use **module-scoped numbering** following the pattern: `lab-[MODULE_NUMBER][SEQUENCE]-{topic}`
+
+- **MODULE_NUMBER**: Single digit (1-7) identifying the parent module
+- **SEQUENCE**: Single digit (1, 2, 3...) identifying position within that module
+- Lab numbering **RESETS to 1** for each new module
+
+**Examples**: 
+- Module 1 labs: `lab-11-{topic}`, `lab-12-{topic}`, `lab-13-{topic}`
+- Module 2 labs: `lab-21-{topic}`, `lab-22-{topic}`, `lab-23-{topic}`
+
+This ensures labs are clearly associated with their parent module.
+
 ## Lab Structure
 
 Each lab follows a consistent structure:
 
-- **Main Lab Directory**: Contains the exercise instructions and any starter files
-- **Solution Directory** (suffix `-solution`): Contains the complete solution and explanation
+- **Main Lab Directory** (`lab-XX-{topic}/`): Contains exercise instructions and starter files
+- **Solution Directory** (`lab-XX-{topic}-solution/`): Contains complete solutions and explanations
   - **Optional Resources Folder**: May contain lab outputs and deliverables (e.g., final projects, code samples)
 
 ## Module 1: Introduction to AI and Prompt Engineering
 
-### Lab 01: Prompt Engineering Basics
+### Lab 11: Prompt Engineering Basics
 - **Duration**: 2-3 hours
 - **Slides Alignment**: Exercises 1-5 from slide `13_exercise_prompts.md`
 - **Objectives**: Master the CLEAR framework and advanced prompt patterns
 - **Skills**: Prompt engineering fundamentals, iterative refinement, pattern application
 - **Tools**: ChatGPT, Claude, or any available AI assistant
 
-### Lab 02: AI Fundamentals in Practice  
+### Lab 12: AI Fundamentals in Practice  
 - **Duration**: 3-4 hours
 - **Slides Alignment**: Concepts from `11_ai_fundamentals.md` + Exercise 6 from `14_tools_and_agents.md`
 - **Objectives**: Understand LLMs, embeddings, RAG, and practical AI tool integration
@@ -28,65 +42,65 @@ Each lab follows a consistent structure:
 
 ## Module 2: Modern AI Coding Tools and Autonomous Agents
 
-### Lab 02: AI Tool Setup and Comparison
+### Lab 21: GitHub Copilot Setup and Configuration
 - **Duration**: 45 minutes
-- **Objectives**: Set up GitHub Copilot and compare different AI tools
-- **Skills**: Tool configuration, evaluation criteria, comparative analysis
-- **Tools**: GitHub Copilot, VS Code, various AI platforms
+- **Objectives**: Set up GitHub Copilot and configure for optimal usage
+- **Skills**: Tool installation, authentication, configuration customization
+- **Tools**: GitHub Copilot, VS Code or Cursor IDE
 
-### Lab 03: GitHub Copilot Advanced Features
+### Lab 22: AI Tool Comparison and Evaluation
+- **Duration**: 45 minutes
+- **Objectives**: Compare different AI coding platforms using structured evaluation
+- **Skills**: Comparative analysis, evaluation criteria, tool selection
+- **Tools**: GitHub Copilot, Cursor, Claude, Gemini, multiple AI platforms
+
+## Module 3: AI-Powered Debugging, Refactoring, and Code Analysis
+
+### Lab 31: AI-Assisted Debugging
+- **Duration**: 45 minutes
+- **Objectives**: Use AI to identify and fix code issues systematically
+- **Skills**: Bug identification, automated fixes, debugging workflows
+- **Tools**: GitHub Copilot Chat, debugging AI features
+
+### Lab 32: Code Refactoring with AI
 - **Duration**: 30 minutes
-- **Objectives**: Explore advanced Copilot features and chat functionality
-- **Skills**: Code completion, chat commands, context awareness
-- **Tools**: GitHub Copilot, VS Code
+- **Objectives**: Improve code quality using AI suggestions and refactoring patterns
+- **Skills**: Code optimization, refactoring patterns, quality improvement
+- **Tools**: AI refactoring tools, code analysis features
 
-## Module 3: Agentic Development Workflows
+## Module 4: Test Automation and Quality Assurance with AI
 
-### Lab 04: Building with Agentic Workflows
+### Lab 41: AI Test Generation
+- **Duration**: 45 minutes
+- **Objectives**: Generate comprehensive test suites using AI assistance
+- **Skills**: Test case creation, coverage analysis, quality validation
+- **Tools**: AI testing tools, test generation features
+
+## Module 5: AI-Assisted Code Review, Security Basics, and Governance
+
+### Lab 51: AI-Powered Code Review
+- **Duration**: 45 minutes
+- **Objectives**: Conduct code reviews with AI assistance and security scanning
+- **Skills**: Code quality assessment, security scanning, best practices
+- **Tools**: AI review tools, security analysis features
+
+## Module 6: Agentic Development Workflows and Spec-Driven Coding
+
+### Lab 61: Building with Agentic Workflows
 - **Duration**: 45 minutes
 - **Objectives**: Practice systematic AI-driven development processes
 - **Skills**: Goal specification, agent collaboration, iterative development
 - **Tools**: Cursor, Claude, or advanced AI agents
 
-### Lab 05: Specification-Driven Development
+### Lab 62: Specification-Driven Development
 - **Duration**: 45 minutes
 - **Objectives**: Learn to guide AI development through detailed specifications
 - **Skills**: Requirements writing, spec-driven coding, quality control
 - **Tools**: AI agents, project specification templates
 
-## Module 4: AI-Powered Debugging and Analysis
+## Module 7: Practical Project - Website Development with AI Agents
 
-### Lab 06: AI-Assisted Debugging
-- **Duration**: 30 minutes
-- **Objectives**: Use AI to identify and fix code issues
-- **Skills**: Bug identification, automated fixes, debugging workflows
-- **Tools**: GitHub Copilot Chat, debugging AI features
-
-### Lab 07: Code Refactoring with AI
-- **Duration**: 30 minutes
-- **Objectives**: Improve code quality using AI suggestions
-- **Skills**: Code optimization, refactoring patterns, quality improvement
-- **Tools**: AI refactoring tools, code analysis features
-
-## Module 5: Test Automation and Quality Assurance
-
-### Lab 08: AI Test Generation
-- **Duration**: 30 minutes
-- **Objectives**: Generate comprehensive test suites using AI
-- **Skills**: Test case creation, coverage analysis, quality validation
-- **Tools**: AI testing tools, test generation features
-
-## Module 6: Code Review and Security
-
-### Lab 09: AI-Powered Code Review
-- **Duration**: 30 minutes
-- **Objectives**: Conduct code reviews with AI assistance
-- **Skills**: Code quality assessment, security scanning, best practices
-- **Tools**: AI review tools, security analysis features
-
-## Module 7: Final Project
-
-### Lab 10: Complete Website Development
+### Lab 71: Complete Website Development Project
 - **Duration**: 60 minutes
 - **Objectives**: Build a complete project using all learned AI techniques
 - **Skills**: End-to-end development, project planning, AI orchestration

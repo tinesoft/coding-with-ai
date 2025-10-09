@@ -43,7 +43,7 @@
 
 ### Session 2025-10-07
 - Q: For the visual aids required by FR-006 to illustrate complex AI concepts (LLMs, embeddings, RAG, prompt patterns), should these assets be created new, sourced from existing materials, or use a mixed approach? → A: Created new as part of Module 1 development (original SVG diagrams for all key concepts)
-- Q: For the new SPEAR framework content (Scenario, Perspective, Examples, Action, Result) to be added after CLEAR framework, what should be the implementation scope: new dedicated slide file, extend existing prompt engineering slides, or separate advanced module? → A: Extend existing prompt engineering slides (12_prompt_engineering.md), create new SPEAR visual, and add SPEAR exercises to Lab 01
+- Q: For the new SPEAR framework content (Scenario, Perspective, Examples, Action, Result) to be added after CLEAR framework, what should be the implementation scope: new dedicated slide file, extend existing prompt engineering slides, or separate advanced module? → A: Extend existing prompt engineering slides (12_prompt_engineering.md), create new SPEAR visual, and add SPEAR exercises to Lab 11 (Module 1, Lab 1)
 
 ---
 

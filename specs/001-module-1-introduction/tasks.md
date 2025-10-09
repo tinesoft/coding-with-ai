@@ -38,14 +38,14 @@
 
 ## Path Conventions
 - **Slides**: `docs/markdown/10_module_1_ai_fundamentals/` directory
-- **Labs**: `labs/lab-01-prompt-basics/`, `labs/lab-02-ai-fundamentals/` and solution directories
+- **Labs**: `labs/lab-11-prompt-basics/`, `labs/lab-12-ai-fundamentals/` and solution directories (module-scoped numbering)
 - **Assets**: `docs/assets/images/module-1/` for visual resources
 - **Configuration**: `docs/scripts/slides.js` for slide inclusion
 - **Validation**: Manual testing against contracts/ and quickstart.md scenarios
 
 ## Phase 3.1: Setup
 - [x] T001 Create Module 1 slide directory `docs/markdown/10_module_1_ai_fundamentals/`
-- [x] T002 Create lab structure directories: `labs/lab-01-prompt-basics/`, `labs/lab-01-prompt-basics-solution/`, `labs/lab-02-ai-fundamentals/`, `labs/lab-02-ai-fundamentals-solution/`
+- [x] T002 Create lab structure directories: `labs/lab-11-prompt-basics/`, `labs/lab-11-prompt-basics-solution/`, `labs/lab-12-ai-fundamentals/`, `labs/lab-12-ai-fundamentals-solution/`
 - [x] T003 [P] Create asset directory for Module 1 images: `docs/assets/images/module-1/`
 
 ## Phase 3.2: Core Implementation
@@ -59,12 +59,12 @@
 - [x] T009 Create `docs/markdown/10_module_1_ai_fundamentals/15_assessment_and_recap.md` - Knowledge validation and summary
 
 ### Lab Exercise Development (Parallel - different directories)
-- [x] T010 [P] Create `labs/lab-01-prompt-basics/README.md` - Prompt writing exercises with clear instructions
-- [x] T011 [P] Create `labs/lab-01-prompt-basics/exercises/` directory with practice templates and resources
-- [x] T012 [P] Create `labs/lab-01-prompt-basics-solution/README.md` - Complete solutions and explanations
-- [x] T013 [P] Create `labs/lab-02-ai-fundamentals/README.md` - AI concepts exploration exercises  
-- [x] T014 [P] Create `labs/lab-02-ai-fundamentals/exercises/` directory with reference materials
-- [x] T015 [P] Create `labs/lab-02-ai-fundamentals-solution/README.md` - Solution guides and teaching notes
+- [x] T010 [P] Create `labs/lab-11-prompt-basics/README.md` - Prompt writing exercises with clear instructions
+- [x] T011 [P] Create `labs/lab-11-prompt-basics/exercises/` directory with practice templates and resources
+- [x] T012 [P] Create `labs/lab-11-prompt-basics-solution/README.md` - Complete solutions and explanations
+- [x] T013 [P] Create `labs/lab-12-ai-fundamentals/README.md` - AI concepts exploration exercises  
+- [x] T014 [P] Create `labs/lab-12-ai-fundamentals/exercises/` directory with reference materials
+- [x] T015 [P] Create `labs/lab-12-ai-fundamentals-solution/README.md` - Solution guides and teaching notes
 
 ## Phase 3.3: Integration
 - [x] T016 Update `docs/scripts/slides.js` to include all Module 1 slide files in correct sequence (10-15_*.md)
@@ -93,12 +93,12 @@
 ### Phase 3.2: Lab Development (T010-T015) - Parallel with Slide Creation
 ```bash
 # While slides are being created sequentially, labs can be developed in parallel:
-Task: "Create labs/lab-01-prompt-basics/README.md - Prompt writing exercises"
-Task: "Create labs/lab-01-prompt-basics/exercises/ directory with practice templates" 
-Task: "Create labs/lab-01-prompt-basics-solution/README.md - Complete solutions"
-Task: "Create labs/lab-02-ai-fundamentals/README.md - AI concepts exploration"
-Task: "Create labs/lab-02-ai-fundamentals/exercises/ directory with reference materials"
-Task: "Create labs/lab-02-ai-fundamentals-solution/README.md - Solution guides"
+Task: "Create labs/lab-11-prompt-basics/README.md - Prompt writing exercises"
+Task: "Create labs/lab-11-prompt-basics/exercises/ directory with practice templates" 
+Task: "Create labs/lab-11-prompt-basics-solution/README.md - Complete solutions"
+Task: "Create labs/lab-12-ai-fundamentals/README.md - AI concepts exploration"
+Task: "Create labs/lab-12-ai-fundamentals/exercises/ directory with reference materials"
+Task: "Create labs/lab-12-ai-fundamentals-solution/README.md - Solution guides"
 ```
 
 ### Phase 3.4: Quality Assurance (T020-T023) - All Parallel
