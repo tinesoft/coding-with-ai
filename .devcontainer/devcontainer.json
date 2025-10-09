@@ -60,6 +60,8 @@
           "wget": true,
           "find": true,
           "ls": true,
+          "mkdir": true,
+          "mv": true,
           "cat": true,
           "head": true,
           "tail": true,
