@@ -559,7 +559,7 @@ Detailed speaker notes with timing and additional context
 1. Task description step 1
 2. Task description step 2
 
-### Step: lab-01-[slug]
+### Step: lab-[MODULE][SEQUENCE]-{slug}
 
 Notes:
 Reference the corresponding lab directory for detailed instructions
@@ -648,11 +648,11 @@ Perfect for side-by-side comparisons and before/after examples
 
 10. **CREATE LABS IN `labs/`**
 
-For each lab `lab-XX` (zero-padded), create:
+For each lab using the module-scoped pattern `lab-[MODULE][SEQUENCE]-{topic}` (for example `lab-11-prompt-basics`, `lab-21-copilot-setup-basics`), create:
 
-#### `labs/lab-01/README.md`
+#### `labs/lab-[MODULE][SEQUENCE]-topic/README.md`
 ```markdown
-# Lab 01: [Lab Title]
+# Lab [MODULE][SEQUENCE]: [Lab Title]
 
 ## Objectives
 - Objective 1
@@ -666,12 +666,12 @@ For each lab `lab-XX` (zero-padded), create:
 - Hint 1
 
 ## Reference Slides
-- [11_concepts.md](../../docs/assets/markdown/11_concepts.md)
+- [10_module_1_ai_fundamentals/11_ai_fundamentals.md](../../docs/markdown/10_module_1_ai_fundamentals/11_ai_fundamentals.md)
 ```
 
-#### `labs/lab-01-solution/README.md`
+#### `labs/lab-[MODULE][SEQUENCE]-topic-solution/README.md`
 ```markdown
-# Lab 01 Solution
+# Lab [MODULE][SEQUENCE] Solution
 
 ## Approach
 Explain the solution step-by-step.
@@ -789,9 +789,13 @@ sfeir-school-[technology-name]/
 │   ├── tsconfig.json
 │   └── vite.config.ts
 ├── labs/
-│   ├── lab-01/
+│   ├── lab-11-prompt-basics/
 │   │   └── README.md
-│   ├── lab-01-solution/
+│   ├── lab-11-prompt-basics-solution/
+│   │   └── README.md
+│   ├── lab-12-ai-fundamentals/
+│   │   └── README.md
+│   ├── lab-12-ai-fundamentals-solution/
 │   │   └── README.md
 │   └── README.md
 ├── nx.json
