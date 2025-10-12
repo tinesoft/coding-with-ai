@@ -1,28 +1,26 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.7.2 → 1.8.0
-Modified Principles: VIII. Sequential Numbering and Consistency Standards - Complete rewrite to enforce module-scoped numbering
-Added Sections: Module-Level Numbering, Lab-Level Numbering (within module scope), Exercise-Level Numbering clarifications
-Removed Sections: None (replaced global sequential numbering guidance with module-scoped approach)
+Version Change: 1.8.0 → 1.9.0
+Modified Principles: Training Module Overview - Comprehensive update with expanded content and new educa- **CLI Agents Lab:** Hands-on use of a powerful CLI agent (GitHub Copilot CLI) for quick, focused code tasks; showcase most relevant commands and workflows
+- **Deep Dive: GitHub Copilot (VS Code):** Installation, most important features exploration, including custom agents, and practicing the three core modes: **Ask** (chat), **Edit** (inline/apply changes), and **Agent** (autonomous task execution)l focus areas
+Added Sections: Module 1 safety and ethics section, Module 2 enhanced tool landscape and model comparison, Module 3 Human-in-the-Loop focus, Module 6 Spec-Kit Deep Dive, Module 7 multimodal prototyping
+Removed Sections: None
 Templates Requiring Updates:
-  ✅ .specify/memory/constitution.md - Updated with module-scoped numbering principle
-  ⚠️ ALL existing lab folders require renumbering to follow module-scoped pattern
-  ⚠️ ALL lab instruction and solution README files require exercise numbering updates
-  ⚠️ ALL exercise slides require lab reference updates
-  ⚠️ spec-template.md may require updates to reflect module-scoped lab planning
-  ⚠️ tasks-template.md may require updates to reflect module-scoped task organization
+  ✅ .specify/memory/constitution.md - Updated with expanded training module overview
+  ⚠️ Module specifications may require updates to reflect new content areas (safety/ethics, multimodal prototyping, Spec-Kit focus)
+  ⚠️ Lab development plans may need adjustment to accommodate expanded module content
+  ⚠️ Assessment materials may require updates to cover new learning objectives
 Follow-up TODOs:
-  1) Rename existing lab folders to follow module-scoped pattern (e.g., lab-01-prompt-basics → lab-11-prompt-basics for Module 1)
-  2) Update all lab README files to use module-scoped exercise numbering
-  3) Update all exercise slides to reference correct module-scoped lab numbers
-  4) Update spec files for all modules to reflect module-scoped lab planning
-  5) Verify all cross-references between slides, labs, and assessments maintain consistency
-Notes: Changed from global sequential lab numbering (lab-01, lab-02, lab-03 across all modules) to module-scoped numbering (Module 1: lab-11, lab-12; Module 2: lab-21, lab-22; etc.). This MAJOR principle change ensures labs are clearly associated with their parent module and numbering resets for each module. Lab folders now use pattern lab-[MODULE_NUMBER][SEQUENCE]-{topic} where MODULE_NUMBER is the module digit (1-7) and SEQUENCE is the sequential position within that module (1, 2, 3...). Exercise numbering within each lab still starts from 1 and increments sequentially.
+  1) Review existing module specifications to ensure alignment with updated overview content
+  2) Update lab development plans to incorporate new focus areas (safety/ethics, Spec-Kit, multimodal)
+  3) Verify assessment materials cover expanded learning objectives
+  4) Ensure slide content development plans reflect updated module descriptions
+Notes: Expanded training module overview with significantly enhanced content descriptions. Module 1 now includes comprehensive safety and ethics coverage. Module 2 features detailed tool landscape categorization and expanded model comparison. Module 3 emphasizes Human-in-the-Loop methodology. Module 6 includes dedicated Spec-Kit Deep Dive component. Module 7 adds multimodal prototyping and efficiency measurement focus. This MINOR version change adds substantial new educational content while maintaining existing educational methodology and structure.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.8.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-09
+**Version**: 1.9.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-12
 
 ## Core Principles
 
@@ -142,55 +140,61 @@ All training content MUST maintain strict sequential numbering without gaps to e
 
 ## Training Module Overview
 
-### Module 1: Introduction to AI and Prompt Engineering (1 day)
-- AI Fundamentals: Core concepts, LLMs, embeddings, and RAG
-- Prompt Engineering: Effective communication patterns with AI systems
-- Practical Exercises: Hands-on prompt writing and iteration
-- Tools Introduction: Overview of coding agents and safety practices
+This 7-day training provides a comprehensive journey from AI fundamentals to advanced agentic development workflows, with a strong focus on practical application and enterprise readiness.
 
-### Module 2: Modern AI Coding Tools and Copilot Agent (1.5 days)
-- Agentic Tools Landscape: Focus on practical tools developers actually use, highlighted by category:
-  - Standalone IDEs: Cursor, Windsurf, Kiro, Zed
-  - IDE Extensions (VS Code/JetBrains): GitHub Copilot, Cline (formerly Claude Dev), Roo Code, KiloCode, Continue, Amazon Q Developer
-  - CLI-Based Agents: GitHub Copilot CLI, Codex CLI, Gemini CLI, Claude Code, Opencode, Aider, Warp
-  - Online Tools: Mention-only (Bolt.new, Firebase Studio, Lovable, v0 by Vercel, Replit AI)
-- GitHub Copilot Setup (Simplified): Install the VS Code extension, then add the custom agent “GPT 4.1 - Beast Mode” via this direct link badge: [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/awesome-copilot/install/chatmode?url=vscode%3Achat-mode%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fawesome-copilot%2Fmain%2Fchatmodes%2F4.1-Beast.chatmode.md)
-- Copilot Interaction Modes: Showcase and practice the three modes — Ask (chat), Edit (inline/apply changes), Agent (autonomous task execution with oversight)
-- Labs Scope: Hands-on labs exclusively in VS Code using GitHub Copilot with “GPT 4.1 - Beast Mode”; other tools are demonstrated live by the trainer
-- Model Comparison (when to use what):
-  - GPT-5: General-purpose coding assistant; strong for multi-step reasoning and tool-use orchestration
-  - GPT-5-Codex: Code-centric generation; effective for structured edits, refactors, and multi-file changes
-  - GPT-4.1: Balanced assistant compatible with Copilot features; great for inline edits and quick iterations
-  - Claude Sonnet: Long-context comprehension and clear explanations; helpful for documentation, reviews, and planning
-  - Gemini 2.5 Pro: Solid code understanding with ecosystem integrations; good for API-first tasks and multi-modal prompts
+### Module 1: AI Fundamentals, Prompt Engineering, and Safety (1 day)
+- **AI Fundamentals:** Core concepts, LLMs, embeddings, Retrieval-Augmented Generation (RAG), and context windows
+- **Prompt Engineering Theory:** Effective communication patterns with AI systems (e.g., role-playing, constraints, few-shot examples)
+- **Safety and Ethics:** AI tool implications for code security, data privacy, and ethical use
+  - **Code Security:** Vulnerabilities in AI-generated code (injection attacks, insecure dependencies); best practices for review, testing, and validation
+  - **Data Privacy:** Sensitive data exposure risks; compliance with regulations (GDPR, HIPAA); authorization protocols for external services
+  - **Ethical Use:** Bias and fairness considerations; transparency in AI assistance disclosure; developer accountability for AI-generated code
+  - **Prerequisite for Tool Introduction:** Awareness of safety and ethical considerations essential before integrating AI tools into development workflows; organizational policy establishment for responsible AI tool usage
+- **Practical Exercises:** Hands-on prompt writing and iterative refinement
 
-### Module 3: AI-Powered Debugging, Refactoring, and Code Analysis (1 day)
-- AI Debugging: Systematic problem-solving with AI assistance
-- Refactoring with AI: Code improvement and modernization techniques
-- Code Analysis: AI-powered code review and optimization
-- Debugging Exercises: Practical troubleshooting scenarios
+### Module 2: Modern AI Coding Tools and Deep Dive (1.5 days)
+- **Agentic Tools Landscape:** Overview of practical tools across categories (CLI, IDEs, Extensions, Online)
+  - **CLI-Based Agents:** GitHub Copilot CLI, Codex CLI, Gemini CLI, Claude Code, Opencode, Aider, Warp
+  - **Standalone IDEs:** Cursor, Windsurf, Kiro, Zed
+  - **IDE Extensions (VS Code/JetBrains):** GitHub Copilot, Cline (formerly Claude Dev), Roo Code, Kilo Code, Continue, Amazon Q Developer
+  - **Online Tools:** Mention-only (Bolt.new, Firebase Studio, Lovable, v0 by Vercel, Replit AI)
+- Focus on GitHub Copilot (VS Code) for hands-on labs and exercises
+  - Install the VS Code extension, then add the custom agent “GPT 4.1 - Beast Mode” via this direct link badge: [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/awesome-copilot/install/chatmode?url=vscode%3Achat-mode%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fawesome-copilot%2Fmain%2Fchatmodes%2F4.1-Beast.chatmode.md)
+  - Showcase and practice the three modes — Ask (chat), Edit (inline/apply changes), Agent (autonomous task execution with oversight)
+  - Showcase custom agent mode
+  - Showcase restore points in Github CopilotChat
+- **Models Comparison:** Detailed comparison on main coding models and when to use what (e.g., GPT-5 for reasoning, Claude for long context, Gemini for API/multimodal, Deepseek, etc.)
+
+### Module 3: AI-Powered Debugging, Refactoring, and Verification (1 day)
+- **AI Debugging:** Systematic problem-solving with AI assistance (focusing on root cause analysis)
+- **Refactoring with AI:** Code improvement, modernization, and using AI to maintain backward compatibility
+- **Verifying AI Code:** A critical segment on the **Human-in-the-Loop** model and techniques for spotting and fixing AI **hallucinations** and security flaws
+- **Debugging Exercises:** Practical troubleshooting scenarios, including finding intentionally introduced AI-generated flaws
 
 ### Module 4: Test Automation and Quality Assurance with AI (1 day)
-- Test Automation: AI-assisted test generation and execution
-- Quality Assurance: Maintaining standards with AI tools
-- Testing Exercises: Automated test creation and validation
+- **Test Automation:** AI-assisted generation of unit, integration, and end-to-end tests
+- **Test-Driven Development (TDD) with AI:** Using agents to co-create tests *before* writing implementation code
+- **Quality Assurance:** Maintaining coding standards and enforcing best practices using AI-powered static analysis
+- **Testing Exercises:** Automated test creation, validation, and increasing test coverage
 
-### Module 5: AI-Assisted Code Review, Security Basics, and Governance (1 day)
-- Code Review with AI: Systematic review processes and best practices
-- Security Fundamentals: AI tool implications for code security
-- Governance: Enterprise AI adoption strategies and policies
-- Review Exercises: Practical code review scenarios
+### Module 5: Code Review, Security Governance, and DevOps (1 day)
+- **Code Review with AI:** Using AI assistants to evaluate pull requests, suggest performance improvements, and assess compliance
+- **Governance and Policy:** Enterprise AI adoption strategies, policy setting, and controlling tool usage across teams
+- **AI in DevOps/LLMOps:** Introduction to integrating AI agents into CI/CD pipelines (e.g., auto-documentation, automated reviews)
+- **Review Exercises:** Practical code review scenarios focusing on security and compliance checks
 
 ### Module 6: Agentic Development Workflows and Spec-Driven Coding (1.5 days)
-- Agentic Workflows: Systematic approaches to AI-driven development
-- Vibe Coding: Intuitive AI collaboration patterns
-- Spec-Driven Coding: Specification-based development methodology
-- Workflow Exercises: Real-world development scenarios
+- **Agentic Workflows:** Systematic approaches to AI-driven development methodologies
+- **Vibe Coding:** Intuitive AI collaboration patterns and advanced agent prompting
+- **Spec-Driven Coding (Spec-Kit Deep Dive):** Specification-based development methodology
+- **Hands-on Lab:** Dedicated lab on **Spec-Kit** to plan, scaffold, and execute an application module using a documented specification
+- **Workflow Exercises:** Building a multi-step agentic process for a defined engineering task
 
-### Module 7: Practical Project - Website Development with AI Agents (1 day)
-- Project Planning: AI-assisted project architecture and planning
-- Project Execution: Complete website development using AI agents
-- Project Showcase: Presentation and evaluation of results
+### Module 7: Practical Project - Website Development and Multimodality (1 day)
+- **Project Planning:** AI-assisted project architecture and component-level planning
+- **Multimodal Prototyping:** Using an AI model (e.g., Gemini Pro) to generate starter UI code from a simple **wireframe sketch or screenshot**
+- **Project Execution:** Complete a well-scoped website component/feature using the **workflows and tools from Modules 6 and 2**
+- **Project Showcase:** Presentation and evaluation of results, emphasizing the **efficiency gained** through AI-assisted processes
 
 ## Technical Stack Requirements
 
@@ -280,41 +284,51 @@ labs/
 ├── lab-12-ai-fundamentals-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-21-copilot-setup/         # Module 2, Lab 1: GitHub Copilot setup (VS Code + Beast Mode)
+├── lab-21-copilot-cli/           # Module 2, Lab 1: CLI agent hands-on (GitHub Copilot CLI)
 │   └── README.md
-├── lab-21-copilot-setup-solution/
+├── lab-21-copilot-cli-solution/
 │   ├── README.md
-│   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-22-tool-comparison/       # Module 2, Lab 2: Copilot modes and model comparison in VS Code
+│   └── resources/
+├── lab-22-copilot-vscode/        # Module 2, Lab 2: Deep dive on Copilot in VS Code (modes, custom agents)
 │   └── README.md
-├── lab-22-tool-comparison-solution/
+├── lab-22-copilot-vscode-solution/
 │   ├── README.md
-│   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-31-ai-debugging/          # Module 3, Lab 1: AI-assisted debugging
+│   └── resources/
+├── lab-23-model-comparison/      # Module 2, Lab 3: Coding model comparison (GPT-5, Claude, Gemini, etc.)
+│   └── README.md
+├── lab-23-model-comparison-solution/
+│   ├── README.md
+│   └── resources/
+├── lab-31-ai-debugging/          # Module 3, Lab 1: AI-powered debugging and verification (Human-in-the-Loop)
 │   └── README.md
 ├── lab-31-ai-debugging-solution/
 │   ├── README.md
-│   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-41-test-automation/       # Module 4, Lab 1: Test automation with AI
+│   └── resources/
+├── lab-41-test-automation/       # Module 4, Lab 1: Test automation and TDD with AI
 │   └── README.md
 ├── lab-41-test-automation-solution/
 │   ├── README.md
-│   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-51-code-review/           # Module 5, Lab 1: AI-assisted code review
+│   └── resources/
+├── lab-51-code-review/           # Module 5, Lab 1: AI-assisted code review and DevOps integration
 │   └── README.md
 ├── lab-51-code-review-solution/
 │   ├── README.md
-│   └── resources/                # Optional: Lab outputs and deliverables
+│   └── resources/
 ├── lab-61-agentic-workflows/     # Module 6, Lab 1: Agentic development workflows
 │   └── README.md
 ├── lab-61-agentic-workflows-solution/
 │   ├── README.md
-│   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-71-capstone-project/      # Module 7, Lab 1: Complete project development
+│   └── resources/
+├── lab-62-spec-kit/              # Module 6, Lab 2: Spec-Kit deep dive and hands-on
 │   └── README.md
-└── lab-71-capstone-project-solution/
-    ├── README.md
-    └── resources/                # Optional: Lab outputs and deliverables
+├── lab-62-spec-kit-solution/
+│   ├── README.md
+│   └── resources/
+├── lab-71-multimodal-project/    # Module 7, Lab 1: Multimodal website prototyping and project execution
+│   └── README.md
+├── lab-71-multimodal-project-solution/
+│   ├── README.md
+│   └── resources/
 ```
 
 ### Content Creation Guidelines
@@ -329,4 +343,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.8.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-09
+**Version**: 1.9.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-12
