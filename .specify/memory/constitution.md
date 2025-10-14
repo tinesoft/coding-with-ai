@@ -1,26 +1,25 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.8.0 → 1.9.0
-Modified Principles: Training Module Overview - Comprehensive update with expanded content and new educa- **CLI Agents Lab:** Hands-on use of a powerful CLI agent (GitHub Copilot CLI) for quick, focused code tasks; showcase most relevant commands and workflows
-- **Deep Dive: GitHub Copilot (VS Code):** Installation, most important features exploration, including custom agents, and practicing the three core modes: **Ask** (chat), **Edit** (inline/apply changes), and **Agent** (autonomous task execution)l focus areas
-Added Sections: Module 1 safety and ethics section, Module 2 enhanced tool landscape and model comparison, Module 3 Human-in-the-Loop focus, Module 6 Spec-Kit Deep Dive, Module 7 multimodal prototyping
+Version Change: 1.9.0 → 1.10.0
+Modified Principles: None
+Added Sections: Research Information Currency Requirements (Principle IX) - New principle requiring active fetching of current, accurate information during research phases
 Removed Sections: None
 Templates Requiring Updates:
-  ✅ .specify/memory/constitution.md - Updated with expanded training module overview
-  ⚠️ Module specifications may require updates to reflect new content areas (safety/ethics, multimodal prototyping, Spec-Kit focus)
-  ⚠️ Lab development plans may need adjustment to accommodate expanded module content
-  ⚠️ Assessment materials may require updates to cover new learning objectives
+  ✅ .specify/memory/constitution.md - Updated with new research information currency principle
+  ⚠️ .specify/templates/plan-template.md - May require update to reflect research phase requirements for current information
+  ⚠️ Research phase workflows may need adjustment to incorporate active information verification requirements
+  ⚠️ Spec development processes may require updates to ensure research includes current information validation
 Follow-up TODOs:
-  1) Review existing module specifications to ensure alignment with updated overview content
-  2) Update lab development plans to incorporate new focus areas (safety/ethics, Spec-Kit, multimodal)
-  3) Verify assessment materials cover expanded learning objectives
-  4) Ensure slide content development plans reflect updated module descriptions
-Notes: Expanded training module overview with significantly enhanced content descriptions. Module 1 now includes comprehensive safety and ethics coverage. Module 2 features detailed tool landscape categorization and expanded model comparison. Module 3 emphasizes Human-in-the-Loop methodology. Module 6 includes dedicated Spec-Kit Deep Dive component. Module 7 adds multimodal prototyping and efficiency measurement focus. This MINOR version change adds substantial new educational content while maintaining existing educational methodology and structure.
+  1) Review plan-template.md to ensure research phases include current information gathering requirements
+  2) Update research workflows to incorporate active verification of information currency and accuracy
+  3) Verify that spec development processes include requirements for current information validation
+  4) Ensure all research-dependent activities comply with new information currency standards
+Notes: Added new Research Information Currency Requirements principle (IX) mandating active fetching of current, accurate information during research phases. This MINOR version change enhances information quality standards while maintaining existing educational methodology and structure.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.9.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-12
+**Version**: 1.10.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-14
 
 ## Core Principles
 
@@ -138,6 +137,16 @@ All training content MUST maintain strict sequential numbering without gaps to e
 
 **Cross-Reference Consistency**: When content is modified, ALL related materials MUST be updated simultaneously including lab instructions, solutions, exercise slides, assessment content, and navigation references. No orphaned references or broken sequential chains SHALL be permitted. Changes to numbering in one component require immediate verification and update of all dependent references to maintain educational coherence. The module-scoped numbering system ensures clear module boundaries and prevents confusion when working across multiple modules simultaneously.
 
+### IX. Research Information Currency Requirements
+During any research phase of content development, training material creation, or educational resource preparation, ALL information gathering activities MUST actively seek and validate the most current and accurate information available. Research SHALL NOT rely solely on static knowledge bases or pre-existing documentation without verification. When conducting research for AI technologies, tools, frameworks, APIs, or industry practices, content creators MUST:
+
+- **Active Information Retrieval**: Actively fetch current information from authoritative online sources, official documentation, and up-to-date repositories rather than relying on potentially outdated cached knowledge
+- **Currency Validation**: Verify that all technical information, version numbers, feature availability, and capabilities reflect the current state of the technology as of the research date
+- **Source Authority Verification**: Prioritize official documentation, primary sources, and authoritative references over secondary or potentially outdated information sources
+- **Real-Time Validation**: When possible, validate information against live APIs, current tool capabilities, and available features rather than assuming functionality based on historical knowledge
+
+**Rationale**: The rapidly evolving nature of AI technologies, tools, and best practices requires that educational content reflect the most current state of the field. Outdated information in training materials can lead to learner confusion, ineffective practices, and reduced educational value. Active research ensures that learners receive accurate, applicable, and professionally relevant instruction that prepares them for current industry practices.
+
 ## Training Module Overview
 
 This 7-day training provides a comprehensive journey from AI fundamentals to advanced agentic development workflows, with a strong focus on practical application and enterprise readiness.
@@ -154,9 +163,9 @@ This 7-day training provides a comprehensive journey from AI fundamentals to adv
 
 ### Module 2: Modern AI Coding Tools and Deep Dive (1.5 days)
 - **Agentic Tools Landscape:** Overview of practical tools across categories (CLI, IDEs, Extensions, Online)
-  - **CLI-Based Agents:** GitHub Copilot CLI, Codex CLI, Gemini CLI, Claude Code, Opencode, Aider, Warp
+  - **CLI-Based Agents:** GitHub Copilot CLI, Codex CLI, Gemini CLI, Claude Code, Opencode, Warp, Aider
   - **Standalone IDEs:** Cursor, Windsurf, Kiro, Zed
-  - **IDE Extensions (VS Code/JetBrains):** GitHub Copilot, Cline (formerly Claude Dev), Roo Code, Kilo Code, Continue, Amazon Q Developer
+  - **IDE Extensions (VS Code/JetBrains):** GitHub Copilot, Roo Code, Kilo Code, Continue,  Codex, Cline (formerly Claude Dev), Amazon Q Developer
   - **Online Tools:** Mention-only (Bolt.new, Firebase Studio, Lovable, v0 by Vercel, Replit AI)
 - Focus on GitHub Copilot (VS Code) for hands-on labs and exercises
   - Install the VS Code extension, then add the custom agent “GPT 4.1 - Beast Mode” via this direct link badge: [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/awesome-copilot/install/chatmode?url=vscode%3Achat-mode%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fawesome-copilot%2Fmain%2Fchatmodes%2F4.1-Beast.chatmode.md)
@@ -343,4 +352,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.9.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-12
+**Version**: 1.10.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-14
