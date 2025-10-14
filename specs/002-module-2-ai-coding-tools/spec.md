@@ -22,7 +22,11 @@
 
 ### User Story 1 - AI Coding Tools Landscape Overview (Priority: P1)
 
-Learners need a comprehensive overview of available AI coding tools across different categories to make informed decisions about which tools to use in their development workflow. They learn about CLI-based agents, standalone IDEs, IDE extensions, and online tools with their specific use cases and capabilities.
+Learners need a comprehensive overview of available AI coding tools across different categories to make informed decisions about which tools to use in their development workflow. They learn about CLI-based agents, standalone IDEs, IDE extensions, and online tools with their specific use cases and capabilities, as accurately, comprehensively, and up-to-date (as of the research date) as possible. The tools landscape must include:
+  - **CLI-Based Agents:** GitHub Copilot CLI, Codex CLI, Gemini CLI, Claude Code, Opencode, Warp, Aider
+  - **Standalone IDEs:** Cursor, Windsurf, Kiro, Zed
+  - **IDE Extensions (VS Code/JetBrains):** GitHub Copilot, Roo Code, Kilo Code, Continue,  Codex, Cline (formerly Claude Dev), Amazon Q Developer
+  - **Online Tools:** Mention-only (Bolt.new, Firebase Studio, Lovable, v0 by Vercel, Replit AI)
 
 **Why this priority**: Foundation knowledge of the AI coding tools ecosystem is essential before diving into specific tool usage. Without this overview, learners cannot make informed choices about which tools to adopt for different scenarios.
 
@@ -68,14 +72,23 @@ Learners understand the strengths and appropriate use cases for different AI cod
 3. **Given** an API integration or multimodal task, **When** learners recommend a model, **Then** they choose Gemini and explain its multimodal advantages
 4. **Given** performance-critical coding tasks, **When** learners evaluate options, **Then** they can compare different models' speed and efficiency trade-offs
 
-### Edge Cases
+---
 
-- What happens when learners don't have GitHub accounts or Copilot access?
-- How does the module handle learners using different operating systems or development environments?
-- What if learners have different levels of programming experience affecting their tool adoption speed?
-- How does the training address network connectivity issues affecting cloud-based AI tools?
-- What happens when AI tools are temporarily unavailable during hands-on exercises?
-- How does the module handle learners who are skeptical about AI-assisted development?
+### User Story 4 - AI Agent Instruction Files and Project Context (Priority: P3)
+
+Learners understand what agent instruction files are and how to create and maintain AI agent instruction files (`.github/copilot-instructions.md`, `CLAUDE.md`, `GEMINI.md`, `AGENTS.md`) that provide essential project context and guidelines to AI coding assistants for improved collaboration and code quality.
+
+**Why this priority**: Agent instruction files are critical for scaling AI-assisted development in real projects, but this knowledge builds on understanding of AI tools and models. Learners need practical experience with AI agents before they can effectively design instructions for them.
+
+**Independent Test**: Can be fully tested by having learners analyze an existing codebase and generate appropriate instruction files that demonstrably improve AI agent performance on project-specific tasks.
+
+**Acceptance Scenarios**:
+
+1. **Given** a software project without AI instruction files, **When** learners analyze the codebase architecture and patterns, **Then** they can identify key information that AI agents need to be immediately productive
+2. **Given** project-specific conventions and workflows, **When** learners create agent instruction files, **Then** they can document critical patterns, dependencies, and development processes that differ from standard practices
+3. **Given** multiple AI platforms in use (GitHub Copilot, Claude, Gemini), **When** learners design instruction files, **Then** they can create both platform-specific files and a unified `AGENTS.md` that covers common project context
+4. **Given** an existing generic instruction file, **When** learners work with a specific codebase, **Then** they can customize and enhance the instructions with project-specific architectural decisions, build systems, and integration points
+
 
 ## Requirements *(mandatory)*
 
@@ -89,15 +102,18 @@ Learners understand the strengths and appropriate use cases for different AI cod
 - **FR-006**: Module MUST provide detailed comparison of major AI coding models (GPT-5, Claude, Gemini, Deepseek) with specific use case recommendations
 - **FR-007**: Module MUST include restore points demonstration in GitHub Copilot Chat for version control and experimentation safety
 - **FR-008**: Learning materials MUST follow SFEIR School Theme markdown syntax and constitutional formatting requirements
-- **FR-009**: Module MUST provide three lab exercises using module-scoped numbering (lab-21, lab-22, lab-23) with corresponding solution documentation
-- **FR-010**: All practical exercises MUST be designed for beginner to intermediate developers with clear success criteria and scaffolded learning progression
+- **FR-009**: Module MUST provide practical guidance on creating and maintaining AI agent instruction files including platform-specific files (copilot-instructions.md, CLAUDE.md, GEMINI.md) and unified AGENTS.md
+- **FR-010**: Module MUST include exercises for analyzing codebases to identify essential project context that AI agents need, including architecture patterns, build systems, and development workflows
+- **FR-011**: Module MUST provide three lab exercises using module-scoped numbering (lab-21, lab-22, lab-23) with corresponding solution documentation
+- **FR-012**: All practical exercises MUST be designed for beginner to intermediate developers with clear success criteria and scaffolded learning progression
 
 ### Key Entities *(include if feature involves data)*
 
 - **AI Coding Tool**: Represents different categories of AI-powered development tools with attributes like category type, capabilities, platform compatibility, and use case recommendations
 - **Learning Exercise**: Structured hands-on activities with objectives, prerequisites, instructions, and success criteria for skill development
 - **Tool Configuration**: Setup instructions, installation procedures, and configuration settings required for learners to successfully use AI tools in their development environment
-- **Assessment Criteria**: Measurable learning outcomes and validation methods to ensure learners achieve proficiency with AI coding tools
+- **Agent Instruction File**: Project-specific guidance documents (copilot-instructions.md, CLAUDE.md, GEMINI.md, AGENTS.md) containing essential codebase context, architectural patterns, development workflows, and conventions to optimize AI agent performance
+- **Assessment Criteria**: Measurable learning outcomes and validation methods to ensure learners achieve proficiency with AI coding tools and agent collaboration
 
 ## Success Criteria *(mandatory)*
 
@@ -109,8 +125,10 @@ Learners understand the strengths and appropriate use cases for different AI cod
 - **SC-004**: Learners can complete a coding task 40% faster using AI assistance compared to unassisted coding baseline established in Module 1
 - **SC-005**: 90% of learners correctly recommend appropriate AI models for 4 out of 5 given coding scenarios based on task requirements (reasoning, context length, multimodal needs, performance)
 - **SC-006**: Learners complete all three lab exercises (lab-21, lab-22, lab-23) with documented success criteria within allocated module timeframe
-- **SC-007**: 95% of learners report increased confidence in selecting and using AI coding tools for their development workflow
-- **SC-008**: Post-module assessment shows 80% proficiency in identifying when and how to use different AI coding tool categories for various development scenarios
+- **SC-007**: 80% of learners successfully create comprehensive AI agent instruction files that demonstrably improve agent performance on project-specific coding tasks
+- **SC-008**: Learners can identify and document at least 5 critical project-specific patterns (architecture, build systems, conventions) that AI agents need for effective collaboration
+- **SC-009**: 95% of learners report increased confidence in selecting and using AI coding tools for their development workflow
+- **SC-010**: Post-module assessment shows 80% proficiency in identifying when and how to use different AI coding tool categories for various development scenarios
 
 ## Assumptions
 
