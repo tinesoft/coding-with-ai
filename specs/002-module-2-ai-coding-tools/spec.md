@@ -5,6 +5,14 @@
 **Status**: Draft  
 **Input**: User description: "Module 2: Modern AI Coding Tools"
 
+## Clarifications
+
+### Session 2025-10-14
+- Q: Learning Delivery Format - The spec mentions "1.5 days" duration but doesn't specify the learning delivery format, which affects content depth, interaction methods, and assessment approaches. → A: Mixed format combining presentations, live demos, and guided practice sessions
+- Q: Tool Access Failure Handling - The spec assumes access to GitHub accounts and cloud-based AI services but doesn't specify how to handle situations where learners can't access these tools during the session. → A: Google's Gemini
+- Q: Assessment Method for AI Agent Instruction Files - Success Criteria SC-007 states "80% of learners successfully create comprehensive AI agent instruction files that demonstrably improve agent performance" but doesn't specify how to measure "demonstrable improvement." → A: Subjective trainer evaluation using a rubric for instruction file quality and completeness
+- Q: Lab Exercise Scope Definition - The spec requires "three lab exercises using module-scoped numbering (lab-21, lab-22, lab-23)" but doesn't specify what specific skills or tools each individual lab should focus on, which affects content planning and time allocation. → A: lab-21: GitHub Copilot CLI installation and usage (main commands), lab-22: GitHub Copilot (VSCode Extension) installation and exploration, lab-23: Agent Instruction File creation (via Github Copilot CLI and Github Copilot VSCode Extension)
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--
@@ -104,8 +112,10 @@ Learners understand what agent instruction files are and how to create and maint
 - **FR-008**: Learning materials MUST follow SFEIR School Theme markdown syntax and constitutional formatting requirements
 - **FR-009**: Module MUST provide practical guidance on creating and maintaining AI agent instruction files including platform-specific files (copilot-instructions.md, CLAUDE.md, GEMINI.md) and unified AGENTS.md
 - **FR-010**: Module MUST include exercises for analyzing codebases to identify essential project context that AI agents need, including architecture patterns, build systems, and development workflows
-- **FR-011**: Module MUST provide three lab exercises using module-scoped numbering (lab-21, lab-22, lab-23) with corresponding solution documentation
+- **FR-011**: Module MUST provide three lab exercises: lab-21 focusing on GitHub Copilot CLI installation and main commands usage, lab-22 covering GitHub Copilot VS Code extension installation and exploration, and lab-23 on Agent Instruction File creation using both CLI and VS Code extension approaches
 - **FR-012**: All practical exercises MUST be designed for beginner to intermediate developers with clear success criteria and scaffolded learning progression
+- **FR-013**: Module delivery MUST use mixed format combining presentations, live demonstrations, and guided practice sessions to accommodate both theoretical learning and hands-on skill development
+- **FR-014**: Module MUST provide assessment rubric for evaluating AI agent instruction file quality covering completeness, project-specific context, and actionable guidance criteria
 
 ### Key Entities *(include if feature involves data)*
 
@@ -125,7 +135,7 @@ Learners understand what agent instruction files are and how to create and maint
 - **SC-004**: Learners can complete a coding task 40% faster using AI assistance compared to unassisted coding baseline established in Module 1
 - **SC-005**: 90% of learners correctly recommend appropriate AI models for 4 out of 5 given coding scenarios based on task requirements (reasoning, context length, multimodal needs, performance)
 - **SC-006**: Learners complete all three lab exercises (lab-21, lab-22, lab-23) with documented success criteria within allocated module timeframe
-- **SC-007**: 80% of learners successfully create comprehensive AI agent instruction files that demonstrably improve agent performance on project-specific coding tasks
+- **SC-007**: 80% of learners successfully create comprehensive AI agent instruction files that meet trainer evaluation rubric criteria for quality and completeness on project-specific coding tasks
 - **SC-008**: Learners can identify and document at least 5 critical project-specific patterns (architecture, build systems, conventions) that AI agents need for effective collaboration
 - **SC-009**: 95% of learners report increased confidence in selecting and using AI coding tools for their development workflow
 - **SC-010**: Post-module assessment shows 80% proficiency in identifying when and how to use different AI coding tool categories for various development scenarios
@@ -133,7 +143,7 @@ Learners understand what agent instruction files are and how to create and maint
 ## Assumptions
 
 - Learners have completed Module 1 (AI Fundamentals, Prompt Engineering, and Safety) and understand basic AI concepts and safety considerations
-- Learners have access to GitHub accounts for Copilot installation and usage
+- Learners have access to GitHub accounts for Copilot installation and usage, with Google's Gemini as fallback for learners unable to access GitHub Copilot
 - Training environment provides VS Code or similar IDE with extension installation capabilities
 - Network connectivity allows access to cloud-based AI services during hands-on exercises
 - Learners have basic programming knowledge and familiarity with code editors/IDEs
