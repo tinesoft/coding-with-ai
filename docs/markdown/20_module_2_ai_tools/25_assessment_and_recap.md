@@ -5,97 +5,81 @@
 ##--##
 
 <!-- .slide: -->
-# Assessment Overview
+# Learning Objectives Review
 
-## Four Core Competencies
+## ✅ What You Should Now Know
 
 <br>
 
-### **1. Tool Categorization** (SC-001)
-- Categorize 8/10 AI tools correctly within 5 minutes
-- Demonstrate understanding of CLI agents, IDEs, extensions, online tools
+### **AI Coding Tools Landscape**
+- 🗂️ **Tool Categories**: CLI agents, standalone IDEs, extensions, online tools
+- 🎯 **Tool Selection**: Choosing the right tool for specific development scenarios
+- 📊 **Market Overview**: 22 AI coding tools across 4 categories
 
-### **2. GitHub Copilot Proficiency** (SC-002, SC-003, SC-004)
-- Successfully use Copilot Chat, Edits, and Workspace modes
-- Configure custom instructions and demonstrate advanced features
-- Complete coding tasks 40% faster with AI assistance
+### **GitHub Copilot Mastery**
+- 💬 **Copilot CLI**: Terminal-based AI assistance for Git, shell commands
+- 🖥️ **VS Code Extension**: Chat, Edits, and Agent modes
+- ⚙️ **Configuration**: Custom agents and instruction files
+
+### **Advanced AI Collaboration**
+- 🤖 **Model Comparison**: GPT-5, Claude 4.x, Gemini 2.5, DeepSeek Coder
+- 📝 **Instruction Files**: Creating effective agent guidance documents
+- 🎯 **Context Optimization**: Providing project-specific context for better AI responses
 
 Notes:
-Each competency area has specific success criteria that validate practical skills.
+Reflect on your progress. You now have foundational knowledge to effectively integrate AI tools into your development workflow.
 
 ##--##
 
 <!-- .slide: -->
-# Assessment Methods
+# Knowledge Check: AI Coding Tools
 
-## How We Measure Success
+## Quick Quiz (2 minutes each)
 
 <br>
 
-### **Practical Demonstrations**
-- Live coding with GitHub Copilot modes
-- Tool selection and justification exercises
-- Agent instruction file creation tasks
+### **Question 1**: Which tool category is best for quick terminal operations?
+**A)** Standalone IDEs  
+**B)** CLI agents  
+**C)** IDE extensions  
+**D)** Online tools
 
-### **Rubric-Based Evaluation**
-- 5-point scale for instruction file quality
-- Project-specific context assessment
-- Trainer evaluation with structured criteria
+### **Question 2**: What is GitHub Copilot's Agent mode used for?
+**A)** Writing single-line code completions  
+**B)** Answering questions in chat  
+**C)** Autonomous task execution with oversight  
+**D)** Terminal command assistance
 
-### **Self-Assessment Checkpoints**
-- Confidence surveys before/after
-- Independent test completion
-- Peer collaboration exercises
+### **Question 3**: Which model has the largest context window?
+**A)** GPT-5 (128K tokens)  
+**B)** Claude 4.x (200K tokens)  
+**C)** Gemini 2.5 Pro (2M tokens)  
+**D)** DeepSeek Coder V2.5 (128K tokens)
+
+*Think about your answers, we'll discuss them next!*
 
 Notes:
-Mixed assessment approach ensures comprehensive skill validation.
+These questions test your understanding of tool selection and capabilities covered in Module 2.
 
 ##--##
 
 <!-- .slide: -->
-# Success Metrics
+# Knowledge Check: Answers
 
-## Your Achievement Targets
+## Answer 1: **B** - CLI agents
+CLI agents like GitHub Copilot CLI, Codex, and Gemini CLI are optimized for terminal operations, providing quick assistance with Git commands, shell scripts, and command-line workflows without leaving the terminal.
 
-<br>
+## Answer 2: **C** - Autonomous task execution with oversight
+Agent mode allows GitHub Copilot to execute multi-step tasks autonomously while maintaining human oversight through approval gates. It's more powerful than chat or inline completions for complex development tasks.
 
-| **Competency** | **Target** | **Assessment Method** |
-|----------------|------------|----------------------|
-| Tool Categorization | 90% accuracy | Timed exercise |
-| Copilot Installation | 100% success | Guided practice |
-| Custom Agent Usage | 85% demonstration | Live coding |
-| Model Selection | 90% appropriate recommendations | Scenario analysis |
-| Instruction Files | 80% rubric success | Trainer evaluation |
+## Answer 3: **C** - Gemini 2.5 Pro (2M tokens)
+Gemini 2.5 Pro offers a massive 2 million token context window, significantly larger than Claude 4.x (200K), GPT-5 (128K), and DeepSeek Coder (128K). This enables analysis of entire large codebases in a single context.
 
-Notes:
-These targets represent professional proficiency levels for AI-assisted development.
-
-##--##
-
-<!-- .slide: -->
-# Assessment Rubric
-
-## Agent Instruction Files Quality
-
-<br>
-
-### **5-Point Scale Criteria**
-
-#### **Completeness (0-5 points)**
-- Project architecture documentation
-- Development workflow description
-- Technology stack and dependencies
-- Code style and conventions
-- Build and deployment instructions
-
-#### **Project-Specific Context (0-5 points)**
-- Unique architectural patterns identified
-- Custom business logic documented
-- Integration points and external services
-- Domain-specific terminology and concepts
+## 💡 Key Insight
+Understanding tool capabilities and model differences helps you choose the optimal AI assistant for each development scenario, maximizing productivity and code quality.
 
 Notes:
-Rubric ensures consistent evaluation of instruction file quality across learners.
+These aren't just facts to memorize - they guide practical decisions about which tools to use in your daily development workflow.
 
 ##--##
 

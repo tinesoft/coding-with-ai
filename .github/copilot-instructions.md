@@ -207,8 +207,29 @@ When creating content, verify:
 - [ ] Addresses AI safety and limitations
 - [ ] Includes assessment and validation elements
 - [ ] Maintains professional educational standards
+- [ ] Assessment slides use learner-focused structure (Learning Objectives Review, Knowledge Check)
+- [ ] NO administrative slides in assessments (Assessment Overview, Success Metrics, Rubrics)
+
+## Assessment Slide Structure
+
+Module assessment and recap slides MUST follow this standardized structure:
+
+1. **Transition slide**: `# Module X: Assessment and Recap`
+2. **Learning Objectives Review**: What learners should now know and skills developed
+3. **Knowledge Check**: Interactive quiz questions with answers and explanations
+4. **Module Recap**: Key achievements and takeaways
+5. **Next Steps**: Application guidance and preview of next module
+6. **Resources**: Documentation links and practice materials
+
+**Prohibited Content in Assessment Slides:**
+- ❌ "Assessment Overview" - success criteria codes belong in spec docs
+- ❌ "Assessment Methods" - evaluation procedures belong in spec docs
+- ❌ "Success Metrics" - target scores and tables belong in spec docs
+- ❌ "Assessment Rubric" - scoring criteria belong in spec docs
+
+**Rationale**: Assessment slides reinforce learning through review and knowledge checks. Administrative evaluation frameworks belong in specification documents, not learner-facing presentations.
 
 ---
-*Instructions updated: 2025-09-18*
-*Module focus: Module 1 - Introduction to AI and Prompt Engineering*
+*Instructions updated: 2025-10-16*
+*Module focus: All modules*
 *Constitutional compliance: Required for all content creation*

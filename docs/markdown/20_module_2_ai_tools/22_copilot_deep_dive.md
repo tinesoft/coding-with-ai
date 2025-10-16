@@ -95,14 +95,6 @@ We'll focus primarily on VS Code extension and CLI installations as they represe
 - **Custom Instructions**: Personalized responses based on your preferences
 - **Agents**: Specialized assistants for terminal, VS Code, and GitHub
 
-### **Example Usage**
-```
-You: "How do I implement a binary search in Python?"
-Copilot: [Provides implementation with explanation]
-You: "Can you make it recursive?"
-Copilot: [Modifies to recursive approach]
-```
-
 Notes:
 Ask mode is perfect for learning and exploration, providing explanations and context that help you understand the "why" behind code suggestions.
 

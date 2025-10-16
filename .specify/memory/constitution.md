@@ -1,29 +1,35 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.10.1 → 1.10.2
-Modified Principles: Principle II (Content Organization Standards) - Added Transition Slide Formatting requirement
-Added Sections: Transition Slide Formatting - Mandatory module prefix for all transition slides within modules
+Version Change: 1.10.2 → 1.11.0
+Modified Principles: Principle II (Content Organization Standards) - Added Assessment and Recap Slide Structure requirement
+Added Sections: Assessment and Recap Slide Structure - Standardized structure for module assessment slides
 Removed Sections: None
 Templates Requiring Updates:
-  ✅ .specify/memory/constitution.md - Updated with transition slide formatting requirement
-  ✅ All existing module transition slides in docs/markdown/ - Added module prefix to all transition slides
-  ✅ .github/copilot-instructions.md - Updated with correct transition slide format example
-  ✅ Content generation workflows - Memory updated to enforce module prefix requirement
+  ✅ .specify/memory/constitution.md - Updated with assessment slide structure requirement
+  ✅ docs/markdown/20_module_2_ai_tools/25_assessment_and_recap.md - Replaced administrative slides with learner-focused structure
+  ✅ .github/copilot-instructions.md - Updated with assessment slide structure guidance and examples
+  ✅ /memories/sfeir-school-constitutional-rules.md - Documented assessment slide structure requirements
+  ⚠️ Future modules (3-7) assessment slides - Must follow new standardized structure when created
 Completed Actions:
-  1) ✅ Updated all Module 1 transition slides: 11_ai_fundamentals.md, 12_prompt_engineering.md, 14_tools_and_agents.md, 15_assessment_and_recap.md
-  2) ✅ Updated all Module 2 transition slides: 21_tools_landscape.md, 22_copilot_deep_dive.md, 23_model_comparison.md, 24_agent_instructions.md, 25_assessment_and_recap.md
-  3) ✅ Updated copilot-instructions.md with correct transition slide format example
-  4) ✅ Updated memory system (/memories/sfeir-school-constitutional-rules.md) with transition slide format rules and examples
+  1) ✅ Updated Module 2 assessment slides (25_assessment_and_recap.md):
+     - Replaced "Assessment Overview" (SC-001, SC-002 codes) with "Learning Objectives Review"
+     - Replaced "Assessment Methods" (evaluation procedures) with learner summary
+     - Replaced "Success Metrics" (target scores table) with "Knowledge Check: AI Coding Tools"
+     - Replaced "Assessment Rubric" (5-point scoring criteria) with "Knowledge Check: Answers"
+     - Retained "Module Recap", "Next Steps", "Resources" (learner-focused sections)
+  2) ✅ Updated copilot-instructions.md with assessment slide structure section and rationale
+  3) ✅ Updated memory system with prohibited/required assessment slide content
+  4) ✅ Module 1 already follows correct structure (used as reference model)
 Future Compliance:
-  - All future modules (3-7) MUST use "Module X:" prefix format in transition slides
-  - Content generation workflows will reference updated constitution and memory system
-  - GitHub Copilot will follow copilot-instructions.md format examples
-Notes: Successfully implemented Transition Slide Formatting requirement across all existing modules. All 9 transition slides updated (4 in Module 1, 5 in Module 2) with mandatory module prefix format. This PATCH version change (v1.10.2) improves navigational clarity by ensuring learners always understand module context during presentation flow. Amendment fully propagated and validated.
+  - All future modules (3-7) MUST follow standardized assessment structure
+  - Prohibited: Administrative slides (Assessment Overview, Methods, Metrics, Rubric)
+  - Required: Learner-focused slides (Learning Objectives Review, Knowledge Check with answers)
+Notes: Successfully implemented Assessment and Recap Slide Structure standardization. Module 2 transformed from administrative evaluation framework (4 slides removed) to learner-focused knowledge reinforcement (3 new slides added). Module 1 already compliant. This MINOR version change (v1.11.0) adds new governance guidance separating learner-facing content from trainer/spec documentation. Amendment fully propagated and validated.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.10.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-16
+**Version**: 1.11.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-16
 
 ## Core Principles
 
@@ -46,6 +52,23 @@ Where X is the module number (1-7) and sectionTitle describes the content sectio
 **Content Generation Restrictions**: When generating exercise slides, focus ONLY on the actual exercise content without creating introductory or closing slides. When generating module slides, focus ONLY on the core content without creating introductory or closing transition slides. This ensures lean, focused educational content without unnecessary navigational overhead.
 
 **Module Introduction Content Restrictions**: Module introduction slides SHALL NOT include "Module Structure" or "Success Criteria" slides. These administrative details belong in specification documents and trainer materials, not in learner-facing slide presentations. Module introductions MUST include ONLY: (1) Transition slide with module title, (2) Learning Objectives slide, and (3) Prerequisites slide. This maintains focus on actionable learning outcomes while eliminating redundant scheduling and assessment information that does not enhance learning experience.
+
+**Assessment and Recap Slide Structure**: Module assessment and recap slides SHALL follow a standardized learner-focused structure that reinforces learning rather than duplicating administrative content from specification documents. Assessment slides MUST include:
+
+1. **Transition slide**: Module title with "Assessment and Recap" subtitle
+2. **Learning Objectives Review**: Summarizes what learners should now know and skills developed
+3. **Knowledge Check**: Interactive quiz questions testing key concepts with answers and explanations
+4. **Module Recap**: Key achievements and takeaways from the module
+5. **Next Steps**: Application guidance and preview of next module
+6. **Resources**: Documentation links and practice materials
+
+Assessment slides SHALL NOT include administrative content that duplicates specification documents:
+- ❌ "Assessment Overview" slides listing success criteria codes and competency requirements
+- ❌ "Assessment Methods" slides detailing evaluation procedures and rubrics
+- ❌ "Success Metrics" slides showing target scores and assessment tables
+- ❌ "Assessment Rubric" slides with detailed scoring criteria
+
+**Rationale**: Assessment slides must reinforce learning through review and knowledge checks rather than presenting administrative evaluation frameworks. Success criteria, rubrics, scoring tables, and evaluation methods belong in specification documents and trainer materials where they guide curriculum development and assessment design. Learner-facing slides should focus on knowledge consolidation, self-assessment through practice questions, and practical application guidance. This separation ensures presentations remain educational and engaging while maintaining rigorous evaluation standards in appropriate documentation.
 
 **Exercise Slide Formatting**: Exercise slides MUST use the `class="exercice"` directive and follow this exact heading hierarchy:
 ```markdown

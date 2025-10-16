@@ -54,6 +54,10 @@ Each category serves different use cases and developer preferences. Understandin
 
 ##--##
 
+<img src="./assets/images/module-2/tools-landscape-diagram.svg" alt="AI tools landscape" style="width:100%; height:auto; display:block;">
+
+##--##
+
 <!-- .slide: -->
 # Category 1: CLI-Based Agents
 
@@ -89,7 +93,7 @@ CLI agents excel in environments where terminal efficiency is paramount and inte
 
 <br>
 
-### **GitHub Copilot CLI** (Industry Standard)
+### **GitHub Copilot CLI** (Microsoft/GitHub)
 - **Installation**: `npm install -g @github/copilot`
 - **Usage**: Interactive mode with `copilot` command or programmatic with `-p` flag
 - Natural language conversational interface with repository context
@@ -100,6 +104,15 @@ CLI agents excel in environments where terminal efficiency is paramount and inte
 - Default GPT-5 model with optional `gpt-5-codex` and reasoning levels via `/model` or `--model`
 - Supports image attachments, non-interactive `codex exec`, and MCP integrations
 - Install via `npm install -g @openai/codex` or `brew install codex`; included with ChatGPT plans or API usage
+
+##--##
+
+<!-- .slide: -->
+# CLI Tools Spotlight
+
+## Detailed Tool Breakdown
+
+<br>
 
 ### **Claude Code** (Anthropic)
 - Terminal-native agent that plans, edits files, runs commands, and can create commits
@@ -112,6 +125,15 @@ CLI agents excel in environments where terminal efficiency is paramount and inte
 - Integrates with Google AI Studio and Vertex AI
 - Supports multimodal inputs and long context windows
 - Access via Google Cloud SDK or standalone CLI tools
+
+##--##
+
+<!-- .slide: -->
+# CLI Tools Spotlight
+
+## Detailed Tool Breakdown
+
+<br>
 
 ### **Warp Terminal** (Enhanced Experience)
 - AI-powered terminal with built-in command assistance
@@ -177,6 +199,15 @@ Standalone IDEs offer the most integrated AI experience but require adapting to 
 - Enterprise-grade security and custom model training
 - **Pricing**: Free + Enterprise tiers
 
+##--##
+
+<!-- .slide: -->
+# Standalone IDEs Spotlight
+
+## Detailed Tool Breakdown
+
+<br>
+
 ### **Zed** (Performance Leader)
 - **Latest**: Built-in AI with multiple provider support
 - Ultra-fast performance (Rust-based) with real-time collaboration
@@ -235,6 +266,14 @@ IDE extensions offer the lowest barrier to entry for AI-assisted development by 
 - Autocomplete, chat, and edit functionality
 - Self-hosted or cloud deployment options
 - Free and fully customizable
+##--##
+
+<!-- .slide: -->
+# IDE Extensions Spotlight
+
+## Detailed Tool Breakdown
+
+<br>
 
 ### **Cline (formerly Claude Dev)**
 - Autonomous development agent with file system access
@@ -270,6 +309,10 @@ IDE extensions offer the lowest barrier to entry for AI-assisted development by 
 
 Notes:
 Online tools excel for quick experiments and collaboration but may not be suitable for production development workflows.
+
+##--##
+
+<img src="./assets/images/module-2/online-tools-overview.svg" alt="Online Tools Overview" style="width:100%; height:auto; display:block;">
 
 ##--##
 
@@ -340,54 +383,3 @@ Different scenarios call for different tool categories. Consider your team's wor
 
 Notes:
 Evaluate tools holistically, considering both technical capabilities and practical adoption factors for your specific context.
-
-##--##
-
-<!-- .slide: -->
-# Assessment: Tool Categorization
-
-## Validating Success Criteria SC-001
-
-<br>
-
-### **In-Class Exercise**
-Trainer will provide 10 AI coding tools for categorization
-
-### **Success Criteria**
-- **90% accuracy**: Correctly categorize 8/10 tools within 5 minutes
-- **Clear reasoning**: Justify choices using landscape knowledge
-- **Scenario application**: Recommend tools for development contexts
-
-### **Assessment Format**
-This assessment validates your understanding of the AI coding tools landscape and prepares you for hands-on tool usage in subsequent labs.
-
-Notes:
-This in-class assessment (not a separate lab) validates Success Criteria SC-001 before proceeding to hands-on GitHub Copilot exercises.
-
-##--##
-
-<!-- .slide: -->
-# Key Takeaways
-
-## Tools Landscape Mastery
-
-<br>
-
-### **✅ Understanding Categories**
-- CLI agents for terminal workflows
-- Standalone IDEs for integrated AI experience
-- IDE extensions for existing workflow enhancement
-- Online tools for rapid prototyping
-
-### **✅ Selection Criteria**
-- Match tool category to your workflow
-- Consider team adoption and security requirements
-- Evaluate technical capabilities and practical factors
-
-### **✅ Next Steps**
-- Hands-on experience with GitHub Copilot
-- Deep dive into CLI and VS Code approaches
-- Advanced AI model comparison and selection
-
-Notes:
-You now have the foundation to make informed decisions about AI coding tool adoption and can proceed to hands-on GitHub Copilot mastery.
