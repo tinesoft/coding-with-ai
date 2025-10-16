@@ -23,46 +23,6 @@ This module provides hands-on experience with modern AI coding tools, focusing o
 ##--##
 
 <!-- .slide: -->
-# Module Structure
-
-## 1.5 Days of Hands-on Learning
-
-<br>
-
-### **Session 1: Tools Landscape & GitHub Copilot**
-- AI coding tools categorization and selection
-- GitHub Copilot CLI installation and commands
-- VS Code extension deep dive
-
-### **Session 2: Advanced Usage & Project Integration**
-- AI model comparison and selection strategies
-- Agent instruction files creation
-- Project-specific AI collaboration patterns
-
-Notes:
-Mixed format combining presentations, live demonstrations, and guided practice sessions.
-
-##--##
-
-<!-- .slide: -->
-# Success Criteria
-
-## What You'll Achieve
-
-<br>
-
-- **90%** accuracy in AI tool categorization within 5 minutes
-- **100%** successful GitHub Copilot installation and usage
-- **85%** custom agent installation and demonstration
-- **40%** faster coding with AI assistance
-- **90%** correct AI model recommendations for coding scenarios
-
-Notes:
-These measurable outcomes ensure you gain practical proficiency with AI coding tools.
-
-##--##
-
-<!-- .slide: -->
 # Prerequisites
 
 ## What You Need to Know

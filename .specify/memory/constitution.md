@@ -1,25 +1,25 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.9.0 → 1.10.0
-Modified Principles: None
-Added Sections: Research Information Currency Requirements (Principle IX) - New principle requiring active fetching of current, accurate information during research phases
+Version Change: 1.10.0 → 1.10.1
+Modified Principles: Principle II (Content Organization Standards) - Enhanced with Module Introduction Content Restrictions
+Added Sections: Module Introduction Content Restrictions - Prohibition of "Module Structure" and "Success Criteria" slides in module introductions
 Removed Sections: None
 Templates Requiring Updates:
-  ✅ .specify/memory/constitution.md - Updated with new research information currency principle
-  ⚠️ .specify/templates/plan-template.md - May require update to reflect research phase requirements for current information
-  ⚠️ Research phase workflows may need adjustment to incorporate active information verification requirements
-  ⚠️ Spec development processes may require updates to ensure research includes current information validation
+  ✅ .specify/memory/constitution.md - Updated with module intro content restrictions
+  ⚠️ All existing module introduction slides (10_module1_intro.md, 20_module2_intro.md, etc.) - Must remove "Module Structure" and "Success Criteria" slides
+  ⚠️ Content generation workflows - Must enforce new restrictions when creating future module intros
 Follow-up TODOs:
-  1) Review plan-template.md to ensure research phases include current information gathering requirements
-  2) Update research workflows to incorporate active verification of information currency and accuracy
-  3) Verify that spec development processes include requirements for current information validation
-  4) Ensure all research-dependent activities comply with new information currency standards
-Notes: Added new Research Information Currency Requirements principle (IX) mandating active fetching of current, accurate information during research phases. This MINOR version change enhances information quality standards while maintaining existing educational methodology and structure.
+  1) Remove "Module Structure" slides from all existing module introduction files
+  2) Remove "Success Criteria" slides from all existing module introduction files
+  3) Update content generation prompts to enforce module intro content restrictions
+  4) Verify Module 1 intro compliance with new restrictions
+  5) Verify all future module intros (Modules 3-7) comply when created
+Notes: Added Module Introduction Content Restrictions to Principle II prohibiting "Module Structure" and "Success Criteria" slides in module introductions. This PATCH version change clarifies presentation content standards by removing redundant administrative details that belong in specification documents rather than learner-facing slides. Module intros shall include only: (1) Transition slide, (2) Learning Objectives, (3) Prerequisites.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.10.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-14
+**Version**: 1.10.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-16
 
 ## Core Principles
 
@@ -32,6 +32,8 @@ Place training modules in `docs/markdown/` using SFEIR School Theme markdown syn
 **Slide Class Organization**: Only the main presentation introduction (`00_intro.md`) SHALL use the `class="first-slide"` directive. All module introduction slides MUST use `class="transition"` to maintain consistent navigation flow. Regular content slides use standard slide classes without special designation.
 
 **Content Generation Restrictions**: When generating exercise slides, focus ONLY on the actual exercise content without creating introductory or closing slides. When generating module slides, focus ONLY on the core content without creating introductory or closing transition slides. This ensures lean, focused educational content without unnecessary navigational overhead.
+
+**Module Introduction Content Restrictions**: Module introduction slides SHALL NOT include "Module Structure" or "Success Criteria" slides. These administrative details belong in specification documents and trainer materials, not in learner-facing slide presentations. Module introductions MUST include ONLY: (1) Transition slide with module title, (2) Learning Objectives slide, and (3) Prerequisites slide. This maintains focus on actionable learning outcomes while eliminating redundant scheduling and assessment information that does not enhance learning experience.
 
 **Exercise Slide Formatting**: Exercise slides MUST use the `class="exercice"` directive and follow this exact heading hierarchy:
 ```markdown

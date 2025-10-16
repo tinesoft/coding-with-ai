@@ -22,25 +22,6 @@ These learning objectives are designed to take you from AI newcomer to confident
 ##--##
 
 <!-- .slide -->
-# **Module Structure**
-
-## **Our Learning Journey (6-8 hours)**
-1. **AI Fundamentals** (25 min) - Core concepts and technologies
-2. **Prompt Engineering** (30 min) - Techniques and best practices  
-3. **Hands-on Practice** (20 min) - Interactive prompt exercises
-4. **Tools Introduction** (15 min) - AI coding assistants overview
-5. **Assessment & Recap** (10 min) - Knowledge validation
-
-### **Plus 2 Hands-on Labs**
-- **Lab 1**: Prompt Writing Basics (30 min)
-- **Lab 2**: AI Concepts Exploration (45 min)
-
-Notes:
-This structure follows our progressive learning approach: theory, practice, application, and validation. Each section includes interactive elements to reinforce learning.
-
-##--##
-
-<!-- .slide -->
 # **Prerequisites & Expectations**
 
 ## **What You Need**
@@ -77,24 +58,3 @@ We've designed this training to be accessible to developers at various skill lev
 
 Notes:
 Prompt engineering isn't just about writing better prompts—it's about fundamentally changing how you approach problem-solving and communication in software development.
-
-##--##
-
-<!-- .slide -->
-# **Success Indicators**
-
-## **You'll Know You're Ready When You Can:**
-- [ ] Explain core AI concepts to a colleague
-- [ ] Write effective prompts that achieve intended outcomes
-- [ ] Recognize when and how to iterate on prompt effectiveness
-- [ ] Make informed decisions about AI tool selection
-- [ ] Understand AI limitations and safety considerations
-
-## **Confidence Building Goals**
-- **Comfortable** with AI system interaction
-- **Confident** in basic prompt writing abilities
-- **Curious** about advanced AI development techniques
-- **Prepared** for Module 2: Modern AI Coding Tools
-
-Notes:
-These success indicators help you self-assess your progress. Don't worry if you don't feel 100% confident immediately—learning AI skills is an iterative process.
