@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# **Module 1 Assessment**
+# **Module 1: Assessment and Recap**
 ## **Knowledge Check and Recap**
 
 Notes:

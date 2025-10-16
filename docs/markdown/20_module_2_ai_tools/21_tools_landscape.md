@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# AI Coding Tools Landscape
+# Module 2: AI Coding Tools Landscape
 ## Understanding the Modern Developer Toolkit
 
 ##--##

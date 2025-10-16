@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# Module 2 Assessment
+# Module 2: Assessment and Recap
 ## Validating Your AI Coding Tools Mastery
 
 ##--##

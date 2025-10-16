@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# AI Model Comparison
+# Module 2: AI Model Comparison
 ## Choosing the Right Model for Your Task
 
 ##--##

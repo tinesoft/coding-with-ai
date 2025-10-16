@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# AI Agent Instruction Files
+# Module 2: AI Agent Instruction Files
 ## Enhancing AI Collaboration with Project Context
 
 ##--##

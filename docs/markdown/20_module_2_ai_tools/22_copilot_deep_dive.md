@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# GitHub Copilot Deep Dive
+# Module 2: GitHub Copilot Deep Dive
 ## Mastering AI-Assisted Development
 
 ##--##

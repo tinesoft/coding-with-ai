@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# AI Fundamentals
+# Module 1: AI Fundamentals
 ## Core Concepts and Technologies
 
 Notes:

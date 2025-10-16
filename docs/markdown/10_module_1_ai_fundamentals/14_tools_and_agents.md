@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# **AI Development Toolkit**
+# **Module 1: AI Development Toolkit**
 ## **Tools, Agents, and Best Practices**
 
 Notes:

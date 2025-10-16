@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
-# Prompt Engineering
+# Module 1: Prompt Engineering
 ## The Art of AI Communication
 
 Notes:

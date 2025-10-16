@@ -27,8 +27,8 @@ When creating slide content, use these patterns:
 ##--##
 
 <!-- .slide: class="transition" -->
-# Section Title
-## Subtitle
+# Module X: {sectionTitle}
+## {subTitle}
 
 ##--##
 
