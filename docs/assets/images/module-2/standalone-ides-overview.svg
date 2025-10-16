@@ -1,0 +1,33 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0fdf4"/>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">🚀 Standalone IDEs</text>
+  
+  <!-- Cursor -->
+  <rect x="20" y="50" width="160" height="60" rx="8" fill="#000000" stroke="#3b82f6" stroke-width="2"/>
+  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Cursor</text>
+  <text x="100" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a3a3a3">VS Code fork + native AI</text>
+  
+  <!-- Windsurf -->
+  <rect x="220" y="50" width="160" height="60" rx="8" fill="#1e40af" stroke="#60a5fa" stroke-width="2"/>
+  <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Windsurf</text>
+  <text x="300" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#dbeafe">Multi-language platform</text>
+  
+  <!-- Zed -->
+  <rect x="20" y="130" width="160" height="60" rx="8" fill="#dc2626" stroke="#f87171" stroke-width="2"/>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Zed</text>
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fecaca">Performance + collaboration</text>
+  
+  <!-- Kiro -->
+  <rect x="220" y="130" width="160" height="60" rx="8" fill="#7c3aed" stroke="#a78bfa" stroke-width="2"/>
+  <text x="300" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Kiro</text>
+  <text x="300" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e9d5ff">AI-first development</text>
+  
+  <!-- Key Features -->
+  <rect x="20" y="210" width="360" height="70" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">Key Advantages:</text>
+  <text x="30" y="255" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">• Built-in AI capabilities optimized for the development experience</text>
+  <text x="30" y="270" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">• Custom AI model configurations and unified interface design</text>
+</svg>

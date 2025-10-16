@@ -1,0 +1,43 @@
+<svg width="400" height="460" viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="460" fill="#f1f5f9"/>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">🖥️ CLI-Based Agents</text>
+  
+  <!-- GitHub Copilot CLI -->
+  <rect x="20" y="50" width="160" height="60" rx="8" fill="#24292f" stroke="#f78166" stroke-width="2"/>
+  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">GitHub Copilot CLI</text>
+  <text x="100" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#8b949e">Conversational Git workflows</text>
+  
+  <!-- Codex -->
+  <rect x="220" y="50" width="160" height="60" rx="8" fill="#10a37f" stroke="#1ac8a0" stroke-width="2"/>
+  <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Codex CLI</text>
+  <text x="300" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#d1fae5">GPT-5 driven CLI</text>
+  
+  <!-- Claude Code -->
+  <rect x="20" y="130" width="160" height="60" rx="8" fill="#d97706" stroke="#fbbf24" stroke-width="2"/>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Claude Code</text>
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fef3c7">Plan and execute agent</text>
+  
+  <!-- Gemini CLI -->
+  <rect x="220" y="130" width="160" height="60" rx="8" fill="#059669" stroke="#34d399" stroke-width="2"/>
+  <text x="300" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Gemini CLI</text>
+  <text x="300" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#d1fae5">Google's multimodal AI</text>
+  
+  <!-- Warp Terminal -->
+  <rect x="20" y="210" width="160" height="60" rx="8" fill="#4338ca" stroke="#818cf8" stroke-width="2"/>
+  <text x="100" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Warp Terminal</text>
+  <text x="100" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e0e7ff">Enhanced terminal UX</text>
+  
+  <!-- Aider -->
+  <rect x="220" y="210" width="160" height="60" rx="8" fill="#2563eb" stroke="#60a5fa" stroke-width="2"/>
+  <text x="300" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Aider</text>
+  <text x="300" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#dbeafe">Direct file editing</text>
+  
+  <!-- Key Features -->
+  <rect x="20" y="290" width="360" height="70" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="315" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">Key Advantages:</text>
+  <text x="30" y="335" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">• Native terminal integration and shell workflow optimization</text>
+  <text x="30" y="350" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">• Scriptable automation and batch processing capabilities</text>
+</svg>

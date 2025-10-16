@@ -1,0 +1,41 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="350" fill="#fdf2f8"/>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">🌐 Online Tools</text>
+  
+  <!-- Note about mention-only -->
+  <rect x="50" y="40" width="300" height="25" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="200" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#92400e">Mention-only: Focus on CLI/IDE integration for professional workflows</text>
+  
+  <!-- Bolt.new -->
+  <rect x="20" y="80" width="160" height="50" rx="8" fill="#ec4899" stroke="#f472b6" stroke-width="2" opacity="0.7"/>
+  <text x="100" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Bolt.new</text>
+  <text x="100" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#fce7f3">Full-stack development</text>
+  
+  <!-- Firebase Studio -->
+  <rect x="220" y="80" width="160" height="50" rx="8" fill="#dc2626" stroke="#f87171" stroke-width="2" opacity="0.7"/>
+  <text x="300" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Firebase Studio</text>
+  <text x="300" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#fecaca">Google's AI platform</text>
+  
+  <!-- Lovable -->
+  <rect x="20" y="150" width="160" height="50" rx="8" fill="#f59e0b" stroke="#fbbf24" stroke-width="2" opacity="0.7"/>
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Lovable</text>
+  <text x="100" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#fef3c7">AI app builder</text>
+  
+  <!-- v0 by Vercel -->
+  <rect x="220" y="150" width="160" height="50" rx="8" fill="#7c3aed" stroke="#a78bfa" stroke-width="2" opacity="0.7"/>
+  <text x="300" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">v0 by Vercel</text>
+  <text x="300" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e9d5ff">UI component generation</text>
+  
+  <!-- Replit AI -->
+  <rect x="20" y="220" width="160" height="50" rx="8" fill="#0891b2" stroke="#22d3ee" stroke-width="2" opacity="0.7"/>
+  <text x="100" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Replit AI</text>
+  <text x="100" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#cffafe">Collaborative coding</text>
+  
+  <!-- Use Cases -->
+  <rect x="20" y="290" width="360" height="50" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="310" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">Best For:</text>
+  <text x="30" y="325" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">• Rapid prototyping, educational demos, and instant collaboration</text>
+</svg>

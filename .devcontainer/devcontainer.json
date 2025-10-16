@@ -45,7 +45,8 @@
         "chrisdias.promptboost",
         "GitHub.copilot",
         "GitHub.copilot-chat",
-        "nrwl.angular-console"
+        "nrwl.angular-console",
+        "digitarald.agent-memory"
       ],
       "settings": {
         "debug.javascript.autoAttachFilter": "disabled",

@@ -19,7 +19,10 @@ Comprehensive 1.5-day training module covering modern AI coding tools landscape,
 **Project Type**: Educational content - slides + labs structure  
 **Performance Goals**: Slide load time <2 seconds, lab completion 20-45 minutes per lab  
 **Constraints**: 1.5 day duration, beginner-intermediate skill level, mixed delivery format  
-**Scale/Scope**: Module 2 (20-29 numbering), 3 labs, GitHub Copilot focus with Gemini fallback
+**Scale/Scope**: Module 2 (20-29 numbering), 3 labs (46 implementation tasks), GitHub Copilot focus with Gemini fallback
+**Implementation Approach**: Task-based development with user story grouping, 19 parallelizable tasks, MVP-first delivery strategy
+**Lab Architecture**: lab-21 (CLI), lab-22 (VS Code extension), lab-23 (agent instruction files via both CLI and VS Code approaches)
+**Assessment Strategy**: 8 success criteria with rubric-based evaluation, dual GitHub Copilot approach validation
 
 ## Constitution Check
 

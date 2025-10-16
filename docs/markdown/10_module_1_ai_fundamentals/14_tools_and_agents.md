@@ -5,7 +5,7 @@
 Notes:
 We've covered the fundamentals and practiced prompt engineering. Now let's explore how these concepts translate into real development tools that are transforming how we write code.
 
-*Note: All tool capabilities and market information are current as of September 2025.*
+*Note: All tool capabilities and market information are current as of October 16, 2025.*
 
 ##--##
 
@@ -24,7 +24,7 @@ We've covered the fundamentals and practiced prompt engineering. Now let's explo
 - **2022**: ChatGPT democratizes AI chat
 - **2023**: GPT-4 and specialized coding models
 - **2024**: Multi-modal AI and advanced agents
-- **2025**: Enterprise AI integration, Claude 3.5 Sonnet, GPT-4o deployment
+- **2025**: Enterprise AI integration, Claude 4.x, GPT-5/GPT-4.5 deployment
 
 Notes:
 The AI coding tool landscape has exploded in just a few years. Each category serves different development needs, from inline code completion to complex architectural discussions.
@@ -206,7 +206,7 @@ Successful AI adoption requires measuring both individual productivity gains and
 # **Future of AI Development**
 
 ## **Current Trends (2025)**
-- 🤖 **Autonomous Agents**: Self-directed development tasks (Claude Computer Use, GPT-4o with tools)
+- 🤖 **Autonomous Agents**: Self-directed development tasks (Claude Computer Use, GPT-5/GPT-4.5 with tools)
 - 🔗 **Multi-Modal AI**: Understanding images, diagrams, voice, and code simultaneously  
 - 🌐 **Context-Aware AI**: Repository-wide understanding and team collaboration features
 - 🏗️ **Architecture AI**: System-level design recommendations and pattern recognition

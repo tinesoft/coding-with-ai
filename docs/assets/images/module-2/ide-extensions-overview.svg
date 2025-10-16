@@ -1,0 +1,48 @@
+<svg width="400" height="450" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="450" fill="#fffbeb"/>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">🔌 IDE Extensions</text>
+  
+  <!-- GitHub Copilot -->
+  <rect x="20" y="50" width="160" height="60" rx="8" fill="#24292f" stroke="#f78166" stroke-width="2"/>
+  <text x="100" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">GitHub Copilot</text>
+  <text x="100" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8b949e">Chat + Inline + Agent</text>
+  
+  <!-- Roo Code -->
+  <rect x="220" y="50" width="160" height="60" rx="8" fill="#8b5cf6" stroke="#a78bfa" stroke-width="2"/>
+  <text x="300" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Roo Code</text>
+  <text x="300" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#e9d5ff">Context-aware AI</text>
+  
+  <!-- Kilo Code -->
+  <rect x="20" y="130" width="160" height="60" rx="8" fill="#db2777" stroke="#f472b6" stroke-width="2"/>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Kilo Code</text>
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fce7f3">AI pair programmer</text>
+  
+  <!-- Continue -->
+  <rect x="220" y="130" width="160" height="60" rx="8" fill="#059669" stroke="#34d399" stroke-width="2"/>
+  <text x="300" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Continue</text>
+  <text x="300" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#d1fae5">Open-source + flexible</text>
+  
+  <!-- Codex -->
+  <rect x="20" y="210" width="160" height="60" rx="8" fill="#0891b2" stroke="#22d3ee" stroke-width="2"/>
+  <text x="100" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Codex</text>
+  <text x="100" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#cffafe">OpenAI extension</text>
+  
+  <!-- Cline (Claude Dev) -->
+  <rect x="220" y="210" width="160" height="60" rx="8" fill="#7c2d12" stroke="#f97316" stroke-width="2"/>
+  <text x="300" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Cline</text>
+  <text x="300" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fed7aa">Autonomous agent</text>
+  
+  <!-- Amazon Q -->
+  <rect x="20" y="290" width="160" height="60" rx="8" fill="#1e40af" stroke="#60a5fa" stroke-width="2"/>
+  <text x="100" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Amazon Q Developer</text>
+  <text x="100" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#dbeafe">AWS integration</text>
+  
+  <!-- Key Features -->
+  <rect x="20" y="370" width="360" height="70" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">Key Advantages:</text>
+  <text x="30" y="415" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">• Preserve existing IDE preferences and customizations</text>
+  <text x="30" y="430" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">• Multiple AI providers and gradual adoption strategies</text>
+</svg>

@@ -5,7 +5,7 @@
 Notes:
 Let's start our journey by understanding the fundamental building blocks of modern AI systems. These concepts will provide the foundation for everything we do with AI in software development.
 
-*Note: All AI model capabilities and tool references are current as of September 2025.*
+*Note: All AI model capabilities and tool references are current as of October 16, 2025.*
 
 ##--##
 
@@ -39,10 +39,10 @@ AI represents a fundamental shift in how we approach problem-solving. Instead of
 - **Multimodal Capabilities**: Some models handle text, code, and images
 
 ## **Popular LLMs for Developers**
-- **GPT-4o** (OpenAI) - Latest model with improved reasoning and speed
-- **Claude 3.5 Sonnet** (Anthropic) - Safety-focused, excellent for analysis
-- **Gemini Pro** (Google) - Integrated with Google services and tools
-- **GitHub Copilot** (Microsoft/OpenAI) - Specialized for code generation
+- **GPT-5 / GPT-4.5** (OpenAI) - State-of-the-art reasoning and multimodal capabilities
+- **Claude 4.x** (Anthropic) - Safety-focused family with strong long-form reasoning
+- **Gemini 2.5** (Google) - Large-context and multimodal family optimized for code-assist
+- **GitHub Copilot** (Microsoft/OpenAI) - Integrated code assistant leveraging multiple model backends
 
 Notes:
 LLMs are the engines behind most AI coding tools. Understanding their capabilities and limitations helps you use them more effectively.

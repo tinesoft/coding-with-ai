@@ -1,0 +1,120 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">AI Coding Tools Landscape</text>
+  
+  <!-- CLI Agents Quadrant (Top Left) -->
+  <rect x="50" y="80" width="320" height="220" rx="12" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="210" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e40af">🖥️ CLI-Based Agents</text>
+  
+  <!-- CLI Agents Tools - Constitutional Order -->
+  <rect x="70" y="130" width="100" height="40" rx="6" fill="#3b82f6" opacity="0.8"/>
+  <text x="120" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">GitHub Copilot</text>
+  
+  <rect x="190" y="130" width="70" height="40" rx="6" fill="#60a5fa" opacity="0.8"/>
+  <text x="225" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Codex</text>
+  
+  <rect x="280" y="130" width="70" height="40" rx="6" fill="#93c5fd" opacity="0.8"/>
+  <text x="315" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Gemini</text>
+  
+  <rect x="70" y="190" width="90" height="40" rx="6" fill="#bfdbfe" opacity="0.8"/>
+  <text x="115" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Claude Code</text>
+  
+  <rect x="180" y="190" width="80" height="40" rx="6" fill="#bfdbfe" opacity="0.8"/>
+  <text x="220" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Warp AI</text>
+  
+  <rect x="280" y="190" width="70" height="40" rx="6" fill="#bfdbfe" opacity="0.8"/>
+  <text x="315" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Aider</text>
+  
+  <!-- CLI Characteristics -->
+  <text x="70" y="260" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Terminal integration</text>
+  <text x="70" y="275" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Git workflow optimization</text>
+  <text x="70" y="290" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Scriptable automation</text>
+  
+  <!-- Standalone IDEs Quadrant (Top Right) -->
+  <rect x="430" y="80" width="320" height="220" rx="12" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="590" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#15803d">🚀 Standalone IDEs</text>
+  
+  <!-- Standalone IDEs Tools - Constitutional Order -->
+  <rect x="450" y="130" width="70" height="40" rx="6" fill="#22c55e" opacity="0.8"/>
+  <text x="485" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Cursor</text>
+  
+  <rect x="540" y="130" width="80" height="40" rx="6" fill="#4ade80" opacity="0.8"/>
+  <text x="580" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Windsurf</text>
+  
+  <rect x="640" y="130" width="60" height="40" rx="6" fill="#86efac" opacity="0.8"/>
+  <text x="670" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">Kiro</text>
+  
+  <rect x="450" y="190" width="60" height="40" rx="6" fill="#bbf7d0" opacity="0.8"/>
+  <text x="480" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">Zed</text>
+  
+  <!-- IDE Characteristics -->
+  <text x="450" y="260" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Built-in AI capabilities</text>
+  <text x="450" y="275" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Optimized AI interface</text>
+  <text x="450" y="290" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Custom model configs</text>
+  
+  <!-- IDE Extensions Quadrant (Bottom Left) -->
+  <rect x="50" y="340" width="320" height="220" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="210" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#d97706">🔌 IDE Extensions</text>
+  
+  <!-- IDE Extensions Tools - Constitutional Order -->
+  <rect x="70" y="390" width="100" height="40" rx="6" fill="#f59e0b" opacity="0.8"/>
+  <text x="120" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">GitHub Copilot</text>
+  
+  <rect x="190" y="390" width="80" height="40" rx="6" fill="#fbbf24" opacity="0.8"/>
+  <text x="230" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Roo Code</text>
+  
+  <rect x="290" y="390" width="60" height="40" rx="6" fill="#fcd34d" opacity="0.8"/>
+  <text x="320" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">Continue</text>
+  
+  <rect x="70" y="450" width="70" height="40" rx="6" fill="#fde68a" opacity="0.8"/>
+  <text x="105" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">Codex</text>
+  
+  <rect x="160" y="450" width="60" height="40" rx="6" fill="#fde68a" opacity="0.8"/>
+  <text x="190" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">Cline</text>
+  
+  <rect x="240" y="450" width="80" height="40" rx="6" fill="#fde68a" opacity="0.8"/>
+  <text x="280" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">Amazon Q</text>
+  
+  <!-- Extensions Characteristics -->
+  <text x="70" y="520" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Existing workflow integration</text>
+  <text x="70" y="535" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Multiple AI providers</text>
+  <text x="70" y="550" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Gradual adoption</text>
+  
+  <!-- Online Tools Quadrant (Bottom Right) -->
+  <rect x="430" y="340" width="320" height="220" rx="12" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+  <text x="590" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#be185d">🌐 Online Tools</text>
+  
+  <!-- Online Tools - Constitutional Order -->
+  <rect x="450" y="390" width="70" height="40" rx="6" fill="#ec4899" opacity="0.8"/>
+  <text x="485" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Bolt.new</text>
+  
+  <rect x="540" y="390" width="100" height="40" rx="6" fill="#f472b6" opacity="0.8"/>
+  <text x="590" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Firebase Studio</text>
+  
+  <rect x="660" y="390" width="70" height="40" rx="6" fill="#f9a8d4" opacity="0.8"/>
+  <text x="695" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#be185d">Lovable</text>
+  
+  <rect x="450" y="450" width="60" height="40" rx="6" fill="#fbcfe8" opacity="0.8"/>
+  <text x="480" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#be185d">v0</text>
+  
+  <rect x="530" y="450" width="80" height="40" rx="6" fill="#fbcfe8" opacity="0.8"/>
+  <text x="570" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#be185d">Replit AI</text>
+  
+  <!-- Online Characteristics -->
+  <text x="450" y="520" font-family="Arial, sans-serif" font-size="11" fill="#475569">• No installation required</text>
+  <text x="450" y="535" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Instant collaboration</text>
+  <text x="450" y="550" font-family="Arial, sans-serif" font-size="11" fill="#475569">• Cloud-based processing</text>
+  
+  <!-- Central connecting lines (subtle) -->
+  <line x1="370" y1="190" x2="430" y2="190" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  <line x1="210" y1="300" x2="210" y2="340" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  <line x1="590" y1="300" x2="590" y2="340" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  <line x1="370" y1="450" x2="430" y2="450" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  
+  <!-- Legend -->
+  <rect x="300" y="580" width="200" height="15" rx="3" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="400" y="592" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Choose based on workflow and team preferences</text>
+</svg>
