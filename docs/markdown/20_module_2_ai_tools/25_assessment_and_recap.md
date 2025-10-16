@@ -108,33 +108,6 @@ You now have the practical skills to effectively integrate AI tools into your de
 ##--##
 
 <!-- .slide: -->
-# Next Steps
-
-## Continuing Your AI Coding Journey
-
-<br>
-
-### **Immediate Application**
-- Implement GitHub Copilot in your current projects
-- Create instruction files for your team's codebases
-- Experiment with different AI models for various tasks
-
-### **Ongoing Learning**
-- Stay updated with new AI coding tools and features
-- Share knowledge and best practices with your team
-- Contribute to the growing AI-assisted development community
-
-### **Module 3 Preview**
-- Advanced AI development workflows
-- Team collaboration with AI agents
-- Enterprise AI coding tool deployment
-
-Notes:
-The skills you've learned in Module 2 form the foundation for advanced AI-assisted development practices.
-
-##--##
-
-<!-- .slide: -->
 # Resources
 
 ## Continue Your Learning

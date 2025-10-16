@@ -1,35 +1,36 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.11.0 → 1.11.1
-Modified Principles: Principle II (Content Organization Standards) - Added GitHub Copilot Terminology Standards
-Added Sections: GitHub Copilot Terminology Standards - Standardized feature naming conventions
-Removed Sections: None
+Version Change: 1.11.1 → 1.11.2
+Modified Principles: Principle II (Content Organization Standards) - Updated Assessment and Recap Slide Structure
+Added Sections: None
+Removed Sections: "Next Steps" from Assessment and Recap Slide Structure
 Templates Requiring Updates:
-  ✅ .specify/memory/constitution.md - Updated with GitHub Copilot terminology standards
-  ✅ docs/markdown/20_module_2_ai_tools/21_tools_landscape.md - Updated "Ask/Edit/Agent/Custom Agent Mode" terminology
-  ✅ docs/markdown/20_module_2_ai_tools/22_copilot_deep_dive.md - Updated all section titles and content with mode-based terminology
-  ✅ docs/markdown/20_module_2_ai_tools/20_module2_intro.md - Updated learning objectives with correct terminology
-  ✅ /memories/sfeir-school-constitutional-rules.md - Documented terminology standards with rationale
-  ⚠️ labs/lab-22-copilot-vscode/README.md - Needs update with mode-based terminology throughout
-  ⚠️ labs/lab-22-copilot-vscode-solution/README.md - Needs terminology updates
-  ⚠️ specs/002-module-2-ai-coding-tools/*.md - Needs terminology updates in specification documents
-  ⚠️ .github/copilot-instructions.md - Should update examples with correct terminology (optional)
+  ✅ .specify/memory/constitution.md - Updated assessment slide structure removing "Next Steps"
+  ✅ docs/markdown/10_module_1_ai_fundamentals/15_assessment_and_recap.md - Removed "Next Steps and Preparation" slide
+  ✅ docs/markdown/20_module_2_ai_tools/25_assessment_and_recap.md - Removed "Next Steps" slide
+  ✅ docs/markdown/20_module_2_ai_tools/24_agent_instructions.md - Removed "Next Steps" section from Key Takeaways
+  ✅ .github/copilot-instructions.md - Updated assessment slide structure examples
+  ✅ /memories/sfeir-school-constitutional-rules.md - Updated assessment structure requirements
 Completed Actions:
-  1) ✅ Updated constitution with GitHub Copilot Terminology Standards in Principle II
-  2) ✅ Updated 22_copilot_deep_dive.md: All 4 mode section titles and content updated
-  3) ✅ Updated 21_tools_landscape.md: GitHub Copilot capabilities list with new terminology
-  4) ✅ Updated 20_module2_intro.md: Learning objectives with mode-based terminology
-  5) ✅ Updated memory system with terminology standards and rationale
-Pending Manual Updates:
-  - Lab 22 exercises and solutions need comprehensive terminology updates
-  - Spec documents (spec.md, tasks.md, research files) should align with new terminology
-  - Optional: Update copilot-instructions.md examples for consistency
-Notes: Successfully implemented GitHub Copilot Terminology Standards. Main slide content updated from generic feature names ("Chat", "Edits", "Spaces", "Custom Instructions") to mode-based terminology ("Ask Mode", "Edit Mode", "Agent Mode", "Custom Agent Mode"). This PATCH version change (v1.11.1) clarifies interaction paradigms without changing functionality. Lab files and spec documents flagged for manual updates to maintain consistency across all training materials.
+  1) ✅ Removed "Next Steps and Preparation" slide from Module 1 assessment (15_assessment_and_recap.md)
+     - Removed Module 2 preview, homework assignments, and recommended reading sections
+     - Kept "Questions and Discussion" slide for trainer-facilitated wrap-up
+  2) ✅ Removed "Next Steps" slide from Module 2 assessment (25_assessment_and_recap.md)
+     - Removed immediate application, ongoing learning, and Module 3 preview sections
+  3) ✅ Removed "Next Steps" section from 24_agent_instructions.md Key Takeaways
+     - Removed action items that belonged in lab instructions
+  4) ✅ Updated copilot-instructions.md to reflect new assessment structure without "Next Steps"
+  5) ✅ Updated memory system with updated assessment requirements including "Next Steps" prohibition
+Future Compliance:
+  - All future modules (3-7) MUST NOT include "Next Steps" in assessment slides
+  - Forward-looking content belongs in course syllabi and trainer materials only
+  - Assessment slides focus exclusively on current module mastery
+Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structure. This PATCH version change (v1.11.2) streamlines assessment slides by eliminating forward-looking content. Assessment slides now focus exclusively on: (1) Transition, (2) Learning Objectives Review, (3) Knowledge Check, (4) Module Recap, (5) Resources. "Next Steps" content (module previews, homework, recommended reading, application guidance) belongs in course syllabi, trainer materials, and module transitions, not in module-ending assessment slides. This maintains focus on consolidating current module learning.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.11.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-16
+**Version**: 1.11.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-16
 
 ## Core Principles
 
@@ -59,16 +60,16 @@ Where X is the module number (1-7) and sectionTitle describes the content sectio
 2. **Learning Objectives Review**: Summarizes what learners should now know and skills developed
 3. **Knowledge Check**: Interactive quiz questions testing key concepts with answers and explanations
 4. **Module Recap**: Key achievements and takeaways from the module
-5. **Next Steps**: Application guidance and preview of next module
-6. **Resources**: Documentation links and practice materials
+5. **Resources**: Documentation links and practice materials
 
-Assessment slides SHALL NOT include administrative content that duplicates specification documents:
+Assessment slides SHALL NOT include:
 - ❌ "Assessment Overview" slides listing success criteria codes and competency requirements
 - ❌ "Assessment Methods" slides detailing evaluation procedures and rubrics
 - ❌ "Success Metrics" slides showing target scores and assessment tables
 - ❌ "Assessment Rubric" slides with detailed scoring criteria
+- ❌ "Next Steps" slides with forward-looking content or next module previews
 
-**Rationale**: Assessment slides must reinforce learning through review and knowledge checks rather than presenting administrative evaluation frameworks. Success criteria, rubrics, scoring tables, and evaluation methods belong in specification documents and trainer materials where they guide curriculum development and assessment design. Learner-facing slides should focus on knowledge consolidation, self-assessment through practice questions, and practical application guidance. This separation ensures presentations remain educational and engaging while maintaining rigorous evaluation standards in appropriate documentation.
+**Rationale**: Assessment slides must reinforce learning through review and knowledge checks rather than presenting administrative evaluation frameworks or forward-looking content. Success criteria, rubrics, scoring tables, evaluation methods, and module previews belong in specification documents and trainer materials. Learner-facing slides should focus exclusively on knowledge consolidation, self-assessment through practice questions, and resource access for continued learning. This separation ensures presentations remain educational and focused on mastery of current module content.
 
 **GitHub Copilot Terminology Standards**: All training materials (slides, labs, documentation) MUST use standardized mode-based terminology when referring to GitHub Copilot IDE extension features. This ensures clarity about the actual interaction modes and capabilities:
 

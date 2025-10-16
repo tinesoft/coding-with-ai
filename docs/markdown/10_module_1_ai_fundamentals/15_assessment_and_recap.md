@@ -351,31 +351,6 @@ Use this checklist to self-assess your readiness for Module 2. If any areas feel
 ##--##
 
 <!-- .slide: data-type-show="hidden" -->
-# **Next Steps and Preparation**
-
-## **📚 Module 2 Preview**: Code Generation and Assistance
-- Advanced prompt engineering for code generation
-- Working with AI coding assistants effectively
-- Code review and refactoring with AI
-- Building complete features with AI assistance
-
-## **🏠 Homework** (Optional):
-- **Practice**: Use an AI tool for a real coding task this week
-- **Document**: What worked well? What was challenging?
-- **Reflect**: How did AI change your development process?
-
-## **📖 Recommended Reading**:
-- [GitHub Copilot documentation](https://docs.github.com/en/copilot) and best practices
-- [Claude Code documentation](https://docs.claude.com/en/docs/claude-code/overview)
-- [OpenAI prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering) and best practices
-- [Cursor AI coding assistant overview](https://www.cursor.so/) and tutorials
-
-Notes:
-Module 2 will build directly on these fundamentals, so any additional practice you can get with prompt engineering and AI tool usage will be valuable.
-
-##--##
-
-<!-- .slide: data-type-show="hidden" -->
 # **Questions and Discussion**
 
 ## **💬 Open Floor** (10 minutes)
@@ -393,4 +368,4 @@ Module 2 will build directly on these fundamentals, so any additional practice y
 - What specific use cases are you excited to try?
 
 Notes:
-You've successfully completed the foundation module! You now have the essential knowledge and skills to start using AI effectively in your development work. In Module 2, we'll dive deeper into practical code generation and assistance techniques that will transform your daily coding experience.
+You've successfully completed the foundation module! You now have the essential knowledge and skills to start using AI effectively in your development work.

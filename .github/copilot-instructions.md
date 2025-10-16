@@ -218,16 +218,16 @@ Module assessment and recap slides MUST follow this standardized structure:
 2. **Learning Objectives Review**: What learners should now know and skills developed
 3. **Knowledge Check**: Interactive quiz questions with answers and explanations
 4. **Module Recap**: Key achievements and takeaways
-5. **Next Steps**: Application guidance and preview of next module
-6. **Resources**: Documentation links and practice materials
+5. **Resources**: Documentation links and practice materials
 
 **Prohibited Content in Assessment Slides:**
 - ❌ "Assessment Overview" - success criteria codes belong in spec docs
 - ❌ "Assessment Methods" - evaluation procedures belong in spec docs
 - ❌ "Success Metrics" - target scores and tables belong in spec docs
 - ❌ "Assessment Rubric" - scoring criteria belong in spec docs
+- ❌ "Next Steps" - forward-looking content belongs in course syllabi/trainer materials
 
-**Rationale**: Assessment slides reinforce learning through review and knowledge checks. Administrative evaluation frameworks belong in specification documents, not learner-facing presentations.
+**Rationale**: Assessment slides reinforce learning through review and knowledge checks. Administrative evaluation frameworks and forward-looking navigation belong in specification documents and trainer materials, not learner-facing presentations.
 
 ---
 *Instructions updated: 2025-10-16*
