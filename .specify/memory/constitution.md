@@ -1,35 +1,35 @@
 <!--
 SYNC IMPACT REPORT:
-Version Change: 1.10.2 → 1.11.0
-Modified Principles: Principle II (Content Organization Standards) - Added Assessment and Recap Slide Structure requirement
-Added Sections: Assessment and Recap Slide Structure - Standardized structure for module assessment slides
+Version Change: 1.11.0 → 1.11.1
+Modified Principles: Principle II (Content Organization Standards) - Added GitHub Copilot Terminology Standards
+Added Sections: GitHub Copilot Terminology Standards - Standardized feature naming conventions
 Removed Sections: None
 Templates Requiring Updates:
-  ✅ .specify/memory/constitution.md - Updated with assessment slide structure requirement
-  ✅ docs/markdown/20_module_2_ai_tools/25_assessment_and_recap.md - Replaced administrative slides with learner-focused structure
-  ✅ .github/copilot-instructions.md - Updated with assessment slide structure guidance and examples
-  ✅ /memories/sfeir-school-constitutional-rules.md - Documented assessment slide structure requirements
-  ⚠️ Future modules (3-7) assessment slides - Must follow new standardized structure when created
+  ✅ .specify/memory/constitution.md - Updated with GitHub Copilot terminology standards
+  ✅ docs/markdown/20_module_2_ai_tools/21_tools_landscape.md - Updated "Ask/Edit/Agent/Custom Agent Mode" terminology
+  ✅ docs/markdown/20_module_2_ai_tools/22_copilot_deep_dive.md - Updated all section titles and content with mode-based terminology
+  ✅ docs/markdown/20_module_2_ai_tools/20_module2_intro.md - Updated learning objectives with correct terminology
+  ✅ /memories/sfeir-school-constitutional-rules.md - Documented terminology standards with rationale
+  ⚠️ labs/lab-22-copilot-vscode/README.md - Needs update with mode-based terminology throughout
+  ⚠️ labs/lab-22-copilot-vscode-solution/README.md - Needs terminology updates
+  ⚠️ specs/002-module-2-ai-coding-tools/*.md - Needs terminology updates in specification documents
+  ⚠️ .github/copilot-instructions.md - Should update examples with correct terminology (optional)
 Completed Actions:
-  1) ✅ Updated Module 2 assessment slides (25_assessment_and_recap.md):
-     - Replaced "Assessment Overview" (SC-001, SC-002 codes) with "Learning Objectives Review"
-     - Replaced "Assessment Methods" (evaluation procedures) with learner summary
-     - Replaced "Success Metrics" (target scores table) with "Knowledge Check: AI Coding Tools"
-     - Replaced "Assessment Rubric" (5-point scoring criteria) with "Knowledge Check: Answers"
-     - Retained "Module Recap", "Next Steps", "Resources" (learner-focused sections)
-  2) ✅ Updated copilot-instructions.md with assessment slide structure section and rationale
-  3) ✅ Updated memory system with prohibited/required assessment slide content
-  4) ✅ Module 1 already follows correct structure (used as reference model)
-Future Compliance:
-  - All future modules (3-7) MUST follow standardized assessment structure
-  - Prohibited: Administrative slides (Assessment Overview, Methods, Metrics, Rubric)
-  - Required: Learner-focused slides (Learning Objectives Review, Knowledge Check with answers)
-Notes: Successfully implemented Assessment and Recap Slide Structure standardization. Module 2 transformed from administrative evaluation framework (4 slides removed) to learner-focused knowledge reinforcement (3 new slides added). Module 1 already compliant. This MINOR version change (v1.11.0) adds new governance guidance separating learner-facing content from trainer/spec documentation. Amendment fully propagated and validated.
+  1) ✅ Updated constitution with GitHub Copilot Terminology Standards in Principle II
+  2) ✅ Updated 22_copilot_deep_dive.md: All 4 mode section titles and content updated
+  3) ✅ Updated 21_tools_landscape.md: GitHub Copilot capabilities list with new terminology
+  4) ✅ Updated 20_module2_intro.md: Learning objectives with mode-based terminology
+  5) ✅ Updated memory system with terminology standards and rationale
+Pending Manual Updates:
+  - Lab 22 exercises and solutions need comprehensive terminology updates
+  - Spec documents (spec.md, tasks.md, research files) should align with new terminology
+  - Optional: Update copilot-instructions.md examples for consistency
+Notes: Successfully implemented GitHub Copilot Terminology Standards. Main slide content updated from generic feature names ("Chat", "Edits", "Spaces", "Custom Instructions") to mode-based terminology ("Ask Mode", "Edit Mode", "Agent Mode", "Custom Agent Mode"). This PATCH version change (v1.11.1) clarifies interaction paradigms without changing functionality. Lab files and spec documents flagged for manual updates to maintain consistency across all training materials.
 -->
 
 # SFEIR School Coding with AI Constitution
 
-**Version**: 1.11.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-16
+**Version**: 1.11.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-16
 
 ## Core Principles
 
@@ -69,6 +69,15 @@ Assessment slides SHALL NOT include administrative content that duplicates speci
 - ❌ "Assessment Rubric" slides with detailed scoring criteria
 
 **Rationale**: Assessment slides must reinforce learning through review and knowledge checks rather than presenting administrative evaluation frameworks. Success criteria, rubrics, scoring tables, and evaluation methods belong in specification documents and trainer materials where they guide curriculum development and assessment design. Learner-facing slides should focus on knowledge consolidation, self-assessment through practice questions, and practical application guidance. This separation ensures presentations remain educational and engaging while maintaining rigorous evaluation standards in appropriate documentation.
+
+**GitHub Copilot Terminology Standards**: All training materials (slides, labs, documentation) MUST use standardized mode-based terminology when referring to GitHub Copilot IDE extension features. This ensures clarity about the actual interaction modes and capabilities:
+
+- **"Copilot - Ask Mode"** (NOT "Copilot Chat"): Multi-turn conversational interface for asking questions, getting explanations, and exploring code concepts
+- **"Copilot - Edit Mode"** (NOT "Copilot Edits"): Direct code modification interface for multi-file changes and refactoring operations
+- **"Copilot - Agent Mode"** (NOT "Copilot Spaces"): Autonomous task execution mode with human oversight for complex multi-step development workflows
+- **"Copilot - Custom Agent Mode"** (NOT "Custom Instructions"): Personalized AI agent configuration with project-specific instructions and preferences
+
+**Rationale**: Mode-based terminology clearly communicates the interaction paradigm (Ask/Edit/Agent) rather than using generic feature names that don't convey how learners will actually interact with the tool. "Ask Mode" immediately signals conversational interaction, "Edit Mode" indicates direct code modification, "Agent Mode" conveys autonomous execution, and "Custom Agent Mode" clarifies personalization capabilities. This standardization improves comprehension and sets accurate expectations for tool behavior.
 
 **Exercise Slide Formatting**: Exercise slides MUST use the `class="exercice"` directive and follow this exact heading hierarchy:
 ```markdown

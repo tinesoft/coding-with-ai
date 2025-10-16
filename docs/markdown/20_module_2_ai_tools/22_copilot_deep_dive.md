@@ -20,7 +20,7 @@
 ### **Why Choose GitHub Copilot?**
 - **Market Leader**: 1.3M+ paid subscribers, trusted by Fortune 500
 - **Enterprise Ready**: SOC 2 compliance, audit logs, content filtering
-- **Multi-Modal**: Chat, Edits, Workspace, and custom instructions
+- **Multi-Modal**: Ask, Edit, Agent, and Custom Agent modes
 - **Extensive Integration**: Native GitHub ecosystem integration
 
 Notes:
@@ -35,14 +35,14 @@ GitHub Copilot represents the market leader for AI-assisted development, offerin
 
 <br>
 
-### **1. Copilot Chat** 💬
+### **1. Copilot - Ask Mode** 💬
 Multi-turn conversations with repository context and web search
 
-### **2. Copilot Edits** ✏️
+### **2. Copilot - Edit Mode** ✏️
 Multi-file editing with natural language instructions and preview
 
-### **3. Copilot Spaces** 🤖
-Organized context and knowledge for specific development tasks
+### **3. Copilot - Agent Mode** 🤖
+Autonomous task execution with human oversight for complex workflows
 
 <br>
 
@@ -76,218 +76,6 @@ We'll focus primarily on VS Code extension and CLI installations as they represe
 
 ##--##
 
-<!-- .slide: -->
-# Copilot Chat
-
-## Multi-Turn Conversational AI Assistant
-
-<br>
-
-### **When to Use Copilot Chat**
-- Complex problem-solving and architecture discussions
-- Code review and security analysis
-- Learning new frameworks or best practices
-- Debugging with full repository context
-
-### **Key Features**
-- **Repository Context**: Analyzes entire codebase for relevant answers
-- **Web Search**: Access to current documentation and Stack Overflow
-- **Custom Instructions**: Personalized responses based on your preferences
-- **Agents**: Specialized assistants for terminal, VS Code, and GitHub
-
-Notes:
-Ask mode is perfect for learning and exploration, providing explanations and context that help you understand the "why" behind code suggestions.
-
-##--##
-
-<!-- .slide: -->
-# Copilot Edits
-
-## Multi-File Natural Language Editing
-
-<br>
-
-### **When to Use Copilot Edits**
-- Refactoring across multiple files
-- Implementing features with natural language descriptions
-- Making consistent changes across your codebase
-- Converting between frameworks or languages
-
-### **Key Features**
-- **Multi-File Editing**: Modify multiple files simultaneously
-- **Natural Language Instructions**: Describe changes in plain English
-- **Preview Mode**: Review all changes before applying
-- **Contextual Understanding**: Analyzes file relationships and dependencies
-
-### **Example Workflow**
-1. Open Copilot Edits panel (`Ctrl+Shift+I`)
-2. Describe desired changes: "Add TypeScript types to all API functions"
-3. Review proposed changes across multiple files
-4. Accept or reject individual changes
-
-Notes:
-Edit mode transforms your coding experience by predicting what you want to write next, significantly speeding up development.
-
-##--##
-
-<!-- .slide: -->
-# Copilot Spaces
-
-## Organized Context for Development Tasks
-
-<br>
-
-### **When to Use Copilot Spaces**
-- Planning new features or major changes
-- Understanding large or unfamiliar codebases
-- Creating comprehensive implementation plans
-- Coordinating changes across multiple systems
-- Implementing feature specifications
-- Batch operations across codebase
-
-### **Key Features**
-- **Context Organization**: Centralize relevant code, docs, and specs in one place
-- **Focused Assistance**: Ground Copilot responses in project-specific context
-- **Team Collaboration**: Share spaces to reduce handoffs and repeated questions
-- **Knowledge Persistence**: Maintain context across development sessions
-
-### **Example Workflow**
-1. Create a space at github.com/copilot/spaces
-2. Add relevant code files, documentation, and specifications
-3. Provide context instructions for the development task
-4. Ask Copilot questions grounded in your space's context
-5. Share with team members for consistent knowledge access
-
-Notes:
-Copilot Spaces help organize and centralize relevant content for specific development tasks, enabling better context-aware assistance from Copilot.
-
-##--##
-
-<!-- .slide: -->
-# Custom Instructions
-
-## Personalizing Your AI Assistant
-
-<br>
-
-### **What are Custom Instructions?**
-Persistent preferences that shape how Copilot responds to you
-
-### **Setup Process**
-1. Open VS Code settings (Ctrl/Cmd + ,)
-2. Search for "copilot instructions"
-3. Add your preferences in natural language
-4. Save and restart VS Code for full effect
-
-### **Example Instructions**
-- "Use TypeScript with strict mode and functional programming patterns"
-- "Always include error handling and input validation"
-- "Prefer modern ES6+ syntax and avoid jQuery"
-- "Follow React hooks patterns and avoid class components"
-
-### **Benefits**
-- **Consistent Style**: Maintains your coding preferences across projects
-- **Domain Knowledge**: Incorporates your specific frameworks and patterns
-- **Team Standards**: Enforces organizational coding guidelines
-
-Notes:
-Custom instructions transform Copilot from a generic assistant into a personalized pair programmer that understands your specific preferences and constraints.
-
-##--##
-
-<!-- .slide: -->
-# Workflow Integration Patterns
-
-## Combining Modes Effectively
-
-<br>
-
-### **Discovery → Implementation → Refinement**
-1. **Ask Mode**: "How should I approach this problem?"
-2. **Edit Mode**: Implement solution with inline assistance
-3. **Agent Mode**: Refactor and optimize across files
-
-### **Learning → Doing → Scaling**
-1. **Ask Mode**: Learn new concepts and patterns
-2. **Edit Mode**: Practice with guided assistance
-3. **Agent Mode**: Apply to larger-scale implementations
-
-### **Planning → Coding → Review**
-1. **Agent Mode**: Generate implementation plan
-2. **Edit Mode**: Write code with contextual help
-3. **Ask Mode**: Review and explain complex sections
-
-Notes:
-The most effective developers use all three modes synergistically, leveraging each mode's strengths for different phases of development.
-
-##--##
-
-<!-- .slide: -->
-# Restore Points & Version Control
-
-## Safe AI Experimentation
-
-<br>
-
-### **GitHub Copilot Chat Restore Points**
-- **Automatic Snapshots**: Save state before major changes
-- **Manual Checkpoints**: Create restore points on demand
-- **Quick Rollback**: Revert to previous state instantly
-- **Branch Integration**: Works with Git branching strategies
-
-### **Best Practices**
-- Create restore points before experimental changes
-- Use descriptive names for manual checkpoints
-- Combine with Git commits for comprehensive versioning
-- Test AI-generated code before committing
-
-### **Example Workflow**
-```bash
-# Create restore point
-copilot restore create "before-refactoring"
-
-# Make AI-assisted changes
-copilot agent "refactor for performance"
-
-# If issues arise, restore
-copilot restore apply "before-refactoring"
-```
-
-Notes:
-Restore points provide safety nets for AI experimentation, allowing you to explore solutions without fear of breaking working code.
-
-##--##
-
-<!-- .slide: -->
-# Performance Optimization
-
-## Getting the Most from GitHub Copilot
-
-<br>
-
-### **Context Optimization**
-- **File Organization**: Keep related files open for better context
-- **Meaningful Names**: Use descriptive variable and function names
-- **Clear Comments**: Write intent-revealing comments
-- **Project Structure**: Maintain consistent architecture patterns
-
-### **Prompt Engineering for Code**
-- **Be Specific**: Detailed requirements get better results
-- **Provide Examples**: Show expected input/output patterns
-- **Use Standards**: Reference coding conventions and style guides
-- **Iterate Gradually**: Build complexity step by step
-
-### **Performance Monitoring**
-- Track code generation accuracy
-- Monitor suggestion acceptance rates
-- Measure development speed improvements
-- Assess code quality and maintainability
-
-Notes:
-Optimizing your interaction with Copilot significantly improves both the quality of suggestions and your overall development velocity.
-
-##--##
-
 <!-- .slide: class="exercice" --> 
 # Exercice 1: GitHub Copilot CLI
 ## Lab 21
@@ -315,6 +103,162 @@ Notes:
 
 Notes:
 - Read the lab README.md for example of solutions.
+
+##--##
+
+<!-- .slide: -->
+# Copilot (IDE Extension) - Ask Mode
+
+## Multi-Turn Conversational AI Assistant
+
+<br>
+
+### **When to Use Ask Mode**
+- Complex problem-solving and architecture discussions
+- Code review and security analysis
+- Learning new frameworks or best practices
+- Debugging with full repository context
+
+### **Key Features**
+- **Repository Context**: Analyzes entire codebase for relevant answers
+- **Web Search**: Access to current documentation and Stack Overflow
+- **Custom Agent Configuration**: Personalized responses based on your preferences
+- **Specialized Agents**: Terminal, VS Code, and GitHub assistants
+
+Notes:
+Ask mode is perfect for learning and exploration, providing explanations and context that help you understand the "why" behind code suggestions.
+
+##--##
+
+<!-- .slide: -->
+# Copilot (IDE Extension) - Edit Mode
+
+## Multi-File Natural Language Editing
+
+<br>
+
+### **When to Use Edit Mode**
+- Refactoring across multiple files
+- Implementing features with natural language descriptions
+- Making consistent changes across your codebase
+- Converting between frameworks or languages
+
+### **Key Features**
+- **Multi-File Editing**: Modify multiple files simultaneously
+- **Natural Language Instructions**: Describe changes in plain English
+- **Preview Mode**: Review all changes before applying
+- **Contextual Understanding**: Analyzes file relationships and dependencies
+
+
+Notes:
+Edit mode transforms your coding experience by enabling direct code modifications across multiple files based on natural language instructions.
+
+
+### **Example Workflow**
+1. Open Edit Mode panel (`Ctrl+Shift+I`)
+2. Describe desired changes: "Add TypeScript types to all API functions"
+3. Review proposed changes across multiple files
+4. Accept or reject individual changes
+
+##--##
+
+<!-- .slide: -->
+# Copilot (IDE Extension) - Agent Mode
+
+## Autonomous Task Execution with Oversight
+
+<br>
+
+### **When to Use Agent Mode**
+- Planning new features or major changes
+- Understanding large or unfamiliar codebases
+- Creating comprehensive implementation plans
+- Coordinating changes across multiple systems
+- Implementing feature specifications
+- Complex multi-step development workflows
+
+### **Key Features**
+- **Autonomous Execution**: AI handles multi-step tasks with human oversight
+- **Context Organization**: Centralizes relevant code, docs, and specs
+- **Approval Gates**: Review and approve actions before execution
+- **Team Collaboration**: Share context to reduce handoffs and repeated questions
+- **Knowledge Persistence**: Maintains context across development sessions
+
+Notes:
+Agent Mode enables autonomous task execution while maintaining human oversight through approval gates, perfect for complex multi-step development workflows.
+### **Example Workflow**
+1. Initiate Agent Mode in your IDE or at github.com/copilot/spaces
+2. Add relevant code files, documentation, and specifications
+3. Provide task instructions and acceptance criteria
+4. Review proposed actions at approval gates
+5. Share context with team members for consistent knowledge access
+##--##
+
+<!-- .slide: -->
+# Copilot (VSCode Extension) - Custom Agent Mode
+
+## Personalizing Your AI Assistant
+
+<br>
+
+### **What is Custom Agent Mode?**
+Persistent preferences and project-specific instructions that shape how Copilot responds to you
+
+### **Setup Process**
+1. Open VS Code settings (Ctrl/Cmd + ,)
+2. Search for "copilot instructions"
+3. Add your preferences and project context in natural language
+4. Save and restart VS Code for full effect
+
+##--##
+
+<!-- .slide: -->
+# Copilot (VSCode Extension) - Custom Agent Mode
+
+## Personalizing Your AI Assistant
+
+<br>
+
+### **Example Instructions**
+- "Use TypeScript with strict mode and functional programming patterns"
+- "Always include error handling and input validation"
+- "Prefer modern ES6+ syntax and avoid jQuery"
+- "Follow React hooks patterns and avoid class components"
+
+### **Benefits**
+- **Consistent Style**: Maintains your coding preferences across projects
+- **Domain Knowledge**: Incorporates your specific frameworks and patterns
+- **Team Standards**: Enforces organizational coding guidelines
+
+Notes:
+Custom Agent Mode transforms Copilot from a generic assistant into a personalized pair programmer that understands your specific preferences, project context, and constraints.
+
+##--##
+
+<!-- .slide: -->
+# Workflow Integration Patterns
+
+## Combining Modes Effectively
+
+<br>
+
+### **Discovery → Implementation → Refinement**
+1. **Ask Mode**: "How should I approach this problem?"
+2. **Edit Mode**: Implement solution with inline assistance
+3. **Agent Mode**: Refactor and optimize across files
+
+### **Learning → Doing → Scaling**
+1. **Ask Mode**: Learn new concepts and patterns
+2. **Edit Mode**: Practice with guided assistance
+3. **Agent Mode**: Apply to larger-scale implementations
+
+### **Planning → Coding → Review**
+1. **Agent Mode**: Generate implementation plan
+2. **Edit Mode**: Write code with contextual help
+3. **Ask Mode**: Review and explain complex sections
+
+Notes:
+The most effective developers use all three modes synergistically, leveraging each mode's strengths for different phases of development.
 
 ##--##
 
@@ -370,10 +314,6 @@ Notes:
 - Prompt engineering for specific results
 - Custom agents for specialized capabilities
 
-### **✅ Next Steps**
-- Advanced AI model comparison and selection
-- Project-specific agent instruction files
-- Enterprise deployment considerations
 
 Notes:
 You now have comprehensive GitHub Copilot skills that will serve as the foundation for all subsequent AI-assisted development activities.

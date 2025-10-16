@@ -18,7 +18,18 @@ Provide AI coding assistants with essential project context, patterns, and conve
 - `.github/copilot-instructions.md` - GitHub Copilot-specific
 - `CLAUDE.md` - Claude/Anthropic-specific  
 - `GEMINI.md` - Google Gemini-specific
-- `AGENTS.md` - Universal instructions for all AI agents
+- `AGENTS.md` - Open standard supported by multiple coding agents (GitHub Copilot, Gemini CLI, etc.)
+
+
+
+##--##
+
+<!-- .slide: -->
+# What Are Agent Instruction Files?
+
+## Project-Specific AI Guidance
+
+<br>
 
 ### **Key Benefits**
 - **Consistency**: AI follows project conventions automatically
@@ -26,8 +37,6 @@ Provide AI coding assistants with essential project context, patterns, and conve
 - **Quality**: Better suggestions aligned with architecture
 - **Onboarding**: New team members (human and AI) get up to speed faster
 
-Notes:
-Agent instruction files are the bridge between your codebase's unique characteristics and generic AI model knowledge.
 
 ##--##
 
@@ -165,7 +174,7 @@ Quality over quantity - focused, actionable instructions yield better AI collabo
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: class="with-code" -->
 # Example: Real Instruction File
 
 ## SFEIR School Project Instructions
@@ -250,11 +259,6 @@ Notes:
 - ✅ Correct library versions and APIs used
 - ✅ Consistent code style across all generations
 
-### **Quantified Benefits**
-- **55% reduction** in suggestion rejection rate
-- **40% faster** code review (fewer convention violations)
-- **30% fewer** "AI doesn't understand our codebase" complaints
-
 Notes:
 Instruction files transform AI from generic helper to project-aware collaborator, significantly improving code quality and developer satisfaction.
 
@@ -279,11 +283,8 @@ Instruction files transform AI from generic helper to project-aware collaborator
 - **Documentation** - Keep in sync with formal docs
 - **Version control** - Track changes alongside code
 
-### **Quality Checks**
-- Test instructions with real AI interactions
-- Gather feedback from team on AI suggestion quality
-- Monitor for outdated or conflicting guidance
-- Remove obsolete information promptly
+You can use you favourite AI agent (re)generate this file at any time!
+<!-- .element: class="admonition tip" -->
 
 Notes:
 Treat instruction files as living documentation that evolves with your codebase - stale instructions are worse than no instructions.

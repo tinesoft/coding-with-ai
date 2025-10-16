@@ -25,6 +25,14 @@
 - **Strengths**: Multimodal (code + images), 2M token context, fast
 - **Best For**: API integration, vision-related tasks, massive context needs
 - **Context**: 2M tokens, multimodal capabilities
+##--##
+
+<!-- .slide: -->
+# AI Models Overview
+
+## Major Coding Models (October 2025)
+
+<br>
 
 ### **DeepSeek Coder V2.5**
 - **Strengths**: Code-specialized, fast inference, cost-effective
@@ -76,6 +84,14 @@ Choose models based on task requirements, not just popularity. Different models 
 - **Claude 4.x**: Long context, safety, instruction following
 - **Gemini 2.5**: Multimodal, API integration, speed
 - **DeepSeek**: Code-specific, inference speed, cost efficiency
+##--##
+
+<!-- .slide: -->
+# Model Capabilities Comparison
+
+## Technical Specifications
+
+<br>
 
 ### **Availability in Tools**
 - Most tools support GPT-4/GPT-5 and Claude models
@@ -188,11 +204,6 @@ Strategic model selection improves both code quality and development velocity wh
 - Codebase size drives context window needs
 - Performance criticality affects speed vs. quality trade-offs
 - Budget constraints guide cost optimization
-
-### **✅ Next Steps**
-- Hands-on model comparison exercises
-- Create agent instruction files for optimal model usage
-- Apply model selection strategies in real projects
 
 Notes:
 You now understand how to strategically select AI models for different coding scenarios and can make informed decisions about model usage.

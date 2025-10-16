@@ -12,10 +12,10 @@ By the end of this module, you will be able to:
 <br>
 
 - **Categorize** AI coding tools into CLI agents, standalone IDEs, IDE extensions, and online tools
-- **Master** GitHub Copilot using Chat, Edits, and Workspace modes
-- **Configure** custom instructions and specialized AI agents for your workflow
+- **Master** GitHub Copilot using Ask, Edit, and Agent modes
+- **Configure** Custom Agent Mode with project-specific instructions and specialized AI agents
 - **Compare** AI models (GPT-5, GPT-4.5/GPT-4o, Claude 4.x, Gemini 2.5) for different coding scenarios
-- **Create** comprehensive AI agent instruction files with custom instructions and project context
+- **Create** comprehensive AI agent instruction files with project context and custom configurations
 
 Notes:
 This module provides hands-on experience with modern AI coding tools, focusing on practical skills you can immediately apply in your development workflow.

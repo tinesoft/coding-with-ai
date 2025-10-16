@@ -255,10 +255,10 @@ IDE extensions offer the lowest barrier to entry for AI-assisted development by 
 <br>
 
 ### **GitHub Copilot** ⭐
-- **Copilot Chat**: Multi-turn conversations with context awareness
-- **Copilot Edits**: Multi-file editing with natural language instructions  
-- **Copilot Spaces**: Organize context and knowledge for specific projects
-- **Custom Instructions**: Personalized coding style and preferences
+- **Ask Mode**: Multi-turn conversations with context awareness
+- **Edit Mode**: Multi-file editing with natural language instructions  
+- **Agent Mode**: Autonomous task execution with human oversight
+- **Custom Agent Mode**: Personalized coding style and project-specific instructions
 - $10/month individual, $19/month business, free for students/OSS
 
 ### **Continue**
