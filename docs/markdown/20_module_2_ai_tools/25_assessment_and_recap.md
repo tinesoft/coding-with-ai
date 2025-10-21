@@ -119,18 +119,7 @@ You now have the practical skills to effectively integrate AI tools into your de
 - [OpenAI Models & Docs](https://platform.openai.com/docs/models) - OpenAI model SKUs (GPT-5, GPT-4.5, GPT-4o) and APIs
 - [Anthropic Docs](https://www.anthropic.com) - Claude product pages and guides (Claude 4.x)
 - [Google Vertex AI / Gemini](https://cloud.google.com/vertex-ai) - Gemini 2.5 family and Vertex AI docs
-- [October 2025 Research Snapshot](../../specs/002-module-2-ai-coding-tools/october-2025-comprehensive-update.md) - Module 2 accuracy audit and sources
 - Lab exercise solutions in `/labs/lab-2X-solution/` directories
-
-### **Community & Support**
-- SFEIR School Community Forums
-- AI Coding Tools Discord/Slack Channels
-- Monthly AI Development Meetups
-
-### **Practice Labs**
-- All lab exercises remain available for continued practice
-- Solution files provide reference implementations
-- Additional challenges for advanced skill development
 
 Notes:
 These resources support your continued growth in AI-assisted development beyond this module.

@@ -1,4 +1,44 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.11.3
+Date: 2025-10-19
+Amendment: Remove "Success Criteria Checklist" sections from lab content
+
+RATIONALE:
+- Administrative checklists at end of lab documents create maintenance overhead
+- Box-checking duplicates validation that should occur through hands-on completion
+- Learners validate understanding through doing, not through self-assessment checklists
+- Exercise-level success criteria defining expected outcomes remain appropriate and educational
+
+SCOPE:
+This amendment distinguishes between:
+1. PROHIBITED: End-of-document "Success Criteria Checklist" sections (administrative overhead)
+2. ALLOWED: Exercise-level success criteria defining learning objectives (educational content)
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Added prohibition to Principle III
+
+Lab Content:
+- [✓] labs/lab-21-copilot-cli/README.md - Removed "Success Criteria Checklist" section (29 lines removed)
+- [✓] labs/lab-22-copilot-vscode/README.md - Removed "Success Criteria Checklist" section (28 lines removed)
+- [✓] labs/lab-23-model-comparison/README.md - Removed "Success Criteria Checklist" section (26 lines removed)
+- [✓] labs/lab-11-prompt-basics/README.md - "Success Criteria" subsections are exercise learning objectives (preserved as educational content)
+
+Supporting Documentation:
+- [✓] .github/copilot-instructions.md - Added lab content structure guidance
+- [✓] /memories/sfeir-school-constitutional-rules.md - Added lab content restrictions with examples
+
+VALIDATION:
+- [✓] All Module 2 labs updated (lab-21, lab-22, lab-23) - removed administrative checklists
+- [✓] Module 1 labs evaluated - exercise-level criteria preserved as educational content
+- [✓] Solution labs contain only educational content (no checklists removed)
+- [✓] Supporting documentation updated with clear guidance
+- [✓] Memory system updated for future lab generation compliance
+
+AMENDMENT COMPLETE: All tasks validated and completed on October 21, 2025.
+-->
+
+<!--
 SYNC IMPACT REPORT:
 Version Change: 1.11.1 → 1.11.2
 Modified Principles: Principle II (Content Organization Standards) - Updated Assessment and Recap Slide Structure
@@ -28,9 +68,8 @@ Future Compliance:
 Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structure. This PATCH version change (v1.11.2) streamlines assessment slides by eliminating forward-looking content. Assessment slides now focus exclusively on: (1) Transition, (2) Learning Objectives Review, (3) Knowledge Check, (4) Module Recap, (5) Resources. "Next Steps" content (module previews, homework, recommended reading, application guidance) belongs in course syllabi, trainer materials, and module transitions, not in module-ending assessment slides. This maintains focus on consolidating current module learning.
 -->
 
-# SFEIR School Coding with AI Constitution
-
-**Version**: 1.11.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-16
+# SFEIR School Coding with AI - Constitutional Document
+## Version 1.11.3
 
 ## Core Principles
 
@@ -129,6 +168,8 @@ Content here...
 
 ### III. Lab Structure Requirements
 Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with corresponding solution folders `labs/lab-XX-{topic}-solution/`. Each solution folder MUST contain a mandatory `README.md` file and MAY include an optional `resources/` directory for lab outputs and deliverables (e.g., final projects, code samples, generated artifacts). Write all lab instructions in GitHub-flavored markdown format with clear objectives, prerequisites, and success criteria. Provide hands-on exercises with scaffolded projects that demonstrate practical application of module concepts.
+
+**Lab Content Restrictions**: Lab documents SHALL NOT include "Success Criteria Checklist" sections at the end of lab files. Administrative checklists create maintenance overhead and duplicate validation that should occur through hands-on completion of exercises. Learners validate understanding through doing the exercises, not through self-assessment checklists. Exercise instructions MAY include inline success criteria defining expected outcomes for specific tasks, as these serve an educational purpose in clarifying learning objectives.
 
 **Lab-Slide Content Alignment**: Lab exercises MUST align with and reinforce the learning objectives and content presented in their corresponding module slides. Each lab SHALL provide hands-on practice for concepts introduced in the theoretical slide content. Exercise instructions MUST reference specific techniques, tools, or methodologies covered in the module slides. Learning progression in labs SHALL follow the sequence established in slide presentations to ensure educational coherence and effective skill building.
 

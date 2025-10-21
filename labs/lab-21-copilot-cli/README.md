@@ -192,29 +192,6 @@ Optimize @package.json for production builds
 
 ---
 
-## Success Criteria Checklist
-
-### Installation & Setup
-- [ ] Successfully installed `@github/copilot` via npm
-- [ ] Completed first-time setup and authentication
-- [ ] Can start interactive sessions with `copilot` command
-
-### Code Generation
-- [ ] Generated at least 4 different types of code snippets in interactive mode
-- [ ] Used natural language prompts effectively
-- [ ] Successfully created and saved generated code to files
-
-### Code Analysis
-- [ ] Explained complex algorithms using @ file references
-- [ ] Analyzed existing code files in projects
-- [ ] Used Copilot to understand unfamiliar code patterns
-
-### Advanced Usage
-- [ ] Used programmatic mode with -p flag
-- [ ] Explored slash commands (/help, /model, /usage)
-- [ ] Integrated CLI into development workflow
-- [ ] Used file referencing and directory navigation features
-
 ## Common Issues and Solutions
 
 ### Issue: "copilot: command not found"
@@ -260,20 +237,25 @@ npm install -g @github/copilot
 ## Alternative CLI Tools to Explore
 Now that you've mastered GitHub Copilot CLI, consider exploring these popular alternatives:
 
-### **Claude Code**
-- Anthropic's terminal-first agent that plans, edits files, runs commands, and can commit changes
-- Switch models on demand (`sonnet`, `opus`, `haiku`, `opusplan`, `sonnet[1m]`) with the `/model` command
-- Install with `npm install -g @anthropic-ai/claude-code`; usage bills through Claude Console/Claude.ai
+### **Gemini**
+- Google's AI coding assistant CLI with multi-model support
+- Features include code generation, explanation, and refactoring
+- Install with `npm install -g @google/gemini-cli`; requires Google account for access
+
+### **OpenCode**
+- Open-source AI coding agent running natively in the terminal with responsive TUI
+- Features include LSP-enabled code generation, multi-session support, and works with 75+ LLM providers (Claude Pro, local models, etc.)
+- Install with `npm i -g opencode-ai` (also available via curl, bun, brew, paru); privacy-first with no code storage
 
 ### **Codex**
 - OpenAI's open-source Rust CLI that reads, edits, and runs code with approval modes
 - Default GPT-5 model with optional `gpt-5-codex` and reasoning levels; supports non-interactive `codex exec`
 - Install with `npm install -g @openai/codex` or `brew install codex`; works with ChatGPT plans or API keys
 
-### **Aider**
-- Open-source CLI agent with direct file editing
-- `pip install aider-chat`
-- Supports multiple models (GPT-4, Claude, local models)
+### **Claude Code**
+- Anthropic's terminal-first agent that plans, edits files, runs commands, and can commit changes
+- Switch models on demand (`sonnet`, `opus`, `haiku`, `opusplan`, `sonnet[1m]`) with the `/model` command
+- Install with `npm install -g @anthropic-ai/claude-code`; requires PRO plan or more
 
 ---
 

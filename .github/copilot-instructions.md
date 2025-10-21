@@ -107,11 +107,12 @@ labs/lab-XX-topic-solution/
 
 ### Exercise 2: Title
 [Same pattern]
-
-## Success Criteria
-- [ ] Checkboxes for completion validation
-- [ ] Measurable outcomes
 ```
+
+**Lab Content Restrictions:**
+- **NO "Success Criteria Checklist"**: Do not include end-of-document administrative checklist sections
+- **Exercise Success Criteria Allowed**: Individual exercises may include success criteria defining expected outcomes
+- **Rationale**: Learners validate understanding through doing exercises, not through self-assessment checklists
 
 ## Constitutional Compliance Requirements
 

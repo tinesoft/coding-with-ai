@@ -194,32 +194,6 @@ Alt+[: Previous suggestion
 
 ---
 
-## Success Criteria Checklist
-
-### Chat Proficiency
-- [ ] Successfully use repository-wide context in conversations
-- [ ] Get meaningful architecture and optimization suggestions
-- [ ] Use chat for planning and documentation tasks
-- [ ] Demonstrate understanding of web search integration
-
-### Edits Mastery
-- [ ] Complete multi-file refactoring with Copilot Edits
-- [ ] Preview and selectively apply suggested changes
-- [ ] Handle complex cross-file dependencies
-- [ ] Use natural language effectively for editing tasks
-
-### Custom Instructions
-- [ ] Configure personalized instructions for coding style
-- [ ] Test instructions with real coding tasks
-- [ ] Include team-specific conventions and requirements
-- [ ] Demonstrate improved suggestion quality
-
-### Workflow Integration
-- [ ] Use keyboard shortcuts efficiently
-- [ ] Apply advanced features to real development tasks
-- [ ] Show measurable productivity improvements
-- [ ] Integrate Copilot into existing development workflow
-
 ## Common Issues and Solutions
 
 ### Issue: Poor suggestion quality
