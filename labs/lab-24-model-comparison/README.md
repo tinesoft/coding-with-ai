@@ -1,4 +1,6 @@
-# Lab 23: AI Model Comparison and Selection Strategy
+# Lab 24 (Bonus): AI Model Comparison and Selection Strategy
+
+> **Note:** This is a bonus lab. The official Module 2 lab sequence is Lab 21 (Copilot CLI), Lab 22 (VS Code Extension), and Lab 23 (Agent Instruction Files).
 
 ## Learning Objectives
 By the end of this lab, you will be able to:
@@ -11,7 +13,7 @@ By the end of this lab, you will be able to:
 - Access to multiple AI platforms (recommended: GitHub Copilot, Claude.ai, ChatGPT)
 - Basic understanding of AI capabilities and limitations
 - Programming experience in at least one language
-- Completion of Labs 21-22 (Copilot experience helpful)
+- Completion of Labs 21-23 (Copilot experience helpful)
 
 ## Duration: 45 minutes
 
