@@ -430,12 +430,21 @@ Create Instructions → Test with AI → Identify Gaps → Update Instructions �
 ## Bonus: Platform-Specific Instruction Files
 
 ### Cursor IDE (`.cursorrules`)
-```
-# Cursor-specific rules
-@always use TypeScript strict mode
-@prefer functional components in React
-@include unit tests with all new functions
-@follow ESLint configuration in .eslintrc
+```markdown
+# Cursor Rules for TaskFlow
+
+You are an expert TypeScript developer working on TaskFlow.
+
+## Code Style
+- Use TypeScript strict mode for all files
+- Prefer functional components over class components in React
+- Include unit tests with all new functions
+- Follow the ESLint configuration defined in .eslintrc
+
+## File Organization
+- Place components in src/components/
+- Place utilities in src/utils/
+- Colocate tests with source files
 ```
 
 ### Aider CLI (`.aider.md`)

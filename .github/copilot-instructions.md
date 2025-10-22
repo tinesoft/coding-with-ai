@@ -114,6 +114,12 @@ labs/lab-XX-topic-solution/
 - **Exercise Success Criteria Allowed**: Individual exercises may include success criteria defining expected outcomes
 - **Rationale**: Learners validate understanding through doing exercises, not through self-assessment checklists
 
+**Lab Solution Deliverable Completeness:**
+- **REQUIRED**: When lab exercises create files or projects, solution `resources/` folder MUST contain those actual files/projects
+- **Example 1**: If exercise creates `CLAUDE.md`, solution must include `resources/CLAUDE.md` with complete content
+- **Example 2**: If exercise creates a project, solution must include `resources/project-name/` with all project files
+- **Rationale**: Complete solution artifacts provide concrete reference implementations learners can examine and learn from
+
 ## Constitutional Compliance Requirements
 
 ### File Organization
@@ -231,6 +237,6 @@ Module assessment and recap slides MUST follow this standardized structure:
 **Rationale**: Assessment slides reinforce learning through review and knowledge checks. Administrative evaluation frameworks and forward-looking navigation belong in specification documents and trainer materials, not learner-facing presentations.
 
 ---
-*Instructions updated: 2025-10-16*
+*Instructions updated: 2025-10-22*
 *Module focus: All modules*
 *Constitutional compliance: Required for all content creation*

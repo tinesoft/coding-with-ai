@@ -1,0 +1,186 @@
+# Cursor Rules for TaskFlow Project
+
+You are an expert TypeScript developer specializing in Next.js 14, React 18, Prisma ORM, and modern web application development. You are working on TaskFlow, a task management application with a focus on security, performance, and maintainability.
+
+## Project Context
+
+TaskFlow is a production-ready task management system built with:
+- **Frontend**: Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes, NextAuth.js authentication
+- **Database**: PostgreSQL with Prisma ORM
+- **Testing**: Jest, React Testing Library, Playwright
+- **Deployment**: Vercel (or similar platform)
+
+## Core Development Principles
+
+### Code Quality
+- Write concise, technical TypeScript code with accurate examples
+- Use functional and declarative programming patterns
+- Prefer iteration and modularization over code duplication
+- Use descriptive variable names with auxiliary verbs (e.g., `isLoading`, `hasPermission`)
+- Follow TypeScript strict mode - no `any` types without justification
+
+### File Structure
+- Components: `src/components/` (PascalCase files)
+- API routes: `src/app/api/` (kebab-case directories)
+- Services: `src/server/services/` (business logic layer)
+- Repositories: `src/server/repositories/` (database access layer)
+- Types: `src/types/` (shared TypeScript interfaces)
+- Utilities: `src/utils/` (pure functions)
+- Tests: Colocate with source files (`*.test.ts`, `*.spec.tsx`)
+
+### React Best Practices
+- Use functional components with TypeScript interfaces for props
+- Prefer Server Components over Client Components (use `'use client'` sparingly)
+- Extract complex logic into custom hooks
+- Implement proper loading and error states in all data-fetching components
+- Use `React.memo` for expensive computations
+- Destructure props in function parameters for clarity
+
+### TypeScript Guidelines
+- Use `interface` over `type` for object shapes
+- Prefer `unknown` over `any` for truly unknown types
+- Use explicit return types for all exported functions
+- Leverage type inference where it improves readability
+- Create type guards for runtime type checking
+
+## Architecture Patterns
+
+### API Development
+- Authenticate all protected routes with `getServerSession()`
+- Validate all inputs using Zod schemas before processing
+- Use try-catch blocks in all async route handlers
+- Return consistent error responses:
+  ```typescript
+  return NextResponse.json({ error: "User-friendly message" }, { status: 400 })
+  ```
+- Never expose internal errors or stack traces to clients
+- Implement rate limiting on sensitive endpoints
+
+### Database Access
+- **Always use the repository pattern** - never query Prisma directly from API routes
+- Implement repositories in `src/server/repositories/`
+- Use Prisma transactions for multi-step operations
+- Implement soft deletes with `deletedAt` timestamp fields
+- Use proper indexes on frequently queried columns
+- Handle database connection pooling appropriately
+
+### Error Handling
+- Handle errors at the start of functions (early returns)
+- Create custom error classes for different scenarios
+- Implement global error boundary in root layout
+- Log errors with structured logging (include user ID, timestamp, context)
+- Provide user-friendly error messages
+- Use error tracking service (Sentry or similar)
+
+### Security
+- Sanitize all user inputs before processing
+- Implement CSRF protection using NextAuth
+- Store all secrets in environment variables
+- Validate JWT tokens on every authenticated request
+- Implement role-based access control (RBAC) where needed
+- Log all authentication failures for security monitoring
+
+## Testing Requirements
+
+### Unit Tests
+- Test all business logic functions
+- Test error cases as thoroughly as happy paths
+- Use descriptive test names: `it('should return null when user is not found')`
+- Mock external dependencies (database, APIs)
+- Aim for 80% code coverage minimum
+
+### Component Tests
+- Use React Testing Library
+- Test user interactions, not implementation details
+- Test accessibility features
+- Verify loading and error states
+
+### Integration Tests
+- Test API endpoints with Supertest or similar
+- Verify authentication and authorization
+- Test error responses and edge cases
+
+## Performance Optimization
+
+- Implement pagination for all list endpoints (default: 20 items)
+- Use `React.lazy()` for code splitting of large components
+- Optimize images with Next.js `<Image>` component
+- Implement caching with React Query (staleTime, cacheTime)
+- Use Server Components for data fetching when possible
+- Monitor and optimize database query performance
+
+## Accessibility (WCAG 2.1 Level AA)
+
+- Use semantic HTML elements (`<main>`, `<nav>`, `<article>`)
+- Include ARIA labels on all interactive elements
+- Ensure keyboard navigation works throughout the application
+- Maintain color contrast ratios (4.5:1 for normal text)
+- Provide skip-to-content links
+- Test with screen readers (NVDA, JAWS, VoiceOver)
+
+## Git Workflow
+
+- Use conventional commits:
+  - `feat:` for new features
+  - `fix:` for bug fixes
+  - `docs:` for documentation
+  - `refactor:` for code refactoring
+  - `test:` for adding tests
+  - `chore:` for maintenance tasks
+- Write descriptive commit messages (what and why, not how)
+- Create feature branches from `main`
+- Require PR reviews before merging
+- Run tests and linting in CI pipeline
+- Squash commits when merging to main
+
+## Documentation
+
+- Document all exported functions with JSDoc comments
+- Include type information in JSDoc
+- Maintain README with setup instructions
+- Document environment variables in `.env.example`
+- Keep architecture decision records (ADRs) for major choices
+- Update documentation when changing functionality
+
+## Environment Configuration
+
+- Never commit `.env` files
+- Validate environment variables at application startup
+- Use different configs for dev/staging/production
+- Implement feature flags for gradual rollouts
+- Document all required environment variables
+
+## Monitoring and Observability
+
+- Implement health check endpoint (`/api/health`)
+- Track key metrics: response time, error rate, database query time
+- Set up alerts for critical failures
+- Use correlation IDs for request tracing
+- Monitor database connection pool usage
+- Track user analytics for feature usage
+
+## Code Review Checklist
+
+When reviewing code, verify:
+- [ ] Security vulnerabilities addressed
+- [ ] Tests included and passing
+- [ ] Code follows style guide and conventions
+- [ ] Performance considerations evaluated
+- [ ] Error handling is comprehensive
+- [ ] Documentation updated
+- [ ] Accessibility requirements met
+- [ ] No sensitive data exposed
+
+## Deployment
+
+- Use environment-specific builds
+- Implement zero-downtime deployments
+- Have rollback plan for each deployment
+- Run smoke tests after deployment
+- Monitor error rates and performance metrics post-deployment
+- Use incremental static regeneration (ISR) where appropriate
+
+---
+
+**Remember**: Security, performance, and user experience are top priorities. When in doubt, favor explicit code over clever code, and always consider the maintainability of your solutions.
