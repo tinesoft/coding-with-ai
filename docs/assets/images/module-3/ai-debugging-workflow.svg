@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+    AI-Powered Debugging Workflow
+  </text>
+  
+  <!-- Step 1: Reproduce -->
+  <g id="step1">
+    <rect x="50" y="80" width="140" height="80" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="120" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#1976d2">Step 1</text>
+    <text x="120" y="125" text-anchor="middle" font-size="16" fill="#333">Reproduce</text>
+    <text x="120" y="145" text-anchor="middle" font-size="12" fill="#666">the Bug</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 190 120 L 240 120" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="215" y="115" text-anchor="middle" font-size="10" fill="#666">Human</text>
+  
+  <!-- Step 2: Analyze with AI -->
+  <g id="step2">
+    <rect x="240" y="80" width="140" height="80" rx="10" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+    <text x="310" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#f57c00">Step 2</text>
+    <text x="310" y="125" text-anchor="middle" font-size="16" fill="#333">Analyze</text>
+    <text x="310" y="145" text-anchor="middle" font-size="12" fill="#666">with AI</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 380 120 L 430 120" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="405" y="115" text-anchor="middle" font-size="10" fill="#666">AI Assist</text>
+  
+  <!-- Step 3: Review Hypothesis -->
+  <g id="step3">
+    <rect x="430" y="80" width="140" height="80" rx="10" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="500" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#7b1fa2">Step 3</text>
+    <text x="500" y="125" text-anchor="middle" font-size="16" fill="#333">Review</text>
+    <text x="500" y="145" text-anchor="middle" font-size="12" fill="#666">Hypothesis</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M 570 120 L 620 120" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="595" y="115" text-anchor="middle" font-size="10" fill="#666">Human</text>
+  
+  <!-- Step 4: Test Fix -->
+  <g id="step4">
+    <rect x="620" y="80" width="140" height="80" rx="10" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <text x="690" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#388e3c">Step 4</text>
+    <text x="690" y="125" text-anchor="middle" font-size="16" fill="#333">Test</text>
+    <text x="690" y="145" text-anchor="middle" font-size="12" fill="#666">Fix</text>
+  </g>
+  
+  <!-- Arrow 4 down -->
+  <path d="M 690 160 L 690 210" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="705" y="185" font-size="10" fill="#666">Human</text>
+  
+  <!-- Step 5: Validate -->
+  <g id="step5">
+    <rect x="620" y="210" width="140" height="80" rx="10" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+    <text x="690" y="235" text-anchor="middle" font-size="14" font-weight="bold" fill="#d32f2f">Step 5</text>
+    <text x="690" y="255" text-anchor="middle" font-size="16" fill="#333">Validate</text>
+    <text x="690" y="275" text-anchor="middle" font-size="12" fill="#666">&amp; Document</text>
+  </g>
+  
+  <!-- Human-AI Collaboration Labels -->
+  <g id="legend">
+    <text x="50" y="350" font-size="16" font-weight="bold" fill="#333">Human-AI Collaboration:</text>
+    
+    <circle cx="70" cy="380" r="8" fill="#1976d2"/>
+    <text x="90" y="385" font-size="14" fill="#333">Human-led steps (Reproduce, Review, Validate)</text>
+    
+    <circle cx="70" cy="410" r="8" fill="#f57c00"/>
+    <text x="90" y="415" font-size="14" fill="#333">AI-assisted steps (Analyze)</text>
+    
+    <circle cx="70" cy="440" r="8" fill="#7b1fa2"/>
+    <text x="90" y="445" font-size="14" fill="#333">Collaborative steps (Review, Test)</text>
+  </g>
+  
+  <!-- Validation Checkpoints -->
+  <g id="checkpoints">
+    <text x="50" y="490" font-size="16" font-weight="bold" fill="#333">Validation Checkpoints:</text>
+    
+    <rect x="50" y="505" width="15" height="15" fill="#388e3c"/>
+    <text x="75" y="517" font-size="14" fill="#333">After Step 3: Does hypothesis make sense?</text>
+    
+    <rect x="50" y="530" width="15" height="15" fill="#388e3c"/>
+    <text x="75" y="542" font-size="14" fill="#333">After Step 4: Does fix resolve the bug?</text>
+    
+    <rect x="50" y="555" width="15" height="15" fill="#388e3c"/>
+    <text x="75" y="567" font-size="14" fill="#333">After Step 5: No regressions? Edge cases covered?</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

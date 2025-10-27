@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">
+    5 Common Refactoring Patterns
+  </text>
+  
+  <!-- Pattern 1: Extract Method -->
+  <g id="pattern1">
+    <rect x="50" y="80" width="180" height="110" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="140" y="105" text-anchor="middle" font-size="16" font-weight="bold" fill="#1976d2">1. Extract Method</text>
+    <text x="140" y="130" text-anchor="middle" font-size="13" fill="#333">Long Function</text>
+    <text x="140" y="150" text-anchor="middle" font-size="20" fill="#666">→</text>
+    <text x="140" y="170" text-anchor="middle" font-size="13" fill="#333">Multiple Small Functions</text>
+  </g>
+  
+  <!-- Pattern 2: Rename -->
+  <g id="pattern2">
+    <rect x="260" y="80" width="180" height="110" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+    <text x="350" y="105" text-anchor="middle" font-size="16" font-weight="bold" fill="#f57c00">2. Rename</text>
+    <text x="350" y="130" text-anchor="middle" font-size="13" fill="#333">Cryptic Names (x, y, d)</text>
+    <text x="350" y="150" text-anchor="middle" font-size="20" fill="#666">→</text>
+    <text x="350" y="170" text-anchor="middle" font-size="13" fill="#333">Descriptive Names</text>
+  </g>
+  
+  <!-- Pattern 3: Simplify Conditionals -->
+  <g id="pattern3">
+    <rect x="470" y="80" width="180" height="110" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="560" y="105" text-anchor="middle" font-size="16" font-weight="bold" fill="#7b1fa2">3. Simplify</text>
+    <text x="560" y="130" text-anchor="middle" font-size="13" fill="#333">Nested If-Else</text>
+    <text x="560" y="150" text-anchor="middle" font-size="20" fill="#666">→</text>
+    <text x="560" y="170" text-anchor="middle" font-size="13" fill="#333">Guard Clauses</text>
+  </g>
+  
+  <!-- Pattern 4: Remove Duplication -->
+  <g id="pattern4">
+    <rect x="680" y="80" width="180" height="110" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <text x="770" y="105" text-anchor="middle" font-size="16" font-weight="bold" fill="#388e3c">4. Deduplicate</text>
+    <text x="770" y="130" text-anchor="middle" font-size="13" fill="#333">Repeated Code</text>
+    <text x="770" y="150" text-anchor="middle" font-size="20" fill="#666">→</text>
+    <text x="770" y="170" text-anchor="middle" font-size="13" fill="#333">Shared Function</text>
+  </g>
+  
+  <!-- Pattern 5: Modernize -->
+  <g id="pattern5">
+    <rect x="890" y="80" width="60" height="110" rx="8" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+    <!-- Rotated text for vertical layout -->
+    <g transform="translate(920, 135)">
+      <text transform="rotate(-90)" text-anchor="middle" font-size="16" font-weight="bold" fill="#d32f2f">5. Modernize</text>
+    </g>
+  </g>
+  
+  <!-- Detailed examples below -->
+  <g id="examples">
+    <!-- Example 1: Extract Method -->
+    <g id="ex1">
+      <text x="50" y="230" font-size="14" font-weight="bold" fill="#1976d2">Before:</text>
+      <rect x="50" y="240" width="180" height="70" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="60" y="260" font-size="11" font-family="monospace" fill="#333">function process() {</text>
+      <text x="70" y="275" font-size="11" font-family="monospace" fill="#666">// validate (10 lines)</text>
+      <text x="70" y="290" font-size="11" font-family="monospace" fill="#666">// calculate (15 lines)</text>
+      <text x="70" y="305" font-size="11" font-family="monospace" fill="#666">// save (12 lines)</text>
+      <text x="60" y="320" font-size="11" font-family="monospace" fill="#333">}</text>
+      
+      <text x="50" y="350" font-size="14" font-weight="bold" fill="#388e3c">After:</text>
+      <rect x="50" y="360" width="180" height="95" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="60" y="380" font-size="11" font-family="monospace" fill="#333">function process() {</text>
+      <text x="70" y="395" font-size="11" font-family="monospace" fill="#388e3c">validate();</text>
+      <text x="70" y="410" font-size="11" font-family="monospace" fill="#388e3c">calculate();</text>
+      <text x="70" y="425" font-size="11" font-family="monospace" fill="#388e3c">save();</text>
+      <text x="60" y="440" font-size="11" font-family="monospace" fill="#333">}</text>
+    </g>
+    
+    <!-- Example 2: Rename -->
+    <g id="ex2">
+      <text x="260" y="230" font-size="14" font-weight="bold" fill="#f57c00">Before:</text>
+      <rect x="260" y="240" width="180" height="50" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="270" y="260" font-size="11" font-family="monospace" fill="#333">function calc(d) {</text>
+      <text x="280" y="275" font-size="11" font-family="monospace" fill="#666">let x = d.filter(...)</text>
+      <text x="270" y="290" font-size="11" font-family="monospace" fill="#333">}</text>
+      
+      <text x="260" y="320" font-size="14" font-weight="bold" fill="#388e3c">After:</text>
+      <rect x="260" y="330" width="180" height="65" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="270" y="350" font-size="11" font-family="monospace" fill="#333">function calcTotal(items) {</text>
+      <text x="280" y="365" font-size="11" font-family="monospace" fill="#388e3c">const active = items</text>
+      <text x="290" y="380" font-size="11" font-family="monospace" fill="#388e3c">.filter(...)</text>
+      <text x="270" y="395" font-size="11" font-family="monospace" fill="#333">}</text>
+    </g>
+    
+    <!-- Example 3: Simplify -->
+    <g id="ex3">
+      <text x="470" y="230" font-size="14" font-weight="bold" fill="#7b1fa2">Before:</text>
+      <rect x="470" y="240" width="180" height="80" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="480" y="260" font-size="11" font-family="monospace" fill="#333">if (user) {</text>
+      <text x="490" y="275" font-size="11" font-family="monospace" fill="#333">if (user.active) {</text>
+      <text x="500" y="290" font-size="11" font-family="monospace" fill="#333">if (user.email) {</text>
+      <text x="510" y="305" font-size="11" font-family="monospace" fill="#666">// deep nesting</text>
+      
+      <text x="470" y="340" font-size="14" font-weight="bold" fill="#388e3c">After:</text>
+      <rect x="470" y="350" width="180" height="80" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="480" y="370" font-size="11" font-family="monospace" fill="#388e3c">if (!user) return;</text>
+      <text x="480" y="385" font-size="11" font-family="monospace" fill="#388e3c">if (!user.active) return;</text>
+      <text x="480" y="400" font-size="11" font-family="monospace" fill="#388e3c">if (!user.email) return;</text>
+      <text x="480" y="415" font-size="11" font-family="monospace" fill="#666">// flat structure</text>
+    </g>
+    
+    <!-- Example 4: Deduplicate -->
+    <g id="ex4">
+      <text x="680" y="230" font-size="14" font-weight="bold" fill="#388e3c">Before:</text>
+      <rect x="680" y="240" width="180" height="80" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="690" y="260" font-size="11" font-family="monospace" fill="#333">formatUser() { ... }</text>
+      <text x="690" y="275" font-size="11" font-family="monospace" fill="#333">formatProduct() { ... }</text>
+      <text x="690" y="290" font-size="11" font-family="monospace" fill="#333">formatOrder() { ... }</text>
+      <text x="690" y="305" font-size="11" font-family="monospace" fill="#666">// 80% identical</text>
+      
+      <text x="680" y="340" font-size="14" font-weight="bold" fill="#388e3c">After:</text>
+      <rect x="680" y="350" width="180" height="50" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="690" y="370" font-size="11" font-family="monospace" fill="#388e3c">formatEntity(obj) {</text>
+      <text x="700" y="385" font-size="11" font-family="monospace" fill="#388e3c">// generic logic</text>
+      <text x="690" y="400" font-size="11" font-family="monospace" fill="#388e3c">}</text>
+    </g>
+    
+    <!-- Example 5: Modernize (rotated layout) -->
+    <g id="ex5">
+      <text x="885" y="220" font-size="13" font-weight="bold" fill="#d32f2f">Before</text>
+      <rect x="870" y="230" width="70" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="875" y="250" font-size="9" font-family="monospace" fill="#333">var x = [];</text>
+      <text x="875" y="265" font-size="9" font-family="monospace" fill="#333">for(var i...</text>
+      <text x="875" y="280" font-size="9" font-family="monospace" fill="#333">x.push(y)</text>
+      <text x="875" y="295" font-size="9" font-family="monospace" fill="#333">}</text>
+      <text x="875" y="310" font-size="9" font-family="monospace" fill="#666">// ES5</text>
+      
+      <text x="885" y="350" font-size="13" font-weight="bold" fill="#388e3c">After</text>
+      <rect x="870" y="360" width="70" height="70" fill="#fff" stroke="#ddd" stroke-width="1"/>
+      <text x="875" y="380" font-size="9" font-family="monospace" fill="#388e3c">const x =</text>
+      <text x="875" y="395" font-size="9" font-family="monospace" fill="#388e3c">arr.map(</text>
+      <text x="875" y="410" font-size="9" font-family="monospace" fill="#388e3c">i => i.y)</text>
+    </g>
+  </g>
+  
+  <!-- Benefits section -->
+  <g id="benefits">
+    <text x="50" y="510" font-size="18" font-weight="bold" fill="#333">Benefits of Refactoring:</text>
+    
+    <circle cx="70" cy="540" r="6" fill="#1976d2"/>
+    <text x="90" y="545" font-size="14" fill="#333">Improved Readability - Code is easier to understand</text>
+    
+    <circle cx="70" cy="570" r="6" fill="#f57c00"/>
+    <text x="90" y="575" font-size="14" fill="#333">Better Maintainability - Changes are simpler and safer</text>
+    
+    <circle cx="70" cy="600" r="6" fill="#7b1fa2"/>
+    <text x="90" y="605" font-size="14" fill="#333">Reduced Complexity - Fewer bugs, easier testing</text>
+    
+    <circle cx="70" cy="630" r="6" fill="#388e3c"/>
+    <text x="90" y="635" font-size="14" fill="#333">Enhanced Reusability - Code can be shared across features</text>
+    
+    <circle cx="70" cy="660" r="6" fill="#d32f2f"/>
+    <text x="90" y="665" font-size="14" fill="#333">Modern Standards - Up-to-date syntax and patterns</text>
+  </g>
+  
+  <!-- Footer note -->
+  <text x="500" y="690" text-anchor="middle" font-size="12" font-style="italic" fill="#666">
+    Always refactor with tests • One pattern at a time • Commit frequently
+  </text>
+</svg>

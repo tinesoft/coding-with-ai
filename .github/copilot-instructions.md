@@ -240,3 +240,7 @@ Module assessment and recap slides MUST follow this standardized structure:
 *Instructions updated: 2025-10-22*
 *Module focus: All modules*
 *Constitutional compliance: Required for all content creation*
+
+## Active Technologies
+- Markdown for slide content, various programming languages for lab exercises (Python, JavaScript/TypeScript for practical examples) (003-module-3-ai-debug-refactor-verify)
+- Git repository for version control, file-based markdown for content (003-module-3-ai-debug-refactor-verify)
