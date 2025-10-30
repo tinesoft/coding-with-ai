@@ -271,26 +271,6 @@ This methodology prevents over-reliance while maximizing AI benefits.
 ##--##
 
 <!-- .slide: -->
-# **Module Recap**
-
-## **Key Achievements**
-<br>
-
-### **🎯 Core Skills Mastered**
-
-- **Systematic Debugging**: Root cause analysis with AI assistance
-- **Refactoring Patterns**: Code improvement with AI suggestions
-- **Critical Evaluation**: Detecting AI hallucinations and issues
-
-### **💡 Key Insight**
-AI is a powerful assistant, but human expertise drives quality
-
-Notes:
-You now have practical skills to leverage AI tools effectively while maintaining code quality and security.
-
-##--##
-
-<!-- .slide: -->
 # **Resources**
 
 ## **Further Learning**

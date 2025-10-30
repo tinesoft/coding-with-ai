@@ -301,22 +301,22 @@ Module introduction files SHALL contain ONLY the three slides listed above. ANY 
 
 ## Assessment Slide Structure
 
-Module assessment and recap slides MUST follow this standardized structure:
+Module assessment and recap slides MUST follow this streamlined four-slide structure:
 
 1. **Transition slide**: `# Module X: Assessment and Recap`
 2. **Learning Objectives Review**: What learners should now know and skills developed
 3. **Knowledge Check**: Interactive quiz questions with answers and explanations
-4. **Module Recap**: Key achievements and takeaways
-5. **Resources**: Documentation links and practice materials
+4. **Resources**: Documentation links and practice materials
 
 **Prohibited Content in Assessment Slides:**
+- ❌ "Module Recap" - duplicates Learning Objectives Review content
 - ❌ "Assessment Overview" - success criteria codes belong in spec docs
 - ❌ "Assessment Methods" - evaluation procedures belong in spec docs
 - ❌ "Success Metrics" - target scores and tables belong in spec docs
 - ❌ "Assessment Rubric" - scoring criteria belong in spec docs
 - ❌ "Next Steps" - forward-looking content belongs in course syllabi/trainer materials
 
-**Rationale**: Assessment slides reinforce learning through review and knowledge checks. Administrative evaluation frameworks and forward-looking navigation belong in specification documents and trainer materials, not learner-facing presentations.
+**Rationale**: Assessment slides focus on three essential functions: reviewing what was learned (Learning Objectives Review), validating understanding (Knowledge Check), and providing continued learning resources (Resources). "Module Recap" slides create redundancy with Learning Objectives Review. Administrative evaluation frameworks and forward-looking navigation belong in specification documents and trainer materials, not learner-facing presentations.
 
 ---
 *Instructions updated: 2025-10-22*

@@ -1,4 +1,56 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.13.3
+Date: 2025-10-30
+Amendment: Remove "Module Recap" from Assessment and Recap Slide Structure
+
+RATIONALE:
+- "Module Recap" slides duplicate content already covered in "Learning Objectives Review"
+- Creates unnecessary redundancy: both sections summarize what learners accomplished
+- Adds extra slide count without adding unique educational value
+- Learners benefit more from concise, focused assessment structure
+- Learning Objectives Review already summarizes skills developed and knowledge gained
+- Streamlined four-slide structure (Transition → Learning Objectives Review → Knowledge Check → Resources) is more efficient
+
+SCOPE:
+This PATCH amendment modifies existing "Assessment and Recap Slide Structure" in Principle II by:
+1. REMOVED: "Module Recap" from required slides list (previously slide 4 of 5)
+2. UPDATED: Structure from five slides to four slides
+3. ADDED: Explicit prohibition of "Module Recap" slides in SHALL NOT include section
+4. CLARIFIED: "Module Recap" duplicates Learning Objectives Review content
+5. STRENGTHENED: Rationale emphasizes three essential assessment functions (review, validate, resources)
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Removed "Module Recap" from Assessment and Recap Slide Structure (v1.13.2 → v1.13.3)
+
+Module Assessment Slides:
+- [⚠] docs/markdown/20_module_2_ai_tools/25_assessment_and_recap.md - REQUIRES FIX: Remove "Module Recap" slide
+- [⚠] docs/markdown/30_module_3_debugging/37_assessment_and_recap.md - REQUIRES FIX: Remove "Module Recap" slide
+- [⚠] docs/markdown/10_module_1_ai_fundamentals/15_assessment_and_recap.md - AUDIT NEEDED: Check for "Module Recap" slide
+
+Supporting Documentation:
+- [⚠] .github/copilot-instructions.md - REQUIRES UPDATE: Update assessment structure to four slides
+
+VALIDATION:
+- [✓] Constitution principle updated with streamlined four-slide structure
+- [✓] Version incremented (PATCH: clarification and content reduction)
+- [✓] Amendment date updated to 2025-10-30
+- [⚠] Module 2 assessment requires "Module Recap" removal
+- [⚠] Module 3 assessment requires "Module Recap" removal
+- [⚠] Module 1 assessment requires audit
+- [⚠] Copilot instructions require update
+
+FOLLOW-UP ACTIONS:
+1. Remove "Module Recap" slide from Module 2 assessment (25_assessment_and_recap.md)
+2. Remove "Module Recap" slide from Module 3 assessment (37_assessment_and_recap.md)
+3. Audit Module 1 assessment (15_assessment_and_recap.md) for "Module Recap" slide
+4. Update .github/copilot-instructions.md to reflect four-slide structure
+5. Ensure future module assessments (4-7) follow four-slide structure
+
+AMENDMENT STATUS: Constitution updated, module assessments require cleanup.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.13.2
 Date: 2025-10-30
 Amendment: Prohibit headers and content before exercise slide declarations
@@ -252,7 +304,7 @@ Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structu
 -->
 
 # SFEIR School Coding with AI - Constitutional Document
-## Version 1.13.2
+## Version 1.13.3
 
 ## Core Principles
 
@@ -291,22 +343,22 @@ Where X is the module number (1-7) and sectionTitle describes the content sectio
 
 **Rationale**: The EXACTLY-three-slide structure provides essential educational framing (context, goals, preparation) while eliminating ALL redundant content. This strict limit prevents scope creep in module introductions, ensures consistency across all modules (1-7), maintains focus exclusively on actionable learning outcomes, and prevents slide deck bloat. Additional content such as learning approaches, success criteria, and motivational material belongs in the module's main content slides or in specification documents, NOT in the standardized three-slide introduction. The "Module X Overview" title format creates clean, consistent navigation while the subtitle provides necessary context.
 
-**Assessment and Recap Slide Structure**: Module assessment and recap slides SHALL follow a standardized learner-focused structure that reinforces learning rather than duplicating administrative content from specification documents. Assessment slides MUST include:
+**Assessment and Recap Slide Structure**: Module assessment and recap slides SHALL follow a streamlined learner-focused structure that reinforces learning through review, practice, and resource access. Assessment slides MUST include ONLY:
 
 1. **Transition slide**: Module title with "Assessment and Recap" subtitle
 2. **Learning Objectives Review**: Summarizes what learners should now know and skills developed
 3. **Knowledge Check**: Interactive quiz questions testing key concepts with answers and explanations
-4. **Module Recap**: Key achievements and takeaways from the module
-5. **Resources**: Documentation links and practice materials
+4. **Resources**: Documentation links and practice materials
 
 Assessment slides SHALL NOT include:
+- ❌ "Module Recap" slides with key achievements or takeaways (duplicates Learning Objectives Review)
 - ❌ "Assessment Overview" slides listing success criteria codes and competency requirements
 - ❌ "Assessment Methods" slides detailing evaluation procedures and rubrics
 - ❌ "Success Metrics" slides showing target scores and assessment tables
 - ❌ "Assessment Rubric" slides with detailed scoring criteria
 - ❌ "Next Steps" slides with forward-looking content or next module previews
 
-**Rationale**: Assessment slides must reinforce learning through review and knowledge checks rather than presenting administrative evaluation frameworks or forward-looking content. Success criteria, rubrics, scoring tables, evaluation methods, and module previews belong in specification documents and trainer materials. Learner-facing slides should focus exclusively on knowledge consolidation, self-assessment through practice questions, and resource access for continued learning. This separation ensures presentations remain educational and focused on mastery of current module content.
+**Rationale**: Assessment slides must focus on three essential functions: reviewing what was learned (Learning Objectives Review), validating understanding (Knowledge Check), and providing continued learning resources (Resources). "Module Recap" slides create redundancy with Learning Objectives Review and add unnecessary slide count. Administrative evaluation frameworks (success criteria, rubrics, scoring tables, assessment methods) and forward-looking content (next module previews, next steps) belong in specification documents and trainer materials, not learner-facing presentations. This streamlined four-slide structure ensures presentations remain focused, concise, and educational while eliminating redundant summary content.
 
 **GitHub Copilot Terminology Standards**: All training materials (slides, labs, documentation) MUST use standardized mode-based terminology when referring to GitHub Copilot IDE extension features. This ensures clarity about the actual interaction modes and capabilities:
 
@@ -650,4 +702,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.13.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-30
+**Version**: 1.13.3 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-30

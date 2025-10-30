@@ -84,30 +84,6 @@ These aren't just facts to memorize - they guide practical decisions about which
 ##--##
 
 <!-- .slide: -->
-# Module Recap
-
-## Key Achievements
-
-<br>
-
-### **Tools Landscape Mastery**
-✅ Comprehensive understanding of AI coding tool categories  
-✅ Informed decision-making for tool selection
-
-### **GitHub Copilot Expertise**
-✅ Practical experience with CLI and VS Code approaches  
-✅ Custom agent configuration and usage
-
-### **Advanced AI Collaboration**
-✅ Model comparison and selection strategies  
-✅ Project-specific instruction file creation
-
-Notes:
-You now have the practical skills to effectively integrate AI tools into your development workflow.
-
-##--##
-
-<!-- .slide: -->
 # Resources
 
 ## Continue Your Learning
