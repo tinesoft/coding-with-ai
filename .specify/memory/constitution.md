@@ -1,4 +1,55 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.13.6
+Date: 2025-10-30
+Amendment: Define explicit Resources Slide Formatting standard for module assessment sections
+
+RATIONALE:
+- Resources slides across modules lacked consistent formatting and presentation structure
+- Module 3 assessment (37_assessment_and_recap.md) demonstrates best practice with standardized Resources template
+- Module 2 assessment (25_assessment_and_recap.md) has inconsistent formatting (no bold headers, different H2 text)
+- Module 1 assessment (15_assessment_and_recap.md) lacks Resources slide entirely
+- Constitution lacked explicit requirement for Resources slide template
+- Need clear formatting standard with mandatory sections (Documentation, Lab Solutions) and presentation style
+
+SCOPE:
+This PATCH amendment adds detailed "Resources Slide Formatting" subsection to Principle II's "Assessment and Recap Slide Structure":
+1. ADDED: Complete markdown template for Resources slides with exact formatting requirements
+2. ADDED: Mandatory sections (H1 title, H2 subtitle, H3 Documentation section, H3 Lab Solutions section)
+3. ADDED: Formatting requirements (bold headers, <br> spacing, bulleted lists with links)
+4. CLARIFIED: Resources slides provide continued learning paths and reference materials
+5. STRENGTHENED: Standardization ensures consistent learner experience across all modules
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Added "Resources Slide Formatting" to Principle II (v1.13.5 → v1.13.6)
+
+Module Assessment Slides:
+- [✓] docs/markdown/30_module_3_debugging/37_assessment_and_recap.md - COMPLIANT: Already uses standardized template (reference implementation)
+- [✓] docs/markdown/20_module_2_ai_tools/25_assessment_and_recap.md - FIXED: Updated to bold headers, changed H2 to "Further Learning", separated Lab Solutions section
+- [✓] docs/markdown/10_module_1_ai_fundamentals/15_assessment_and_recap.md - FIXED: Added Resources slide with standardized template
+
+Supporting Documentation:
+- [✓] .github/copilot-instructions.md - UPDATED: Added "Resources Slide Format" section with complete template and examples
+
+VALIDATION:
+- [✓] Constitution principle enhanced with explicit Resources slide formatting template
+- [✓] Version incremented (PATCH: formatting standardization and clarification)
+- [✓] Amendment date updated to 2025-10-30
+- [✓] Module 3 assessment verified compliant (serves as reference implementation)
+- [✓] Module 2 assessment updated with proper formatting
+- [✓] Module 1 assessment updated with new Resources slide
+- [✓] Copilot instructions updated with template and guidance
+
+FOLLOW-UP ACTIONS:
+1. [✓] Updated Module 2 assessment (25_assessment_and_recap.md) Resources slide formatting
+2. [✓] Added Resources slide to Module 1 assessment (15_assessment_and_recap.md)
+3. [✓] Updated .github/copilot-instructions.md with Resources slide template
+4. Ensure all future module assessments (4-7) follow standardized Resources template during content generation
+
+AMENDMENT STATUS: Constitution updated (v1.13.6), all existing assessments (Modules 1-3) now compliant, copilot instructions updated.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.13.5
 Date: 2025-10-30
 Amendment: Define explicit Knowledge Check Slide Formatting standard for assessment slides
@@ -448,6 +499,45 @@ Notes:
 
 **Rationale**: The single-slide question-and-answer format using `<details>` tags provides immediate feedback while maintaining presentation flow. Learners can attempt to answer the question, then reveal the answer and explanation without navigating to separate slides. This format eliminates slide deck bloat from answer slides, maintains educational pacing, provides contextual learning through inline explanations, and ensures consistent formatting across all Knowledge Check questions. Separating questions and answers creates unnecessary navigation complexity and breaks the learning flow.
 
+**Resources Slide Formatting**: Resources slides in module assessment sections MUST follow a standardized template to provide consistent access to documentation and lab solutions. The exact formatting structure is:
+
+```markdown
+<!-- .slide: -->
+# **Resources**
+
+## **Further Learning**
+<br>
+
+### **Documentation**
+- [{Link Title}]({URL}) - {Brief description}
+- [{Link Title}]({URL}) - {Brief description}
+
+### **Lab Solutions**
+- Review `labs/lab-XX-{topic}-solution/`
+- Review `labs/lab-YY-{topic}-solution/`
+
+Notes:
+{Brief guidance about using resources for continued learning.}
+```
+
+**Formatting Requirements**:
+- Title SHALL use bold H1: `# **Resources**`
+- Subtitle SHALL use bold H2: `## **Further Learning**`
+- Single `<br>` tag MUST appear between H2 and first H3 section
+- Documentation section SHALL use bold H3: `### **Documentation**`
+- Lab Solutions section SHALL use bold H3: `### **Lab Solutions**`
+- Documentation links SHALL use format: `[Title](URL) - Description`
+- Lab solution paths SHALL use backticks with `labs/lab-XX-{topic}-solution/` pattern
+- Notes section MUST provide context for resource usage
+
+**Content Requirements**:
+- Documentation section MUST include relevant official documentation links for tools/technologies covered in module
+- Lab Solutions section MUST reference all lab solution folders from the current module using module-scoped numbering
+- Links SHALL prioritize official documentation and authoritative sources
+- Descriptions SHALL be concise (under 15 words) and explain resource relevance
+
+**Rationale**: Standardized Resources slides ensure learners have consistent access to continued learning materials across all modules. The template provides clear separation between external documentation resources and internal lab solutions, making it easy for learners to find reference materials. Bold formatting and structured sections create visual hierarchy and improve scannability. The `<br>` spacing prevents content overlap. This format eliminates inconsistencies seen in early modules where Resources slides varied in structure, header formatting, and section organization.
+
 **GitHub Copilot Terminology Standards**: All training materials (slides, labs, documentation) MUST use standardized mode-based terminology when referring to GitHub Copilot IDE extension features. This ensures clarity about the actual interaction modes and capabilities:
 
 - **"Copilot - Ask Mode"** (NOT "Copilot Chat"): Multi-turn conversational interface for asking questions, getting explanations, and exploring code concepts
@@ -790,4 +880,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.13.3 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-30
+**Version**: 1.13.6 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-30

@@ -351,6 +351,26 @@ Use this checklist to self-assess your readiness for Module 2. If any areas feel
 
 ##--##
 
+<!-- .slide: -->
+# **Resources**
+
+## **Further Learning**
+<br>
+
+### **Documentation**
+- [OpenAI GPT Documentation](https://platform.openai.com/docs) - Understanding LLMs and APIs
+- [Anthropic Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering) - Advanced prompting techniques
+- [Google AI Principles](https://ai.google/responsibility/principles/) - AI ethics and responsible use
+
+### **Lab Solutions**
+- Review `labs/lab-11-prompt-basics-solution/`
+- Review `labs/lab-12-ai-fundamentals-solution/`
+
+Notes:
+Refer back to lab solutions and documentation as references for your continued AI learning journey.
+
+##--##
+
 <!-- .slide: data-type-show="hidden" -->
 # **Questions and Discussion**
 

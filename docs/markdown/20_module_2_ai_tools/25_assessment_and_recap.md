@@ -101,18 +101,22 @@ Context window size directly impacts which tasks each model excels at - larger w
 ##--##
 
 <!-- .slide: -->
-# Resources
+# **Resources**
 
-## Continue Your Learning
-
+## **Further Learning**
 <br>
 
-### **Documentation & Guides**
+### **Documentation**
 - [GitHub Copilot Documentation](https://docs.github.com/copilot) - Official docs with latest features
 - [OpenAI Models & Docs](https://platform.openai.com/docs/models) - OpenAI model SKUs (GPT-5, GPT-4.5, GPT-4o) and APIs
 - [Anthropic Docs](https://www.anthropic.com) - Claude product pages and guides (Claude 4.x)
 - [Google Vertex AI / Gemini](https://cloud.google.com/vertex-ai) - Gemini 2.5 family and Vertex AI docs
-- Lab exercise solutions in `/labs/lab-2X-solution/` directories
+
+### **Lab Solutions**
+- Review `labs/lab-21-copilot-cli-solution/`
+- Review `labs/lab-22-copilot-vscode-solution/`
+- Review `labs/lab-23-agent-instruction-files-solution/`
+- Review `labs/lab-24-model-comparison-solution/`
 
 Notes:
 These resources support your continued growth in AI-assisted development beyond this module.

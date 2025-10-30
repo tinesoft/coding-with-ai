@@ -358,8 +358,64 @@ Notes:
 - ❌ Creating separate "Answers" slides
 - ❌ Any format other than `<details>` for answers
 
+### Resources Slide Format
+
+**REQUIRED FORMAT**: Resources slides in module assessments MUST follow this standardized template:
+
+```markdown
+<!-- .slide: -->
+# **Resources**
+
+## **Further Learning**
+<br>
+
+### **Documentation**
+- [{Link Title}]({URL}) - {Brief description}
+- [{Link Title}]({URL}) - {Brief description}
+
+### **Lab Solutions**
+- Review `labs/lab-XX-{topic}-solution/`
+- Review `labs/lab-YY-{topic}-solution/`
+
+Notes:
+{Brief guidance about using resources for continued learning.}
+```
+
+**Key Requirements**:
+- Bold H1 title: `# **Resources**`
+- Bold H2 subtitle: `## **Further Learning**`
+- Single `<br>` tag between H2 and first H3
+- Bold H3 sections: `### **Documentation**` and `### **Lab Solutions**`
+- Documentation links format: `[Title](URL) - Description`
+- Lab paths in backticks with module-scoped numbering
+- Notes section with resource usage guidance
+
+**Content Requirements**:
+- Documentation section MUST include relevant official docs for module tools/technologies
+- Lab Solutions section MUST reference all module lab solution folders
+- Prioritize official documentation and authoritative sources
+- Keep descriptions concise (under 15 words)
+
+**Example** (Module 3):
+```markdown
+### **Documentation**
+- [GitHub Copilot Best Practices](https://github.blog/developer-skills/github/)
+- [AI-Assisted Debugging Research](https://www.microsoft.com/en-us/research/publication/ai-assisted-debugging/)
+
+### **Lab Solutions**
+- Review `labs/lab-31-ai-debugging-solution/`
+- Review `labs/lab-32-ai-refactoring-solution/`
+- Review `labs/lab-33-code-verification-solution/`
+```
+
+**Prohibited**:
+- ❌ Using non-bold headers
+- ❌ Inconsistent subtitle text (must be "Further Learning")
+- ❌ Omitting `<br>` spacing tag
+- ❌ Using non-module-scoped lab numbering
+
 ---
-*Instructions updated: 2025-10-22*
+*Instructions updated: 2025-10-30*
 *Module focus: All modules*
 *Constitutional compliance: Required for all content creation*
 
