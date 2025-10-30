@@ -287,13 +287,3 @@ This methodology prevents over-reliance while maximizing AI benefits.
 
 Notes:
 Refer back to lab solutions as references for your own work.
-
-##--##
-
-<!-- .slide: -->
-# **Thank You!**
-
-## **Questions?**
-
-Notes:
-Great work completing Module 3! You're now equipped to use AI tools for debugging, refactoring, and code verification.

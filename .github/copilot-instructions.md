@@ -315,8 +315,9 @@ Module assessment and recap slides MUST follow this streamlined four-slide struc
 - ❌ "Success Metrics" - target scores and tables belong in spec docs
 - ❌ "Assessment Rubric" - scoring criteria belong in spec docs
 - ❌ "Next Steps" - forward-looking content belongs in course syllabi/trainer materials
+- ❌ "Thank You" slides - concluding gratitude or open questions belong in trainer facilitation
 
-**Rationale**: Assessment slides focus on three essential functions: reviewing what was learned (Learning Objectives Review), validating understanding (Knowledge Check), and providing continued learning resources (Resources). "Module Recap" slides create redundancy with Learning Objectives Review. Administrative evaluation frameworks and forward-looking navigation belong in specification documents and trainer materials, not learner-facing presentations.
+**Rationale**: Assessment slides focus on three essential functions: reviewing what was learned (Learning Objectives Review), validating understanding (Knowledge Check), and providing continued learning resources (Resources). "Module Recap" slides create redundancy with Learning Objectives Review. Administrative evaluation frameworks, forward-looking navigation, and ceremonial concluding slides belong in specification documents and trainer materials, not learner-facing presentations.
 
 ---
 *Instructions updated: 2025-10-22*
