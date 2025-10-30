@@ -1,4 +1,54 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.13.5
+Date: 2025-10-30
+Amendment: Define explicit Knowledge Check Slide Formatting standard for assessment slides
+
+RATIONALE:
+- Knowledge Check slides across modules lacked standardized formatting for question-answer presentation
+- Module 3 assessment (37_assessment_and_recap.md) demonstrates best practice with inline answers using <details> tags
+- Some modules may have questions and answers on separate slides, reducing educational flow
+- Constitution lacked explicit requirement for single-slide question-answer format
+- Need clear template and strict prohibition of separated question-answer slides
+
+SCOPE:
+This PATCH amendment adds detailed "Knowledge Check Slide Formatting" subsection to Principle II's "Assessment and Recap Slide Structure":
+1. ADDED: Complete markdown template for Knowledge Check slides with <details> disclosure element
+2. ADDED: Formatting requirements (H2 for question title, H3 for question text, bold options, Notes section)
+3. ADDED: Strict prohibition of separate answer slides and alternative formats
+4. CLARIFIED: Single-slide format with inline collapsible answers maintains educational flow
+5. STRENGTHENED: Rationale emphasizes immediate feedback, presentation flow, and consistency
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Added "Knowledge Check Slide Formatting" to Principle II (v1.13.4 → v1.13.5)
+
+Supporting Documentation:
+- [✓] .github/copilot-instructions.md - Added "Knowledge Check Slide Format" section with complete template
+
+Module Assessment Slides:
+- [✓] docs/markdown/30_module_3_debugging/37_assessment_and_recap.md - COMPLIANT: Already uses inline <details> format (reference implementation)
+- [✓] docs/markdown/10_module_1_ai_fundamentals/15_assessment_and_recap.md - FIXED: Updated to single-slide <details> format (2 questions converted)
+- [✓] docs/markdown/20_module_2_ai_tools/25_assessment_and_recap.md - FIXED: Updated to single-slide <details> format (3 questions converted)
+
+VALIDATION:
+- [✓] Constitution principle enhanced with explicit Knowledge Check formatting template
+- [✓] Version incremented (PATCH: clarification and standardization)
+- [✓] Amendment date updated to 2025-10-30
+- [✓] Copilot instructions updated with complete template and examples
+- [✓] Module 3 assessment verified compliant (serves as reference implementation)
+- [✓] Module 1 assessment fixed (2 Knowledge Check questions now use inline <details> format)
+- [✓] Module 2 assessment fixed (3 Knowledge Check questions now use inline <details> format)
+
+FOLLOW-UP ACTIONS:
+1. [✓] Updated Module 1 assessment (15_assessment_and_recap.md) - Converted Q1 (Context Windows) and Q2 (LLM Performance)
+2. [✓] Updated Module 2 assessment (25_assessment_and_recap.md) - Converted Q1 (Tool Categories), Q2 (Agent Mode), Q3 (Context Windows)
+3. [✓] All existing Knowledge Check slides now use single-slide <details> format
+4. Ensure all future module assessments (4-7) follow standardized Knowledge Check template
+
+AMENDMENT STATUS: Constitution updated (v1.13.5), copilot instructions updated, all existing assessments (Modules 1-3) now compliant.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.13.4
 Date: 2025-10-30
 Amendment: Remove "Thank You" slides from Assessment and Recap Slide Structure
@@ -300,7 +350,7 @@ Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structu
 -->
 
 # SFEIR School Coding with AI - Constitutional Document
-## Version 1.13.4
+## Version 1.13.5
 
 ## Core Principles
 
@@ -356,6 +406,47 @@ Assessment slides SHALL NOT include:
 - ❌ "Thank You" slides with concluding gratitude or open questions (belongs in trainer facilitation)
 
 **Rationale**: Assessment slides must focus on three essential functions: reviewing what was learned (Learning Objectives Review), validating understanding (Knowledge Check), and providing continued learning resources (Resources). "Module Recap" slides create redundancy with Learning Objectives Review and add unnecessary slide count. Administrative evaluation frameworks (success criteria, rubrics, scoring tables, assessment methods) and forward-looking content (next module previews, next steps) belong in specification documents and trainer materials, not learner-facing presentations. This streamlined four-slide structure ensures presentations remain focused, concise, and educational while eliminating redundant summary content.
+
+**Knowledge Check Slide Formatting**: Knowledge Check slides MUST present both the question and answer on a single slide using the HTML `<details>` disclosure element for the answer. Each question SHALL be presented on a separate slide. The exact template structure is:
+
+```markdown
+<!-- .slide: -->
+# **Knowledge Check**
+
+## **Question X: {Topic/Concept Name}**
+<br>
+
+### {Question text}
+
+**A)** {Option A text}  
+**B)** {Option B text}  
+**C)** {Option C text}  
+**D)** {Option D text}
+
+<details>
+<summary>Answer</summary>
+**{Correct Option}** - {Detailed explanation of why this is correct and/or why other options are incorrect. Include relevant context about the concept being tested.}
+</details>
+
+Notes:
+{Brief explanation of the educational purpose or key learning point.}
+```
+
+**Formatting Requirements**:
+- Question number SHALL use format "Question X:" followed by short topic descriptor
+- Questions SHALL use H3 (###) heading level
+- Answer options SHALL use bold labels (**A)**, **B)**, **C)**, **D)**) followed by two spaces before next option
+- Answer explanation SHALL be enclosed in `<details><summary>Answer</summary>` tags
+- Correct answer SHALL be bolded at start of explanation
+- Notes section MUST provide brief educational context
+
+**STRICT PROHIBITION**: Knowledge Check slides SHALL NOT:
+- ❌ Separate questions and answers into different slides
+- ❌ Place all answers on a single separate "Answers" slide
+- ❌ Use any format other than the `<details>` disclosure element for answers
+- ❌ Omit the Notes section providing educational context
+
+**Rationale**: The single-slide question-and-answer format using `<details>` tags provides immediate feedback while maintaining presentation flow. Learners can attempt to answer the question, then reveal the answer and explanation without navigating to separate slides. This format eliminates slide deck bloat from answer slides, maintains educational pacing, provides contextual learning through inline explanations, and ensures consistent formatting across all Knowledge Check questions. Separating questions and answers creates unnecessary navigation complexity and breaks the learning flow.
 
 **GitHub Copilot Terminology Standards**: All training materials (slides, labs, documentation) MUST use standardized mode-based terminology when referring to GitHub Copilot IDE extension features. This ensures clarity about the actual interaction modes and capabilities:
 

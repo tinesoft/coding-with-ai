@@ -29,47 +29,48 @@ Take a moment to reflect on your progress. These foundational skills will be the
 ##--##
 
 <!-- .slide: -->
-# **Knowledge Check: AI Fundamentals**
+# **Knowledge Check**
 
-## **Quick Quiz** (2 minutes each)
+## **Question 1: Context Windows**
 <br>
 
-### **Question 1**: What is a context window in LLMs and why is it important?
+### What is a context window in LLMs and why is it important?
+
 **A)** The visual interface where you interact with AI  
 **B)** The maximum amount of text an LLM can process at once  
 **C)** The time window when AI models are most accurate  
 **D)** The browser window where AI tools run
 
-### **Question 2**: Which component is most crucial for LLM performance?
+<details>
+<summary>Answer</summary>
+**B** - The context window determines how much text (measured in tokens) an LLM can process at once. This affects conversation length, document analysis capability, and code completion quality. Understanding context windows helps you work within AI tool limitations and explains why long conversations may lose coherence.
+</details>
+
+Notes:
+Context windows are a fundamental concept that directly impacts how you use AI tools in practice.
+
+##--##
+
+<!-- .slide: -->
+# **Knowledge Check**
+
+## **Question 2: LLM Performance**
+<br>
+
+### Which component is most crucial for LLM performance?
+
 **A)** Processing speed  
 **B)** Training data quality and quantity  
 **C)** Hardware specifications  
 **D)** User interface design
 
-*Think about your answers, we'll discuss them next!*
+<details>
+<summary>Answer</summary>
+**B** - While all factors matter, the foundation of any LLM's capabilities comes from the quality, diversity, and quantity of its training data. This determines what the model can understand and generate, and explains why some models excel at certain programming languages while struggling with others.
+</details>
 
 Notes:
-These questions test your understanding of core AI concepts that underpin all the tools and techniques we'll use throughout the course.
-
-##--##
-
-<!-- .slide: -->
-# **Knowledge Check: Answers**
-
-## **Answer 1**: **B** - Retrieval Augmented Generation
-The context window determines how much text (measured in tokens) an LLM can process at once. This affects conversation length, document analysis capability, and code completion quality.
-
-## **Answer 2**: **B** - Training data quality and quantity
-While all factors matter, the foundation of any LLM's capabilities comes from the quality, diversity, and quantity of its training data. This determines what the model can understand and generate.
-
-## **💡 Key Insight**
-Understanding these fundamentals helps you:
-- Choose the right AI tool for specific tasks
-- Set realistic expectations for AI capabilities
-- Troubleshoot when AI responses aren't meeting your needs
-
-Notes:
-These aren't just theoretical concepts - they directly impact how you use AI tools in practice. Context windows explain why long conversations may lose coherence, and training data quality explains why some models excel at certain programming languages.
+Training data quality is why different AI models have varying strengths and weaknesses.
 
 ##--##
 

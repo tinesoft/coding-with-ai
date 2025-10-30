@@ -32,54 +32,71 @@ Reflect on your progress. You now have foundational knowledge to effectively int
 ##--##
 
 <!-- .slide: -->
-# Knowledge Check: AI Coding Tools
+# **Knowledge Check**
 
-## Quick Quiz (2 minutes each)
-
+## **Question 1: Tool Categories**
 <br>
 
-### **Question 1**: Which tool category is best for quick terminal operations?
+### Which tool category is best for quick terminal operations?
+
 **A)** Standalone IDEs  
 **B)** CLI agents  
 **C)** IDE extensions  
 **D)** Online tools
 
-### **Question 2**: What is GitHub Copilot's Agent mode used for?
+<details>
+<summary>Answer</summary>
+**B** - CLI agents like GitHub Copilot CLI, Codex, and Gemini CLI are optimized for terminal operations, providing quick assistance with Git commands, shell scripts, and command-line workflows without leaving the terminal. They integrate seamlessly into your existing command-line workflow.
+</details>
+
+Notes:
+CLI agents are purpose-built for developers who spend significant time in the terminal.
+
+##--##
+
+<!-- .slide: -->
+# **Knowledge Check**
+
+## **Question 2: GitHub Copilot Agent Mode**
+<br>
+
+### What is GitHub Copilot's Agent mode used for?
+
 **A)** Writing single-line code completions  
 **B)** Answering questions in chat  
 **C)** Autonomous task execution with oversight  
 **D)** Terminal command assistance
 
-### **Question 3**: Which model has the largest context window?
+<details>
+<summary>Answer</summary>
+**C** - Agent mode allows GitHub Copilot to execute multi-step tasks autonomously while maintaining human oversight through approval gates. It's more powerful than chat or inline completions for complex development tasks that require multiple coordinated actions.
+</details>
+
+Notes:
+Agent mode represents the evolution from assistance to autonomous collaboration with human oversight.
+
+##--##
+
+<!-- .slide: -->
+# **Knowledge Check**
+
+## **Question 3: Context Windows**
+<br>
+
+### Which model has the largest context window?
+
 **A)** GPT-5 (128K tokens)  
 **B)** Claude 4.x (200K tokens)  
 **C)** Gemini 2.5 Pro (2M tokens)  
 **D)** DeepSeek Coder V2.5 (128K tokens)
 
-*Think about your answers, we'll discuss them next!*
+<details>
+<summary>Answer</summary>
+**C** - Gemini 2.5 Pro offers a massive 2 million token context window, significantly larger than Claude 4.x (200K), GPT-5 (128K), and DeepSeek Coder (128K). This enables analysis of entire large codebases in a single context, making it ideal for comprehensive code understanding tasks.
+</details>
 
 Notes:
-These questions test your understanding of tool selection and capabilities covered in Module 2.
-
-##--##
-
-<!-- .slide: -->
-# Knowledge Check: Answers
-
-## Answer 1: **B** - CLI agents
-CLI agents like GitHub Copilot CLI, Codex, and Gemini CLI are optimized for terminal operations, providing quick assistance with Git commands, shell scripts, and command-line workflows without leaving the terminal.
-
-## Answer 2: **C** - Autonomous task execution with oversight
-Agent mode allows GitHub Copilot to execute multi-step tasks autonomously while maintaining human oversight through approval gates. It's more powerful than chat or inline completions for complex development tasks.
-
-## Answer 3: **C** - Gemini 2.5 Pro (2M tokens)
-Gemini 2.5 Pro offers a massive 2 million token context window, significantly larger than Claude 4.x (200K), GPT-5 (128K), and DeepSeek Coder (128K). This enables analysis of entire large codebases in a single context.
-
-## 💡 Key Insight
-Understanding tool capabilities and model differences helps you choose the optimal AI assistant for each development scenario, maximizing productivity and code quality.
-
-Notes:
-These aren't just facts to memorize - they guide practical decisions about which tools to use in your daily development workflow.
+Context window size directly impacts which tasks each model excels at - larger windows enable more comprehensive analysis.
 
 ##--##
 

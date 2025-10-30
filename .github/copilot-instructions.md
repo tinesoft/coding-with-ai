@@ -319,6 +319,45 @@ Module assessment and recap slides MUST follow this streamlined four-slide struc
 
 **Rationale**: Assessment slides focus on three essential functions: reviewing what was learned (Learning Objectives Review), validating understanding (Knowledge Check), and providing continued learning resources (Resources). "Module Recap" slides create redundancy with Learning Objectives Review. Administrative evaluation frameworks, forward-looking navigation, and ceremonial concluding slides belong in specification documents and trainer materials, not learner-facing presentations.
 
+### Knowledge Check Slide Format
+
+**REQUIRED FORMAT**: Each Knowledge Check question MUST present both question and answer on a SINGLE slide using `<details>` tags:
+
+```markdown
+<!-- .slide: -->
+# **Knowledge Check**
+
+## **Question X: {Topic/Concept Name}**
+<br>
+
+### {Question text}
+
+**A)** {Option A text}  
+**B)** {Option B text}  
+**C)** {Option C text}  
+**D)** {Option D text}
+
+<details>
+<summary>Answer</summary>
+**{Correct Option}** - {Detailed explanation of why this is correct and/or why other options are incorrect.}
+</details>
+
+Notes:
+{Brief explanation of the educational purpose or key learning point.}
+```
+
+**Key Requirements**:
+- Each question on separate slide with inline answer using `<details>` disclosure element
+- Question format: "Question X: {Topic}" as H2, question text as H3
+- Bold answer options (**A)**, **B)**, etc.) with two spaces between
+- Answer explanation starts with bolded correct option letter
+- Notes section provides educational context
+
+**Prohibited**:
+- ❌ Separating questions and answers into different slides
+- ❌ Creating separate "Answers" slides
+- ❌ Any format other than `<details>` for answers
+
 ---
 *Instructions updated: 2025-10-22*
 *Module focus: All modules*
