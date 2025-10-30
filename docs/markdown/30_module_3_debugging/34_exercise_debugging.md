@@ -1,7 +1,3 @@
-# Hands-on Debugging Practice
-
-##--##
-
 <!-- .slide: class="exercice" -->
 # Exercice 1: AI-Powered Debugging
 ## Lab 31

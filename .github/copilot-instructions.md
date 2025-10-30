@@ -68,6 +68,13 @@ Notes:
 - Use SFEIR theme classes: `first-slide`, `transition`, `exercice`, `speaker-slide`
 - Reference images with relative paths: `./assets/images/filename.png`
 
+**Exercise Slide Formatting:**
+Exercise slide files MUST begin directly with the `<!-- .slide: class="exercice" -->` directive. NO headers, titles, or other content before the first exercise slide:
+- ❌ PROHIBITED: `# Hands-on Practice` or similar H1 headers before exercise
+- ❌ PROHIBITED: Section separators (`##--##`) before first exercise
+- ❌ PROHIBITED: ANY introductory content before exercise declaration
+- ✅ REQUIRED: File starts immediately with `<!-- .slide: class="exercice" -->`
+
 **Transition Slide Formatting:**
 ALL transition slides within modules MUST follow this format:
 ```markdown

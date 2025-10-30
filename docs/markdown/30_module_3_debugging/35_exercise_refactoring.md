@@ -1,7 +1,3 @@
-# Hands-on Refactoring Practice
-
-##--##
-
 <!-- .slide: class="exercice" -->
 # Exercice 2: AI-Powered Refactoring
 ## Lab 32

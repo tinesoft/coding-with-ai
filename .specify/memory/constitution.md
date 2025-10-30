@@ -1,4 +1,52 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.13.2
+Date: 2025-10-30
+Amendment: Prohibit headers and content before exercise slide declarations
+
+RATIONALE:
+- Module 3 exercise files contain unnecessary H1 headers before `<!-- .slide: class="exercice" -->` directive
+- 34_exercise_debugging.md has "# Hands-on Debugging Practice" before exercise declaration
+- 35_exercise_refactoring.md has "# Hands-on Refactoring Practice" before exercise declaration
+- These headers create maintenance overhead and duplicate context already in exercise titles
+- Constitution "Exercise Slide Formatting" section lacked explicit prohibition of preceding content
+- Need clear requirement that exercise files begin directly with exercise slide directive
+
+SCOPE:
+This PATCH amendment strengthens existing "Exercise Slide Formatting" in Principle II by:
+1. ADDED: Explicit requirement "Exercise slides MUST begin directly with the class='exercice' directive without any preceding content"
+2. ADDED: "STRICT PROHIBITION" section listing disallowed content before exercise slides
+3. ADDED: Specific prohibition examples (H1 headers, introductory text, section separators)
+4. CLARIFIED: Exercise files serve single purpose - declaring exercise slides pointing to lab instructions
+5. STRENGTHENED: Rationale emphasizes focused, lean slide generation without unnecessary wrapping content
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Enhanced Exercise Slide Formatting with strict prohibition of preceding content (v1.13.1 → v1.13.2)
+
+Module 3 Exercise Slides:
+- [✓] docs/markdown/30_module_3_debugging/34_exercise_debugging.md - FIXED: Removed "# Hands-on Debugging Practice" header
+- [✓] docs/markdown/30_module_3_debugging/35_exercise_refactoring.md - FIXED: Removed "# Hands-on Refactoring Practice" header
+- [✓] docs/markdown/30_module_3_debugging/36_exercise_verification.md - COMPLIANT: Already starts with exercise directive
+
+Supporting Documentation:
+- [⚠] .github/copilot-instructions.md - REQUIRES UPDATE: Add prohibition guidance for exercise slide headers
+
+VALIDATION:
+- [✓] Constitution principle strengthened with explicit prohibition of content before exercise slides
+- [✓] Version incremented (PATCH: clarification and enforcement strengthening)
+- [✓] Amendment date updated to 2025-10-30
+- [✓] All Module 3 exercise slides now compliant (2 headers removed, 1 already correct)
+- [⚠] Copilot instructions require update for future compliance
+
+FOLLOW-UP ACTIONS:
+1. Update .github/copilot-instructions.md to emphasize exercise slides must start directly with directive
+2. Audit Module 1 and Module 2 exercise slides for similar header issues
+3. Ensure future exercise slide generation follows direct-start pattern
+
+AMENDMENT STATUS: Constitution updated, Module 3 exercise slides fixed, copilot instructions update pending.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.13.1
 Date: 2025-10-30
 Amendment: Enforce EXACTLY three slides in Module Introduction Slide Structure with strict prohibition of additional content
@@ -204,7 +252,7 @@ Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structu
 -->
 
 # SFEIR School Coding with AI - Constitutional Document
-## Version 1.13.1
+## Version 1.13.2
 
 ## Core Principles
 
@@ -269,7 +317,7 @@ Assessment slides SHALL NOT include:
 
 **Rationale**: Mode-based terminology clearly communicates the interaction paradigm (Ask/Edit/Agent) rather than using generic feature names that don't convey how learners will actually interact with the tool. "Ask Mode" immediately signals conversational interaction, "Edit Mode" indicates direct code modification, "Agent Mode" conveys autonomous execution, and "Custom Agent Mode" clarifies personalization capabilities. This standardization improves comprehension and sets accurate expectations for tool behavior.
 
-**Exercise Slide Formatting**: Exercise slides MUST use the `class="exercice"` directive and follow this exact heading hierarchy:
+**Exercise Slide Formatting**: Exercise slides MUST begin directly with the `class="exercice"` directive without any preceding content. Exercise files SHALL NOT contain headers, titles, or any other content before the first exercise slide declaration. The exact formatting structure is:
 ```markdown
 <!-- .slide: class="exercice" --> 
 # Exercice X: {short text}
@@ -300,9 +348,14 @@ Notes:
 - Read the lab README.md for example of solutions.
 ```
 Where X is the exercise number and XX is the two-digit lab number. Exercise slides SHALL only use H1, H2, or H3 level headers: H1 (#) is reserved for the exercise title, H2 (##) is reserved for the lab generic sub-header ("Lab XX"), and H3 (###) is reserved for specific steps of the exercise. Bold text MAY be used to highlight sections within the exercise content.
-```
 
-Where X is the exercise number and XX is the two-digit lab number. Exercise slides SHALL only use H1, H2, or H3 level headers: H1 (#) is reserved for the exercise title, H2 (##) is reserved for the lab generic sub-header ("Lab XX"), and H3 (###) is reserved for specific steps of the exercise. Bold text MAY be used to highlight sections within the exercise content.
+**STRICT PROHIBITION**: Exercise slide files SHALL NOT contain any content before the first `<!-- .slide: class="exercice" -->` directive. Specifically prohibited:
+- ❌ H1 headers (e.g., "# Hands-on Practice", "# Lab Exercises")
+- ❌ Introductory text or descriptions
+- ❌ Section separators (`##--##`) before the first exercise slide
+- ❌ ANY other content preceding the exercise declaration
+
+**Rationale**: Exercise files serve a single purpose: declaring exercise slides that point to lab instructions. Unnecessary headers create maintenance overhead, duplicate content that belongs in module slides, and violate the principle of focused, lean slide generation. The exercise title within the slide itself (e.g., "Exercice 1: AI-Powered Debugging") provides sufficient context without additional wrapping content.
 
 **Regular Slide Formatting**: Regular content slides MUST include a `<br>` tag between H2-level (##) and H3-level (###) headers to prevent content overlap. This formatting requirement applies to all standard slides that are not exercise or transition slides:
 ```markdown
@@ -597,4 +650,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.13.1 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-30
+**Version**: 1.13.2 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-30
