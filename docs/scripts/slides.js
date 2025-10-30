@@ -29,11 +29,16 @@ function schoolSlides() {
     "30_module_3_debugging/35_exercise_refactoring.md",
     "30_module_3_debugging/36_exercise_verification.md",
     "30_module_3_debugging/37_assessment_and_recap.md",
-    // Module 4: Test Automation and Quality Assurance with AI (MVP - User Story 1 only)
-    "40_module_4_testing/40_module4_intro.md",
-    "40_module_4_testing/41_test_automation.md",
-    "40_module_4_testing/46_exercise_testing.md",
-    "40_module_4_testing/48_assessment_and_recap.md",
+    // Module 4: Test Automation and Quality Assurance (User Stories 1, 2, 3 & 4)
+      '40_module_4_testing/40_module4_intro.md',
+      '40_module_4_testing/41_test_automation.md',
+      '40_module_4_testing/42_tdd_with_ai.md',
+      '40_module_4_testing/43_integration_testing.md',
+      '40_module_4_testing/44_e2e_testing.md',
+      '40_module_4_testing/45_code_quality.md',
+      '40_module_4_testing/47_best_practices.md',
+      '40_module_4_testing/46_exercise_testing.md',
+      '40_module_4_testing/48_assessment_and_recap.md',
     // add more slides as needed
   ];
 }
