@@ -1,0 +1,202 @@
+# Module 4 Slide Structure Contract
+
+metadata:
+  module_number: 4
+  module_title: "Test Automation and Quality Assurance with AI"
+  module_duration: "1 day (6-7 hours)"
+  file_number_range: "40-49"
+  estimated_total_slides: 35
+  target_audience: "Beginner to intermediate developers"
+  prerequisites:
+    - "Module 1: AI Fundamentals and Prompt Engineering"
+    - "Module 2: Modern AI Coding Tools (GitHub Copilot)"
+    - "Module 3: AI-Powered Debugging and Verification"
+
+slide_files:
+  - file_name: "40_module4_intro.md"
+    file_type: "intro"
+    slide_count: 3
+    description: "Module introduction with overview, learning objectives, and prerequisites"
+    constitutional_requirements:
+      - "EXACTLY 3 slides (no more, no less)"
+      - "Slide 1: Transition with 'Module 4 Overview' title"
+      - "Slide 2: Learning Objectives with bold action verbs"
+      - "Slide 3: Prerequisites with sections for prior modules and technical requirements"
+    slide_classes:
+      - "transition (slide 1)"
+      - "standard (slides 2-3)"
+    
+  - file_name: "41_test_automation.md"
+    file_type: "content"
+    slide_count: 6
+    description: "AI-assisted test automation fundamentals - unit, integration, and E2E testing overview"
+    topics:
+      - "Introduction to test automation"
+      - "Unit testing with AI assistance"
+      - "Integration testing concepts"
+      - "End-to-end testing introduction"
+      - "Testing pyramid with AI context"
+      - "Test generation workflow"
+    visual_assets:
+      - "test-generation-flow.svg"
+      - "test-pyramid.svg"
+    constitutional_requirements:
+      - "Use <br> tag between H2 and H3 headers"
+      - "Visual assets on dedicated slides after concept slides"
+      - "Full-width image display format"
+    
+  - file_name: "42_tdd_with_ai.md"
+    file_type: "content"
+    slide_count: 7
+    description: "Test-Driven Development methodology and AI collaboration patterns"
+    topics:
+      - "Introduction to TDD"
+      - "Red-Green-Refactor cycle"
+      - "TDD with AI assistance"
+      - "Writing failing tests first"
+      - "Minimal implementation strategies"
+      - "Refactoring while keeping tests green"
+      - "TDD benefits and challenges"
+    visual_assets:
+      - "tdd-cycle.svg"
+    constitutional_requirements:
+      - "Use <br> tag between H2 and H3 headers"
+      - "Emphasize human-in-the-loop validation"
+    
+  - file_name: "43_integration_e2e_testing.md"
+    file_type: "content"
+    slide_count: 6
+    description: "Integration and end-to-end testing with AI guidance"
+    topics:
+      - "Integration testing fundamentals"
+      - "Component interaction validation"
+      - "End-to-end testing concepts"
+      - "User workflow simulation"
+      - "Test maintainability strategies"
+      - "Avoiding test brittleness"
+    constitutional_requirements:
+      - "Use <br> tag between H2 and H3 headers"
+      - "Address common pitfalls (FR-014)"
+    
+  - file_name: "44_code_quality_analysis.md"
+    file_type: "content"
+    slide_count: 6
+    description: "Code quality assurance, coding standards, and AI-powered static analysis"
+    topics:
+      - "Code quality metrics overview"
+      - "Cyclomatic complexity"
+      - "Code duplication detection"
+      - "Naming and clarity standards"
+      - "AI-powered code review"
+      - "Quality improvement workflows"
+    visual_assets:
+      - "quality-metrics-dashboard.svg"
+    constitutional_requirements:
+      - "Use <br> tag between H2 and H3 headers"
+      - "Show measurable metrics (SC-007)"
+    
+  - file_name: "45_exercise_unit_testing.md"
+    file_type: "exercise"
+    slide_count: 2
+    description: "Exercise slides for lab-41-unit-testing"
+    constitutional_requirements:
+      - "File MUST start directly with <!-- .slide: class=\"exercice\" -->"
+      - "NO headers or content before first exercise slide"
+      - "Slide 1: Instructions pointing to lab-41-unit-testing/README.md"
+      - "Slide 2: Solution pointing to lab-41-unit-testing-solution/README.md"
+    exercise_reference:
+      lab_number: "lab-41"
+      lab_topic: "unit-testing"
+      lab_path: "labs/lab-41-unit-testing/"
+      solution_path: "labs/lab-41-unit-testing-solution/"
+    
+  - file_name: "46_exercise_tdd_workflow.md"
+    file_type: "exercise"
+    slide_count: 2
+    description: "Exercise slides for lab-42-tdd-workflow"
+    constitutional_requirements:
+      - "File MUST start directly with <!-- .slide: class=\"exercice\" -->"
+      - "NO headers or content before first exercise slide"
+      - "Slide 1: Instructions pointing to lab-42-tdd-workflow/README.md"
+      - "Slide 2: Solution pointing to lab-42-tdd-workflow-solution/README.md"
+    exercise_reference:
+      lab_number: "lab-42"
+      lab_topic: "tdd-workflow"
+      lab_path: "labs/lab-42-tdd-workflow/"
+      solution_path: "labs/lab-42-tdd-workflow-solution/"
+    
+  - file_name: "47_exercise_integration_quality.md"
+    file_type: "exercise"
+    slide_count: 2
+    description: "Exercise slides for lab-43-integration-quality"
+    constitutional_requirements:
+      - "File MUST start directly with <!-- .slide: class=\"exercice\" -->"
+      - "NO headers or content before first exercise slide"
+      - "Slide 1: Instructions pointing to lab-43-integration-quality/README.md"
+      - "Slide 2: Solution pointing to lab-43-integration-quality-solution/README.md"
+    exercise_reference:
+      lab_number: "lab-43"
+      lab_topic: "integration-quality"
+      lab_path: "labs/lab-43-integration-quality/"
+      solution_path: "labs/lab-43-integration-quality-solution/"
+    
+  - file_name: "48_assessment_and_recap.md"
+    file_type: "assessment"
+    slide_count: 4
+    description: "Module assessment with knowledge checks and resources"
+    constitutional_requirements:
+      - "EXACTLY 4 slides: transition, objectives review, knowledge checks, resources"
+      - "Knowledge checks MUST use single-slide format with <details> tag"
+      - "Each question on separate slide"
+      - "Resources slide MUST use standardized template"
+      - "NO 'Module Recap', 'Assessment Overview', 'Success Metrics', or 'Next Steps' slides"
+    knowledge_checks:
+      count: 4
+      topics:
+        - "Unit testing with AI concepts"
+        - "TDD Red-Green-Refactor cycle"
+        - "Integration vs E2E testing"
+        - "Code quality metrics and validation"
+      format:
+        - "Question X: {Topic}"
+        - "4 options (A, B, C, D)"
+        - "Inline answer in <details><summary>Answer</summary> tags"
+        - "Notes section with educational purpose"
+    resources:
+      documentation_links:
+        - name: "Vitest Documentation"
+          url: "https://vitest.dev/"
+        - name: "Playwright Documentation"
+          url: "https://playwright.dev/"
+        - name: "TypeScript Handbook"
+          url: "https://www.typescriptlang.org/docs/"
+      lab_solutions:
+        - "labs/lab-41-unit-testing-solution/"
+        - "labs/lab-42-tdd-workflow-solution/"
+        - "labs/lab-43-integration-quality-solution/"
+
+configuration:
+  slides_js_update_required: true
+  slides_js_path: "docs/scripts/slides.js"
+  slides_js_entries:
+    - "40_module_4_testing/40_module4_intro.md"
+    - "40_module_4_testing/41_test_automation.md"
+    - "40_module_4_testing/42_tdd_with_ai.md"
+    - "40_module_4_testing/43_integration_e2e_testing.md"
+    - "40_module_4_testing/44_code_quality_analysis.md"
+    - "40_module_4_testing/45_exercise_unit_testing.md"
+    - "40_module_4_testing/46_exercise_tdd_workflow.md"
+    - "40_module_4_testing/47_exercise_integration_quality.md"
+    - "40_module_4_testing/48_assessment_and_recap.md"
+
+validation_checklist:
+  - "All files use 40-49 numbering range"
+  - "Intro file has EXACTLY 3 slides"
+  - "Assessment file has EXACTLY 4 slides"
+  - "Exercise files start with class='exercice' directive"
+  - "Content slides use <br> between H2 and H3"
+  - "Visual assets displayed full-width on dedicated slides"
+  - "Knowledge checks use <details> tag format"
+  - "Resources slide follows standardized template"
+  - "All slides follow SFEIR School Theme syntax"
+  - "GitHub Copilot terminology uses mode-based names"

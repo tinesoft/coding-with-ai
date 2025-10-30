@@ -1,0 +1,255 @@
+# Module 4 Assessment Criteria Contract
+
+metadata:
+  module_number: 4
+  assessment_slide: "48_assessment_and_recap.md"
+  total_slides: 4
+  knowledge_check_questions: 6
+
+structure:
+  required_slides:
+    - slide_number: 1
+      type: "transition"
+      format: "<!-- .slide: class=\"transition\" -->"
+      title: "Module 4: Assessment and Recap"
+      subtitle: "Test Automation and Quality Assurance with AI"
+      
+    - slide_number: 2
+      type: "learning_objectives_review"
+      format: "<!-- .slide: -->"
+      title: "Learning Objectives Review"
+      required_content:
+        - "What Learners Should Now Know"
+        - "Skills Developed in Module 4"
+        - "Bulleted list of achieved objectives"
+      
+    - slide_number: 3
+      type: "knowledge_check"
+      format: "<!-- .slide: -->"
+      title: "Knowledge Check"
+      question_count: 6
+      questions_across_slides: "Each question on separate slide (6 total slides)"
+      
+    - slide_number: 4
+      type: "resources"
+      format: "<!-- .slide: -->"
+      title: "Resources"
+      subtitle: "Further Learning"
+      required_sections:
+        - "Documentation links (with brief descriptions)"
+        - "Lab solution references"
+
+knowledge_check_format:
+  question_template: |
+    <!-- .slide: -->
+    # **Knowledge Check**
+
+    ## **Question X: {Topic/Concept Name}**
+    <br>
+
+    ### {Question text}
+
+    **A)** {Option A text}  
+    **B)** {Option B text}  
+    **C)** {Option C text}  
+    **D)** {Option D text}
+
+    <details>
+    <summary>Answer</summary>
+    **{Correct Option}** - {Detailed explanation of why this is correct and/or why other options are incorrect.}
+    </details>
+
+    Notes:
+    {Brief explanation of the educational purpose or key learning point.}
+  
+  required_elements:
+    - "Bold H1 title: # **Knowledge Check**"
+    - "Bold H2 subtitle: ## **Question X: {Topic}**"
+    - "<br> spacing tag after subtitle"
+    - "H3 question text"
+    - "Bold option labels (**A)**, **B)**, etc.) with two spaces between"
+    - "<details> disclosure element for answer"
+    - "Answer starts with bolded correct option"
+    - "Notes section with educational context"
+    
+  prohibited_elements:
+    - "Separate answer slides (answers MUST be inline with <details>)"
+    - "Creating dedicated 'Answers' slides"
+    - "Any format other than <details> for answers"
+    
+  question_distribution:
+    - topic: "Unit Testing Basics"
+      question_count: 2
+      coverage_areas:
+        - "Test generation with AI"
+        - "Code coverage interpretation"
+        - "Human validation techniques"
+        
+    - topic: "TDD Workflow"
+      question_count: 2
+      coverage_areas:
+        - "Red-Green-Refactor cycle"
+        - "Test-first development"
+        - "AI assistance in each phase"
+        
+    - topic: "Integration/E2E Testing"
+      question_count: 1
+      coverage_areas:
+        - "Vitest integration tests"
+        - "Playwright E2E tests"
+        - "Test pyramid understanding"
+        
+    - topic: "Code Quality"
+      question_count: 1
+      coverage_areas:
+        - "AI-assisted quality improvements"
+        - "Code metrics interpretation"
+        - "Refactoring best practices"
+
+resources_slide_format:
+  template: |
+    <!-- .slide: -->
+    # **Resources**
+
+    ## **Further Learning**
+    <br>
+
+    ### **Documentation**
+    - [{Link Title}]({URL}) - {Brief description}
+    - [{Link Title}]({URL}) - {Brief description}
+
+    ### **Lab Solutions**
+    - Review `labs/lab-41-unit-testing-solution/`
+    - Review `labs/lab-42-tdd-workflow-solution/`
+    - Review `labs/lab-43-integration-quality-solution/`
+
+    Notes:
+    {Brief guidance about using resources for continued learning.}
+  
+  required_elements:
+    - "Bold H1 title: # **Resources**"
+    - "Bold H2 subtitle: ## **Further Learning**"
+    - "Single <br> tag between H2 and first H3"
+    - "Bold H3 sections: ### **Documentation** and ### **Lab Solutions**"
+    - "Documentation links format: [Title](URL) - Description"
+    - "Lab paths in backticks with module-scoped numbering"
+    - "Notes section with resource usage guidance"
+    
+  documentation_links:
+    - category: "Vitest"
+      links:
+        - title: "Vitest Documentation"
+          url: "https://vitest.dev/"
+          description: "Official Vitest testing framework guide"
+        - title: "Vitest Coverage"
+          url: "https://vitest.dev/guide/coverage.html"
+          description: "Code coverage configuration and interpretation"
+          
+    - category: "Playwright"
+      links:
+        - title: "Playwright Documentation"
+          url: "https://playwright.dev/"
+          description: "Official E2E testing framework guide"
+        - title: "Playwright Best Practices"
+          url: "https://playwright.dev/docs/best-practices"
+          description: "Recommended patterns for reliable tests"
+          
+    - category: "GitHub Copilot"
+      links:
+        - title: "GitHub Copilot for Testing"
+          url: "https://github.blog/developer-skills/github/how-to-use-github-copilot-for-test-generation/"
+          description: "AI-assisted test generation techniques"
+          
+    - category: "Testing Best Practices"
+      links:
+        - title: "Test Automation Patterns"
+          url: "https://martinfowler.com/articles/practical-test-pyramid.html"
+          description: "Understanding the test pyramid"
+
+success_criteria:
+  learning_validation:
+    - criteria_id: "SC-001"
+      description: "Learner can generate comprehensive unit tests covering 80%+ code paths using AI assistance within 15 minutes"
+      measurement: "Knowledge check validates understanding of coverage metrics"
+      
+    - criteria_id: "SC-002"
+      description: "Learner successfully implements Red-Green-Refactor TDD cycle with AI assistance in under 30 minutes"
+      measurement: "Knowledge check validates TDD workflow understanding"
+      
+    - criteria_id: "SC-003"
+      description: "Learner identifies 3+ AI testing anti-patterns and applies human validation"
+      measurement: "Knowledge check includes scenario-based validation questions"
+      
+    - criteria_id: "SC-007"
+      description: "Code quality metrics improve by 25%+ after applying AI-suggested refactoring"
+      measurement: "Knowledge check validates quality metrics interpretation"
+      
+  assessment_targets:
+    passing_score: "75%"
+    description: "Learners must answer 5/6 knowledge check questions correctly"
+    
+    completion_rate: "90%"
+    description: "90%+ of learners complete all 3 labs"
+    
+    time_targets:
+      lab_41: "60 minutes"
+      lab_42: "90 minutes"
+      lab_43: "120 minutes"
+      total: "270 minutes (4.5 hours)"
+
+prohibited_content:
+  assessment_slides:
+    - "Module Recap slides (duplicates Learning Objectives Review)"
+    - "Assessment Overview slides (evaluation frameworks belong in specs)"
+    - "Assessment Methods slides (evaluation procedures belong in specs)"
+    - "Success Metrics slides (target scores/tables belong in specs)"
+    - "Assessment Rubric slides (scoring criteria belong in specs)"
+    - "Next Steps slides (forward-looking content belongs in trainer materials)"
+    - "Thank You slides (ceremonial content belongs in trainer facilitation)"
+    
+  rationale: "Assessment slides focus on three essential functions: reviewing what was learned (Learning Objectives Review), validating understanding (Knowledge Check), and providing continued learning resources (Resources). Administrative evaluation frameworks, forward-looking navigation, and ceremonial concluding slides belong in specification documents and trainer materials, not learner-facing presentations."
+
+constitutional_compliance:
+  - principle: "Assessment Slide Structure"
+    requirement: "EXACTLY 4 slides (transition, learning objectives review, knowledge checks across multiple slides, resources)"
+    validation: "Count slides in 48_assessment_and_recap.md"
+    
+  - principle: "Knowledge Check Slide Format"
+    requirement: "Each question with inline <details> answer (no separate answer slides)"
+    validation: "Verify <details> tags present for all questions"
+    
+  - principle: "Resources Slide Format"
+    requirement: "Bold headers, documentation links with descriptions, module-scoped lab paths"
+    validation: "Check formatting matches template exactly"
+    
+  - principle: "Prohibited Content"
+    requirement: "No administrative slides (Assessment Overview, Success Metrics, Rubrics, Next Steps, Thank You)"
+    validation: "Ensure only 4 required slide types present"
+
+validation_checklist:
+  structure:
+    - "Assessment file contains EXACTLY 4 slide types (transition, review, knowledge checks, resources)"
+    - "Each knowledge check question on separate slide"
+    - "6 total knowledge check question slides (covering all topics)"
+    - "Resources slide includes all 3 lab solution references"
+    
+  formatting:
+    - "All knowledge check questions use <details> for inline answers"
+    - "Bold formatting applied correctly (H1, H2, H3, option labels)"
+    - "<br> spacing tags present where required"
+    - "Lab paths use module-scoped numbering (lab-41, lab-42, lab-43)"
+    
+  content:
+    - "Question distribution covers all module topics (2 unit testing, 2 TDD, 1 integration/E2E, 1 quality)"
+    - "Documentation links include Vitest, Playwright, GitHub Copilot, testing best practices"
+    - "All answers include explanations (not just correct letter)"
+    - "Notes sections provide educational context"
+    
+  prohibited:
+    - "No 'Module Recap' slides"
+    - "No 'Assessment Overview' slides"
+    - "No 'Success Metrics' slides"
+    - "No 'Assessment Rubric' slides"
+    - "No 'Next Steps' slides"
+    - "No 'Thank You' slides"
+    - "No separate answer slides"

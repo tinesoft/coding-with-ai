@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; font-size: 16px; fill: #333; }
+      .title { font-size: 24px; font-weight: bold; fill: #1e3a8a; }
+      .box { fill: #f0f9ff; stroke: #3b82f6; stroke-width: 2; }
+      .arrow { stroke: #3b82f6; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3b82f6" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="40" class="title" text-anchor="middle">AI-Assisted Test Generation Workflow</text>
+  
+  <!-- Step 1: Code Context -->
+  <rect x="50" y="80" width="150" height="80" class="box" rx="5"/>
+  <text x="125" y="110" class="text" text-anchor="middle">1. Code Context</text>
+  <text x="125" y="135" class="text" text-anchor="middle" font-size="12">Select function</text>
+  <text x="125" y="150" class="text" text-anchor="middle" font-size="12">to test</text>
+  
+  <!-- Arrow -->
+  <path d="M 200 120 L 280 120" class="arrow"/>
+  
+  <!-- Step 2: AI Prompt -->
+  <rect x="280" y="80" width="150" height="80" class="box" rx="5"/>
+  <text x="355" y="110" class="text" text-anchor="middle">2. AI Prompt</text>
+  <text x="355" y="135" class="text" text-anchor="middle" font-size="12">"Generate unit</text>
+  <text x="355" y="150" class="text" text-anchor="middle" font-size="12">tests with coverage"</text>
+  
+  <!-- Arrow -->
+  <path d="M 430 120 L 510 120" class="arrow"/>
+  
+  <!-- Step 3: Test Generation -->
+  <rect x="510" y="80" width="150" height="80" class="box" rx="5"/>
+  <text x="585" y="110" class="text" text-anchor="middle">3. AI Generates</text>
+  <text x="585" y="135" class="text" text-anchor="middle" font-size="12">Test suite with</text>
+  <text x="585" y="150" class="text" text-anchor="middle" font-size="12">assertions</text>
+  
+  <!-- Arrow down -->
+  <path d="M 585 160 L 585 220" class="arrow"/>
+  
+  <!-- Step 4: Human Review -->
+  <rect x="510" y="220" width="150" height="80" class="box" rx="5"/>
+  <text x="585" y="250" class="text" text-anchor="middle">4. Human Review</text>
+  <text x="585" y="275" class="text" text-anchor="middle" font-size="12">Validate logic</text>
+  <text x="585" y="290" class="text" text-anchor="middle" font-size="12">Check edge cases</text>
+  
+  <!-- Arrow left -->
+  <path d="M 510 260 L 430 260" class="arrow"/>
+  
+  <!-- Step 5: Execute Tests -->
+  <rect x="280" y="220" width="150" height="80" class="box" rx="5"/>
+  <text x="355" y="250" class="text" text-anchor="middle">5. Execute Tests</text>
+  <text x="355" y="275" class="text" text-anchor="middle" font-size="12">Run test suite</text>
+  <text x="355" y="290" class="text" text-anchor="middle" font-size="12">Check coverage</text>
+  
+  <!-- Arrow left -->
+  <path d="M 280 260 L 200 260" class="arrow"/>
+  
+  <!-- Step 6: Refine -->
+  <rect x="50" y="220" width="150" height="80" class="box" rx="5"/>
+  <text x="125" y="250" class="text" text-anchor="middle">6. Refine</text>
+  <text x="125" y="275" class="text" text-anchor="middle" font-size="12">Add missing tests</text>
+  <text x="125" y="290" class="text" text-anchor="middle" font-size="12">Fix issues</text>
+  
+  <!-- Feedback loop arrow -->
+  <path d="M 125 220 Q 125 180 200 120" class="arrow" stroke-dasharray="5,5"/>
+  <text x="150" y="190" class="text" font-size="12" fill="#3b82f6">Iterate</text>
+  
+  <!-- Success box -->
+  <rect x="280" y="360" width="240" height="60" class="box" rx="5" fill="#d1fae5" stroke="#10b981"/>
+  <text x="400" y="385" class="text" text-anchor="middle" font-weight="bold" fill="#047857">✓ Tests Pass</text>
+  <text x="400" y="405" class="text" text-anchor="middle" font-size="12" fill="#047857">80%+ Coverage Achieved</text>
+  
+  <!-- Arrow to success -->
+  <path d="M 355 300 L 400 360" class="arrow" stroke="#10b981"/>
+</svg>

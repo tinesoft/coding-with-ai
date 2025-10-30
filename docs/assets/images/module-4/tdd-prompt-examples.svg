@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .text { font-family: 'Courier New', monospace; font-size: 12px; fill: #333; }
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1e3a8a; }
+      .box { fill: #f0f9ff; stroke: #3b82f6; stroke-width: 2; }
+      .prompt { fill: #fef3c7; stroke: #f59e0b; stroke-width: 1; }
+      .label { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <text x="400" y="30" class="title" text-anchor="middle">TDD Prompt Examples for AI Assistance</text>
+  
+  <!-- Red Phase Prompt -->
+  <rect x="50" y="60" width="700" height="140" class="box" rx="5"/>
+  <text x="70" y="85" class="label" fill="#991b1b">🔴 RED Phase Prompt:</text>
+  
+  <rect x="70" y="95" width="660" height="85" class="prompt" rx="3"/>
+  <text x="85" y="115" class="text">"Generate a failing unit test for a calculateDiscount function that:</text>
+  <text x="85" y="135" class="text">- Takes originalPrice (number) and discountPercent (number)</text>
+  <text x="85" y="155" class="text">- Returns the discounted price</text>
+  <text x="85" y="175" class="text">- Test should cover: valid discount, edge case with 0%, and error for invalid input"</text>
+  
+  <!-- Green Phase Prompt -->
+  <rect x="50" y="220" width="700" height="140" class="box" rx="5"/>
+  <text x="70" y="245" class="label" fill="#047857">🟢 GREEN Phase Prompt:</text>
+  
+  <rect x="70" y="255" width="660" height="85" class="prompt" rx="3"/>
+  <text x="85" y="275" class="text">"Implement the MINIMAL code to make this test pass:</text>
+  <text x="85" y="295" class="text">[paste failing test]</text>
+  <text x="85" y="315" class="text">Focus on simplest solution, no optimization yet. Just make the test green."</text>
+  
+  <!-- Refactor Phase Prompt -->
+  <rect x="50" y="380" width="700" height="160" class="box" rx="5"/>
+  <text x="70" y="405" class="label" fill="#1e3a8a">🔵 REFACTOR Phase Prompt:</text>
+  
+  <rect x="70" y="415" width="660" height="105" class="prompt" rx="3"/>
+  <text x="85" y="435" class="text">"Refactor this implementation to improve code quality:</text>
+  <text x="85" y="455" class="text">[paste current implementation]</text>
+  <text x="85" y="475" class="text">Improve: naming, readability, eliminate duplication.</text>
+  <text x="85" y="495" class="text">Constraint: All existing tests must still pass."</text>
+  
+  <!-- Tip box -->
+  <rect x="50" y="560" width="700" height="30" fill="#d1fae5" stroke="#10b981" stroke-width="1" rx="3"/>
+  <text x="400" y="580" class="label" text-anchor="middle" fill="#047857" font-size="11">
+    💡 Tip: Always specify constraints (test must pass, no optimization yet) for better AI guidance
+  </text>
+</svg>

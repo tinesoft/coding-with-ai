@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+      .title { font-size: 20px; font-weight: bold; fill: #1e3a8a; }
+      .browser { fill: #f0f9ff; stroke: #3b82f6; stroke-width: 2; }
+      .step { fill: #fef3c7; stroke: #f59e0b; stroke-width: 2; }
+      .action { fill: #d1fae5; stroke: #10b981; stroke-width: 1; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="35" class="title" text-anchor="middle">E2E Test Workflow: User Journey Testing</text>
+  
+  <!-- Browser Window -->
+  <rect x="50" y="70" width="700" height="200" class="browser" rx="8"/>
+  <rect x="50" y="70" width="700" height="30" fill="#3b82f6"/>
+  <circle cx="70" cy="85" r="6" fill="#fee2e2"/>
+  <circle cx="90" cy="85" r="6" fill="#fef3c7"/>
+  <circle cx="110" cy="85" r="6" fill="#d1fae5"/>
+  <text x="400" y="92" class="text" text-anchor="middle" fill="white" font-weight="bold">localhost:3000/login</text>
+  
+  <!-- Page Content Representation -->
+  <rect x="80" y="120" width="200" height="30" class="action" rx="3"/>
+  <text x="180" y="140" class="text" text-anchor="middle" font-size="11">📧 Email Input</text>
+  
+  <rect x="80" y="160" width="200" height="30" class="action" rx="3"/>
+  <text x="180" y="180" class="text" text-anchor="middle" font-size="11">🔒 Password Input</text>
+  
+  <rect x="80" y="210" width="200" height="30" class="action" rx="3"/>
+  <text x="180" y="230" class="text" text-anchor="middle" font-size="11">🔘 Login Button</text>
+  
+  <!-- Test Steps -->
+  <text x="400" y="305" class="text" text-anchor="middle" font-weight="bold" fill="#1e3a8a">
+    Playwright E2E Test Steps
+  </text>
+  
+  <!-- Step 1 -->
+  <rect x="100" y="320" width="600" height="40" class="step" rx="5"/>
+  <text x="400" y="335" class="text" text-anchor="middle" font-weight="bold">1. Navigate</text>
+  <text x="400" y="352" class="text" text-anchor="middle" font-size="10">
+    await page.goto('http://localhost:3000/login');
+  </text>
+  
+  <!-- Step 2 -->
+  <rect x="100" y="370" width="600" height="40" class="step" rx="5"/>
+  <text x="400" y="385" class="text" text-anchor="middle" font-weight="bold">2. Fill Form</text>
+  <text x="400" y="402" class="text" text-anchor="middle" font-size="10">
+    await page.fill('[name="email"]', 'user@test.com'); await page.fill('[name="password"]', 'pass123');
+  </text>
+  
+  <!-- Step 3 -->
+  <rect x="100" y="420" width="600" height="40" class="step" rx="5"/>
+  <text x="400" y="435" class="text" text-anchor="middle" font-weight="bold">3. Submit & Assert</text>
+  <text x="400" y="452" class="text" text-anchor="middle" font-size="10">
+    await page.click('button[type="submit"]'); await expect(page).toHaveURL('/dashboard');
+  </text>
+  
+  <!-- AI Assistance Note -->
+  <rect x="100" y="480" width="600" height="50" fill="#d1fae5" stroke="#10b981" stroke-width="2" rx="5"/>
+  <text x="400" y="500" class="text" text-anchor="middle" font-weight="bold" fill="#047857">
+    AI Prompt Example:
+  </text>
+  <text x="400" y="518" class="text" text-anchor="middle" font-size="11" fill="#047857">
+    "Generate Playwright E2E test for login flow with email/password and verify dashboard redirect"
+  </text>
+</svg>

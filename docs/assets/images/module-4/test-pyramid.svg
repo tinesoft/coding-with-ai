@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; text-anchor: middle; }
+      .title { font-size: 20px; font-weight: bold; fill: #1e3a8a; }
+      .e2e { fill: #dbeafe; stroke: #3b82f6; stroke-width: 2; }
+      .integration { fill: #fef3c7; stroke: #f59e0b; stroke-width: 2; }
+      .unit { fill: #d1fae5; stroke: #10b981; stroke-width: 2; }
+      .label { font-size: 12px; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <text x="300" y="40" class="title" text-anchor="middle">Test Pyramid with AI Assistance</text>
+  
+  <!-- E2E Tests (Top - Smallest) -->
+  <polygon points="300,80 400,180 200,180" class="e2e"/>
+  <text x="300" y="140" class="text label" fill="#1e3a8a">E2E Tests</text>
+  <text x="300" y="160" class="text" font-size="11">Few, Slow, Expensive</text>
+  
+  <!-- Integration Tests (Middle) -->
+  <polygon points="300,180 450,300 150,300" class="integration"/>
+  <text x="300" y="240" class="text label" fill="#92400e">Integration Tests</text>
+  <text x="300" y="260" class="text" font-size="11">Moderate Count</text>
+  <text x="300" y="280" class="text" font-size="11">Component Interactions</text>
+  
+  <!-- Unit Tests (Bottom - Largest) -->
+  <polygon points="300,300 500,420 100,420" class="unit"/>
+  <text x="300" y="355" class="text label" fill="#047857">Unit Tests</text>
+  <text x="300" y="375" class="text" font-size="11">Many, Fast, Cheap</text>
+  <text x="300" y="395" class="text" font-size="11">80%+ Coverage Target</text>
+  
+  <!-- AI Assistance Annotations -->
+  <g>
+    <circle cx="450" cy="150" r="8" fill="#3b82f6"/>
+    <text x="465" y="155" class="text" font-size="10" text-anchor="start" fill="#3b82f6">AI: User journey scenarios</text>
+  </g>
+  
+  <g>
+    <circle cx="450" cy="250" r="8" fill="#f59e0b"/>
+    <text x="465" y="255" class="text" font-size="10" text-anchor="start" fill="#f59e0b">AI: API contract tests</text>
+  </g>
+  
+  <g>
+    <circle cx="450" cy="370" r="8" fill="#10b981"/>
+    <text x="465" y="375" class="text" font-size="10" text-anchor="start" fill="#10b981">AI: Comprehensive coverage</text>
+  </g>
+  
+  <!-- Bottom note -->
+  <text x="300" y="460" class="text" font-size="11" fill="#666">
+    Focus: Start with unit tests (green layer) using AI assistance
+  </text>
+</svg>

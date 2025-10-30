@@ -1,0 +1,232 @@
+# Module 4 Lab Structure Contract
+
+metadata:
+  module_number: 4
+  total_labs: 3
+  numbering_pattern: "lab-4X-{topic}"
+  primary_language: "TypeScript"
+  testing_framework: "Vitest"
+  e2e_framework: "Playwright"
+
+labs:
+  - lab_number: "lab-41"
+    lab_topic: "unit-testing"
+    priority: "P1"
+    estimated_duration: "60 minutes"
+    user_story: "AI-Assisted Unit Test Generation"
+    learning_objectives:
+      - "Generate unit tests using GitHub Copilot"
+      - "Achieve 80%+ code coverage"
+      - "Validate AI-generated tests for correctness"
+      - "Identify and fix gaps in test coverage"
+    
+    folder_structure:
+      main_lab: "labs/lab-41-unit-testing/"
+      solution: "labs/lab-41-unit-testing-solution/"
+      
+    required_files:
+      main_lab:
+        - path: "README.md"
+          description: "Lab instructions with objectives, prerequisites, exercises"
+          format: "GitHub-flavored markdown"
+        - path: "exercises/starter-code/calculator.ts"
+          description: "Calculator functions needing unit tests"
+        - path: "exercises/starter-code/user-validator.ts"
+          description: "User validation logic needing tests"
+        - path: "exercises/starter-code/data-transformer.ts"
+          description: "Data transformation functions needing tests"
+        - path: "exercises/vitest.config.ts"
+          description: "Vitest configuration with coverage enabled"
+          
+      solution:
+        - path: "README.md"
+          description: "Solution explanations and validation techniques"
+          format: "GitHub-flavored markdown"
+          required_content:
+            - "Exercise-by-exercise solutions in sequential order"
+            - "Human-in-the-loop validation strategies"
+            - "Coverage analysis explanation"
+        - path: "resources/completed-tests/calculator.spec.ts"
+          description: "Complete unit tests for calculator"
+          required: true
+        - path: "resources/completed-tests/user-validator.spec.ts"
+          description: "Complete unit tests for user validator"
+          required: true
+        - path: "resources/completed-tests/data-transformer.spec.ts"
+          description: "Complete unit tests for data transformer"
+          required: true
+        - path: "resources/coverage-report/"
+          description: "Example coverage output showing 80%+ coverage"
+          optional: true
+    
+    success_criteria:
+      - "All starter functions have comprehensive unit tests"
+      - "Test coverage achieves 80%+ for all modules"
+      - "Tests pass successfully"
+      - "Edge cases and error conditions covered"
+      - "Completed within 15 minutes (SC-001)"
+    
+    constitutional_requirements:
+      - "Module-scoped numbering (lab-41)"
+      - "Solution folder MUST contain README.md"
+      - "resources/ MUST contain actual test files (deliverables)"
+      - "No 'Success Criteria Checklist' in lab README"
+      - "Lab aligns with slide content from 41_test_automation.md"
+      
+  - lab_number: "lab-42"
+    lab_topic: "tdd-workflow"
+    priority: "P2"
+    estimated_duration: "90 minutes"
+    user_story: "Test-Driven Development (TDD) with AI"
+    learning_objectives:
+      - "Practice Red-Green-Refactor cycle with AI assistance"
+      - "Write failing tests before implementation"
+      - "Use AI to implement minimal passing code"
+      - "Refactor while keeping tests green"
+    
+    folder_structure:
+      main_lab: "labs/lab-42-tdd-workflow/"
+      solution: "labs/lab-42-tdd-workflow-solution/"
+      
+    required_files:
+      main_lab:
+        - path: "README.md"
+          description: "TDD exercise instructions"
+        - path: "exercises/feature-spec.md"
+          description: "Feature specification for TDD implementation"
+        - path: "exercises/vitest.config.ts"
+          description: "Vitest configuration"
+        - path: "exercises/src/"
+          description: "Empty starter structure for implementation"
+          
+      solution:
+        - path: "README.md"
+          description: "TDD walkthrough explaining each phase"
+          required_content:
+            - "Red phase: How to write failing tests"
+            - "Green phase: Minimal implementation approach"
+            - "Refactor phase: Code improvement while tests pass"
+        - path: "resources/red-phase/"
+          description: "Example failing tests"
+          required: true
+        - path: "resources/green-phase/"
+          description: "Minimal passing implementation"
+          required: true
+        - path: "resources/refactor-phase/"
+          description: "Refactored clean implementation"
+          required: true
+    
+    success_criteria:
+      - "Complete Red-Green-Refactor cycle"
+      - "All tests pass in final implementation"
+      - "Code quality improved through refactoring"
+      - "Cycle completed within 30 minutes (SC-002)"
+    
+    constitutional_requirements:
+      - "Module-scoped numbering (lab-42)"
+      - "Solution MUST show all 3 TDD phases as deliverables"
+      - "resources/ contains actual code from each phase"
+      - "Lab aligns with 42_tdd_with_ai.md content"
+      
+  - lab_number: "lab-43"
+    lab_topic: "integration-quality"
+    priority: "P3"
+    estimated_duration: "120 minutes"
+    user_story: "Integration/E2E Testing and Code Quality"
+    learning_objectives:
+      - "Generate integration tests for component interactions"
+      - "Create E2E tests for user workflows"
+      - "Use AI to identify code quality issues"
+      - "Apply AI-suggested quality improvements"
+    
+    folder_structure:
+      main_lab: "labs/lab-43-integration-quality/"
+      solution: "labs/lab-43-integration-quality-solution/"
+      
+    required_files:
+      main_lab:
+        - path: "README.md"
+          description: "Multi-part exercise instructions"
+        - path: "exercises/multi-component-app/src/"
+          description: "Application with API, services, utils for integration testing"
+        - path: "exercises/multi-component-app/vitest.config.ts"
+          description: "Vitest config for integration tests"
+        - path: "exercises/multi-component-app/playwright.config.ts"
+          description: "Playwright config for E2E tests"
+        - path: "exercises/code-with-quality-issues/messy-code.ts"
+          description: "Code with intentional quality issues"
+        - path: "exercises/code-with-quality-issues/complex-function.ts"
+          description: "Overly complex code needing refactoring"
+          
+      solution:
+        - path: "README.md"
+          description: "Solutions for all three exercises"
+          required_content:
+            - "Exercise 1: Integration testing solution"
+            - "Exercise 2: E2E testing solution"
+            - "Exercise 3: Quality improvement solution"
+        - path: "resources/integration-tests/api-service.integration.spec.ts"
+          description: "Integration test example"
+          required: true
+        - path: "resources/integration-tests/data-flow.integration.spec.ts"
+          description: "Integration test example"
+          required: true
+        - path: "resources/e2e-tests/user-journey.spec.ts"
+          description: "E2E test with Playwright"
+          required: true
+        - path: "resources/e2e-tests/critical-workflow.spec.ts"
+          description: "E2E test with Playwright"
+          required: true
+        - path: "resources/quality-improvements/cleaned-code.ts"
+          description: "Refactored code with quality fixes"
+          required: true
+        - path: "resources/quality-improvements/refactored-function.ts"
+          description: "Simplified complex function"
+          required: true
+    
+    success_criteria:
+      - "Integration tests validate component interactions"
+      - "E2E tests simulate complete user workflows"
+      - "Code quality metrics measurably improved (SC-007)"
+      - "Tests are maintainable (not brittle)"
+      - "Can identify 3+ AI testing issues (SC-003)"
+    
+    constitutional_requirements:
+      - "Module-scoped numbering (lab-43)"
+      - "Solution MUST contain all deliverables in resources/"
+      - "Both integration AND E2E tests included (not either/or)"
+      - "Quality improvement examples show before/after code"
+      - "Lab aligns with slides 43 and 44 content"
+
+validation_rules:
+  all_labs:
+    - "Use module-scoped numbering pattern lab-4X-{topic}"
+    - "Each lab has corresponding -solution/ folder"
+    - "Solution README.md is mandatory"
+    - "Solution resources/ contains actual deliverable files when exercises produce artifacts"
+    - "README files use GitHub-flavored markdown"
+    - "No 'Success Criteria Checklist' sections in lab files"
+    - "Exercise numbering is sequential within each lab"
+    - "Solutions correspond to exercises in sequential order"
+    - "All TypeScript code is syntactically valid"
+    - "Vitest configurations include coverage settings"
+    
+  typescript_requirements:
+    - "Use ES2022+ features"
+    - "Enable strict mode in tsconfig"
+    - "Follow TypeScript best practices"
+    - "Use proper typing (avoid 'any' unless necessary)"
+    
+  testing_requirements:
+    - "Vitest for unit and integration tests"
+    - "Playwright for E2E tests"
+    - "All test files use .spec.ts extension"
+    - "Follow AAA pattern (Arrange-Act-Assert)"
+    - "Test names follow 'should [behavior] when [condition]' pattern"
+    
+constitutional_compliance:
+  - "Principle III: Lab Structure Requirements - All labs follow sequential pattern"
+  - "Principle III: Lab Solution Deliverable Completeness - resources/ contains actual files"
+  - "Principle III: Exercise-Solution Correspondence - Solutions match exercises sequentially"
+  - "Principle III: Lab-Slide Content Alignment - Labs reinforce slide concepts"
+  - "Principle V: Code Quality Standards - Professional code in all examples"

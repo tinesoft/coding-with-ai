@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; }
+      .title { font-size: 20px; font-weight: bold; fill: #1e3a8a; }
+      .red { fill: #fee2e2; stroke: #dc2626; stroke-width: 2; }
+      .green { fill: #d1fae5; stroke: #10b981; stroke-width: 2; }
+      .refactor { fill: #dbeafe; stroke: #3b82f6; stroke-width: 2; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+  
+  <text x="350" y="35" class="title" text-anchor="middle">TDD Red-Green-Refactor Cycle with AI</text>
+  
+  <!-- Red Phase -->
+  <rect x="50" y="80" width="180" height="120" class="red" rx="8"/>
+  <text x="140" y="110" class="text" text-anchor="middle" font-weight="bold" fill="#991b1b">🔴 RED Phase</text>
+  <text x="140" y="135" class="text" text-anchor="middle" font-size="12">1. AI: Generate failing test</text>
+  <text x="140" y="155" class="text" text-anchor="middle" font-size="12">2. Define expected behavior</text>
+  <text x="140" y="175" class="text" text-anchor="middle" font-size="12">3. Run test → ✗ FAILS</text>
+  
+  <!-- Arrow to Green -->
+  <path d="M 230 140 L 290 140" class="arrow"/>
+  
+  <!-- Green Phase -->
+  <rect x="290" y="80" width="180" height="120" class="green" rx="8"/>
+  <text x="380" y="110" class="text" text-anchor="middle" font-weight="bold" fill="#047857">🟢 GREEN Phase</text>
+  <text x="380" y="135" class="text" text-anchor="middle" font-size="12">1. AI: Implement minimal code</text>
+  <text x="380" y="155" class="text" text-anchor="middle" font-size="12">2. Make test pass</text>
+  <text x="380" y="175" class="text" text-anchor="middle" font-size="12">3. Run test → ✓ PASSES</text>
+  
+  <!-- Arrow to Refactor -->
+  <path d="M 470 140 L 530 140" class="arrow"/>
+  
+  <!-- Refactor Phase -->
+  <rect x="530" y="80" width="180" height="120" class="refactor" rx="8"/>
+  <text x="620" y="110" class="text" text-anchor="middle" font-weight="bold" fill="#1e3a8a">🔵 REFACTOR Phase</text>
+  <text x="620" y="135" class="text" text-anchor="middle" font-size="12">1. AI: Suggest improvements</text>
+  <text x="620" y="155" class="text" text-anchor="middle" font-size="12">2. Clean up code</text>
+  <text x="620" y="175" class="text" text-anchor="middle" font-size="12">3. Tests still pass ✓</text>
+  
+  <!-- Feedback loop arrow -->
+  <path d="M 620 200 Q 620 250 140 250 Q 140 220 140 200" class="arrow" stroke-dasharray="5,5" stroke="#3b82f6"/>
+  <text x="350" y="270" class="text" text-anchor="middle" font-size="12" fill="#3b82f6">Repeat for next feature →</text>
+  
+  <!-- AI Assistance Notes -->
+  <rect x="50" y="300" width="660" height="80" fill="#f9fafb" stroke="#d1d5db" stroke-width="1" rx="5"/>
+  <text x="380" y="325" class="text" text-anchor="middle" font-weight="bold">AI Collaboration Tips</text>
+  <text x="380" y="345" class="text" text-anchor="middle" font-size="11">
+    • Use AI to write tests first with clear acceptance criteria
+  </text>
+  <text x="380" y="362" class="text" text-anchor="middle" font-size="11">
+    • Ask AI for "minimal implementation" in Green phase to avoid over-engineering
+  </text>
+</svg>

@@ -422,3 +422,5 @@ Notes:
 ## Active Technologies
 - Markdown for slide content, various programming languages for lab exercises (Python, JavaScript/TypeScript for practical examples) (003-module-3-ai-debug-refactor-verify)
 - Git repository for version control, file-based markdown for content (003-module-3-ai-debug-refactor-verify)
+- TypeScript (ES2022+) for lab exercises and code examples (004-module-4-testing)
+- File-based (markdown slides, lab code, solution examples) - No database required (004-module-4-testing)

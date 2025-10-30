@@ -5,6 +5,16 @@
 **Status**: Draft  
 **Input**: User description: "Module 4 of the training is about Test Automation and Quality Assurance with AI"
 
+## Clarifications
+
+### Session 2025-10-30
+
+- Q: Primary programming language for lab exercises? → A: TypeScript
+- Q: Lab exercise organization structure? → A: Three consolidated labs (lab-41-unit-testing, lab-42-tdd-workflow, lab-43-integration-quality)
+- Q: Assessment content format and scope? → A: Knowledge checks only (quiz questions in assessment slides)
+- Q: Testing framework selection? → A: Vitest
+- Q: Integration vs E2E testing scope in Lab 43? → A: Both integration and E2E testing
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - AI-Assisted Unit Test Generation (Priority: P1)
@@ -87,15 +97,15 @@ Developers using AI agents to enforce coding standards, identify code smells, an
 - **FR-001**: Training MUST provide slide content covering AI-assisted test automation fundamentals including unit, integration, and E2E testing
 - **FR-002**: Training MUST include slides explaining Test-Driven Development (TDD) methodology and AI collaboration patterns for TDD workflows
 - **FR-003**: Training MUST provide slides on quality assurance concepts including coding standards, static analysis, and AI-powered code review
-- **FR-004**: Training MUST include hands-on lab exercises for generating unit tests using AI agents (GitHub Copilot)
-- **FR-005**: Training MUST include hands-on lab exercises for practicing TDD with AI assistance
-- **FR-006**: Training MUST include hands-on lab exercises for generating integration and/or E2E tests with AI guidance
-- **FR-007**: Training MUST include hands-on lab exercises for using AI to improve code quality and enforce standards
+- **FR-004**: Training MUST include lab-41-unit-testing with exercises for generating unit tests using AI agents (GitHub Copilot)
+- **FR-005**: Training MUST include lab-42-tdd-workflow with exercises for practicing Test-Driven Development with AI assistance
+- **FR-006**: Training MUST include lab-43-integration-quality with exercises for generating both integration tests and end-to-end tests with AI guidance
+- **FR-007**: Training MUST include lab-43-integration-quality with exercises for using AI to improve code quality and enforce standards
 - **FR-008**: Lab exercises MUST provide scaffolded starter code with intentional quality issues for learners to address
 - **FR-009**: Lab solutions MUST include complete working examples of AI-generated tests with explanations of validation techniques
-- **FR-010**: Training MUST include assessment content (knowledge checks/quizzes) validating understanding of AI-assisted testing concepts
+- **FR-010**: Training MUST include assessment slides with knowledge check quiz questions validating conceptual understanding of AI-assisted testing (no separate practical assessment beyond lab completion)
 - **FR-011**: Slide content MUST follow SFEIR School Theme markdown syntax and constitutional formatting requirements
-- **FR-012**: Lab content MUST use module-scoped numbering pattern `lab-41-{topic}` for Module 4 laboratories
+- **FR-012**: Lab content MUST use module-scoped numbering with three labs: lab-41-unit-testing, lab-42-tdd-workflow, and lab-43-integration-quality
 - **FR-013**: Training content MUST emphasize human-in-the-loop validation of AI-generated tests to ensure correctness
 - **FR-014**: Training MUST address common pitfalls in AI-generated tests including false positives, insufficient coverage, and test brittleness
 - **FR-015**: Content MUST align with prerequisite knowledge from Modules 1-3 (AI fundamentals, prompt engineering, AI coding tools, debugging/verification)
@@ -124,9 +134,9 @@ Developers using AI agents to enforce coding standards, identify code smells, an
 
 - Learners have completed Modules 1-3 and understand AI fundamentals, prompt engineering, GitHub Copilot usage, and code verification techniques
 - Learners have access to GitHub Copilot (VS Code extension) as established in Module 2
-- Lab exercises will use JavaScript/TypeScript or Python as primary languages based on target audience (assumption: TypeScript given Nx workspace)
+- Lab exercises will use TypeScript as the primary language, aligning with the Nx workspace infrastructure and providing strong typing for better AI-assisted test generation
 - Learners have basic understanding of testing concepts even if they haven't practiced TDD before
-- Development environment includes standard testing frameworks (e.g., Jest, Vitest, or similar) that AI agents can work with
+- Development environment includes Vitest as the testing framework, providing modern, fast test execution with excellent TypeScript support
 - Module 4 has 1 full training day (approximately 6-7 hours including breaks) as specified in constitution
 - Learners have basic Git knowledge for managing code changes during lab exercises
 
@@ -137,7 +147,8 @@ Developers using AI agents to enforce coding standards, identify code smells, an
 - **Module 3 (Debugging/Verification)**: Human-in-the-loop validation skills and hallucination detection techniques directly applicable to validating AI-generated tests
 - **SFEIR School Theme Framework**: RevealJS-based presentation system with specific markdown syntax for slides
 - **Nx Workspace**: Build system and project structure for hosting training materials
-- **Testing Frameworks**: Jest, Vitest, or similar frameworks must be available in lab environment for executing generated tests
+- **Vitest Testing Framework**: Modern Vite-native testing framework must be configured in lab environment for unit and integration test execution
+- **E2E Testing Tool**: Playwright or similar E2E testing framework required for lab-43 end-to-end test exercises
 - **Constitutional Guidelines**: All content must comply with formatting standards, numbering conventions, and quality requirements
 
 ## Scope
@@ -145,11 +156,11 @@ Developers using AI agents to enforce coding standards, identify code smells, an
 ### In Scope
 
 - Comprehensive slide content covering test automation, TDD, and quality assurance with AI
-- Hands-on lab exercises for unit test generation, TDD practice, integration/E2E testing, and quality improvement
+- Three hands-on labs: lab-41-unit-testing (AI-assisted unit test generation), lab-42-tdd-workflow (TDD with AI), lab-43-integration-quality (both integration and E2E tests plus code quality)
 - Exercise slides following constitutional format pointing to lab instructions
-- Assessment content with knowledge checks validating learning outcomes
+- Assessment slides with knowledge check quiz questions validating conceptual understanding
 - Lab solutions with complete working examples and explanations
-- Module-scoped numbering for labs (lab-41-*, lab-42-*, etc.)
+- Module-scoped numbering with three specific labs: lab-41-unit-testing, lab-42-tdd-workflow, lab-43-integration-quality
 - Focus on GitHub Copilot as primary AI tool with references to concepts applicable to other AI agents
 - Practical testing patterns and prompt examples for effective AI collaboration
 - Guidance on validating AI-generated tests for correctness and completeness
