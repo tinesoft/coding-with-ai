@@ -3,27 +3,31 @@
 ##--##
 
 <!-- .slide: class="transition" -->
-# Systematic Debugging with AI
+# Module 3: Systematic Debugging with AI
 
 ##--##
 
 <!-- .slide -->
 # The 5-Step AI Debugging Process
 
+## **Overview of the Workflow**
 <br>
 
-![AI Debugging Workflow](./assets/images/module-3/ai-debugging-workflow.svg)
+Systematic approach combining AI assistance with human validation at each step.
 
 Notes:
-- Visual representation of the systematic debugging workflow
-- Shows human-AI collaboration at each step
-- Emphasizes validation checkpoints
+This visual workflow (shown on the next slide) illustrates the systematic debugging process. It demonstrates human-AI collaboration at each step and emphasizes critical validation checkpoints.
+
+##--##
+
+<img src="./assets/images/module-3/ai-debugging-workflow.svg" alt="AI Debugging Workflow" style="width:100%; height:auto; display:block;">
 
 ##--##
 
 <!-- .slide -->
 # Step 1: Reproduce the Bug
 
+## **Capturing Bug Context**
 <br>
 
 ### 🔍 **What to Capture**
@@ -59,6 +63,7 @@ Notes:
 <!-- .slide -->
 # Step 2: Ask AI to Analyze
 
+## **Crafting Effective Prompts**
 <br>
 
 ### 💬 **Effective Prompts**
@@ -87,6 +92,7 @@ Notes:
 <!-- .slide -->
 # Step 3: Review AI Hypothesis
 
+## **Evaluating AI's Analysis**
 <br>
 
 ### 🧠 **AI Analysis Example**
@@ -119,6 +125,7 @@ Notes:
 <!-- .slide -->
 # Step 4: Test Suggested Fix
 
+## **Isolated Testing Approach**
 <br>
 
 ### 🔧 **AI-Proposed Solution**
@@ -159,6 +166,7 @@ Notes:
 <!-- .slide -->
 # Step 5: Validate and Document
 
+## **Final Verification Steps**
 <br>
 
 ### ✅ **Validation Checklist**
@@ -198,6 +206,7 @@ Notes:
 <!-- .slide -->
 # Common Debugging Patterns
 
+## **Recognizing Frequent Bug Types**
 <br>
 
 ### 🔄 **Pattern 1: Null/Undefined Checks**
@@ -238,6 +247,7 @@ Notes:
 <!-- .slide -->
 # Debugging Workflow Anti-Patterns
 
+## **Common Mistakes to Avoid**
 <br>
 
 ### ❌ **Don't Do This**
@@ -264,6 +274,7 @@ Notes:
 <!-- .slide -->
 # Key Takeaways
 
+## **Workflow Summary**
 <br>
 
 ### 🎯 **The 5-Step Process**

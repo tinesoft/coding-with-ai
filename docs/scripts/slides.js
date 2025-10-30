@@ -22,14 +22,12 @@ function schoolSlides() {
     // Module 3: AI-Powered Debugging, Refactoring, and Verification
     "30_module_3_debugging/30_module3_intro.md",
     "30_module_3_debugging/31_debugging_concepts.md",
-    "30_module_3_debugging/31b_refactoring_patterns_visual.md",
     "30_module_3_debugging/32_debugging_workflow.md",
     "30_module_3_debugging/33_refactoring_ai.md",
     "30_module_3_debugging/33_code_verification.md",
-    "30_module_3_debugging/33b_verification_checklist_visual.md",
     "30_module_3_debugging/34_exercise_debugging.md",
-    "30_module_3_debugging/35_code_verification.md",
-    "30_module_3_debugging/36_exercise_refactoring.md",
+    "30_module_3_debugging/35_exercise_refactoring.md",
+    "30_module_3_debugging/36_exercise_verification.md",
     "30_module_3_debugging/37_assessment_and_recap.md",
     // add more slides as needed
   ];

@@ -3,13 +3,14 @@
 ##--##
 
 <!-- .slide: class="transition" -->
-# Code Refactoring with AI
+# Module 3: Code Refactoring with AI
 
 ##--##
 
 <!-- .slide -->
 # What is Refactoring?
 
+## **Understanding Code Improvement**
 <br>
 
 ### 🔧 **Definition**
@@ -40,6 +41,7 @@ Notes:
 <!-- .slide -->
 # Why Refactor with AI?
 
+## **Benefits and Considerations**
 <br>
 
 ### 🤖 **AI Advantages**
@@ -68,6 +70,7 @@ Notes:
 <!-- .slide -->
 # 5 Common Refactoring Patterns
 
+## **Essential Techniques**
 <br>
 
 ### 1️⃣ **Extract Method**
@@ -86,15 +89,18 @@ Consolidate repeated code into shared functions
 Update to current language idioms and features
 
 Notes:
-- These patterns apply across programming languages
-- AI tools can suggest all 5 patterns automatically
-- Each pattern has specific applicability conditions
+These patterns apply across programming languages and AI tools can suggest all automatically. Each pattern has specific applicability conditions. The next slide provides a visual overview of how these patterns complement each other.
+
+##--##
+
+<img src="./assets/images/module-3/refactoring-patterns.svg" alt="Refactoring Patterns Overview" style="width:100%; height:auto; display:block;">
 
 ##--##
 
 <!-- .slide -->
 # Pattern 1: Extract Method
 
+## **Breaking Down Long Functions**
 <br>
 
 ### 🐛 **Before: Long, Monolithic Function**
@@ -131,6 +137,7 @@ Notes:
 <!-- .slide -->
 # Pattern 1: Extract Method (Continued)
 
+## **Refactored Solution**
 <br>
 
 ### ✅ **After: Extracted Helper Methods**
@@ -171,6 +178,7 @@ Notes:
 <!-- .slide -->
 # Pattern 2: Rename for Clarity
 
+## **Improving Code Readability**
 <br>
 
 ### 🐛 **Before: Cryptic Names**
@@ -205,9 +213,10 @@ Notes:
 <!-- .slide -->
 # Pattern 3: Simplify Conditionals
 
+## **Reducing Complexity**
 <br>
 
-### 🐛 **Before: Nested Conditionals**
+### 🐛 **Before: Complex Nested Logic**
 
 ```javascript
 function canCheckout(user, cart) {
@@ -241,6 +250,7 @@ Notes:
 <!-- .slide -->
 # Pattern 3: Simplify Conditionals (Continued)
 
+## **Cleaner Control Flow**
 <br>
 
 ### ✅ **After: Guard Clauses**
@@ -272,6 +282,7 @@ Notes:
 <!-- .slide -->
 # Pattern 4: Remove Duplication
 
+## **DRY Principle in Action**
 <br>
 
 ### 🐛 **Before: Repeated Code**
@@ -310,42 +321,17 @@ Notes:
 <!-- .slide -->
 # Pattern 5: Modernize Syntax
 
+## **Adopting Modern Idioms**
 <br>
 
-### 🐛 **Before: Old JavaScript (ES5)**
-
-```javascript
-var users = getUsers();
-var activeUsers = [];
-for (var i = 0; i < users.length; i++) {
-  if (users[i].isActive) {
-    activeUsers.push(users[i].name);
-  }
-}
-return activeUsers;
-```
-
-<br>
-
-### ✅ **After: Modern JavaScript (ES6+)**
-
-```javascript
-const users = getUsers();
-return users
-  .filter(user => user.isActive)
-  .map(user => user.name);
-```
-
-Notes:
-- Modern syntax is more concise and expressive
-- Functional programming patterns often clearer
-- AI knows latest language features and idioms
+### 🐛 **Before: Legacy Python**
 
 ##--##
 
 <!-- .slide -->
 # AI-Assisted Refactoring Workflow
 
+## **Systematic Approach**
 <br>
 
 ### 🔄 **Process**
@@ -379,6 +365,7 @@ Notes:
 <!-- .slide -->
 # When to Refactor vs. Rewrite
 
+## **Making Strategic Decisions**
 <br>
 
 ### ✅ **Refactor When:**
@@ -412,6 +399,7 @@ Notes:
 <!-- .slide -->
 # Refactoring Best Practices
 
+## **Guidelines for Success**
 <br>
 
 ### 📋 **Safe Refactoring**
@@ -440,6 +428,7 @@ Notes:
 <!-- .slide -->
 # AI Refactoring Tools
 
+## **Practical Tool Usage**
 <br>
 
 ### 🛠️ **GitHub Copilot Features**
@@ -468,6 +457,7 @@ Notes:
 <!-- .slide -->
 # Key Takeaways
 
+## **Refactoring Summary**
 <br>
 
 ### 🎯 **Remember**

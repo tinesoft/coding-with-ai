@@ -1,14 +1,12 @@
 <!-- .slide: class="transition" -->
-
-# User Story 3
-## Verifying AI-Generated Code
+# Module 3: Verifying AI-Generated Code
 
 ##--##
 
 <!-- .slide -->
-
 # Why Verify AI-Generated Code?
 
+## **Understanding AI Limitations**
 <br>
 
 AI assistants are powerful but **not infallible**:
@@ -27,9 +25,9 @@ AI coding assistants dramatically accelerate development, but they're trained on
 ##--##
 
 <!-- .slide -->
-
 # The 7-Point Verification Checklist
 
+## **Systematic Review Framework**
 <br>
 
 | # | Check | Question |
@@ -43,14 +41,18 @@ AI coding assistants dramatically accelerate development, but they're trained on
 | 7️⃣ | **Testability** | Can this code be easily unit tested? |
 
 Notes:
-This seven-point checklist provides a systematic approach to code review. Start with correctness—does it even work? Then examine logic for boundary conditions and edge cases. Security checks should include input validation, authentication, and common vulnerability patterns. Dependencies are particularly important for AI-generated code, which may hallucinate package names or API methods. Best practices ensure maintainability. Performance considerations prevent production bottlenecks. Finally, testability determines long-term code health. Apply this checklist to every significant code suggestion from AI tools.
+This seven-point checklist provides a systematic approach to code review. Start with correctness—does it even work? Then examine logic for boundary conditions and edge cases. Security checks should include input validation, authentication, and common vulnerability patterns. Dependencies are particularly important for AI-generated code, which may hallucinate package names or API methods. Best practices ensure maintainability. Performance considerations prevent production bottlenecks. Finally, testability determines long-term code health. The next slide provides a comprehensive visual representation of this framework.
+
+##--##
+
+<img src="./assets/images/module-3/verification-checklist.svg" alt="AI Code Verification Checklist" style="width:100%; height:auto; display:block;">
 
 ##--##
 
 <!-- .slide -->
-
 # Verification Workflow
 
+## **Step-by-Step Process**
 <br>
 
 ```text
@@ -75,9 +77,9 @@ Effective verification is methodical, not random. Start by reading the code to u
 ##--##
 
 <!-- .slide -->
-
 # Common AI Code Issues
 
+## **Frequent Problem Patterns**
 <br>
 
 ### 🔴 Hallucinated Dependencies
@@ -102,9 +104,9 @@ These are the most frequent issues in AI-generated code. Hallucinated dependenci
 ##--##
 
 <!-- .slide -->
-
 # Testing AI-Generated Code
 
+## **Comprehensive Testing Approach**
 <br>
 
 ### ✅ **DO**: Test with diverse inputs
@@ -130,9 +132,9 @@ Testing is your primary defense against AI errors. Create a diverse test suite b
 ##--##
 
 <!-- .slide -->
-
 # Verifying Dependencies
 
+## **Package Validation Process**
 <br>
 
 ### 🛡️ **Verification Steps**:
@@ -151,9 +153,9 @@ Dependency verification prevents integration disasters. When AI suggests a packa
 ##--##
 
 <!-- .slide -->
-
 # Security Verification
 
+## **Identifying Vulnerabilities**
 <br>
 
 ### 🔓 Common Security Gaps in AI Code:
@@ -173,9 +175,9 @@ AI models are trained on code written before modern security awareness became st
 ##--##
 
 <!-- .slide -->
-
 # Performance Verification
 
+## **Avoiding Scalability Issues**
 <br>
 
 ### ⚡ Watch for Performance Anti-Patterns:
@@ -210,9 +212,9 @@ AI often optimizes for readability over performance, generating code that works 
 ##--##
 
 <!-- .slide -->
-
 # Verifying Code Testability
 
+## **Ensuring Maintainability**
 <br>
 
 ### ❌ **Hard to Test** (tight coupling):
@@ -240,9 +242,9 @@ AI-generated code often lacks testability because it creates hard-coded dependen
 ##--##
 
 <!-- .slide -->
-
 # Using AI to Verify AI Code
 
+## **Meta-Review Strategy**
 <br>
 
 ### 🤖 **Meta-Strategy**: Use AI to review AI
@@ -269,9 +271,9 @@ Here's a powerful technique: use AI to review AI-generated code. Paste generated
 ##--##
 
 <!-- .slide -->
-
 # Best Practices for Code Verification
 
+## **Professional Standards**
 <br>
 
 1. ✅ **Always test** before integrating AI code
@@ -288,9 +290,9 @@ Synthesizing verification into best practices: test everything, check official d
 ##--##
 
 <!-- .slide -->
-
 # Summary: Code Verification Mindset
 
+## **Key Principles**
 <br>
 
 | Principle | Why It Matters |

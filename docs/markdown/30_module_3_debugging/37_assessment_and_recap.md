@@ -291,25 +291,6 @@ You now have practical skills to leverage AI tools effectively while maintaining
 ##--##
 
 <!-- .slide: -->
-# **Next Steps**
-
-## **Continue Your Journey**
-<br>
-
-### **Practice These Skills**
-- Apply debugging workflow to your own projects
-- Refactor legacy code using AI tools
-- Always verify AI-generated code
-
-### **Coming Up: Module 4**
-**Test Automation and Quality Assurance with AI**
-
-Notes:
-Keep practicing these techniques - they become more powerful with experience.
-
-##--##
-
-<!-- .slide: -->
 # **Resources**
 
 ## **Further Learning**

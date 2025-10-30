@@ -3,13 +3,14 @@
 ##--##
 
 <!-- .slide: class="transition" -->
-# Understanding AI-Powered Debugging
+# Module 3: Understanding AI-Powered Debugging
 
 ##--##
 
 <!-- .slide -->
 # Traditional Debugging Workflow
 
+## **The Manual Approach**
 <br>
 
 ### 🔍 **Classic Approach**
@@ -35,6 +36,7 @@ Notes:
 <!-- .slide -->
 # How AI Assists in Debugging
 
+## **AI's Role in Bug Detection**
 <br>
 
 ### 🤖 **AI Capabilities**
@@ -60,6 +62,7 @@ Notes:
 <!-- .slide -->
 # Bug Categories AI Can Help With
 
+## **Five Common Bug Types**
 <br>
 
 ### 1️⃣ **Logic Errors**
@@ -89,6 +92,7 @@ Notes:
 <!-- .slide -->
 # AI-Enhanced Debugging Workflow
 
+## **Systematic Process with AI**
 <br>
 
 ### 🔄 **Human-in-the-Loop Process**
@@ -122,6 +126,7 @@ Notes:
 <!-- .slide -->
 # Example: Debugging with Copilot
 
+## **Real-World Bug Scenario**
 <br>
 
 ### 🐛 **Buggy Code**
@@ -153,6 +158,7 @@ Notes:
 <!-- .slide -->
 # AI-Suggested Fixes
 
+## **Multiple Solution Approaches**
 <br>
 
 ### ✅ **Option 1: Guard Clause**
@@ -188,6 +194,7 @@ Notes:
 <!-- .slide -->
 # When AI Struggles with Debugging
 
+## **Understanding AI Limitations**
 <br>
 
 ### ⚠️ **AI Limitations**
@@ -213,6 +220,7 @@ Notes:
 <!-- .slide -->
 # Best Practices for AI-Assisted Debugging
 
+## **Maximizing AI Effectiveness**
 <br>
 
 ### 📋 **Effective Workflow**
@@ -238,6 +246,7 @@ Notes:
 <!-- .slide -->
 # Key Takeaways
 
+## **Debugging Concepts Summary**
 <br>
 
 ### 🎯 **Remember**
