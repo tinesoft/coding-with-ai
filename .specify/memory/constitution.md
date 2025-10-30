@@ -1,4 +1,51 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.13.0
+Date: 2025-10-30
+Amendment: Define explicit Module Introduction Slide Structure based on Module 2 pattern
+
+RATIONALE:
+- Module introduction slides across training program lacked consistent structure
+- Module 2 (20_module2_intro.md) demonstrates ideal three-slide pattern but was not codified
+- Module 3 and potentially other modules contain non-compliant intro structures with extra slides
+- Administrative slides (Module Structure, Why This Matters) duplicate specification document content
+- Standardization improves learner experience through predictable navigation and focus on learning outcomes
+
+SCOPE:
+This amendment replaces general "Module Introduction Content Restrictions" in Principle II with explicit "Module Introduction Slide Structure" defining:
+1. REQUIRED: Three-slide structure (Transition → Learning Objectives → Prerequisites)
+2. REQUIRED: Specific title formats ("Module X Overview" for transition, standard headers for content slides)
+3. REQUIRED: Content organization patterns (bold action verbs in objectives, H3 sections in prerequisites)
+4. PROHIBITED: Extra slides including "Module Structure", "What You'll Learn", "Why This Matters", scheduling information
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Replaced "Module Introduction Content Restrictions" with detailed "Module Introduction Slide Structure" (v1.12.0 → v1.13.0)
+
+Module Introduction Slides:
+- [⚠] docs/markdown/30_module_3_debugging/30_module3_intro.md - REQUIRES REWRITE: Remove extra slides, fix transition title format, restructure Learning Objectives
+- [⚠] docs/markdown/10_module_1_ai_fundamentals/10_module1_intro.md - AUDIT NEEDED: Verify compliance with three-slide structure
+- [⚠] docs/markdown/40_module_4_testing/ through 70_module_7_capstone/ - AUDIT NEEDED: Verify all future module intros comply
+
+Supporting Documentation:
+- [⚠] .github/copilot-instructions.md - Should be updated with explicit Module Introduction Slide Structure guidance
+
+VALIDATION:
+- [✓] Constitution principle enhanced with explicit structure definition
+- [✓] Version incremented (MINOR: new structural requirements added)
+- [✓] Amendment date updated to 2025-10-30
+- [⚠] Module 3 intro slide requires immediate correction
+- [⚠] All existing and future module intros require compliance verification
+
+FOLLOW-UP ACTIONS:
+1. Rewrite docs/markdown/30_module_3_debugging/30_module3_intro.md following constitutional pattern
+2. Update .github/copilot-instructions.md with Module Introduction Slide Structure examples
+3. Audit Module 1 intro (10_module1_intro.md) for compliance
+4. Ensure all future module intros (Modules 4-7) follow three-slide structure during content generation
+
+AMENDMENT STATUS: Constitution updated, Module 3 correction and propagation pending.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.12.0
 Date: 2025-10-22
 Amendment: Add Lab Solution Deliverable Completeness requirement to Principle III
@@ -107,7 +154,7 @@ Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structu
 -->
 
 # SFEIR School Coding with AI - Constitutional Document
-## Version 1.12.0
+## Version 1.13.0
 
 ## Core Principles
 
@@ -129,7 +176,19 @@ Where X is the module number (1-7) and sectionTitle describes the content sectio
 
 **Content Generation Restrictions**: When generating exercise slides, focus ONLY on the actual exercise content without creating introductory or closing slides. When generating module slides, focus ONLY on the core content without creating introductory or closing transition slides. This ensures lean, focused educational content without unnecessary navigational overhead.
 
-**Module Introduction Content Restrictions**: Module introduction slides SHALL NOT include "Module Structure" or "Success Criteria" slides. These administrative details belong in specification documents and trainer materials, not in learner-facing slide presentations. Module introductions MUST include ONLY: (1) Transition slide with module title, (2) Learning Objectives slide, and (3) Prerequisites slide. This maintains focus on actionable learning outcomes while eliminating redundant scheduling and assessment information that does not enhance learning experience.
+**Module Introduction Slide Structure**: Module introduction slides MUST follow a standardized three-slide structure that establishes context, objectives, and prerequisites without administrative overhead. The required structure is:
+
+1. **Transition slide** (`class="transition"`): Title format "Module X Overview" (where X is the module number) with a descriptive subtitle summarizing the module's focus area (e.g., "Modern AI Coding Tools Mastery")
+2. **Learning Objectives slide** (standard slide): H1 header "Learning Objectives" followed by introductory text and bulleted list of specific learning outcomes with **bold** action verbs (e.g., **Categorize**, **Master**, **Configure**, **Compare**, **Create**)
+3. **Prerequisites slide** (standard slide): H1 header "Prerequisites" with H2 subheader (e.g., "What You Need to Know") followed by H3 sections organizing prerequisite categories (e.g., "From Module X", "Technical Requirements")
+
+Module introduction slides SHALL NOT include:
+- ❌ "Module Structure" or "Success Criteria" slides (administrative content belongs in specification documents)
+- ❌ "What You'll Learn" slides that duplicate Learning Objectives content
+- ❌ "Why This Matters" or motivational slides (value proposition belongs in module content or trainer materials)
+- ❌ Duration, timeline, or scheduling information (belongs in course syllabi)
+
+**Rationale**: The three-slide structure provides essential educational framing (context, goals, preparation) while eliminating redundant administrative content. This standardization ensures consistency across all modules, maintains focus on actionable learning outcomes, and prevents slide deck bloat. The "Module X Overview" title format (without full descriptive text) creates clean, consistent navigation while the subtitle provides necessary context.
 
 **Assessment and Recap Slide Structure**: Module assessment and recap slides SHALL follow a standardized learner-focused structure that reinforces learning rather than duplicating administrative content from specification documents. Assessment slides MUST include:
 
@@ -485,4 +544,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.12.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-22
+**Version**: 1.13.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-30

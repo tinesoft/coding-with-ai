@@ -1,20 +1,21 @@
 <!-- .slide: class="transition" -->
-# Module 3: AI-Powered Debugging, Refactoring, and Verification
+# Module 3 Overview
+## AI-Powered Debugging, Refactoring, and Verification
 
 ##--##
 
 <!-- .slide: -->
-# **Module 3 Overview**
+# Learning Objectives
 
-## **AI-Powered Debugging, Refactoring, and Verification**
+By the end of this module, you will be able to:
+
 <br>
 
-### **Learning Objectives**
-
-- Master systematic debugging with AI assistance
-- Apply refactoring patterns using AI tools
-- Critically evaluate AI-generated code
-- Build human-in-the-loop validation skills
+- **Master** systematic debugging workflows with AI assistance
+- **Apply** refactoring patterns using AI-powered tools
+- **Evaluate** AI-generated code critically for correctness and security
+- **Implement** human-in-the-loop validation techniques
+- **Detect** hallucinations, security vulnerabilities, and logic errors in AI code
 
 Notes:
 This module teaches you to leverage AI tools effectively for debugging, refactoring, and verifying code while maintaining professional standards and critical thinking.
@@ -22,82 +23,25 @@ This module teaches you to leverage AI tools effectively for debugging, refactor
 ##--##
 
 <!-- .slide: -->
-# **What You'll Learn**
+# Prerequisites
 
-## **Three Core Skills**
+## What You Need to Know
+
 <br>
 
-### **1. AI-Assisted Debugging**
-Debug faster and smarter using AI to identify root causes
+### **From Modules 1 & 2**
+- AI fundamentals and prompt engineering techniques
+- GitHub Copilot familiarity (Ask, Edit, and Agent modes)
+- AI safety and limitation awareness
 
-### **2. Code Refactoring**
-Improve code quality with AI-suggested refactoring patterns
-
-### **3. Code Verification**
-Detect hallucinations, security issues, and logic errors in AI code
-
-Notes:
-Each skill builds on systematic workflows where AI acts as an accelerator, not a replacement for your expertise.
-
-##--##
-
-<!-- .slide: -->
-# **Module Structure**
-
-## **Duration: 1 Day**
-<br>
-
-### **📚 Content**
-- **3 Core Topics**: Debugging, Refactoring, Verification
-- **3 Hands-On Labs**: One per topic
-- **Knowledge Check**: Assessment and recap
-
-### **🛠️ Primary Tool**
-- **GitHub Copilot** in VS Code
-- Optional demonstrations: Claude, Cursor
-
-Notes:
-This module emphasizes practical application through hands-on exercises with real code examples.
-
-##--##
-
-<!-- .slide: -->
-# **Prerequisites**
-
-## **Required Knowledge**
-<br>
-
-### **✓ Completed Modules 1 & 2**
-- AI fundamentals and prompt engineering
-- Familiarity with GitHub Copilot
-
-### **✓ Basic Programming**
-- Python or JavaScript/TypeScript experience
-- Understanding of debugging concepts
-- Code quality awareness
+### **Technical Requirements**
+- Python or JavaScript/TypeScript programming experience
+- Understanding of basic debugging concepts
+- Code quality and testing awareness
+- VS Code with GitHub Copilot installed
 
 Notes:
 If you're comfortable with basic programming and have completed the first two modules, you're ready for Module 3.
-
-##--##
-
-<!-- .slide: -->
-# **Why This Matters**
-
-## **Real-World Impact**
-<br>
-
-### **🚀 Faster Development**
-Resolve bugs [30-50% faster](https://www.microsoft.com/en-us/research/publication/ai-assisted-debugging/) with AI assistance
-
-### **✅ Better Code Quality**
-Systematic refactoring improves maintainability
-
-### **🔒 Enhanced Security**
-Critical evaluation prevents AI-generated vulnerabilities
-
-Notes:
-These skills translate directly to professional productivity and code safety in production environments.
 
 ##--##
 

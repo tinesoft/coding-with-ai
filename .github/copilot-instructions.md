@@ -216,6 +216,65 @@ When creating content, verify:
 - [ ] Maintains professional educational standards
 - [ ] Assessment slides use learner-focused structure (Learning Objectives Review, Knowledge Check)
 - [ ] NO administrative slides in assessments (Assessment Overview, Success Metrics, Rubrics)
+- [ ] Module introduction slides follow three-slide structure (Transition → Learning Objectives → Prerequisites)
+- [ ] NO extra slides in module intros (Module Structure, What You'll Learn, Why This Matters)
+
+## Module Introduction Slide Structure
+
+Module introduction slides MUST follow this standardized three-slide structure:
+
+**1. Transition Slide:**
+```markdown
+<!-- .slide: class="transition" -->
+# Module X Overview
+## {Descriptive Subtitle}
+```
+- Title format: "Module X Overview" (where X is module number 1-7)
+- Subtitle: Brief description of module focus (e.g., "Modern AI Coding Tools Mastery")
+
+**2. Learning Objectives Slide:**
+```markdown
+<!-- .slide: -->
+# Learning Objectives
+
+By the end of this module, you will be able to:
+
+<br>
+
+- **Action Verb** specific learning outcome
+- **Action Verb** specific learning outcome
+- **Action Verb** specific learning outcome
+```
+- Use bold action verbs: **Categorize**, **Master**, **Configure**, **Compare**, **Create**, **Implement**, **Evaluate**
+- Focus on measurable, specific outcomes
+- 4-6 objectives per module
+
+**3. Prerequisites Slide:**
+```markdown
+<!-- .slide: -->
+# Prerequisites
+
+## What You Need to Know
+
+<br>
+
+### **From Module X**
+- Previous module concepts required
+- Relevant techniques from earlier training
+
+### **Technical Requirements**
+- Software/tools needed
+- Programming experience required
+```
+
+**Prohibited Content in Module Introduction Slides:**
+- ❌ "Module Structure" slides - duration/scheduling belongs in spec docs
+- ❌ "What You'll Learn" slides - duplicates Learning Objectives
+- ❌ "Why This Matters" slides - motivational content belongs in module body
+- ❌ Success criteria or assessment information - belongs in spec docs
+- ❌ Timeline or duration information - belongs in course syllabi
+
+**Rationale**: The three-slide structure provides essential educational framing (context, goals, preparation) while eliminating redundant administrative content. This standardization ensures consistency across all modules and maintains focus on actionable learning outcomes.
 
 ## Assessment Slide Structure
 
