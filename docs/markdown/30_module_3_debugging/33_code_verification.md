@@ -1,5 +1,6 @@
 <!-- .slide: class="transition" -->
 # Module 3: Verifying AI-Generated Code
+## Critical Evaluation and Validation Techniques
 
 ##--##
 

@@ -38,23 +38,3 @@ These learning objectives are designed to take you from AI newcomer to confident
 
 Notes:
 We've designed this training to be accessible to developers at various skill levels. The key is curiosity and willingness to learn new approaches to software development.
-
-##--##
-
-<!-- .slide -->
-# **Why AI and Prompt Engineering Matter**
-
-## **The AI Revolution in Development**
-- **Productivity Boost**: 30-50% faster development cycles
-- **Quality Improvement**: AI-assisted code review and optimization
-- **Learning Acceleration**: Instant access to expertise and guidance
-- **Innovation Enablement**: Focus on creative problem-solving
-
-## **Prompt Engineering as a Core Skill**
-- **Effective Communication**: Clear, specific instructions to AI systems
-- **Iterative Refinement**: Systematic improvement of AI interactions
-- **Professional Advantage**: Essential skill for modern developers
-- **Foundation Building**: Gateway to advanced AI tool mastery
-
-Notes:
-Prompt engineering isn't just about writing better prompts—it's about fundamentally changing how you approach problem-solving and communication in software development.

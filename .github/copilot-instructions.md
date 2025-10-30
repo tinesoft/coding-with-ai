@@ -68,6 +68,18 @@ Notes:
 - Use SFEIR theme classes: `first-slide`, `transition`, `exercice`, `speaker-slide`
 - Reference images with relative paths: `./assets/images/filename.png`
 
+**Transition Slide Formatting:**
+ALL transition slides within modules MUST follow this format:
+```markdown
+<!-- .slide: class="transition" -->
+# Module X: {sectionTitle}
+## {subTitle}
+```
+- **Module prefix required**: Always include "Module X:" before the section title
+- **Subtitle required**: Provide descriptive subtitle for context
+- **No standalone titles**: Never place H1 title before transition slide separator
+- This ensures learners always understand which module context they are in
+
 ### Lab Structure (GitHub Flavored Markdown)
 For lab exercises, create:
 
@@ -221,7 +233,7 @@ When creating content, verify:
 
 ## Module Introduction Slide Structure
 
-Module introduction slides MUST follow this standardized three-slide structure:
+Module introduction slides MUST contain EXACTLY three slides and NO additional content. This strict three-slide limit is mandatory:
 
 **1. Transition Slide:**
 ```markdown
@@ -267,14 +279,18 @@ By the end of this module, you will be able to:
 - Programming experience required
 ```
 
-**Prohibited Content in Module Introduction Slides:**
+**STRICT PROHIBITION - No Additional Slides Allowed:**
+Module introduction files SHALL contain ONLY the three slides listed above. ANY additional slides are PROHIBITED, including:
 - ❌ "Module Structure" slides - duration/scheduling belongs in spec docs
 - ❌ "What You'll Learn" slides - duplicates Learning Objectives
 - ❌ "Why This Matters" slides - motivational content belongs in module body
-- ❌ Success criteria or assessment information - belongs in spec docs
+- ❌ "Learning Approach" slides - pedagogical details belong in trainer materials
+- ❌ "Success Criteria" slides - assessment information belongs in spec docs
+- ❌ "Let's Get Started" slides - unnecessary transitional content
 - ❌ Timeline or duration information - belongs in course syllabi
+- ❌ ANY other slides beyond the three required slides
 
-**Rationale**: The three-slide structure provides essential educational framing (context, goals, preparation) while eliminating redundant administrative content. This standardization ensures consistency across all modules and maintains focus on actionable learning outcomes.
+**Rationale**: The EXACTLY-three-slide structure provides essential educational framing (context, goals, preparation) while eliminating ALL redundant content. This strict limit prevents scope creep, ensures consistency across all modules, and maintains exclusive focus on actionable learning outcomes.
 
 ## Assessment Slide Structure
 

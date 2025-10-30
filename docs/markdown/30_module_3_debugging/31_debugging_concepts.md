@@ -1,9 +1,6 @@
-# Debugging with AI Assistance
-
-##--##
-
 <!-- .slide: class="transition" -->
 # Module 3: Understanding AI-Powered Debugging
+## Core Concepts and Workflows
 
 ##--##
 

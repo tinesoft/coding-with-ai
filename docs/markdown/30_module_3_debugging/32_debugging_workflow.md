@@ -1,9 +1,6 @@
-# AI-Powered Debugging Workflow
-
-##--##
-
 <!-- .slide: class="transition" -->
 # Module 3: Systematic Debugging with AI
+## Practical Workflows and Best Practices
 
 ##--##
 

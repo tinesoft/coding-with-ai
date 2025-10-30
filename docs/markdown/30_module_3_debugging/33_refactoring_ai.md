@@ -1,9 +1,6 @@
-# Refactoring with AI Assistance
-
-##--##
-
 <!-- .slide: class="transition" -->
 # Module 3: Code Refactoring with AI
+## Improving Code Quality and Maintainability
 
 ##--##
 
