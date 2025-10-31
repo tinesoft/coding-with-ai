@@ -36,20 +36,29 @@ Notes:
 ## **Measuring Code Health**
 <br>
 
-![Quality Metrics](./assets/images/module-4/quality-metrics.svg)
-
-<br>
-
 ### **Common Quality Metrics**
 - **Cyclomatic Complexity**: Number of independent paths (target: < 10 per function)
 - **Code Duplication**: Percentage of duplicated code (target: < 5%)
 - **Test Coverage**: Lines/branches covered by tests (target: 80%+)
 - **Technical Debt Ratio**: Estimated fix time / development time (target: < 5%)
 
+<br>
+
+Metrics provide objective quality measurements to guide improvements while balancing delivery speed.
+
 Notes:
 - Metrics provide objective quality measurements
 - Use metrics as guidelines, not absolute rules
 - Balance quality improvements with delivery speed
+- The visual on the next slide shows a quality metrics dashboard concept
+
+##--##
+
+<!-- .slide: -->
+
+<img src="./assets/images/module-4/quality-metrics.svg" alt="Code quality metrics dashboard" style="width:100%; height:auto; display:block;">
+
+##--##
 
 ##--##
 
@@ -92,10 +101,6 @@ Notes:
 ## **Systematic Quality Improvements**
 <br>
 
-![Refactoring Workflow](./assets/images/module-4/refactoring-workflow.svg)
-
-<br>
-
 ### **Refactoring with AI Steps**
 1. **Identify**: Use AI to analyze code and list quality issues
 2. **Prioritize**: Focus on high-impact improvements first
@@ -103,7 +108,23 @@ Notes:
 4. **Validate**: Run tests after each change to ensure behavior preserved
 5. **Review**: Human validates improvements are meaningful, not cosmetic
 
+<br>
+
+Always refactor with tests as safety net using small, incremental changes to reduce risk.
+
 Notes:
+- Always refactor with tests as safety net
+- Small, incremental changes reduce risk
+- Human judgment crucial for prioritizing improvements
+- The visual on the next slide illustrates the AI-assisted refactoring process
+
+##--##
+
+<!-- .slide: -->
+
+<img src="./assets/images/module-4/refactoring-workflow.svg" alt="AI-assisted refactoring process" style="width:100%; height:auto; display:block;">
+
+##--##
 - Always refactor with tests as safety net
 - Small, incremental changes reduce risk
 - Human judgment crucial for prioritizing improvements

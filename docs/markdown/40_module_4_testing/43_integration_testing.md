@@ -43,20 +43,29 @@ Notes:
 ## **Common Integration Patterns**
 <br>
 
-![Integration Test Example](./assets/images/module-4/integration-test-example.svg)
-
-<br>
-
 ### **Typical Integration Test Targets**
 1. **API → Service → Database**: Full data flow validation
 2. **Service A → Service B**: Inter-service communication
 3. **Controller → Multiple Services**: Orchestration logic
 4. **Authentication → Protected Resources**: Security flows
 
+<br>
+
+Integration tests focus on boundaries between components and verify contracts across those boundaries.
+
 Notes:
 - Integration tests focus on boundaries between components
 - They verify contracts and data transformations across boundaries
 - Use real implementations, not mocks (or minimal mocking)
+- The visual on the next slide shows a typical integration test scenario
+
+##--##
+
+<!-- .slide: -->
+
+<img src="./assets/images/module-4/integration-test-example.svg" alt="Component interaction testing scenario" style="width:100%; height:auto; display:block;">
+
+##--##
 
 ##--##
 

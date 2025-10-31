@@ -72,20 +72,29 @@ Notes:
 ## **Complete User Journey Testing**
 <br>
 
-![E2E Workflow](./assets/images/module-4/e2e-workflow.svg)
-
-<br>
-
 ### **Typical E2E Test Structure**
 1. **Setup**: Navigate to starting page, authenticate if needed
 2. **Action**: Perform user interactions (click, type, select)
 3. **Verification**: Assert expected outcomes (page content, URLs, state)
 4. **Teardown**: Clean up test data, logout
 
+<br>
+
+E2E tests follow realistic user flows from start to finish as complete, independent journeys.
+
 Notes:
 - E2E tests follow realistic user flows from start to finish
 - Each test should be a complete, independent user journey
 - Focus on happy paths and critical error scenarios
+- The visual on the next slide illustrates the complete E2E test flow
+
+##--##
+
+<!-- .slide: -->
+
+<img src="./assets/images/module-4/e2e-workflow.svg" alt="User journey E2E test flow" style="width:100%; height:auto; display:block;">
+
+##--##
 
 ##--##
 

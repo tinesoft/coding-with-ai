@@ -38,19 +38,27 @@ Notes:
 ## **TDD Three-Phase Workflow**
 <br>
 
-![TDD Cycle](./assets/images/module-4/tdd-cycle.svg)
-
-<br>
-
 1. **🔴 RED**: Write a failing test for desired functionality
 2. **🟢 GREEN**: Write minimal code to make the test pass
 3. **🔵 REFACTOR**: Improve code quality while keeping tests green
+
+<br>
+
+### **Core Workflow**
+Each cycle should be short (5-15 minutes typically) and follow the complete RED→GREEN→REFACTOR sequence.
 
 Notes:
 - Each cycle should be short (5-15 minutes typically)
 - Never skip the RED phase - verify the test actually fails for the right reason
 - GREEN phase focuses on making it work, not making it perfect
 - REFACTOR phase is where you apply clean code principles
+- The visual on the next slide illustrates this cyclical workflow
+
+##--##
+
+<!-- .slide: -->
+
+<img src="./assets/images/module-4/tdd-cycle.svg" alt="Red-Green-Refactor cycle visualization" style="width:100%; height:auto; display:block;">
 
 ##--##
 
@@ -95,14 +103,14 @@ Notes:
 ## **Effective Prompts for Each Phase**
 <br>
 
-![TDD Prompt Examples](./assets/images/module-4/tdd-prompt-examples.svg)
-
-<br>
-
 ### **Human-in-the-Loop Validation**
 - **RED**: Verify test fails for expected reason (not syntax errors)
 - **GREEN**: Ensure implementation is minimal, not over-engineered
 - **REFACTOR**: Confirm tests remain green after each refactoring step
+
+<br>
+
+Different prompts are needed for different TDD phases to maximize AI effectiveness while maintaining discipline.
 
 Notes:
 - Different prompts are needed for different TDD phases
@@ -110,6 +118,15 @@ Notes:
 - GREEN phase prompts emphasize simplicity and passing tests
 - REFACTOR phase prompts target code quality improvements
 - Always validate AI suggestions align with TDD principles
+- The visual on the next slide shows example prompts for each phase
+
+##--##
+
+<!-- .slide: -->
+
+<img src="./assets/images/module-4/tdd-prompt-examples.svg" alt="Example prompts for each TDD phase" style="width:100%; height:auto; display:block;">
+
+##--##
 
 ##--##
 

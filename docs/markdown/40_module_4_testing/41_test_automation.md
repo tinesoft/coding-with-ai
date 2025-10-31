@@ -43,9 +43,8 @@ Ask AI: *"Generate unit tests for this calculateDiscount function with edge case
 ##--##
 
 <!-- .slide: -->
-# Test Generation Workflow
 
-![test-generation-flow](./assets/images/module-4/test-generation-flow.svg)
+<img src="./assets/images/module-4/test-generation-flow.svg" alt="AI-assisted test generation workflow" style="width:100%; height:auto; display:block;">
 
 ##--##
 
@@ -72,9 +71,8 @@ AI can identify uncovered paths and generate missing tests automatically
 ##--##
 
 <!-- .slide: -->
-# The Test Pyramid
 
-![test-pyramid](./assets/images/module-4/test-pyramid.svg)
+<img src="./assets/images/module-4/test-pyramid.svg" alt="Testing pyramid with AI context" style="width:100%; height:auto; display:block;">
 
 ##--##
 
