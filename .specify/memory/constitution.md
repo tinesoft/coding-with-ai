@@ -1,4 +1,64 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.14.0
+Date: 2025-10-31
+Amendment: Define Exercise Placement and Integration principle for optimal learning flow
+
+RATIONALE:
+- Exercise slides across modules were consolidated in separate markdown files (e.g., 46_exercise_testing.md)
+- Separation of exercises from related content breaks educational flow and contextual relevance
+- Learners benefit from immediate practice following concept introduction (just-in-time learning)
+- Alternating content and exercises creates natural rhythm: Teach → Practice → Teach → Practice
+- Consolidated exercise files create maintenance overhead when updating related content
+- Best practice: exercises should immediately follow the content they reinforce
+
+SCOPE:
+This MINOR amendment adds "Exercise Placement and Integration" subsection to Principle II's "Content Organization Standards":
+1. ADDED: Exercise slides MUST immediately follow related content slides within the same markdown file
+2. ADDED: Multiple labs within a module should alternate with content, not be consolidated separately
+3. ADDED: Rationale explaining pedagogical benefits of just-in-time practice
+4. CLARIFIED: Exercise integration improves learning retention and contextual understanding
+5. STRENGTHENED: Educational flow through natural Teach-Practice rhythm
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Added "Exercise Placement and Integration" to Principle II (v1.13.6 → v1.14.0)
+
+Module 4 Slides (immediate fixes):
+- [✓] docs/markdown/40_module_4_testing/41_test_automation.md - Added Lab 41 exercise slides
+- [✓] docs/markdown/40_module_4_testing/42_tdd_with_ai.md - Added Lab 42 exercise slides
+- [✓] docs/markdown/40_module_4_testing/45_code_quality.md - Added Lab 43 exercise slides
+- [✓] docs/markdown/40_module_4_testing/46_exercise_testing.md - DELETED (content distributed to related files)
+- [✓] docs/markdown/40_module_4_testing/47_best_practices.md - RENUMBERED to 46_best_practices.md
+- [✓] docs/markdown/40_module_4_testing/48_assessment_and_recap.md - RENUMBERED to 47_assessment_and_recap.md
+
+Configuration:
+- [✓] docs/scripts/slides.js - Updated to remove 46_exercise_testing.md, updated numbering
+
+Module Review (compliance check):
+- [ ] Module 1 (10_module_1_ai_fundamentals/) - Check exercise placement
+- [ ] Module 2 (20_module_2_ai_tools/) - Check exercise placement
+- [ ] Module 3 (30_module_3_debugging/) - Check exercise placement
+
+Supporting Documentation:
+- [✓] .github/copilot-instructions.md - Added guidance on exercise placement principle
+
+VALIDATION:
+- [✓] Constitution principle enhanced with Exercise Placement and Integration
+- [✓] Version incremented (MINOR: new educational principle)
+- [✓] Amendment date updated to 2025-10-31
+- [✓] Module 4 restructured with integrated exercises
+- [✓] Slide numbering maintains sequential integrity
+
+FOLLOW-UP ACTIONS:
+1. [✓] Restructure Module 4 exercise slides (distribute to content files)
+2. [ ] Review and fix Modules 1-3 for exercise placement compliance
+3. [ ] Update slide-structure.yaml contracts for all modules
+4. Ensure all future modules follow integrated exercise placement pattern
+
+AMENDMENT STATUS: Constitution updated (v1.14.0), Module 4 restructured and compliant, other modules pending review.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.13.6
 Date: 2025-10-30
 Amendment: Define explicit Resources Slide Formatting standard for module assessment sections
@@ -401,7 +461,7 @@ Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structu
 -->
 
 # SFEIR School Coding with AI - Constitutional Document
-## Version 1.13.5
+## Version 1.14.0
 
 ## Core Principles
 
@@ -587,6 +647,29 @@ Where X is the exercise number and XX is the two-digit lab number. Exercise slid
 
 **Rationale**: Exercise files serve a single purpose: declaring exercise slides that point to lab instructions. Unnecessary headers create maintenance overhead, duplicate content that belongs in module slides, and violate the principle of focused, lean slide generation. The exercise title within the slide itself (e.g., "Exercice 1: AI-Powered Debugging") provides sufficient context without additional wrapping content.
 
+**Exercise Placement and Integration**: Exercise slides MUST immediately follow the content slide(s) they relate to within the same markdown file, rather than being consolidated in separate exercise-only files at the end of a module. When a module contains multiple labs, exercises should alternate with content to create a natural learning rhythm: teach concept → practice with lab → teach next concept → practice with lab. This integration pattern applies at the slide file level, not at the individual slide level.
+
+**Implementation Pattern**:
+- Lab exercises SHALL be appended directly to the content markdown file they reinforce (e.g., Lab 41 exercises appended to `41_test_automation.md`)
+- Exercise slides (both instruction and solution slides) SHALL appear at the END of the related content file, after all concept slides
+- Standalone exercise-only markdown files (e.g., `46_exercise_testing.md`) SHALL NOT be created
+- When content spans multiple topics, exercises may be distributed across multiple files based on primary content relationship
+
+**Example Structure**:
+```
+41_test_automation.md:
+  - Concept slides (test automation, unit testing, etc.)
+  - Lab 41 exercise instruction slide
+  - Lab 41 exercise solution slide
+
+42_tdd_with_ai.md:
+  - Concept slides (TDD workflow, Red-Green-Refactor, etc.)
+  - Lab 42 exercise instruction slide
+  - Lab 42 exercise solution slide
+```
+
+**Rationale**: Integrating exercises with related content creates just-in-time learning opportunities where learners can immediately practice concepts while they're fresh. This approach improves knowledge retention, maintains contextual relevance, reduces cognitive load from context switching, and eliminates maintenance overhead from managing separate exercise files. The alternating teach-practice rhythm mirrors effective instructional design principles and provides natural break points in content delivery. When updating content, related exercises are co-located in the same file, ensuring consistency and reducing the risk of content-exercise misalignment.
+
 **Regular Slide Formatting**: Regular content slides MUST include a `<br>` tag between H2-level (##) and H3-level (###) headers to prevent content overlap. This formatting requirement applies to all standard slides that are not exercise or transition slides:
 ```markdown
 <!-- .slide: -->
@@ -765,28 +848,32 @@ docs/
 ├── 02_agenda.md       # Training agenda
 ├── 10_module_1_ai_fundamentals/     # Module 1: AI Fundamentals
 │   ├── 10_module1_intro.md
-│   ├── 11_ai_fundamentals.md
-│   ├── 12_prompt_engineering.md
-│   ├── 13_exercise_prompts.md
-│   ├── 14_tools_and_agents.md
-│   └── 15_assessment_and_recap.md
+│   ├── 11_ai_fundamentals.md        # Includes Lab 12 exercises
+│   ├── 12_prompt_engineering.md     # Includes Lab 11 exercises
+│   ├── 13_tools_and_agents.md
+│   └── 14_assessment_and_recap.md
 ├── 20_module_2_ai_tools/            # Module 2: AI Tools
 │   ├── 20_module2_intro.md
 │   ├── 21_agentic_tools_landscape.md
-│   ├── 22_copilot_setup_and_modes.md
-│   ├── 23_copilot_agent_workflows.md
+│   ├── 22_copilot_setup_and_modes.md # Includes Lab 21 and Lab 22 exercises
+│   ├── 23_copilot_agent_workflows.md # Includes Lab 23 exercises
 │   └── 24_exercise_copilot_tools.md
 ├── 30_module_3_debugging/           # Module 3: Debugging
 │   ├── 30_module3_intro.md
-│   ├── 31_ai_debugging.md
-│   ├── 32_refactoring_ai.md
-│   ├── 33_code_analysis.md
-│   └── 34_exercise_debugging.md
+│   ├── 31_debugging_concepts.md
+│   ├── 32_debugging_workflow.md     # Includes Lab 31 exercises
+│   ├── 33_refactoring_ai.md         # Includes Lab 32 exercises
+│   ├── 33_code_verification.md      # Includes Lab 33 exercises
+│   └── 34_assessment_and_recap.md
 ├── 40_module_4_testing/             # Module 4: Testing
 │   ├── 40_module4_intro.md
-│   ├── 41_test_automation.md
-│   ├── 42_quality_assurance.md
-│   └── 43_exercise_testing.md
+│   ├── 41_test_automation.md        # Includes Lab 41 exercises
+│   ├── 42_tdd_with_ai.md            # Includes Lab 42 exercises
+│   ├── 43_integration_testing.md
+│   ├── 44_e2e_testing.md
+│   ├── 45_code_quality.md           # Includes Lab 43 exercises
+│   ├── 46_best_practices.md
+│   └── 47_assessment_and_recap.md
 ├── 50_module_5_review_security/     # Module 5: Review & Security
 │   ├── 50_module5_intro.md
 │   ├── 51_code_review_ai.md
@@ -880,4 +967,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.13.6 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-30
+**Version**: 1.14.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-31

@@ -379,3 +379,34 @@ Building a personal prompt library saves time and ensures consistency. Treat you
 
 Notes:
 These common pitfalls represent the most frequent mistakes in prompt engineering. By understanding and avoiding them, you'll write more effective prompts and get better results from AI systems. Remember: good prompts are specific, clear, and provide sufficient context for the AI to understand your intent.
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercice 1: Prompt Engineering Basics
+## Lab 11
+
+<br>
+
+### 👉🏾 Follow **instructions** in
+
+### `labs/lab-11-prompt-basics/README.md`
+
+Notes:
+- Lab 11 (Module 1, Lab 1) contains 5 progressive exercises (1-5) for comprehensive prompt engineering practice.
+- Follow the instructions in the lab README.md for detailed steps.
+
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercice 1: Prompt Engineering Basics
+## Lab 11
+
+<br>
+
+### 💡 Read **solution** at
+
+### `labs/lab-11-prompt-basics-solution/README.md`
+
+Notes:
+- Contains complete solutions and explanations for all 5 exercises.
+- Read the lab README.md for example of solutions.

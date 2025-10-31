@@ -75,6 +75,13 @@ Exercise slide files MUST begin directly with the `<!-- .slide: class="exercice"
 - ❌ PROHIBITED: ANY introductory content before exercise declaration
 - ✅ REQUIRED: File starts immediately with `<!-- .slide: class="exercice" -->`
 
+**Exercise Placement and Integration:**
+Exercise slides MUST immediately follow related content within the same markdown file:
+- ✅ REQUIRED: Append exercise slides to END of related content file (e.g., Lab 41 exercises → `41_test_automation.md`)
+- ✅ REQUIRED: Both instruction and solution slides follow content slides
+- ❌ PROHIBITED: Separate standalone exercise-only markdown files (e.g., `46_exercise_testing.md`)
+- **Rationale**: Just-in-time learning—practice immediately after concept introduction improves retention and contextual understanding
+
 **Transition Slide Formatting:**
 ALL transition slides within modules MUST follow this format:
 ```markdown

@@ -200,3 +200,35 @@ Notes:
 - Test suite grows with each cycle, providing regression safety
 - AI can help at each step but you control the pace and direction
 
+##--##
+
+<!-- .slide: class="exercice" -->
+# Exercise 2: Test-Driven Development (TDD) Workflow
+## Lab 42
+
+<br>
+
+### 👉🏾 Follow **instructions** in
+
+### `labs/lab-42-tdd-workflow/README.md`
+
+Notes:
+- Follow the instructions in the lab README.md for practicing the Red-Green-Refactor TDD cycle.
+- This lab focuses on writing tests before implementation using AI assistance at each phase.
+
+##--##
+
+<!-- .slide: class="exercice" -->
+# Exercise 2: Test-Driven Development (TDD) Workflow
+## Lab 42
+
+<br>
+
+### 💡 Read **solution** at
+
+### `labs/lab-42-tdd-workflow-solution/README.md`
+
+Notes:
+- Read the lab README.md for complete TDD cycle examples.
+- The solution demonstrates RED-GREEN-REFACTOR phases with shopping cart implementation.
+
