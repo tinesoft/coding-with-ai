@@ -382,7 +382,7 @@ These common pitfalls represent the most frequent mistakes in prompt engineering
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 1: Prompt Engineering Basics
+# Exercise 1: Prompt Engineering Basics
 ## Lab 11
 
 <br>
@@ -398,7 +398,7 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 1: Prompt Engineering Basics
+# Exercise 1: Prompt Engineering Basics
 ## Lab 11
 
 <br>

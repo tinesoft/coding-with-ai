@@ -1,4 +1,60 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.14.1
+Date: 2025-10-31
+Amendment: Clarify Exercise/Exercice wording convention in exercise slides
+
+RATIONALE:
+- Constitution template used "Exercice" (French) in exercise slide examples
+- All training materials are in English, requiring "Exercise" in visible content
+- SFEIR School Theme CSS class requires lowercase "exercice" for styling
+- Inconsistency between CSS class name and content created confusion
+- Need explicit guidance: CSS class uses "exercice", visible content uses "Exercise"
+
+SCOPE:
+This PATCH amendment clarifies "Exercise Slide Formatting" in Principle II by:
+1. UPDATED: Template examples changed from "Exercice X:" to "Exercise X:" in H1 titles
+2. ADDED: "Wording Convention" subsection explaining CSS class vs. content spelling
+3. CLARIFIED: CSS attribute `class="exercice"` uses French spelling (framework requirement)
+4. CLARIFIED: All visible content (H1 titles, lab content) uses "Exercise" (English spelling)
+5. UPDATED: Rationale to explain CSS compatibility while maintaining linguistic consistency
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Updated Exercise Slide Formatting wording convention (v1.14.0 → v1.14.1)
+
+Exercise Slides (require updates):
+- [⚠] docs/markdown/10_module_1_ai_fundamentals/12_prompt_engineering.md - Change "Exercice" to "Exercise" in H1 titles
+- [⚠] docs/markdown/10_module_1_ai_fundamentals/11_ai_fundamentals.md - Change "Exercice" to "Exercise" in H1 titles
+- [⚠] docs/markdown/20_module_2_ai_tools/22_copilot_deep_dive.md - Change "Exercice" to "Exercise" in H1 titles
+- [⚠] docs/markdown/20_module_2_ai_tools/23_model_comparison.md - Change "Exercice" to "Exercise" in H1 titles
+- [⚠] docs/markdown/20_module_2_ai_tools/24_agent_instructions.md - Change "Exercice" to "Exercise" in H1 titles
+- [⚠] docs/markdown/30_module_3_debugging/32_debugging_workflow.md - Change "Exercice" to "Exercise" in H1 titles
+- [⚠] docs/markdown/30_module_3_debugging/33_refactoring_ai.md - Change "Exercice" to "Exercise" in H1 titles
+- [⚠] docs/markdown/30_module_3_debugging/33_code_verification.md - Already uses "Exercise" (compliant)
+- [✓] docs/markdown/40_module_4_testing/41_test_automation.md - Already uses "Exercise" (compliant)
+- [✓] docs/markdown/40_module_4_testing/42_tdd_with_ai.md - Already uses "Exercise" (compliant)
+- [✓] docs/markdown/40_module_4_testing/45_code_quality.md - Already uses "Exercise" (compliant)
+
+Supporting Documentation:
+- [⚠] .github/copilot-instructions.md - Update exercise slide examples to use "Exercise" in H1 titles
+
+VALIDATION:
+- [✓] Constitution principle clarified with wording convention guidance
+- [✓] Version incremented (PATCH: clarification of existing requirement)
+- [✓] Amendment date updated to 2025-10-31
+- [⚠] Module 1, 2, 3 exercise slides require H1 title updates
+- [⚠] Module 4 already compliant (verified)
+- [⚠] Copilot instructions require template update
+
+FOLLOW-UP ACTIONS:
+1. Update exercise H1 titles in Modules 1, 2, 3 from "Exercice" to "Exercise"
+2. Update .github/copilot-instructions.md exercise slide template examples
+3. Ensure all future exercise slides follow "Exercise" (content) + class="exercice" (CSS) pattern
+
+AMENDMENT STATUS: Constitution updated (v1.14.1), exercise slide updates pending.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.14.0
 Date: 2025-10-31
 Amendment: Define Exercise Placement and Integration principle for optimal learning flow
@@ -461,7 +517,7 @@ Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structu
 -->
 
 # SFEIR School Coding with AI - Constitutional Document
-## Version 1.14.0
+## Version 1.14.1
 
 ## Core Principles
 
@@ -610,7 +666,7 @@ Notes:
 **Exercise Slide Formatting**: Exercise slides MUST begin directly with the `class="exercice"` directive without any preceding content. Exercise files SHALL NOT contain headers, titles, or any other content before the first exercise slide declaration. The exact formatting structure is:
 ```markdown
 <!-- .slide: class="exercice" --> 
-# Exercice X: {short text}
+# Exercise X: {short text}
 ## Lab XX
 
 <br>
@@ -625,7 +681,7 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice X: {short text}
+# Exercise X: {short text}
 ## Lab XX
 
 <br>
@@ -639,13 +695,15 @@ Notes:
 ```
 Where X is the exercise number and XX is the two-digit lab number. Exercise slides SHALL only use H1, H2, or H3 level headers: H1 (#) is reserved for the exercise title, H2 (##) is reserved for the lab generic sub-header ("Lab XX"), and H3 (###) is reserved for specific steps of the exercise. Bold text MAY be used to highlight sections within the exercise content.
 
+**Wording Convention**: The CSS class attribute uses lowercase "exercice" (French spelling) as required by the SFEIR School Theme framework: `<!-- .slide: class="exercice" -->`. However, all visible content including H1 exercise titles MUST use "Exercise" (English spelling) for consistency with the English-language training materials. Example: `# Exercise 1: AI-Powered Debugging` while maintaining `class="exercice"` in the slide directive.
+
 **STRICT PROHIBITION**: Exercise slide files SHALL NOT contain any content before the first `<!-- .slide: class="exercice" -->` directive. Specifically prohibited:
 - ❌ H1 headers (e.g., "# Hands-on Practice", "# Lab Exercises")
 - ❌ Introductory text or descriptions
 - ❌ Section separators (`##--##`) before the first exercise slide
 - ❌ ANY other content preceding the exercise declaration
 
-**Rationale**: Exercise files serve a single purpose: declaring exercise slides that point to lab instructions. Unnecessary headers create maintenance overhead, duplicate content that belongs in module slides, and violate the principle of focused, lean slide generation. The exercise title within the slide itself (e.g., "Exercice 1: AI-Powered Debugging") provides sufficient context without additional wrapping content.
+**Rationale**: Exercise files serve a single purpose: declaring exercise slides that point to lab instructions. Unnecessary headers create maintenance overhead, duplicate content that belongs in module slides, and violate the principle of focused, lean slide generation. The exercise title within the slide itself (e.g., "Exercise 1: AI-Powered Debugging") provides sufficient context without additional wrapping content. The CSS class uses "exercice" to maintain compatibility with the SFEIR School Theme, while content uses "Exercise" for linguistic consistency.
 
 **Exercise Placement and Integration**: Exercise slides MUST immediately follow the content slide(s) they relate to within the same markdown file, rather than being consolidated in separate exercise-only files at the end of a module. When a module contains multiple labs, exercises should alternate with content to create a natural learning rhythm: teach concept → practice with lab → teach next concept → practice with lab. This integration pattern applies at the slide file level, not at the individual slide level.
 

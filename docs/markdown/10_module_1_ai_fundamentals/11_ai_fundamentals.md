@@ -213,7 +213,7 @@ With these fundamental concepts of RAG systems, you have a comprehensive underst
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 2: AI Fundamentals in Practice
+# Exercise 2: AI Fundamentals in Practice
 ## Lab 12
 
 <br>
@@ -229,7 +229,7 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 2: AI Fundamentals in Practice
+# Exercise 2: AI Fundamentals in Practice
 ## Lab 12
 
 <br>

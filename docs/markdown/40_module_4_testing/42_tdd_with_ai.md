@@ -202,7 +202,9 @@ Notes:
 
 ##--##
 
-<!-- .slide: class="exercice" -->
+##--##
+
+<!-- .slide: class="exercice" --> 
 # Exercise 2: Test-Driven Development (TDD) Workflow
 ## Lab 42
 
@@ -213,7 +215,13 @@ Notes:
 ### `labs/lab-42-tdd-workflow/README.md`
 
 Notes:
-- Follow the instructions in the lab README.md for practicing the Red-Green-Refactor TDD cycle.
+- Follow the instructions in the lab README.md for detailed steps.
+
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercise 2: Test-Driven Development (TDD) Workflow
+## Lab 42
 - This lab focuses on writing tests before implementation using AI assistance at each phase.
 
 ##--##

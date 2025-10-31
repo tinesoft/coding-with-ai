@@ -211,14 +211,14 @@ This real example from our project demonstrates focused, actionable instructions
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 4: Agent Instruction Files
-## Lab 24
+# Exercise 3: Agent Instruction Files
+## Lab 23
 
 <br>
 
 ### 👉🏾 Follow **instructions** in
 
-### `labs/lab-24-agent-instruction-files/README.md`
+### `labs/lab-23-agent-instruction-files/README.md`
 
 Notes:
 - Follow the instructions in the lab README.md for detailed steps.
@@ -226,14 +226,14 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 4: Agent Instruction Files
-## Lab 24
+# Exercise 3: Agent Instruction Files
+## Lab 23
 
 <br>
 
 ### 💡 Read **solution** at
 
-### `labs/lab-24-agent-instruction-files-solution/README.md`
+### `labs/lab-23-agent-instruction-files-solution/README.md`
 
 Notes:
 - Read the lab README.md for example of solutions.

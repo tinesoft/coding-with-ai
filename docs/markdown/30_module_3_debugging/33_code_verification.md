@@ -308,8 +308,10 @@ Synthesizing verification into best practices: test everything, check official d
 
 Notes:
 Adopt a verification mindset that balances speed with quality. Trust AI to accelerate your work, but verify every significant suggestion through testing, documentation review, and critical thinking. Test everything—the cost of finding bugs in development is trivial compared to production incidents. Always consult official documentation before trusting AI's API usage. Security cannot be an afterthought—one SQL injection vulnerability can compromise an entire system. Consider performance implications early, especially for code that will run at scale. Prioritize testability to ensure long-term maintainability. Finally, iterate—AI's first suggestion is a starting point, not a final solution. With practice, verification becomes second nature, making you a more effective developer regardless of whether you're using AI assistance.
-<!-- .slide: class="exercice" -->
 
+##--##
+
+<!-- .slide: class="exercice" -->
 # Exercise 3: Code Verification
 ## Lab 33
 
@@ -320,7 +322,7 @@ Adopt a verification mindset that balances speed with quality. Trust AI to accel
 ### `labs/lab-33-code-verification/README.md`
 
 Notes:
-In this final hands-on exercise, you'll apply the seven-point verification checklist to AI-generated code samples containing intentional issues. Each sample demonstrates a different category of problem: correctness errors, logic bugs, security vulnerabilities, dependency hallucinations, best practice violations, performance inefficiencies, and testability concerns. Work systematically through each check point, documenting your findings as you would in a real code review. This exercise builds critical thinking skills that transfer beyond AI assistance—you'll become better at reviewing any code, regardless of its source.
+- Follow the instructions in the lab README.md for detailed steps.
 
 ##--##
 

@@ -32,9 +32,10 @@ When creating slide content, use these patterns:
 
 ##--##
 
+```markdown
 <!-- .slide: class="exercice" -->  
 <!-- .slide: class="exercice" --> 
-# Exercice X: {short text}
+# Exercise X: {short text}
 ## Lab XX
 
 <br>
@@ -49,7 +50,7 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice X: {short text}
+# Exercise X: {short text}
 ## Lab XX
 
 <br>
@@ -60,6 +61,12 @@ Notes:
 
 Notes:
 - Read the lab README.md for example of solutions.
+```
+
+**Exercise Wording Convention:**
+- CSS class attribute uses lowercase "exercice" (French): `<!-- .slide: class="exercice" -->`
+- All visible content uses "Exercise" (English): `# Exercise 1: AI-Powered Debugging`
+- This maintains SFEIR School Theme compatibility while ensuring linguistic consistency
 ```
 
 **Key Syntax Rules:**

@@ -131,14 +131,14 @@ Match model characteristics to task requirements and constraints. Don't use expe
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 3: Model Comparison
-## Lab 23
+# Exercise 4: Model Comparison
+## Lab 24
 
 <br>
 
 ### 👉🏾 Follow **instructions** in
 
-### `labs/lab-23-model-comparison/README.md`
+### `labs/lab-24-model-comparison/README.md`
 
 Notes:
 - Follow the instructions in the lab README.md for detailed steps.
@@ -146,14 +146,14 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 3: Model Comparison
-## Lab 23
+# Exercise 4: Model Comparison
+## Lab 24
 
 <br>
 
 ### 💡 Read **solution** at
 
-### `labs/lab-23-model-comparison-solution/README.md`
+### `labs/lab-24-model-comparison-solution/README.md`
 
 Notes:
 - Read the lab README.md for example of solutions.

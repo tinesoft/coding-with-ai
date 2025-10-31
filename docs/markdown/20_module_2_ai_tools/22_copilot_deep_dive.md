@@ -77,7 +77,7 @@ We'll focus primarily on VS Code extension and CLI installations as they represe
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 1: GitHub Copilot CLI
+# Exercise 1: GitHub Copilot CLI
 ## Lab 21
 
 <br>
@@ -92,7 +92,7 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 1: GitHub Copilot CLI
+# Exercise 1: GitHub Copilot CLI
 ## Lab 21
 
 <br>
@@ -263,7 +263,7 @@ The most effective developers use all three modes synergistically, leveraging ea
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 2: GitHub Copilot VS Code
+# Exercise 2: GitHub Copilot VS Code
 ## Lab 22
 
 <br>
@@ -278,7 +278,7 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercice 2: GitHub Copilot VS Code
+# Exercise 2: GitHub Copilot VS Code
 ## Lab 22
 
 <br>

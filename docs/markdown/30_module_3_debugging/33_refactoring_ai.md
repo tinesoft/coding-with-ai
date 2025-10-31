@@ -474,8 +474,13 @@ Notes:
 - Refactoring is a continuous practice, not a one-time event
 - Build refactoring into your development workflow
 - Use AI to accelerate, not replace, careful thinking
+
+##--##
+
+##--##
+
 <!-- .slide: class="exercice" -->
-# Exercice 2: AI-Powered Refactoring
+# Exercise 2: AI-Powered Refactoring
 ## Lab 32
 
 <br>
@@ -486,13 +491,19 @@ Notes:
 
 Notes:
 - Follow the instructions in the lab README.md for detailed steps.
+
+##--##
+
+<!-- .slide: class="exercice" -->
+# Exercise 2: AI-Powered Refactoring
+## Lab 32
 - Use GitHub Copilot to refactor 5 legacy code samples
 - Practice applying refactoring patterns systematically
 
 ##--##
 
 <!-- .slide: class="exercice" -->
-# Exercice 2: AI-Powered Refactoring
+# Exercise 2: AI-Powered Refactoring
 ## Lab 32
 
 <br>
