@@ -70,10 +70,15 @@ Notes:
 ```
 
 **Key Syntax Rules:**
-- Use `##--##` to separate slides
+- Use `##--##` to separate slides (single separator only - no duplicates)
 - Include `<!-- .slide -->` directives for special styling
 - Use SFEIR theme classes: `first-slide`, `transition`, `exercice`, `speaker-slide`
 - Reference images with relative paths: `./assets/images/filename.png`
+
+**Slide Separator Standards:**
+- ✅ REQUIRED: Single `##--##` between slides with content following
+- ❌ PROHIBITED: Duplicate separators (`##--##\n\n##--##`) creating empty slides
+- **Rationale**: Empty slides disrupt presentation flow and serve no educational purpose
 
 **Exercise Slide Formatting:**
 Exercise slide files MUST begin directly with the `<!-- .slide: class="exercice" -->` directive. NO headers, titles, or other content before the first exercise slide:

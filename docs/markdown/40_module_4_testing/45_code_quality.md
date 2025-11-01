@@ -60,8 +60,6 @@ Notes:
 
 ##--##
 
-##--##
-
 <!-- .slide: -->
 # **AI-Assisted Code Quality Analysis**
 
@@ -178,8 +176,6 @@ Notes:
 
 ##--##
 
-##--##
-
 <!-- .slide: class="exercice" --> 
 # Exercise 3: Integration and E2E Testing
 ## Lab 43
@@ -192,42 +188,7 @@ Notes:
 
 Notes:
 - Follow the instructions in the lab README.md for detailed steps.
-
-##--##
-
-<!-- .slide: class="exercice" --> 
-# Exercise 3: Integration and E2E Testing
-## Lab 43
-
-<br>
-
-### 💡 Read **solution** at
-
-### `labs/lab-43-integration-quality-solution/README.md`
-
-Notes:
-- Read the lab README.md for example of solutions.
-
-##--##
-
-<!-- .slide: class="exercice" --> 
-# Exercise 4: AI-Assisted Code Quality
-## Lab 43
-
-<br>
-
-### 👉🏾 Follow **instructions** in
-
-### `labs/lab-43-integration-quality/README.md`
-
-Notes:
-- Follow the instructions in the lab README.md for detailed steps.
-
-##--##
-
-<!-- .slide: class="exercice" --> 
-# Exercise 4: AI-Assisted Code Quality
-## Lab 43
+- Focus on integration testing and end-to-end testing with Playwright.
 
 ##--##
 
@@ -249,32 +210,34 @@ Notes:
 
 <!-- .slide: class="exercice" -->
 # Exercise 4: AI-Assisted Code Quality
-## Lab 43 - Exercise 3
+## Lab 43
 
 <br>
 
-### 👉🏾 Refactor **messy code** in
+### 👉🏾 Follow **instructions** in
 
-### `labs/lab-43-integration-quality/exercises/code-with-quality-issues/`
+### `labs/lab-43-integration-quality/README.md`
 
 Notes:
-- Use AI to identify quality issues in messy-code.ts and complex-function.ts
+- Follow the instructions in the lab README.md for detailed steps.
+- Use AI to identify quality issues in messy-code.ts and complex-function.ts located in exercises/code-with-quality-issues/
 - Apply refactoring techniques to improve naming, reduce complexity, and eliminate duplication.
-- Validate improvements with code metrics and maintainability analysis.
 
 ##--##
 
 <!-- .slide: class="exercice" -->
 # Exercise 4: AI-Assisted Code Quality
-## Lab 43 - Exercise 3
+## Lab 43
 
 <br>
 
-### 💡 Review **refactored code** at
+### 💡 Read **solution** at
 
-### `labs/lab-43-integration-quality-solution/resources/quality-improvements/`
+### `labs/lab-43-integration-quality-solution/README.md`
 
 Notes:
-- Compare cleaned-code.ts and refactored-function.ts to see quality improvements
+- Read the lab README.md for refactored code examples with improved quality metrics.
+- Solution demonstrates naming improvements, complexity reduction, and duplication elimination.
+- Compare cleaned-code.ts and refactored-function.ts in resources/quality-improvements/
 - Notice complexity reduction, better naming, and improved testability
 - The solution demonstrates AI-assisted refactoring patterns.

@@ -1,4 +1,55 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.14.2
+Date: 2025-10-31
+Amendment: Prohibit empty slides created by duplicate slide separators
+
+RATIONALE:
+- Empty slides created by consecutive `##--##` separators without content disrupt presentation flow
+- Duplicate separators (`##--##\n\n##--##`) create blank slides that serve no educational purpose
+- Empty slides confuse learners and create awkward pauses in slide progression
+- Visual slide implementations and exercise transitions were common locations for duplicate separators
+- Need explicit prohibition to maintain clean, professional slide deck structure
+
+SCOPE:
+This PATCH amendment adds "Slide Separator Standards" subsection to Principle II's "Content Organization Standards":
+1. ADDED: Prohibition of empty slides created by duplicate `##--##` separators
+2. ADDED: Requirement for single `##--##` separator between slides
+3. ADDED: Explicit rule that every separator MUST have content slide following it
+4. CLARIFIED: Proper slide separation pattern for visual slides and exercise transitions
+5. STRENGTHENED: Quality standards for professional presentation structure
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Added "Slide Separator Standards" to Principle II (v1.14.1 → v1.14.2)
+
+Slide Files (empty slides removed):
+- [✓] docs/markdown/30_module_3_debugging/32_debugging_workflow.md - Removed empty slide before Exercise 1
+- [✓] docs/markdown/30_module_3_debugging/33_refactoring_ai.md - Removed empty slide before Exercise 2
+- [✓] docs/markdown/40_module_4_testing/42_tdd_with_ai.md - Removed empty slide after TDD visual
+- [✓] docs/markdown/40_module_4_testing/43_integration_testing.md - Removed empty slide after integration visual
+- [✓] docs/markdown/40_module_4_testing/44_e2e_testing.md - Removed empty slide after E2E visual
+- [✓] docs/markdown/40_module_4_testing/45_code_quality.md - Removed empty slide after quality metrics visual
+
+Supporting Documentation:
+- [⚠] .github/copilot-instructions.md - Should add guidance on proper slide separator usage
+
+VALIDATION:
+- [✓] Constitution principle enhanced with slide separator standards
+- [✓] Version incremented (PATCH: clarification and quality enforcement)
+- [✓] Amendment date updated to 2025-10-31
+- [✓] All 6 empty slides removed across Module 3 and Module 4
+- [✓] Verification confirms no remaining duplicate separators
+- [⚠] Copilot instructions should include separator guidance
+
+FOLLOW-UP ACTIONS:
+1. Update .github/copilot-instructions.md with slide separator best practices
+2. Ensure future slide generation maintains single separator between slides
+3. Verify no empty slides exist in future modules (5-7) when created
+
+AMENDMENT STATUS: Constitution updated (v1.14.2), all empty slides removed, copilot instructions update pending.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.14.1
 Date: 2025-10-31
 Amendment: Clarify Exercise/Exercice wording convention in exercise slides
@@ -517,7 +568,7 @@ Notes: Successfully removed "Next Steps" from Assessment and Recap Slide Structu
 -->
 
 # SFEIR School Coding with AI - Constitutional Document
-## Version 1.14.1
+## Version 1.14.2
 
 ## Core Principles
 
@@ -538,6 +589,24 @@ Place training modules in `docs/markdown/` using SFEIR School Theme markdown syn
 Where X is the module number (1-7) and sectionTitle describes the content section. This ensures learners always understand which module context they are in during the presentation flow.
 
 **Content Generation Restrictions**: When generating exercise slides, focus ONLY on the actual exercise content without creating introductory or closing slides. When generating module slides, focus ONLY on the core content without creating introductory or closing transition slides. This ensures lean, focused educational content without unnecessary navigational overhead.
+
+**Slide Separator Standards**: Slide markdown files MUST use proper slide separation without creating empty slides. Each slide separator (`##--##`) MUST be followed by actual slide content. Duplicate consecutive separators create empty slides that disrupt presentation flow and confuse learners. The proper pattern is:
+
+```markdown
+Content of current slide
+
+##--##
+
+<!-- .slide: -->
+Content of next slide
+```
+
+**STRICT PROHIBITION**: Slide files SHALL NOT contain:
+- ❌ Consecutive duplicate separators (`##--##\n\n##--##`) creating empty slides
+- ❌ Slide separators without following content
+- ❌ Multiple blank slides between content sections
+
+**Rationale**: Empty slides created by duplicate separators serve no educational purpose, create awkward pauses in slide progression, and reduce presentation professionalism. Every slide transition should move learners to meaningful content. This standard maintains clean slide deck structure and ensures optimal learning flow without unnecessary interruptions.
 
 **Module Introduction Slide Structure**: Module introduction slides MUST contain EXACTLY three slides and NO additional content. This strict three-slide limit is mandatory across all modules to ensure consistency, clarity, and focus. The required structure is:
 

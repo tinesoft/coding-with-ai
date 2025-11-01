@@ -96,8 +96,6 @@ Notes:
 
 ##--##
 
-##--##
-
 <!-- .slide: -->
 # **AI-Assisted E2E Test Generation**
 

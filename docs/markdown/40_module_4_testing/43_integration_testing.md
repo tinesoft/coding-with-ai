@@ -67,8 +67,6 @@ Notes:
 
 ##--##
 
-##--##
-
 <!-- .slide: -->
 # **AI-Assisted Integration Test Generation**
 

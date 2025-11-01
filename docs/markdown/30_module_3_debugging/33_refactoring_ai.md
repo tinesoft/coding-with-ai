@@ -477,8 +477,6 @@ Notes:
 
 ##--##
 
-##--##
-
 <!-- .slide: class="exercice" -->
 # Exercise 2: AI-Powered Refactoring
 ## Lab 32

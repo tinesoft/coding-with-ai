@@ -128,8 +128,6 @@ Notes:
 
 ##--##
 
-##--##
-
 <!-- .slide: -->
 # **TDD Benefits with AI Assistance**
 
@@ -202,8 +200,6 @@ Notes:
 
 ##--##
 
-##--##
-
 <!-- .slide: class="exercice" --> 
 # Exercise 2: Test-Driven Development (TDD) Workflow
 ## Lab 42
@@ -216,12 +212,6 @@ Notes:
 
 Notes:
 - Follow the instructions in the lab README.md for detailed steps.
-
-##--##
-
-<!-- .slide: class="exercice" --> 
-# Exercise 2: Test-Driven Development (TDD) Workflow
-## Lab 42
 - This lab focuses on writing tests before implementation using AI assistance at each phase.
 
 ##--##

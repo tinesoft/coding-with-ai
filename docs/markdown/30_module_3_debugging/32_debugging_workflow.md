@@ -294,8 +294,6 @@ Notes:
 
 ##--##
 
-##--##
-
 <!-- .slide: class="exercice" -->
 # Exercise 1: AI-Powered Debugging
 ## Lab 31
