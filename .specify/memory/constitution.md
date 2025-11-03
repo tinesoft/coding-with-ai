@@ -1,4 +1,52 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.14.3
+Date: 2025-11-03
+Amendment: Require "with-code" CSS class for slides containing multi-line code blocks
+
+RATIONALE:
+- SFEIR School Theme provides specialized "with-code" CSS class for slides with code blocks
+- Code block slides without proper CSS class may have formatting issues (overlap, poor spacing)
+- Content slides containing multi-line code examples require different styling than regular slides
+- Need explicit requirement to use class="with-code" for code-heavy slides
+- Standardization ensures consistent code presentation across all modules
+
+SCOPE:
+This PATCH amendment adds "Code Slide Formatting" requirement to Principle II's "Content Organization Standards":
+1. ADDED: Content slides with multi-line code blocks MUST use `class="with-code"` directive
+2. ADDED: Explicit formatting pattern showing proper slide directive placement
+3. CLARIFIED: "with-code" class applies to content slides with code examples, not exercise/transition slides
+4. STRENGTHENED: Consistent code presentation standards across training materials
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Added "Code Slide Formatting" to Principle II (v1.14.2 → v1.14.3)
+
+Slide Files (require code class updates):
+- [⚠] docs/markdown/40_module_4_testing/44_e2e_testing.md - Add class="with-code" to code example slides
+- [⚠] docs/markdown/40_module_4_testing/42_tdd_with_ai.md - Add class="with-code" to code example slides
+- [⚠] docs/markdown/40_module_4_testing/43_integration_testing.md - Add class="with-code" to code example slides
+- [ ] All module slide files with multi-line code blocks need audit and update
+
+Supporting Documentation:
+- [⚠] .github/copilot-instructions.md - Should add code slide formatting guidance with examples
+
+VALIDATION:
+- [✓] Constitution principle enhanced with code slide formatting requirement
+- [✓] Version incremented (PATCH: formatting clarification)
+- [✓] Amendment date updated to 2025-11-03
+- [⚠] Module 4 slide files require class="with-code" addition to code slides
+- [⚠] Other modules require audit for code slide compliance
+- [⚠] Copilot instructions require code formatting template addition
+
+FOLLOW-UP ACTIONS:
+1. Update .github/copilot-instructions.md with "with-code" class usage examples
+2. Audit and fix all existing slide files containing multi-line code blocks
+3. Ensure future slide generation includes class="with-code" for code-heavy slides
+
+AMENDMENT STATUS: Constitution updated (v1.14.3), slide file updates pending, copilot instructions update pending.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.14.2
 Date: 2025-10-31
 Amendment: Prohibit empty slides created by duplicate slide separators
@@ -809,6 +857,27 @@ Where X is the exercise number and XX is the two-digit lab number. Exercise slid
 Content here...
 ```
 
+**Code Slide Formatting**: Content slides containing multi-line code blocks MUST use the `class="with-code"` CSS class directive to ensure proper code formatting and spacing. This class is provided by the SFEIR School Theme specifically for code-heavy slides. The directive SHALL be placed immediately after the slide separator:
+
+```markdown
+<!-- .slide: class="with-code" -->
+# **Slide Title with Code Example**
+
+## **Code Example Description**
+<br>
+
+```typescript
+// Multi-line code block
+import { example } from 'library';
+
+function demonstrationCode() {
+  return 'formatted properly';
+}
+```
+```
+
+**Rationale**: The "with-code" class ensures proper formatting, prevents content overlap with code blocks, and maintains consistent code presentation across all training modules. Slides without this class may experience formatting issues when displaying multi-line code examples.
+
 ### III. Lab Structure Requirements
 Create sequential lab folders using pattern `labs/lab-XX-{topic}/` with corresponding solution folders `labs/lab-XX-{topic}-solution/`. Each solution folder MUST contain a mandatory `README.md` file and MAY include an optional `resources/` directory for lab outputs and deliverables (e.g., final projects, code samples, generated artifacts). Write all lab instructions in GitHub-flavored markdown format with clear objectives, prerequisites, and success criteria. Provide hands-on exercises with scaffolded projects that demonstrate practical application of module concepts.
 
@@ -1094,4 +1163,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.14.0 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-10-31
+**Version**: 1.14.3 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-11-03

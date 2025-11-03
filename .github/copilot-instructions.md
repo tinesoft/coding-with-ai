@@ -72,13 +72,35 @@ Notes:
 **Key Syntax Rules:**
 - Use `##--##` to separate slides (single separator only - no duplicates)
 - Include `<!-- .slide -->` directives for special styling
-- Use SFEIR theme classes: `first-slide`, `transition`, `exercice`, `speaker-slide`
+- Use SFEIR theme classes: `first-slide`, `transition`, `exercice`, `speaker-slide`, `with-code`
 - Reference images with relative paths: `./assets/images/filename.png`
 
 **Slide Separator Standards:**
 - ✅ REQUIRED: Single `##--##` between slides with content following
 - ❌ PROHIBITED: Duplicate separators (`##--##\n\n##--##`) creating empty slides
 - **Rationale**: Empty slides disrupt presentation flow and serve no educational purpose
+
+**Code Slide Formatting:**
+Content slides containing multi-line code blocks MUST use `class="with-code"` for proper formatting:
+```markdown
+<!-- .slide: class="with-code" -->
+# **Code Example Title**
+
+## **Description**
+<br>
+
+```typescript
+import { test, expect } from '@playwright/test';
+
+test('example test', async ({ page }) => {
+  await page.goto('/');
+  await expect(page).toHaveTitle('Example');
+});
+```
+```
+- ✅ REQUIRED: Use `class="with-code"` for slides with multi-line code blocks
+- ❌ PROHIBITED: Code-heavy slides without proper CSS class (causes formatting issues)
+- **Rationale**: The "with-code" class ensures proper spacing and prevents content overlap
 
 **Exercise Slide Formatting:**
 Exercise slide files MUST begin directly with the `<!-- .slide: class="exercice" -->` directive. NO headers, titles, or other content before the first exercise slide:
