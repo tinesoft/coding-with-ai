@@ -185,3 +185,35 @@ Notes:
 - Integration tests balance realism with maintainability
 - More integration tests than E2E, fewer than unit tests
 - They're the "middle ground" in the test pyramid
+
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercise 3: Integration Testing
+## Lab 43
+
+<br>
+
+### 👉🏾 Follow **instructions** in
+
+### `labs/lab-43-integration-quality/README.md`
+
+Notes:
+- Follow the instructions in the lab README.md for Exercise 1: Integration Testing.
+- Focus on testing API + Service + Validator component interactions.
+
+##--##
+
+<!-- .slide: class="exercice" -->
+# Exercise 3: Integration Testing
+## Lab 43
+
+<br>
+
+### 💡 Read **solution** at
+
+### `labs/lab-43-integration-quality-solution/README.md`
+
+Notes:
+- Read the lab README.md for integration test examples.
+- The solution demonstrates real component testing without mocks.

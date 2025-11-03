@@ -251,3 +251,35 @@ Notes:
 - AI makes it faster to write tests at all levels
 - Don't let AI convenience lead to inverted pyramid (too many E2E tests)
 - Balance speed, coverage, and maintainability
+
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercise 4: End-to-End Testing
+## Lab 43
+
+<br>
+
+### 👉🏾 Follow **instructions** in
+
+### `labs/lab-43-integration-quality/README.md`
+
+Notes:
+- Follow the instructions in the lab README.md for Exercise 2: E2E Testing.
+- Focus on Playwright tests simulating complete user workflows.
+
+##--##
+
+<!-- .slide: class="exercice" -->
+# Exercise 4: End-to-End Testing
+## Lab 43
+
+<br>
+
+### 💡 Read **solution** at
+
+### `labs/lab-43-integration-quality-solution/README.md`
+
+Notes:
+- Read the lab README.md for Playwright E2E test examples.
+- The solution demonstrates user registration and login journey tests.
