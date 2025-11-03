@@ -149,6 +149,18 @@ Notes:
 - Learn TDD discipline through guided practice
 - See clean code principles applied in refactoring suggestions
 
+Notes:
+- TDD with AI doesn't mean "AI writes everything" - you maintain discipline
+- The human developer ensures TDD principles are followed
+- AI accelerates each phase but doesn't replace your judgment
+- Bad TDD with AI is worse than no TDD - maintain the cycle integrity
+
+##--##
+
+<!-- .slide: -->
+# **TDD Benefits with AI Assistance**
+
+## **Why TDD + AI is Powerful**
 <br>
 
 ### **⚠️ TDD Anti-Patterns to Avoid**
@@ -156,12 +168,6 @@ Notes:
 - Skipping RED phase verification (test must fail first)
 - Over-engineering in GREEN phase (add only enough to pass)
 - Refactoring without running tests (breaks safety net)
-
-Notes:
-- TDD with AI doesn't mean "AI writes everything" - you maintain discipline
-- The human developer ensures TDD principles are followed
-- AI accelerates each phase but doesn't replace your judgment
-- Bad TDD with AI is worse than no TDD - maintain the cycle integrity
 
 ##--##
 
@@ -172,8 +178,6 @@ Notes:
 <br>
 
 **Scenario**: Implementing a password strength validator
-
-<br>
 
 1. **🔴 RED**: Write test for minimum length requirement
    - Test fails (validator doesn't exist)

@@ -12,8 +12,6 @@
 
 E2E tests simulate **real user interactions** with your application from start to finish, validating entire workflows.
 
-<br>
-
 ### **E2E Testing Characteristics**
 - **Browser automation**: Real browsers (Chrome, Firefox, Safari)
 - **User perspective**: Clicks, form inputs, navigation
@@ -121,14 +119,6 @@ Use Playwright test framework with page object pattern."
 - 🤖 **Assertion recommendations**: Identifies what to verify
 - 🤖 **Error scenario coverage**: Generates failure case tests
 
-<br>
-
-### **⚠️ Critical Human Validation**
-- Verify selectors are stable (not brittle)
-- Confirm waits are appropriate (not race conditions)
-- Validate test data doesn't conflict across tests
-- Ensure tests are truly independent
-
 Notes:
 - E2E tests are complex - AI significantly speeds up writing them
 - Human expertise crucial for making tests maintainable
@@ -137,6 +127,20 @@ Notes:
 ##--##
 
 <!-- .slide: -->
+# **AI-Assisted E2E Test Generation**
+
+## **Using AI with Playwright**
+<br>
+
+### **⚠️ Critical Human Validation**
+- Verify selectors are stable (not brittle)
+- Confirm waits are appropriate (not race conditions)
+- Validate test data doesn't conflict across tests
+- Ensure tests are truly independent
+
+##--##
+
+<!-- .slide: class="with-code"-->
 # **Playwright Test Example**
 
 ## **Real-World E2E Test**
@@ -204,6 +208,17 @@ Notes:
 - **Ignore flakiness**: Fix flaky tests immediately or delete them
 - **Skip local testing**: Always run E2E tests locally before CI
 
+Notes:
+- E2E tests should be your last line of defense, not your first
+- Quality over quantity - 10 solid E2E tests beat 100 flaky ones
+- Invest time in making them stable and maintainable
+
+##--##
+
+<!-- .slide: -->
+# **E2E Testing Best Practices**
+
+## **Writing Maintainable E2E Tests**
 <br>
 
 ### **🎯 E2E Testing Anti-Patterns**
@@ -211,11 +226,6 @@ Notes:
 - Over-relying on E2E tests (inverted test pyramid)
 - Not using proper waits (causing race conditions)
 - Sharing authentication state incorrectly
-
-Notes:
-- E2E tests should be your last line of defense, not your first
-- Quality over quantity - 10 solid E2E tests beat 100 flaky ones
-- Invest time in making them stable and maintainable
 
 ##--##
 
@@ -243,8 +253,6 @@ Notes:
 
 <br>
 
-### **Key Insight**
-Use AI to accelerate test creation at **all pyramid levels**, but maintain proper proportions: many fast unit tests, fewer integration tests, minimal critical E2E tests.
 
 Notes:
 - The test pyramid remains important even with AI assistance

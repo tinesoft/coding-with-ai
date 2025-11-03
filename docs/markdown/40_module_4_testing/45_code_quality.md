@@ -122,14 +122,10 @@ Notes:
 
 <img src="./assets/images/module-4/refactoring-workflow.svg" alt="AI-assisted refactoring process" style="width:100%; height:auto; display:block;">
 
-##--##
-- Always refactor with tests as safety net
-- Small, incremental changes reduce risk
-- Human judgment crucial for prioritizing improvements
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: class="with-code"-->
 # **Common Code Quality Issues**
 
 ## **What to Look For**

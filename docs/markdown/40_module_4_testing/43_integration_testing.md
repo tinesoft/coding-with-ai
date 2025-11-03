@@ -8,11 +8,9 @@
 # **What is Integration Testing?**
 
 ## **Testing Component Interactions**
-<br>
 
 Integration tests verify that **multiple components work together correctly** when combined.
 
-<br>
 
 ### **Unit vs Integration Testing**
 | Unit Tests | Integration Tests |
@@ -91,6 +89,12 @@ Use Vitest with actual service instances."
 - 🤖 **Assertion patterns**: Verifies data flow through components
 - 🤖 **Error handling**: Tests failure scenarios across boundaries
 
+##--##
+
+<!-- .slide: -->
+# **AI-Assisted Integration Test Generation**
+
+## **Using AI for Integration Testing**
 <br>
 
 ### **⚠️ Human Validation Required**
@@ -105,7 +109,7 @@ Notes:
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: class="with-code"-->
 # **Integration Testing with Vitest**
 
 ## **Test Structure and Patterns**
@@ -173,13 +177,6 @@ Notes:
 - **Share state between tests**: Causes flaky tests
 - **Use production services**: Always use test environments
 - **Ignore test speed**: Keep tests reasonably fast
-
-<br>
-
-### **🎯 Test Pyramid Guidance**
-- **Unit tests**: 70% (fast, isolated, many)
-- **Integration tests**: 20% (realistic, focused, fewer)
-- **E2E tests**: 10% (comprehensive, slow, minimal)
 
 Notes:
 - Integration tests balance realism with maintainability

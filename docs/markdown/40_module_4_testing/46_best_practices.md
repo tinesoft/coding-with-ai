@@ -22,6 +22,20 @@
 - Run in any order without failures
 - Use proper setup/teardown
 
+Notes:
+- F.I.R.S.T principles apply to all test types (unit, integration, E2E)
+- These principles ensure tests remain valuable long-term
+- Violating these makes tests brittle and unreliable
+##--##
+
+<!-- .slide: -->
+# **F.I.R.S.T Testing Principles**
+
+## **Writing Effective Tests**
+<br>
+
+### **F.I.R.S.T Acronym**
+
 **R - Repeatable**: Same result every time
 - No flaky tests (intermittent failures)
 - No dependency on external factors (time, network)
@@ -36,10 +50,6 @@
 - Or immediately after feature implementation
 - Not as an afterthought
 
-Notes:
-- F.I.R.S.T principles apply to all test types (unit, integration, E2E)
-- These principles ensure tests remain valuable long-term
-- Violating these makes tests brittle and unreliable
 
 ##--##
 
@@ -58,12 +68,12 @@ Notes:
 <br>
 
 ### **Developer Validation Checklist**
-✅ Tests fail for the right reasons (RED phase in TDD)
-✅ Assertions test actual behavior, not implementation details
-✅ Edge cases are truly comprehensive (domain knowledge)
-✅ Test names clearly describe what's being validated
-✅ Mock/stub usage is appropriate (not over-mocking)
-✅ Tests are maintainable (not brittle, not coupled)
+- ✅ Tests fail for the right reasons (RED phase in TDD)
+- ✅ Assertions test actual behavior, not implementation details
+- ✅ Edge cases are truly comprehensive (domain knowledge)
+- ✅ Test names clearly describe what's being validated
+- ✅ Mock/stub usage is appropriate (not over-mocking)
+- ✅ Tests are maintainable (not brittle, not coupled)
 
 Notes:
 - AI accelerates test writing but doesn't replace human judgment
@@ -72,7 +82,7 @@ Notes:
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: class="with-code"-->
 # **Test Maintainability**
 
 ## **Writing Tests That Last**
@@ -116,7 +126,7 @@ Notes:
 
 ##--##
 
-<!-- .slide: -->
+<!-- .slide: class="with-code"-->
 # **AI Testing Anti-Patterns**
 
 ## **Common Mistakes with AI-Generated Tests**
@@ -135,6 +145,14 @@ expect(cart._calculateDiscount()).toBe(10);
 expect(cart.getDiscountedTotal()).toBe(90);
 ```
 
+##--##
+
+<!-- .slide: class="with-code"-->
+# **AI Testing Anti-Patterns**
+
+## **Common Mistakes with AI-Generated Tests**
+<br> 
+
 ### **❌ Anti-Pattern 3: Brittle Assertions**
 **Problem**: Tests break with minor changes
 ```typescript
@@ -146,8 +164,8 @@ expect(result.data.id).toBeDefined();
 ```
 
 ### **❌ Anti-Pattern 4: Over-Mocking**
-**Problem**: Mocking everything defeats testing purpose
-**Solution**: Use real implementations in integration tests
+- **Problem**: Mocking everything defeats testing purpose
+- **Solution**: Use real implementations in integration tests
 
 Notes:
 - AI doesn't understand your test strategy automatically
@@ -165,14 +183,14 @@ Notes:
 ### **Recommended Test Distribution**
 
 ```
-     /\
-    /E2E\       10% - Few critical user journeys
-   /------\
-  /        \
- /Integration\ 20% - Component interactions
-/------------\
-/              \
-/   Unit Tests  \ 70% - Many fast, isolated tests
+        /\
+       /  \      10% - Few critical user journeys (E2E)
+      /____\
+     /      \
+    /        \   20% - Component interactions (Integration)
+   /----------\
+  /            \
+ /              \ 70% - Many fast, isolated tests (Unit)
 /________________\
 ```
 
@@ -184,10 +202,6 @@ Notes:
 - **E2E**: AI creates user journey tests for critical paths
 - **Balance**: Human ensures proper pyramid proportions maintained
 
-<br>
-
-### **⚠️ Warning: Inverted Pyramid**
-Don't let AI's ability to quickly generate E2E tests lead to inverted pyramid (too many slow E2E tests, not enough fast unit tests)
 
 Notes:
 - Test pyramid remains essential even with AI assistance
@@ -212,7 +226,15 @@ Notes:
 **2. Code Review Enhancement**
 - AI analyzes PRs for quality issues
 - Suggests refactorings during review
-- Complements human code review
+- Complements human code review##--##
+
+<!-- .slide: -->
+# **Continuous Quality with AI**
+
+## **Maintaining Quality Over Time**
+<br>
+
+### **Integrating AI into Development Workflow**
 
 **3. Test Coverage Monitoring**
 - AI identifies untested code paths
