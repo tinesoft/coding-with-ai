@@ -173,7 +173,6 @@ This validates code quality metrics interpretation (SC-007) and understanding of
 - [Vitest Coverage](https://vitest.dev/guide/coverage.html) - Code coverage configuration and interpretation
 - [Playwright Documentation](https://playwright.dev/) - End-to-end testing framework for modern web apps
 - [Playwright Best Practices](https://playwright.dev/docs/best-practices) - Recommended patterns for reliable E2E tests
-- [GitHub Copilot for Testing](https://github.blog/developer-skills/github/how-to-use-github-copilot-for-test-generation/) - AI-assisted test generation techniques
 - [Test Automation Patterns](https://martinfowler.com/articles/practical-test-pyramid.html) - Understanding the test pyramid by Martin Fowler
 
 ### **Lab Solutions**

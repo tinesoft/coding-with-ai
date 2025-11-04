@@ -1,4 +1,56 @@
 <!--
+SYNC IMPACT REPORT - Amendment v1.14.4
+Date: 2025-11-03
+Amendment: Require validation of external links in Resources slides
+
+RATIONALE:
+- Resources slides across modules contain broken external documentation links
+- Module 1: OpenAI platform docs return 403 errors
+- Module 2: OpenAI models page returns 403 errors
+- Module 3: Microsoft Research debugging article returns 404
+- Module 4: GitHub blog testing article returns 404
+- Broken links undermine educational credibility and create learner frustration
+- Need explicit requirement to validate all external links before inclusion
+- Fabricated or assumed links must be prevented
+
+SCOPE:
+This PATCH amendment adds "Link Validation Requirements" to Principle II's "Resources Slide Formatting":
+1. ADDED: ALL external documentation links MUST be verified as accessible before inclusion
+2. ADDED: Links returning 404, 403, or error codes SHALL NOT be included
+3. ADDED: Topics without valid links SHALL be omitted rather than including broken links
+4. ADDED: Requirement to test link accessibility using HTTP requests or browser verification
+5. STRENGTHENED: Educational credibility through verified, working resource links
+
+AFFECTED FILES:
+Constitution:
+- [✓] .specify/memory/constitution.md - Added "Link Validation Requirements" to Principle II (v1.14.3 → v1.14.4)
+
+Resources Slides (require link fixes):
+- [⚠] docs/markdown/10_module_1_ai_fundamentals/14_assessment_and_recap.md - Remove/fix OpenAI platform docs link (403 error)
+- [⚠] docs/markdown/20_module_2_ai_tools/25_assessment_and_recap.md - Remove/fix OpenAI models link (403 error)
+- [⚠] docs/markdown/30_module_3_debugging/34_assessment_and_recap.md - Remove Microsoft Research link (404 error), fix GitHub blog link
+- [⚠] docs/markdown/40_module_4_testing/47_assessment_and_recap.md - Remove GitHub blog testing article link (404 error)
+
+Supporting Documentation:
+- [⚠] .github/copilot-instructions.md - Should add link validation guidance for Resources slides
+
+VALIDATION:
+- [✓] Constitution principle enhanced with link validation requirements
+- [✓] Version incremented (PATCH: quality and validation requirement)
+- [✓] Amendment date updated to 2025-11-03
+- [⚠] All 4 module assessment Resources slides require link fixes
+- [⚠] Copilot instructions require link validation guidance
+
+FOLLOW-UP ACTIONS:
+1. Fix or remove broken links in all module assessment Resources slides
+2. Update .github/copilot-instructions.md with link validation requirements
+3. Establish link validation process for future content generation
+4. Periodic link validation audits to catch link rot
+
+AMENDMENT STATUS: Constitution updated (v1.14.4), Resources slide link fixes pending, copilot instructions update pending.
+-->
+
+<!--
 SYNC IMPACT REPORT - Amendment v1.14.3
 Date: 2025-11-03
 Amendment: Require "with-code" CSS class for slides containing multi-line code blocks
@@ -769,6 +821,14 @@ Notes:
 - Links SHALL prioritize official documentation and authoritative sources
 - Descriptions SHALL be concise (under 15 words) and explain resource relevance
 
+**Link Validation Requirements**:
+- ALL external documentation links MUST be verified as accessible and working before inclusion
+- Links that return 404 (Not Found), 403 (Forbidden), or other error status codes SHALL NOT be included
+- If no valid, relevant link is available for a topic, that topic SHALL be omitted from the Resources slide
+- Content creators MUST test link accessibility using HTTP requests or browser verification
+- Broken or fabricated links undermine educational credibility and learner trust
+- When links become outdated, Resources slides MUST be updated or links removed
+
 **Rationale**: Standardized Resources slides ensure learners have consistent access to continued learning materials across all modules. The template provides clear separation between external documentation resources and internal lab solutions, making it easy for learners to find reference materials. Bold formatting and structured sections create visual hierarchy and improve scannability. The `<br>` spacing prevents content overlap. This format eliminates inconsistencies seen in early modules where Resources slides varied in structure, header formatting, and section organization.
 
 **GitHub Copilot Terminology Standards**: All training materials (slides, labs, documentation) MUST use standardized mode-based terminology when referring to GitHub Copilot IDE extension features. This ensures clarity about the actual interaction modes and capabilities:
@@ -1163,4 +1223,4 @@ labs/
 
 This constitution supersedes all other development practices for the SFEIR School Coding with AI training program. All content creation, lab development, and documentation MUST verify compliance with these standards. Educational effectiveness and practical utility MUST be maintained throughout the training development process.
 
-**Version**: 1.14.3 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-11-03
+**Version**: 1.14.4 | **Ratified**: 2025-09-18 | **Last Amended**: 2025-11-03

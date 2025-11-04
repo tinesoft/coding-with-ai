@@ -437,11 +437,18 @@ Notes:
 - Prioritize official documentation and authoritative sources
 - Keep descriptions concise (under 15 words)
 
+**Link Validation Requirements**:
+- ALL external documentation links MUST be verified as accessible before inclusion
+- Test links using HTTP requests (curl) or browser to ensure they return 200 OK status
+- Links returning 404 (Not Found), 403 (Forbidden), or error codes SHALL NOT be included
+- If no valid link available for a topic, omit that topic from the Resources slide
+- Never fabricate or assume links work - always verify before adding
+- Update or remove links when they become broken
+
 **Example** (Module 3):
 ```markdown
 ### **Documentation**
-- [GitHub Copilot Best Practices](https://github.blog/developer-skills/github/)
-- [AI-Assisted Debugging Research](https://www.microsoft.com/en-us/research/publication/ai-assisted-debugging/)
+- [GitHub Copilot Documentation](https://docs.github.com/copilot) - Official docs for AI-assisted development
 
 ### **Lab Solutions**
 - Review `labs/lab-31-ai-debugging-solution/`
@@ -454,6 +461,7 @@ Notes:
 - ❌ Inconsistent subtitle text (must be "Further Learning")
 - ❌ Omitting `<br>` spacing tag
 - ❌ Using non-module-scoped lab numbering
+- ❌ Including broken, unverified, or fabricated links
 
 ---
 *Instructions updated: 2025-10-30*

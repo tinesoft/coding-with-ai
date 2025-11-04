@@ -108,9 +108,8 @@ Context window size directly impacts which tasks each model excels at - larger w
 
 ### **Documentation**
 - [GitHub Copilot Documentation](https://docs.github.com/copilot) - Official docs with latest features
-- [OpenAI Models & Docs](https://platform.openai.com/docs/models) - OpenAI model SKUs (GPT-5, GPT-4.5, GPT-4o) and APIs
-- [Anthropic Docs](https://www.anthropic.com) - Claude product pages and guides (Claude 4.x)
-- [Google Vertex AI / Gemini](https://cloud.google.com/vertex-ai) - Gemini 2.5 family and Vertex AI docs
+- [Anthropic Docs](https://www.anthropic.com) - Claude product pages and guides
+- [Google Vertex AI / Gemini](https://cloud.google.com/vertex-ai) - Gemini family and Vertex AI docs
 
 ### **Lab Solutions**
 - Review `labs/lab-21-copilot-cli-solution/`

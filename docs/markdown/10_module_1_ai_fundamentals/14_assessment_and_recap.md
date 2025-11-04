@@ -358,7 +358,6 @@ Use this checklist to self-assess your readiness for Module 2. If any areas feel
 <br>
 
 ### **Documentation**
-- [OpenAI GPT Documentation](https://platform.openai.com/docs) - Understanding LLMs and APIs
 - [Anthropic Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering) - Advanced prompting techniques
 - [Google AI Principles](https://ai.google/responsibility/principles/) - AI ethics and responsible use
 

@@ -277,8 +277,7 @@ This methodology prevents over-reliance while maximizing AI benefits.
 <br>
 
 ### **Documentation**
-- [GitHub Copilot Best Practices](https://github.blog/developer-skills/github/)
-- [AI-Assisted Debugging Research](https://www.microsoft.com/en-us/research/publication/ai-assisted-debugging/)
+- [GitHub Copilot Documentation](https://docs.github.com/copilot) - Official docs for AI-assisted development
 
 ### **Lab Solutions**
 - Review `labs/lab-31-ai-debugging-solution/`
