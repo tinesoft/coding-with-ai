@@ -312,14 +312,6 @@ Notes:
 <!-- .slide: class="exercice" -->
 # Exercise 1: AI-Powered Debugging
 ## Lab 31
-- Use GitHub Copilot to identify and fix 5 different bug types
-- Practice the systematic debugging workflow
-
-##--##
-
-<!-- .slide: class="exercice" -->
-# Exercise 1: AI-Powered Debugging
-## Lab 31
 
 <br>
 

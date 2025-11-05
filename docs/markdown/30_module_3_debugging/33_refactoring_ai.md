@@ -495,14 +495,6 @@ Notes:
 <!-- .slide: class="exercice" -->
 # Exercise 2: AI-Powered Refactoring
 ## Lab 32
-- Use GitHub Copilot to refactor 5 legacy code samples
-- Practice applying refactoring patterns systematically
-
-##--##
-
-<!-- .slide: class="exercice" -->
-# Exercise 2: AI-Powered Refactoring
-## Lab 32
 
 <br>
 

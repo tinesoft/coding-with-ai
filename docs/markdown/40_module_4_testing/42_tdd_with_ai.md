@@ -192,10 +192,6 @@ Notes:
 6. **🔵 REFACTOR**: Consolidate validation rules
    - All tests still pass (code cleaner)
 
-<br>
-
-### **Key Insight**: Each cycle adds one small capability with verified behavior
-
 Notes:
 - Real TDD proceeds incrementally - one requirement at a time
 - Each RED-GREEN-REFACTOR cycle is independent and complete

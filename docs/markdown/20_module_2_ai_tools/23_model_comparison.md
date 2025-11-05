@@ -131,7 +131,7 @@ Match model characteristics to task requirements and constraints. Don't use expe
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercise 4: Model Comparison
+# Exercise 3: Model Comparison
 ## Lab 24
 
 <br>
@@ -146,7 +146,7 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercise 4: Model Comparison
+# Exercise 3: Model Comparison
 ## Lab 24
 
 <br>

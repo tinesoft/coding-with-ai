@@ -211,7 +211,7 @@ This real example from our project demonstrates focused, actionable instructions
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercise 3: Agent Instruction Files
+# Exercise 4: Agent Instruction Files
 ## Lab 23
 
 <br>
@@ -226,7 +226,7 @@ Notes:
 ##--##
 
 <!-- .slide: class="exercice" --> 
-# Exercise 3: Agent Instruction Files
+# Exercise 4: Agent Instruction Files
 ## Lab 23
 
 <br>
