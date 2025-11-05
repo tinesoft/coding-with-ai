@@ -1,7 +1,7 @@
-# Lab 1 Solution Guide: Prompt Engineering Basics
+# Lab 2 Solution Guide: Prompt Engineering Basics
 
 ## Solution Overview
-This guide provides sample solutions and detailed explanations for Lab 1 exercises. Remember that prompt engineering is contextual - your solutions may vary based on your specific needs and the AI tool you're using.
+This guide provides sample solutions and detailed explanations for Lab 2 exercises. Remember that prompt engineering is contextual - your solutions may vary based on your specific needs and the AI tool you're using.
 
 ## Exercise 1 Solutions: From Vague to Clear
 

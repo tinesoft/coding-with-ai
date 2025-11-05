@@ -621,7 +621,7 @@ Lab Content:
 - [✓] labs/lab-21-copilot-cli/README.md - Removed "Success Criteria Checklist" section (29 lines removed)
 - [✓] labs/lab-22-copilot-vscode/README.md - Removed "Success Criteria Checklist" section (28 lines removed)
 - [✓] labs/lab-23-model-comparison/README.md - Removed "Success Criteria Checklist" section (26 lines removed)
-- [✓] labs/lab-11-prompt-basics/README.md - "Success Criteria" subsections are exercise learning objectives (preserved as educational content)
+- [✓] labs/lab-12-prompt-engineering/README.md - "Success Criteria" subsections are exercise learning objectives (preserved as educational content)
 
 Supporting Documentation:
 - [✓] .github/copilot-instructions.md - Added lab content structure guidance
@@ -1154,14 +1154,14 @@ docs/
 ### Laboratory Structure (Module-Scoped Numbering)
 ```
 labs/
-├── lab-11-prompt-basics/         # Module 1, Lab 1: Prompt engineering fundamentals
+├── lab-11-ai-fundamentals/       # Module 1, Lab 1: AI concepts and LLM understanding
 │   └── README.md
-├── lab-11-prompt-basics-solution/
+├── lab-11-ai-fundamentals-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
-├── lab-12-ai-fundamentals/       # Module 1, Lab 2: AI concepts and LLM understanding
+├── lab-12-prompt-engineering/    # Module 1, Lab 2: Prompt engineering fundamentals
 │   └── README.md
-├── lab-12-ai-fundamentals-solution/
+├── lab-12-prompt-engineering-solution/
 │   ├── README.md
 │   └── resources/                # Optional: Lab outputs and deliverables
 ├── lab-21-copilot-cli/           # Module 2, Lab 1: CLI agent hands-on (GitHub Copilot CLI)

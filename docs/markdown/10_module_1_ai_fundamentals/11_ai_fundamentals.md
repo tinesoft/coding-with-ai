@@ -130,6 +130,38 @@ RAG solves the "knowledge cutoff" problem by combining LLM capabilities with rea
 
 ##--##
 
+<!-- .slide: class="exercice" --> 
+# Exercise 1: AI Fundamentals in Practice
+## Lab 11
+
+<br>
+
+### 👉🏾 Follow **instructions** in
+
+### `labs/lab-11-ai-fundamentals/README.md`
+
+Notes:
+- Lab 11 (Module 1, Lab 1) contains 5 progressive exercises (1-5) for AI fundamentals exploration.
+- Follow the instructions in the lab README.md for detailed steps.
+
+##--##
+
+<!-- .slide: class="exercice" --> 
+# Exercise 1: AI Fundamentals in Practice
+## Lab 11
+
+<br>
+
+### 💡 Read **solution** at
+
+### `labs/lab-11-ai-fundamentals-solution/README.md`
+
+Notes:
+- Contains complete solutions and explanations for all 5 exercises.
+- Read the lab README.md for example of solutions.
+
+##--##
+
 <!-- .slide -->
 # **AI Model Types and Capabilities**
 
@@ -210,34 +242,3 @@ Responsible AI use requires understanding both capabilities and limitations. The
 
 Notes:
 With these fundamental concepts of RAG systems, you have a comprehensive understanding of how modern AI applications work. These technologies form the foundation for the AI tools and techniques you'll use throughout your development career.
-##--##
-
-<!-- .slide: class="exercice" --> 
-# Exercise 2: AI Fundamentals in Practice
-## Lab 12
-
-<br>
-
-### 👉🏾 Follow **instructions** in
-
-### `labs/lab-12-ai-fundamentals/README.md`
-
-Notes:
-- Lab 12 (Module 1, Lab 2) contains 5 progressive exercises (1-5) for AI fundamentals exploration.
-- Follow the instructions in the lab README.md for detailed steps.
-
-##--##
-
-<!-- .slide: class="exercice" --> 
-# Exercise 2: AI Fundamentals in Practice
-## Lab 12
-
-<br>
-
-### 💡 Read **solution** at
-
-### `labs/lab-12-ai-fundamentals-solution/README.md`
-
-Notes:
-- Contains complete solutions and explanations for all 5 exercises.
-- Read the lab README.md for example of solutions.

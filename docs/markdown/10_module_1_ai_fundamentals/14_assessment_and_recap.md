@@ -362,8 +362,8 @@ Use this checklist to self-assess your readiness for Module 2. If any areas feel
 - [Google AI Principles](https://ai.google/responsibility/principles/) - AI ethics and responsible use
 
 ### **Lab Solutions**
-- Review `labs/lab-11-prompt-basics-solution/`
-- Review `labs/lab-12-ai-fundamentals-solution/`
+- Review `labs/lab-11-ai-fundamentals-solution/`
+- Review `labs/lab-12-prompt-engineering-solution/`
 
 Notes:
 Refer back to lab solutions and documentation as references for your continued AI learning journey.

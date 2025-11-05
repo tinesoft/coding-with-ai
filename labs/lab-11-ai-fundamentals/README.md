@@ -1,4 +1,4 @@
-# Lab 2: AI Fundamentals in Practice
+# Lab 1: AI Fundamentals in Practice
 
 ## Learning Objectives
 - Understand how LLMs and embeddings work in real applications
@@ -7,7 +7,8 @@
 - Build confidence in choosing appropriate AI tools for specific tasks
 
 ## Prerequisites
-- Completion of Lab 1 (Prompt Engineering Basics)
+- Basic understanding of programming concepts
+- Access to multiple AI tools for comparison
 - Basic understanding of programming concepts
 - Access to multiple AI tools for comparison
 - Text editor for documenting experiments and observations
@@ -23,7 +24,7 @@ This hands-on lab bridges the gap between AI theory and practical application. Y
    - **Optional**: Local AI tools (Ollama, etc.)
 
 2. **Create Lab Documentation**:
-   - Create `lab-12-ai-fundamentals.md` for your observations
+   - Create `lab-11-ai-fundamentals.md` for your observations
    - Set up experiment tracking templates
    - Prepare code samples for testing
 

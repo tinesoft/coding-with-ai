@@ -1,4 +1,4 @@
-# Lab 1: Prompt Engineering Basics
+# Lab 2: Prompt Engineering Basics
 
 ## Learning Objectives
 - Apply the CLEAR framework to write effective prompts
@@ -7,6 +7,7 @@
 - Build confidence in AI communication skills
 
 ## Prerequisites
+- Completion of Lab 1 (AI Fundamentals in Practice)
 - Basic understanding of programming concepts
 - Access to an AI tool (ChatGPT, Claude, or similar)
 - Text editor for documenting your prompts and responses
@@ -22,7 +23,7 @@ This hands-on lab will guide you through the fundamentals of prompt engineering.
    - **IDE Integration**: GitHub Copilot (if available)
 
 2. **Create a Lab Notebook**:
-   - Create a new text file named `lab-11-prompts.md`
+   - Create a new text file named `lab-12-prompts.md`
    - You'll document prompts and responses throughout the lab
    - Include timestamps and tool used for each interaction
 

@@ -1,7 +1,7 @@
-# Lab 2 Solution Guide: AI Fundamentals in Practice
+# Lab 1 Solution Guide: AI Fundamentals in Practice
 
 ## Solution Overview
-This guide provides detailed solutions, analysis, and insights for Lab 2 exercises. The focus is on understanding how AI fundamentals translate into practical development applications and building intuition for effective AI tool usage.
+This guide provides detailed solutions, analysis, and insights for Lab 1 exercises. The focus is on understanding how AI fundamentals translate into practical development applications and building intuition for effective AI tool usage.
 
 ## Exercise 1 Solutions: Understanding Context Windows
 
